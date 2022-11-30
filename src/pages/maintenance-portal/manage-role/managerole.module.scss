@@ -1,0 +1,65 @@
+.mainContainer {
+  .addFieldButton {
+    background-color: var(--blue7);
+    color: var(--white1);
+    font-weight: var(--font-medium);
+    font-size: var(--XXSmall);
+    width: 177px;
+    padding: 18px 25px;
+    float: right;
+    display: flex;
+    margin: 30px;
+    .iconCustomClass {
+      display: inline-flex;
+      margin-right: 10px;
+    }
+  }
+  .tableContainer {
+    margin: 0px 30px 30px 30px;
+    .row {
+      cursor: auto;
+    }
+    .customClassTds {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+      color: var(--black2);
+      padding: 0px 48px !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:first-child {
+        text-align: start !important;
+        cursor: pointer;
+      }
+
+      &:last-child {
+        padding: 0px 0px 0px 49px !important;
+        width: 95px !important;
+      }
+      // &:hover {
+      //   white-space: normal !important;
+      // }
+    }
+    .customClassTableHead {
+      font-size: var(--XSmall);
+      font-weight: var(--font-medium);
+      padding: 0px 48px;
+      &:first-child {
+        text-align: start !important;
+        padding: 0px 35px !important;
+      }
+      &:last-child {
+        padding: 0px 0px 0px 49px !important;
+      }
+    }
+    .text {
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+  .paginationContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 30px 30px;
+  }
+}

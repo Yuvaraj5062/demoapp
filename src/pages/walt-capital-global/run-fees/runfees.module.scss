@@ -1,0 +1,201 @@
+@mixin buttonStyle(
+  $margin,
+  $color,
+  $bg-color,
+  $border,
+  $font-size,
+  $font-weight
+) {
+  color: $color;
+  background: $bg-color;
+  border: 1px solid $border;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  padding: 13px 35px;
+  margin-left: 22px;
+}
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    margin: 15px 0px;
+    .feeReportButton {
+      width: 143px;
+      height: 51px;
+      background: var(--blue10);
+      color: var(--blue1);
+      font-weight: var(--font-semibold);
+      font-size: var(--XSmall);
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    // .tableContent {
+    //   margin-top: 15px;
+    //   width: 100%;
+
+    .customClassTableHead {
+      text-align: center !important;
+      height: 66px;
+      .customClassTh {
+        font-size: var(--XSmall);
+        font-weight: var(--font-medium) !important;
+        // text-align: center;
+        padding: 0px 11px !important;
+        // &:first-child {
+        //   padding-left: 10px !important;
+        // }
+      }
+    }
+    .customClassTableRow {
+      text-align: center;
+      .customClassTd {
+        padding: 0px 0px !important;
+        &:first-child {
+          text-align: left;
+          padding-left: 10px !important;
+        }
+      }
+    }
+    .customClassFooter {
+      background-color: var(--blue10) !important;
+      height: 66px !important;
+      .customClassFooterTd {
+        padding: 0px 0px !important;
+        text-align: center !important;
+        font-size: var(--XSmall);
+      }
+    }
+    // .table {
+    //   width: 100%;
+    //   .tableHead {
+    //     background: var(--blue11);
+    //     height: 66px;
+    //     color: var(--white1);
+    //     font-size: var(--XSmall);
+    //     font-weight: var(----font-medium);
+    //     text-align: left;
+    //   }
+    //   .customClassForTh1{
+    //     font-weight: var(--font-medium);
+    //     text-align:left;
+    //     padding-left: 17px;
+    //   }
+    //   .customClassForTh2{
+    //     font-weight: var(--font-medium);
+    //     text-align: center;
+    //     padding: 0px 0px;
+    //   }
+    //   .customClassForThLast{
+    //     font-weight: var(--font-medium);
+    //     text-align: center;
+    //     padding-right: 14px;
+    //   }
+    //   .customarrowClass{
+    //     padding: 28px 0px 24px 20px;
+    //   }
+    //   .tableBodyRow {
+    //     background: var(--blue8);
+    //     height: 66px;
+    //     font-size: var(--XXSmall);
+    //     font-weight: var(--font-medium);
+    //     color: var(--black2);
+    //     text-align: left;
+    //     .customClassForTd1{
+    //       text-align: left;
+    //       padding-left: 17px;
+    //     }
+    //     .customClassForTd2{
+    //       text-align: center;
+    //       padding: 0px 5px;
+    //     }
+    //     .datePicker {
+    //       input {
+    //         border: 1px solid var(--black1);
+    //         background: var(--blue8);
+    //         padding: 15px 0px;
+    //         text-align: center;
+    //         color: var(--black1);
+    //         &:hover {
+    //           color: var(--white1);
+    //           background: var(--blue1);
+    //           border: 1px solid var(--blue1);
+    //         }
+    //       }
+    //     }
+    //     .calcButton {
+    //       // margin-right: 21px;
+
+    //       @include buttonStyle(
+    //         0px,
+    //         var(--black1),
+    //         var(--blue8),
+    //         var(--black1),
+    //         var(--XSmall),
+    //         var(--font-semibold)
+    //       );
+    //       &:hover {
+    //         @include buttonStyle(
+    //           0px,
+    //           var(--white1),
+    //           var(--blue1),
+    //           var(--blue1),
+    //           var(--XSmall),
+    //           var(--font-semibold)
+    //         );
+    //       }
+    //     }
+    //     // }
+    //     &:nth-child(even) {
+    //       background: var(--blue9);
+    //       .datePicker {
+    //         input {
+    //           border: 1px solid var(--black1);
+    //           background: var(--blue9);
+    //           padding: 15px 0px;
+    //           text-align: center;
+    //           color: var(--black1);
+    //           &:hover {
+    //             background: var(--blue1);
+    //             color: var(--white1);
+    //             border: 1px solid var(--blue1);
+    //           }
+    //         }
+    //       }
+    //     }
+    //     &:nth-child(even) {
+    //       background: var(--blue9);
+    //       .calcButton {
+    //         @include buttonStyle(
+    //           0px,
+    //           var(--black1),
+    //           var(--blue9),
+    //           var(--black1),
+    //           var(--XSmall),
+    //           var(--font-semibold)
+    //         );
+    //         &:hover {
+    //           @include buttonStyle(
+    //             0px,
+    //             var(--white1),
+    //             var(--blue1),
+    //             var(--blue1),
+    //             var(--XSmall),
+    //             var(--font-semibold)
+    //           );
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    .totalAmount {
+      background-color: var(--blue10);
+      height: 66px;
+    }
+    // }
+  }
+  .ifaBreakDownPage {
+    padding: 13px 20px;
+    font-weight: var(--font-semibold);
+    font-size: var(--XSmall);
+    margin-right: 22px;
+    float: right;
+  }
+}

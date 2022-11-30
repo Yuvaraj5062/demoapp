@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+  .eventContainer {
+    .event {
+      width: 180px;
+      margin-right: 10px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--black4);
+      padding: 0px 25px 0px 15px;
+      background: var(--white1);
+      color: var(--black5);
+      cursor: pointer;
+
+      .eventName {
+        font-size: var(--XSmall);
+        font-weight: var(--font-medium);
+        padding-left: 6px;
+      }
+    }
+    & :hover {
+      background: var(--blue7);
+      color: var(--white1);
+    }
+  }
+}

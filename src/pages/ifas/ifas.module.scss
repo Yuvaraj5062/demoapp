@@ -1,0 +1,118 @@
+@media only screen and (min-width: 768px) {
+  .ifaContainer {
+    min-height: 100vh;
+    padding: 30px 30px 0px 30px;
+    // background: var(--grey22);
+    .abcFilter {
+      margin-bottom: 30px;
+    }
+    .searchFilterContainer {
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .searchFilter {
+        width: 380px;
+        .search {
+          background: var(--grey17);
+          box-shadow: none;
+        }
+      }
+
+      .input {
+        width: 75%;
+        background: var(--grey17);
+        box-shadow: none;
+      }
+    }
+
+    .input {
+      width: 75%;
+      background: var(--grey17);
+    }
+    .filterContainer {
+      display: flex;
+      .totalAssets {
+        margin-right: 30px;
+
+        .totalAssetsText {
+          margin: 0px;
+          font-weight: var(--font-semibold);
+          font-size: var(--medium);
+          color: var(--black1);
+        }
+        .totalAssetsText1 {
+          margin: 0px;
+          font-weight: var(--font-semibold);
+          font-size: var(--XXSmall);
+          color: var(--blue7);
+        }
+      }
+      .newIFAsButton {
+        display: flex;
+        align-items: center;
+        width: 168px;
+        background: var(--blue10);
+        color: var(--blue7);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        padding: 0px 20px;
+      }
+      .iconClass {
+        padding-right: 8px;
+      }
+    }
+  }
+  .monthText {
+    margin: 0;
+    padding: 0;
+    font-size: var(--small);
+    font-weight: var(--font-medium);
+    margin-top: 35px;
+  }
+  // .tableContainer {
+  //   margin-top: 30px;
+  //   .table {
+  //     width: 100%;
+  //     th,
+  //     td {
+  //       padding: 0px 15px;
+  //     }
+  //     .tableHead {
+  //       background: var(--blue11);
+  //       height: 66px;
+  //       color: var(--white1);
+  //       font-size: var(--XXSmall);
+  //       font-weight: var(--font-medium);
+  //       text-align: left;
+  //       input {
+  //         height: 18px;
+  //         width: 18px;
+  //       }
+  //     }
+  //     .tableBodyRow {
+  //       background: var(--blue8);
+  //       height: 66px;
+  //       font-size: var(--XXSmall);
+  //       font-weight: var(--font-medium);
+  //       color: var(--black2);
+  //       cursor: pointer;
+  //       &:nth-child(even) {
+  //         background: var(--blue9);
+  //       }
+  //     }
+  //   }
+  // }
+
+  .customClassTh {
+    padding: 0px 15px !important;
+  }
+  .customClassTd {
+    padding: 0px 15px !important;
+  }
+  .paginationContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 30px 0px;
+  }
+}

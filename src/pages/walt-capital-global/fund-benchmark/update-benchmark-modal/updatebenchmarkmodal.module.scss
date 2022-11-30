@@ -1,0 +1,106 @@
+@media only screen and (min-width: 768px) {
+  .modalMainContainer {
+    width: 640px;
+    margin: 5% auto 0px auto;
+    background-color: var(--white1);
+    .modalTitle {
+      padding: 21px 23px 11px 237px;
+      background-color: var(--blue1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+      color: var(--white1);
+      //text-align: center;
+      .crossIcon {
+        float: right;
+        cursor: pointer;
+      }
+    }
+
+    .tableContent {
+      margin: 40px 0px 0px 30px;
+      width: 90%;
+      .dateInput {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .dateInputLabel {
+          font-weight: var(--font-medium);
+          font-size: var(--XXSmall);
+          padding: 10px 10px 10px 0px;
+        }
+        .datePickerContainer {
+          display: flex;
+          align-items: center;
+          margin: 0px 0px 15px 0px;
+          width: 268px;
+          // margin-bottom: 15px;
+          .datePicker {
+            background: var(--grey18);
+            text-align: center;
+            input {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              padding: 15px 20px;
+              background: var(--grey18);
+              border: none;
+              color: var(--black1);
+            }
+            input::placeholder {
+              color: var(--black1);
+            }
+            input:focus {
+              outline: none;
+            }
+          }
+          .iconContainer {
+            background: var(--blue7);
+            padding: 10px 14px;
+          }
+        }
+      }
+
+      .textfieldContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .labelName {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        padding: 10px 10px 10px 0px;
+      }
+      .datainputfield {
+        width: 262px;
+        height: 51px;
+        margin-bottom: 15px;
+        background: var(--grey18);
+        // box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+        border: none;
+      }
+    }
+    .modalFooter {
+      padding: 15px 0px 15px 0px;
+      background-color: var(--blue1);
+      margin-top: 25px;
+      text-align: center;
+      // .editButton {
+      //   width: 178px;
+      //   height: 51px;
+      //   background: var(--blue10);
+      //   font-weight: var(--font-semibold);
+      //   font-size: var(--XSmall);
+      //   color: var(--blue1);
+      //   margin: 13px 0px;
+      //   margin-right: 50px;
+      // }
+      .addBenchmarkButton {
+        width: 188px;
+        height: 51px;
+        background: var(--blue10);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+        color: var(--blue1);
+      }
+    }
+  }
+}

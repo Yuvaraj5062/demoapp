@@ -1,0 +1,84 @@
+@media only screen and (min-width: 768px) {
+  .toggleContainer {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 37px;
+    .checkbox {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .notToggled {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 25px;
+      background: var(--grey5);
+      transition: transform 5s ease;
+      .slider {
+        position: absolute;
+        content: "";
+        height: 35px;
+        width: 34px;
+        left: 1px;
+        top: 0px;
+        background: var(--white1);
+        border-radius: 50%;
+        transition: transform 5s ease;
+      }
+      .icon{
+          padding: 7px 46px;
+          display:inline-block;
+          color: #ffffff;
+      }
+    }
+
+  }
+
+  .toggleContainer {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 35px;
+    .checkbox {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .toggled {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 25px;
+      background: var(--blue7);
+      transition: transform 5s ease;
+      .slider {
+        position: absolute;
+        content: "";
+        height: 35px;
+        width: 34px;
+        left: 40px;
+        top: 0px;
+        background: var(--white1);
+        border-radius: 50%;
+        transition: transform 5s ease;
+      }
+      .icon{
+        
+        padding: 7px 10px;
+        display:inline-block;
+        float: left;
+        color: #ffffff;
+      
+      
+    }
+    }
+  }
+}

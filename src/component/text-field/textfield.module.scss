@@ -1,0 +1,105 @@
+@media only screen and (min-width: 768px) {
+  .textFieldContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .tooltipContainer {
+      display: flex;
+      flex-direction: column;
+      width: 20px;
+      position: relative;
+
+      .printTooltip {
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.22);
+        border-radius: 4px;
+        width: 170px;
+
+        .text {
+          color: var(--blue7);
+          font-size: var(--XXXXXSmall);
+          font-weight: var(--font-medium);
+          padding: 10px;
+          z-index: 10;
+          left: -77px;
+          bottom: 29px;
+          display: inline-block;
+          width: 170px;
+        }
+      }
+
+      .infoIcon {
+        width: 18px;
+        height: 18px;
+        margin-left: 10px;
+        position: relative;
+        cursor: pointer;
+      }
+    }
+
+    .label {
+      color: var(--black5);
+      margin-bottom: 5px;
+      font-weight: var(--font-normal);
+      font-size: var(--XXSmall);
+    }
+
+    .errorText {
+      margin-top: 14px;
+      color: var(--red1);
+      font-weight: var(--font-medium);
+      font-size: var(--XXXSmall);
+    }
+
+    .type {
+      width: 162px;
+      padding: 6px 12px 5px 0px;
+      color: var(--black2);
+      border: 1px solid var(--black4);
+    }
+
+    .typeError {
+      width: 162px;
+      padding: 6px 12px 5px 0px;
+      color: var(--black2);
+      border: 1px solid var(--red1);
+    }
+
+    .inputType {
+      //padding: 5px 0px;
+      width: 90%;
+      color: var(--black2);
+      border: 1px solid var(--black4);
+    }
+
+    .inputTypeError {
+      width: 90%;
+      color: var(--black2);
+      border: 1px solid var(--red1);
+    }
+
+    .icon {
+      padding: 12px;
+    }
+    .checkinput {
+      // display: none;
+      color: var(--secondary-light);
+      font-size: var(--XXSmall);
+      font-weight: var(--font-normal);
+      width: 90%;
+      margin-right: 5px; 
+      input{
+        height: 34px;
+        border: 1px solid var(--black4); 
+      }
+      div{
+        display: none !important;
+      }
+      .PhoneInputCountry{
+        display: none !important;
+      }
+    //   select{
+    //     width: 20px !important;}
+    }
+  }
+}

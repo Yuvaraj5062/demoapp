@@ -1,0 +1,108 @@
+.uploadCSVContainer {
+  box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+
+  margin: 0px 30px 0px 30px;
+  padding-top: 20px;
+
+  .headerContainer {
+    background: var(--blue11);
+    color: var(--white1);
+    padding: 12px 0px 12px 30px;
+    font-size: var(--XSmall);
+    font-weight: var(--font-bold);
+
+    .crossContainer {
+      padding-right: 40px;
+      float: right;
+      cursor: pointer;
+    }
+  }
+  .uploadFileContent {
+    padding: 20px 34px 20px 0px;
+    background: var(--white1);
+    margin-top: 20px;
+    .fileNameText {
+      font-size: var(--small);
+      font-weight: var(--font-normal);
+      padding-left: 30px;
+    }
+    .buttonContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 0px 35px 30px;
+      .datePickerContainer {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 8%;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+        .datePicker {
+          background: var(--white1);
+          text-align: center;
+          input {
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            padding: 15px 0px 15px 20px;
+            background: var(--white1);
+            border: none;
+            color: var(--grey1);
+          }
+          input:focus {
+            outline: none;
+          }
+        }
+        .datePick {
+          color: var(--blue1);
+        }
+        .iconContainer {
+          background: var(--white1);
+          padding: 10px;
+        }
+      }
+      .uploadButtons {
+        display: flex;
+        justify-content: space-around;
+      }
+      .uploadFileDiv {
+        flex-direction: row-reverse;
+      }
+      .uploadBtn {
+        background: var(--blue10);
+        color: black;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        padding: 15px 30px;
+        margin: 0px 0px 0px 17px;
+      }
+      .loader{
+        margin: unset !important;
+      }
+    }
+    .fileInputBtn {
+      background: var(--white1);
+      color: var(--black1);
+      font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+      text-align: left;
+      padding-left: 20px;
+    }
+    .btnStyle {
+      color: var(--white1);
+      font-size: var(--XSmall);
+      font-weight: var(--font-bold);
+      padding: 13px 80px;
+      text-align: left;
+      margin-right: unset;
+      background: var(--blue7);
+    }
+  }
+  .tableContainer {
+    margin-top: 20px;
+  }
+  .paginationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+  }
+}

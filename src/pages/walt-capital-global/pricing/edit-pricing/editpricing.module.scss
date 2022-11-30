@@ -1,0 +1,220 @@
+@mixin inputStyle($height) {
+  border-style: none;
+  background-color: var(--grey18);
+  height: $height;
+}
+
+@media only screen and (min-width: 768px) {
+  .modalMainContainer {
+    width: 50%;
+    margin: auto;
+    background-color: var(--white1);
+
+    .modalTitle {
+      margin: 10% auto 0px auto;
+      text-align: center;
+      padding: 25px 0px 20px 0px;
+      background-color: var(--blue1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+      color: var(--white1);
+
+      .crossIcon {
+        float: right;
+        cursor: pointer;
+        margin-right: 36px;
+      }
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 13px;
+      margin-bottom: 25px;
+      background-color: var(--white1);
+
+      .textFieldContainer {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 48px;
+        margin-bottom: 7px;
+        justify-content: space-between;
+      }
+
+      .customInput {
+        border-style: none;
+        background-color: var(--grey18);
+        width: 53.4%; //288px
+      }
+
+      .title {
+        font-weight: var(--medium);
+        font-size: var(--XXSmall);
+        color: var(--black1);
+      }
+
+      .radionButton {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        // height: 5px;
+        margin-bottom: 7px;
+        justify-content: flex-end;
+
+        .radionButtonGroup {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 60%;
+          align-self: flex-end;
+        }
+      }
+
+      .customInput1 {
+        @include inputStyle(48px);
+      }
+
+      .textBoxField {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-between;
+        margin-bottom: 6px;
+
+        .label {
+          color: var(--black1);
+          font-weight: var(--font-normal);
+          font-size: var(--XXSmall);
+        }
+
+        .inputField {
+          padding: 1px 0px 0px 0px;
+          display: flex;
+          flex-direction: column;
+          background: var(--grey18);
+          width: 54.1%;
+
+          .customClassInputIcon {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding-left: 20px;
+          }
+        }
+      }
+
+      .selectFieldContainer {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        // height: 70px;
+        margin-bottom: 6px;
+        justify-content: space-between;
+        background: var(--white1);
+        font-weight: var(--font-normal);
+        font-size: var(--XXSmall);
+
+        .label {
+          color: var(--black1);
+          font-weight: var(--font-normal);
+          font-size: var(--XXSmall);
+        }
+
+        .selectlistContent {
+          display: flex;
+          width: 54.1%;
+
+          .dropdownContainer {
+            border: none;
+            width: 100%;
+            height: 49px;
+            background: var(--grey18);
+            display: flex;
+            flex-direction: column;
+
+            .dropdownContainerItems {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .dropdownContent {
+                margin-left: 20px;
+                font-size: var(--XSmall);
+                color: var(--black1);
+              }
+
+              .dropdownIconContainer {
+                width: 49px;
+                height: 49px;
+                background-color: var(--blue1);
+
+                .dropdownIcon {
+                  margin: 13px;
+                }
+              }
+            }
+
+            .dropdownListContent {
+              position: relative;
+              border-top: none;
+              height: 150px;
+              width: 84%;
+              padding: 0px 22px;
+              overflow-y: scroll;
+              font-size: var(--XSmall);
+              background: var(--grey18);
+              color: var(--black1);
+            }
+
+            ::-webkit-scrollbar {
+              width: 0px;
+            }
+          }
+
+          .dropdownIcon {
+            background-color: var(--blue7);
+            border: none;
+            line-height: 30px;
+            height: 30px;
+            border-radius: 0px 8px 8px 0px;
+            margin: 10px 0px 0px 0px;
+          }
+        }
+
+        .title {
+          color: var(--black1);
+          background: var(--black1);
+          font-weight: var(--font-normal);
+          font-size: var(--XXSmall);
+        }
+      }
+    }
+
+    .modalFooter {
+      height: 67px;
+      background: var(--blue1);
+      margin: auto;
+      display: flex;
+      align-items: center;
+
+      .modalFooterButton {
+        display: flex;
+        justify-content: right;
+        width: 85%;
+
+        .saveButton {
+          width: 44.7%;
+          text-align: center;
+          padding: 8px 0px 8px 0px;
+          background: var(--blue10);
+          color: var(--blue1);
+          box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

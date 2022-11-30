@@ -1,0 +1,130 @@
+.mainContainer {
+    width: 42%;
+    margin: 12% auto;
+    background-color: var(--white1);
+    z-index: 1;
+    .modalTitle {
+      // padding: 26px 0px 22px 0px;
+      padding: 15px 0px;
+      background-color: var(--blue1);
+      font-weight: var(--font-bold);
+      font-size: var(--large);
+      color: var(--white1);
+      text-align: center;
+      .crossIcon {
+        float: right;
+        margin-right: 26px;
+      }
+    }
+    .iconContainer {
+      display: flex;
+      justify-content: end;
+    //   padding: 10px;
+      .addIcon {
+        height: 25px;
+        cursor: pointer;
+      }
+      .deleteIcon {
+        cursor: pointer;
+      }
+    }
+    .tableContent {
+        padding: 38px 30px;
+        .cityName{
+          font-weight: var(--font-medium);
+          font-size: var(--XXSmall);
+          color: var(--black2);
+        }
+    
+    .divider {
+        background: var(--grey16);
+        margin: 30px 0px 20px 0px;
+      }
+      .divider2 {
+        background: var(--grey16);
+        margin: 17px 0px;
+      }
+      .tabelRow{
+        display: flex;
+        .iconContainer {
+            display: flex;
+            flex: auto;
+            // padding: 10px;
+            .addIcon {
+              height: 25px;
+              cursor: pointer;
+            }
+            .deleteIcon {
+              cursor: pointer;
+            }
+          }
+
+      }
+      .radioButtonText{
+        margin-left: 10px;
+        font-weight: var(--font-medium);
+          font-size: var(--XXSmall);
+          color: var(--black2);
+      }
+      .textfieldContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        //   width: 70%;
+        .labelName {
+          font-weight: var(--font-semibold);
+          font-size: var(--medium);
+          color:var(--blue1)
+         
+        }
+        .datainputfield {
+          width: 45%;
+          padding: 12px;
+          margin-bottom: 15px;
+          background: var(--blue2);
+          box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  
+    .button {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      .saveButton {
+        width: 150px;
+        padding: 12px;
+        background: var(--blue10);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+        color: var(--blue1);
+      }
+      .updateButton {
+        margin-left: 10px;
+        width: 150px;
+        padding: 12px;
+        background: var(--blue10);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+        color: var(--blue1);
+      }
+    }
+    .modalFooter {
+      padding: 8px 40px ;
+      background-color: var(--blue1);
+      text-align: center;
+      
+      margin-top: 25px;
+      .saveButton {
+         width: 36%;
+        // padding: 12px;
+        height: 48px;
+        background: var(--blue10);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+        color: var(--blue1);
+      }
+    }
+  }
+  

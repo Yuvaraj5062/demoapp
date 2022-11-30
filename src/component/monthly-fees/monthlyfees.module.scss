@@ -1,0 +1,35 @@
+@media only screen and (min-width: 768px) {
+  .monthlyFeesContainer {
+    box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+    flex:1;
+    margin:5px;
+    .title {
+      background-color: var(--blue1);
+      padding: 14px 5px 14px 15px;
+      color: var(--white1);
+      font-size: var(--XXSmall);
+      //width: 220px;
+      font-weight: var(--font-medium);
+      .titleText{
+        width: 150px;
+        margin: 0px;
+      }
+    }
+    .feesStructure {
+      background-color: var(--white1);
+      font-size: var(--XXXXSmall);
+      font-weight: var(--font-medium);
+      padding: 14px 10px 11px 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .totalAmountContainer {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-bold);
+      display: flex;
+      padding: 19px 16px 26px 17px;
+      background-color: var(--grey2);
+      justify-content: space-between;
+    }
+  }
+}

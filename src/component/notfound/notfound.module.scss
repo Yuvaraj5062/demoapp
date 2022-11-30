@@ -1,0 +1,14 @@
+.norecordFoundContainer{
+    // width: 90%;
+    // text-align: center;
+    // margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    // overflow-x: hidden;
+    .norecordFoundText{
+        color: var(--grey1);
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+    }
+}

@@ -1,0 +1,42 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .label {
+    font-weight: var(--font-medium);
+    font-size: var(--XXSmall);
+    color: var(--black1);
+    margin-bottom: 0px;
+  }
+  .textfieldContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .inputField {
+      width: 90%;
+      color: var(--black2);
+      border: 1px solid var(--black4);
+    }
+    // inputField with percentage
+    .inputFieldPer {
+      width: 90%;
+      color: var(--black2);
+      border: 1px solid var(--black4);
+      border: none;
+      outline: none;
+    }
+    .errorText {
+      color: var(--red1);
+      margin: 5px 0px 5px 0px;
+      font-weight: var(--font-medium);
+      font-size: var(--XXXSmall);
+    }
+    .percentage{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+}

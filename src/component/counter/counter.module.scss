@@ -1,0 +1,11 @@
+@media only screen and (min-width: 768px) {
+  .counterContainer {
+    display: flex;
+    justify-content: space-between;
+    .count {
+      color: var(--black1);
+      font-weight: var(--font-medium);
+      font-size: var(--XSmall);
+    }
+  }
+}

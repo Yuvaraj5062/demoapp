@@ -1,0 +1,19 @@
+@media only screen and (min-width: 768px) {
+    .insurancePortalContainer {
+        padding: 12px 30px;
+        min-height: 100vh;
+        .textContent {
+            font-size: var(--XXXLarge);
+            font-weight: var(--font-light);
+            color: var(--black2);
+            text-align: center;
+            line-height: 38px;
+            padding: 30% 10%;
+            background: var(--white1);
+            .spanText {
+                color: var(--blue7);
+                font-weight: var(--font-normal);
+            }
+        }
+    }
+}

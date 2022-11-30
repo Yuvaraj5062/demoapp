@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) {
+  .checkboxContainer {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    .checkRoundStyle {
+      // padding: 0px 23px;
+      user-select: none;
+    }
+    .inactiveCheckRoundStyle {
+      // padding: 0px 23px;
+      user-select: none;
+    }
+  }
+}

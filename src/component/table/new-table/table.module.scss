@@ -1,0 +1,232 @@
+@mixin buttonStyle($margin, $color, $bg-color, $border) {
+  // margin-right: 30px;
+  color: $color;
+  background: $bg-color;
+  border: 1px solid $border;
+  font-weight: var(--font-semibold);
+  font-size: var(--XSmall);
+  padding: 7px 17px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tableContainer {
+    width: 100%;
+    margin: auto;
+
+    .table {
+      width: 100%;
+
+      .tableHead {
+        background: var(--blue11);
+        height: 50px;
+        color: var(--white1);
+        font-size: var(--XSmall);
+        font-weight: var(--font-semibold);
+        text-align: left;
+        padding: 0px 10px;
+      }
+
+      .tableRow,
+      .tableFooter {
+        background: var(--blue8);
+        height: 66px;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        color: var(--black2);
+        cursor: pointer;
+
+        &:nth-child(even) {
+          background: var(--blue9);
+
+          .datePicker {
+            // background: var(--white1);
+            text-align: center;
+
+            input {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              padding: 15px 0px 15px 25px;
+              background: var(--blue8);
+              border: 1px solid var(--blue1);
+              color: var(--black1);
+              width: 120px;
+              border: 1px solid var(--black1);
+              background: var(--blue9);
+              // height: 50px !important;
+              margin-right: 15px;
+
+              // background: red !important;
+              &:hover {
+                color: var(--white1);
+                background: var(--blue1);
+                border: none;
+              }
+            }
+
+            input:focus {
+              outline: none;
+            }
+          }
+
+          .buttonStyle {
+            background: var(--blue8);
+            border: 1px solid var(--black1);
+            color: var(--black1);
+            font-size: var(--XSmall);
+            font-weight: var(--font-semibold);
+            margin-left: 5px;
+            padding: 13px 35px;
+            background: var(--blue9);
+
+            &:hover {
+              background: var(--blue1);
+              color: var(--white1);
+            }
+          }
+        }
+
+        .buttonStyle {
+          background: var(--blue8);
+          border: 1px solid var(--black1);
+          color: var(--black1);
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          margin-left: 5px;
+          padding: 13px 35px;
+
+          &:nth-child(even) {
+            background: var(--blue9) !important;
+            color: yellow;
+          }
+
+          &:hover {
+            background: var(--blue1);
+            color: var(--white1);
+          }
+        }
+
+        .datePicker {
+          // background: var(--white1);
+          text-align: center;
+
+          input {
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            padding: 15px 0px 15px 25px;
+            background: var(--blue8);
+            border: 1px solid var(--blue1);
+            color: var(--black1);
+            width: 120px;
+            border: 1px solid var(--black1);
+            // height: 50px !important;
+            margin-right: 15px;
+
+            // background: red !important;
+            &:hover {
+              color: var(--white1);
+              background: var(--blue1);
+              border: none;
+            }
+
+            &:nth-child(even) {
+              background: red !important;
+            }
+          }
+
+          input:focus {
+            outline: none;
+          }
+        }
+
+        // **** Please do not Remove following this comment **** //
+        // .tableRowData,
+        // .footerTd {
+        //   padding: 0px 10px;
+        //   .actionIcons{
+        //   display: flex;
+        //   align-items: center;
+        //   .deleteIcon{
+        //     margin-left: 5px;
+                // cursor: pointer;
+        //   }
+
+        // }
+        //   .ifaButton {
+        //     background: var(--blue1);
+        //     color: var(--white1);
+        //     font-size: var(--XSmall);
+        //     font-weight: var(--font-semibold);
+        //     display: flex;
+        //     margin-left: 25%;
+        //     // width: 255px;
+        //     // margin: 0px 15px !important;
+        //     padding: 10px 16px !important;
+        //   }\
+        // }
+        .tableRowData {
+          padding: 0px 10px;
+          max-width: 120px;
+          overflow-wrap: break-word;
+
+          .actionIcons {
+            display: flex;
+            align-items: center;
+
+            .deleteIcon {
+              margin-left: 5px;
+              cursor: pointer;
+            }
+
+          }
+
+          .ifaButton {
+            background: var(--blue1);
+            color: var(--white1);
+            font-size: var(--XSmall);
+            font-weight: var(--font-semibold);
+            display: flex;
+            margin-left: 25%;
+            // width: 255px;
+            // margin: 0px 15px !important;
+            padding: 10px 16px !important;
+          }
+
+        }
+
+        .footerTd {
+          padding: 0px 10px;
+
+          .actionIcons {
+            display: flex;
+            align-items: center;
+
+            .deleteIcon {
+              margin-left: 5px;
+              cursor: pointer;
+            }
+
+          }
+
+          .ifaButton {
+            background: var(--blue1);
+            color: var(--white1);
+            font-size: var(--XSmall);
+            font-weight: var(--font-semibold);
+            display: flex;
+            margin-left: 25%;
+            // width: 255px;
+            // margin: 0px 15px !important;
+            padding: 10px 16px !important;
+          }
+        }
+
+        .colorRed {
+          color: var(--red1);
+          padding-right: 0px;
+          font-size: var(--XSmall);
+          font-weight: var(--font-medium) !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,373 @@
+@mixin inputStyle($height) {
+  border-style: none;
+  background-color: var(--grey18);
+  height: $height;
+}
+@mixin datePickerCustomClass($borderColor) {
+  display: flex;
+  align-items: center;
+  background: var(--grey18);
+  position: relative;
+  border: none;
+  // width: 257px;
+  height: 47px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  .datePicker {
+    background: var(--white1);
+    padding-left: 7px;
+    input {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+      background: var(--white1);
+      border: none;
+      padding: 12px;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+  .datePick {
+    width: 60%;
+    color: var(--blue1);
+  }
+  .iconContainer {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 4px;
+    background: var(--white1);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modalMainContainer {
+    width: 39%;
+    margin: auto;
+    background-color: var(--white1);
+
+    .modalTitle {
+      margin: 10% auto 0px auto;
+      text-align: center;
+      padding: 25px 0px 20px 0px;
+      background-color: var(--blue1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+      color: var(--white1);
+      position: relative;
+      .crossIcon {
+        // float: right;
+        cursor: pointer;
+        // margin-right: 36px;
+        position: absolute;
+        top: 28px;
+        right: 30px;
+      }
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 13px;
+      margin-bottom: 25px;
+      background-color: var(--white1);
+      // max-height: 400px;
+      // overflow: auto;
+      padding: 11px;
+      .mainContainer {
+        width: 90%;
+        margin: 10px;
+        margin-top: 0px;
+        .textfieldContainer {
+          // min-width: 60%;
+          width: 60%;
+          .input {
+            width: 100%;
+            height: 46px;
+            background: var(--grey18);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            padding-left: 11px;
+            box-sizing: border-box;
+            border: none;
+          }
+        }
+      }
+      .datePickerContainerMain {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 10px;
+        .title {
+          color: var(--black1);
+          font-size: var(--XXSmall);
+          font-weight: var(--font-medium);
+          // margin-bottom: 5px;
+        }
+        .error {
+          margin-top: 14px;
+          color: var(--red1);
+          font-weight: var(--font-medium);
+          font-size: var(--XXXSmall);
+        }
+        .label {
+          color: var(--black5);
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-medium);
+          margin-bottom: 5px;
+        }
+        .datePick {
+          width: 60%;
+          color: var(--blue1);
+        }
+        .datePickerContainer {
+          @include datePickerCustomClass(var(--black4));
+        }
+
+        .datePickerContainerError {
+          @include datePickerCustomClass(var(--red2));
+        }
+      }
+
+      .radionButton {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        // margin: 10px;
+        // margin-top: 0px;
+        justify-content: space-between;
+
+        .radionButtonGroup {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          width: 100%;
+          // align-self: flex-end;
+          font-size: var(--XXSmall);
+          font-weight: var(--font-normal);
+          .unitTypeRadioButton{
+            display: flex;
+            // width: 100%;
+            align-items: center;
+          }
+          .radioButton{
+            margin: 0px 5px;
+          }
+        }
+      }
+
+      .customInput1 {
+        @include inputStyle(48px);
+      }
+
+      .textBoxField {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .label {
+          color: var(--black1);
+          font-weight: var(--font-normal);
+          font-size: var(--XXSmall);
+        }
+
+        .inputField {
+          padding: 1px 0px 0px 0px;
+          display: flex;
+          flex-direction: column;
+          background: var(--grey18);
+          width: 69%;
+
+          .customClassInputIcon {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding-left: 20px;
+          }
+        }
+      }
+
+      .selectFieldContainer {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        // height: 70px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--white1);
+        font-weight: var(--font-normal);
+        font-size: var(--XXSmall);
+
+        .label {
+          color: var(--black1);
+          font-weight: var(--font-normal);
+          font-size: var(--XXSmall);
+        }
+        .inputRadioWithError{
+          display: flex;
+          flex-direction: column;
+          width: 60%;
+          justify-content: space-between;
+          .error {
+            margin-top: 14px;
+            color: var(--red1);
+            font-weight: var(--font-medium);
+            font-size: var(--XXXSmall);
+          }
+        }
+        .selectRadioContent{
+          display: flex;
+          width: 100%;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          // flex-direction: column;
+          .unitTypeRadioButton{
+            display: flex;
+            // width: 100%;
+            align-items: center;
+          }
+          .radioButton{
+            margin: 0px 5px;
+          }
+
+        }
+        .selectlistContent {
+          display: flex;
+          width: 60%;
+          justify-content: space-between;
+          .dropdownContainer {
+            border: none;
+            width: 100%;
+            height: 49px;
+            background: var(--grey18);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .dropdownListContent {
+              color: unset;
+              padding: 10px;
+              // width: 27%;
+              width: 160px;
+              right: -150px;
+              top: -28px;
+              background: var(--white1);
+            }
+            .dropdownListContentBuy {
+              color: unset;
+              padding: unset;
+              width: 100%;
+              max-height: 100px;
+              overflow-y: auto;
+            }
+            .dropdownContainerItems {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              cursor: pointer;
+
+              .dropdownContent {
+                margin-left: 11px;
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                color: var(--black1);
+                cursor: pointer;
+              }
+
+              .dropdownIconContainer {
+                width: 49px;
+                height: 49px;
+                background-color: var(--blue1);
+
+                .dropdownIcon {
+                  margin: 13px;
+                }
+              }
+            }
+
+            .dropdownListContent1 {
+              // position: relative;
+              font-size: var(--XSmall);
+              color: var(--black1);
+              border-top: none;
+              width: 100%;
+              max-height: 150px;
+              padding: unset;
+              overflow-y: auto;
+              bottom: 51px;
+              // background: var(--grey18);
+            }
+            .dropdownListItems {
+              margin-left: 10px;
+            }
+            // .dropdownListContent1 {
+            //   position: relative;
+            //   font-size: var(--XSmall);
+            //   color: var(--black1);
+            //   border-top: none;
+            //   width: 77%;
+            //   margin-right: 10px;
+            //   height: 150px;
+            //   background: var(--grey18);
+            //   overflow-y: scroll;
+            // }
+
+            // ::-webkit-scrollbar {
+            //   width: 0px;
+            // }
+          }
+
+          .dropdownIcon {
+            background-color: var(--blue7);
+            border: none;
+            line-height: 30px;
+            height: 30px;
+            border-radius: 0px 8px 8px 0px;
+            margin: 10px 0px 0px 0px;
+          }
+         
+        }
+
+        .title {
+          color: var(--black1);
+          background: var(--black1);
+          font-weight: var(--font-normal);
+          font-size: var(--XXSmall);
+        }
+      }
+    }
+
+    .modalFooter {
+      height: 67px;
+      background: var(--blue1);
+      margin: auto;
+      display: flex;
+      align-items: center;
+
+      .modalFooterButton {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .saveButton {
+          width: 44.7%;
+          text-align: center;
+          padding: 8px 0px 8px 0px;
+          background: var(--blue10);
+          color: var(--blue1);
+          box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

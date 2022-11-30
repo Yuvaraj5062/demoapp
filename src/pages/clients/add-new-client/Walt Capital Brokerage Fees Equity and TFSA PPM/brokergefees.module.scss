@@ -1,0 +1,297 @@
+@media only screen and (min-width: 768px) {
+  .formDetails {
+    padding: 30px 30px 50px 30px;
+
+    .formContainer {
+      padding: 35px 22px;
+      background: var(--white1);
+
+      .formTitle {
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+        color: var(--black1);
+        margin: 0px;
+      }
+      .radioButtonContainer {
+        display: flex;
+        margin-top: 30px;
+        .errorText {
+          color: var(--red1);
+          font-weight: var(--font-medium);
+          font-size: var(--XXXSmall);
+        }
+        .radioButtonText {
+          padding-left: 8px;
+          padding-right: 30px;
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-normal);
+        }
+        .dscMcsRadiobutton {
+          display: flex;
+          margin-left: 70px;
+          outline: none;
+        }
+      }
+      .feeTypeContainer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        .labelText {
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-normal);
+        }
+        .inputType1 {
+          width: 90%;
+          height: 34px;
+          margin-right: 5px;
+        }
+      }
+
+      .divider {
+        background: var(--grey16);
+        margin-top: 30px;
+      }
+
+      .monthlyFeesContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin-top: 30px;
+        .labelText {
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-normal);
+        }
+        .inputType1 {
+          width: 90%;
+          height: 34px;
+          margin-right: 5px;
+        }
+      }
+      .divider {
+        background: var(--grey16);
+        margin-top: 30px;
+      }
+      .checkContainer {
+        display: flex;
+        margin-top: 30px;
+        .questionText {
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-medium);
+          color: var(--black5);
+        }
+        .radioContainer {
+          display: flex;
+          padding-top: 5px;
+          .radioButtonText {
+            padding-left: 9px;
+            padding-right: 18px;
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-normal);
+          }
+        }
+        .verticalDivider {
+          border: 0.5px solid var(--grey16);
+          height: 70px;
+          margin: 0px 30px;
+        }
+      }
+
+      .btnGrp {
+        margin-top: 33px;
+        text-align: right;
+        .editBtn {
+          padding: 12px 52px 12px 52px;
+          background: var(--blue10);
+          color: var(--blue7);
+          border-radius: 2px;
+          text-align: left;
+          margin-right: 138px;
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+        }
+        .cancelBtn,
+        .saveBtn {
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          padding: 0px 50px;
+          height: 51px;
+          border-radius: 2px;
+        }
+        .cancelBtn {
+          margin-left: 20px;
+          background: var(--white1);
+          color: var(--black5);
+          padding: 12px 35px;
+          border: 1px solid var(--black4);
+        }
+        .deleteBtn {
+          margin-left: 20px;
+          background: var(--white1);
+          color: var(--red2);
+          padding: 12px 28px;
+          border: 1px solid var(--red2);
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+        }
+      }
+    }
+
+    .removeButton {
+      text-align: center;
+      margin-top: 30px;
+      background: var(--blue7);
+      color: var(--white1);
+      padding: 12px 37px;
+      font-size: var(--small);
+      font-weight: var(--font-medium);
+      // width: 554px;
+    }
+    .formContainer1 {
+      padding: 30px 22px;
+      background: var(--white1);
+      // margin-top: 30px;
+      .formTitle {
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+        color: var(--black1);
+        margin: 0px;
+      }
+      .clientType {
+        margin-top: 19px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+
+        .labelText {
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-medium);
+        }
+        .dropdownStyle {
+          width: 90%;
+          height: 37.8px;
+          padding: 0px !important;
+        }
+        .inputType1 {
+          width: 90%;
+          height: 34px;
+          margin-right: 5px;
+        }
+      }
+      .divider {
+        background: var(--grey16);
+        // margin-top: 30px;
+      }
+      .buttonContainer {
+        display: flex;
+        margin-top: 30px;
+        .accountButton {
+          text-align: center;
+          width: 286px;
+          background: var(--blue10);
+          color: var(--blue7);
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          padding: 12px;
+        }
+        .profileButton {
+          margin-left: 22px;
+          text-align: center;
+          width: 286px;
+          background: var(--blue10);
+          color: var(--blue7);
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          padding: 12px;
+        }
+      }
+      .textArea {
+        margin-top: 20px;
+        width: 97%;
+        height: 133px;
+        resize: none;
+        border: 1px solid var(--black4);
+      }
+      .removeButton {
+        text-align: center;
+        margin-top: 30px;
+        background: var(--blue7);
+        color: var(--white1);
+        padding: 12px 37px;
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+        // width: 554px;
+      }
+      .divider {
+        background: var(--grey16);
+        // margin-top: 120px;
+      }
+      .checkboxMainContainer {
+        display: flex;
+
+        .checkboxContainer {
+          display: flex;
+          margin-top: 29px;
+          margin-right: 20px;
+          .checkbox {
+            outline: none;
+          }
+          .accountText {
+            margin-left: 10px;
+            color: var(--black1);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+          }
+        }
+      }
+      .btnGrp {
+        margin-top: 49px;
+        display: flex;
+        justify-content: space-between;
+
+        .editBtn {
+          padding: 12px;
+          width: 335px;
+          background: var(--blue10);
+          color: var(--blue7);
+          border-radius: 2px;
+          text-align: center;
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+        }
+        .buttonContainer1 {
+          float: right;
+          margin-top: 0px;
+          display: flex;
+          align-items: center;
+          .cancelBtn,
+          .saveBtn {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            padding: 0px 50px;
+            height: 51px;
+            border-radius: 2px;
+          }
+          .save {
+          }
+          .cancelBtn {
+            margin-left: 20px;
+            background: var(--white1);
+            color: var(--black5);
+            padding: 12px 35px;
+            border: 1px solid var(--black4);
+          }
+          .deleteBtn {
+            margin-left: 20px;
+            background: var(--white1);
+            color: var(--red2);
+            padding: 12px 28px;
+            border: 1px solid var(--red2);
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+          }
+        }
+      }
+    }
+  }
+}

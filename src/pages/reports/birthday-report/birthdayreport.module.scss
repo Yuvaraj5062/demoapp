@@ -1,0 +1,237 @@
+@mixin buttonStyle($margin, $color, $bg-color, $border) {
+  // margin-right: 30px;
+  color: $color;
+  background: $bg-color;
+  border: 1px solid $border;
+  font-weight: var(--font-semibold);
+  font-size: var(--XXSmall);
+  padding: 7px 17px;
+}
+@media only screen and (min-width: 768px) {
+  .birthdayReportContainer {
+    padding: 30px 0px 51px 0px;
+    width: 95%;
+    margin: auto;
+    .customClassTableRow {
+      .emailButton {
+        @include buttonStyle(0px, var(--black1), var(--blue8), var(--black1));
+        &:hover {
+          @include buttonStyle(0px, var(--white1), var(--blue1), var(--blue1));
+        }
+      }
+      // }
+      &:nth-child(even) {
+        // background: var(--blue9);
+        .emailButton {
+          @include buttonStyle(0px, var(--black1), var(--blue9), var(--black1));
+          &:hover {
+            @include buttonStyle(
+              0px,
+              var(--white1),
+              var(--blue1),
+              var(--blue1)
+            );
+          }
+        }
+      }
+    }
+    .navlink {
+      display: flex;
+      flex-direction: row;
+      font-size: var(--XSmall);
+      color: var(--grey1);
+      font-weight: var(--font-semibold);
+      .reportsLink {
+        color: var(--blue1);
+        margin: 0px 6px 0px 0px;
+      }
+      .reportsLink {
+        margin: 0px 6px 0px 6px;
+      }
+      .birthday {
+        margin: 0px 0px 0px 6px;
+      }
+    }
+    .dropdownAndReminderContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 19px;
+      .dropdownContainer {
+        display: flex;
+        .search {
+          width: 70%;
+        }
+        .viewButton {
+          margin-left: 15px;
+          padding: 13px 32px;
+          background: var(--blue10);
+          color: var(--blue1);
+          border-radius: 2px;
+        }
+      }
+      .reminder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        .reminderText {
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          color: var(--grey1);
+        }
+        .alarmIcon {
+          background: var(--blue1);
+          padding: 2px 4px 0px 4px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .birthdayReportTable {
+      box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+      border-radius: 1px;
+      margin-top: 35px;
+      .birthdayType {
+        background: var(--blue1);
+        padding: 18px 27px 11px 27px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .activeBirthdayText {
+          color: var(--white1);
+          font-weight: var(--font-bold);
+          font-size: var(--medium);
+          cursor: pointer;
+        }
+        .birthdayText {
+          color: var(--white1);
+          font-weight: var(--font-light);
+          font-size: var(--medium);
+          cursor: pointer;
+        }
+      }
+      .table {
+        width: 100%;
+        th,
+        td {
+          padding: 0px 14px;
+        }
+        .tableHead {
+          background: var(--white1);
+          height: 66px;
+          color: var(--black1);
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          text-align: left;
+          input {
+            height: 18px;
+            width: 18px;
+          }
+        }
+        .customClassTableRow {
+          background: var(--blue8);
+          height: 66px;
+          // .initial {
+          //   font-size: 40px;
+          //   font-weight: var(--font-semibold);
+          //   color: var(--blue1);
+          //   background: rgba(7, 95, 155, 0.1);
+          //   border-radius: 2px;
+          //   display: inline-block;
+          //   width: 60px;
+          //   text-align: center;
+          // }
+          .checkbox {
+            input {
+              width: 18px;
+              height: 18px;
+              border-radius: 3px;
+            }
+          }
+          // .buttonGroup {
+          //   display: flex;
+          //   flex-direction: row;
+          //   justify-content: space-between;
+          //   margin-right: 30px;
+          .emailButton {
+            @include buttonStyle(
+              0px,
+              var(--black1),
+              var(--blue8),
+              var(--black1)
+            );
+            &:hover {
+              @include buttonStyle(
+                0px,
+                var(--white1),
+                var(--blue1),
+                var(--blue1)
+              );
+            }
+          }
+          // }
+          &:nth-child(even) {
+            background: var(--blue9);
+            .emailButton {
+              @include buttonStyle(
+                0px,
+                var(--black1),
+                var(--blue9),
+                var(--black1)
+              );
+              &:hover {
+                @include buttonStyle(
+                  0px,
+                  var(--white1),
+                  var(--blue1),
+                  var(--blue1)
+                );
+              }
+            }
+          }
+        }
+      }
+
+      td:nth-last-child(2) {
+        color: #0b6aab !important;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      td:nth-last-child(4) {
+        color: #000000 !important;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      td:nth-last-child(5) {
+        // background-color: #e9f1f6 !important;
+        background: rgba(7, 95, 155, 0.1) !important;
+        width: 40px;
+        padding: 0px 0px 0px 15px !important;
+        margin: 10px 0px 10px 10px !important;
+        border-radius: 2px !important;
+        color: var(--blue1) !important ;
+        display: flex !important;
+        font-weight: var(--font-semibold);
+        font-size: 40px;
+      }
+
+      .customClassTh {
+        background-color: var(--white1) !important;
+        color: var(--black1) !important;
+        padding: 0px 30px !important;
+      }
+      .customClassTd1 {
+        padding: 0px 25px !important;
+      }
+      .paginationContainer {
+        display: flex;
+        justify-content: space-between;
+        background: var(--white1);
+        padding: 33px 22px 22px 28px;
+        .showingDataText {
+          margin-top: 11px;
+        }
+      }
+    }
+  }
+}

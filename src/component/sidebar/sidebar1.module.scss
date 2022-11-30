@@ -1,0 +1,184 @@
+@mixin sideBarLinks($bg-color, $color) {
+    position: relative;
+    list-style: none;
+    color: $color;
+    font-size: var(--XSmall);
+    font-weight: var(--font-medium);
+    // padding: 0px 70px 0px 0px;
+    // margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    background: ($bg-color);
+    cursor: pointer;
+    .dropdownIcon {
+      margin-left: 37px;
+    }
+    .icon {
+      margin: 0px 17px 0px 30px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .sidebarContainer {
+      box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+      width: 310px;
+      // height: 100%;
+      position: relative;
+      z-index: 10;
+      background-color: white;
+      .logoContainer {
+        display: flex;
+        align-items: center;
+        // position: fixed; //new
+        .logo {
+          width: 198px;
+          height: 52px;
+          margin: 35px 0px 12px 31px;
+        }
+        svg{
+          margin-top: 6px;
+        }
+      }
+      .sidebarData {
+        padding: 0px;
+        margin-top: 100px;
+        width: 310px; //new
+        position: fixed;
+        overflow-y: scroll;
+        top: 0;
+        bottom: 0;
+        // transform: 0.6s ease-in-out;
+        // animation: toast-in-left .7s;
+        .dropdownContent {
+          position: unset;
+          background: var(--white1);
+          padding: 12px 16px 12px 46px;
+          .activeDropdownItem {
+            color: var(--blue1);
+            margin-left: 42px;
+            display: inline-block;
+            padding: 6px 0px;
+            cursor: pointer;
+          }
+          .dropdownItems {
+            color: var(--grey1);
+            font-weight: var(--font-medium);
+            font-size: var(--XXXSmall);
+            margin-left: 42px;
+            display: inline-block;
+            padding: 6px 0px;
+            cursor: pointer;
+          }
+        }
+        .sidebarItems {
+          @include sideBarLinks(var(--white1), var(--grey1));
+          .sidebarItemReport {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            align-items: inherit;
+          }
+          .deactiveLinkBox {
+            // visibility: hidden;
+            width: 20px;
+            height: 58px;
+            background-color: var(--white1);
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+          .sidebarItemTitle {
+            margin: 12px 0px 14px 0px;
+            line-height: 17px;
+            cursor: pointer;
+          }
+          .dropdownIcon {
+            margin-left: 37px;
+          }
+        }
+        .activeLink {
+          @include sideBarLinks(var(--blue2), var(--blue1));
+          .sidebarItemReport {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            align-items: inherit;
+          }
+          .sidebarItemTitle {
+            margin: 12px 0px 14px 0px;
+            line-height: 17px;
+            cursor: pointer;
+          }
+          .dropdownIcon {
+            margin-left: 37px;
+          }
+          .activeLinkBox {
+            background-color: var(--blue1);
+            width: 20px;
+            height: 58px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+        }
+        .logout {
+          font-size: var(--XXSmall);
+          font-weight: var(--font-semibold);
+          color: var(--blue1);
+          cursor: pointer;
+          margin: 20px 0px 0px 50px;
+          list-style: none;
+          // text-align: center;
+        }
+        .cardCopyRightsContainer {
+          display: flex;
+          flex-direction: column;
+          height: 90%;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0px 0px 30px 0px;
+          .portalContainer {
+            padding-top: 31px;
+          }
+          .copyrights {
+            line-height: 8px;
+            text-align: center;
+            font-size: var(--XXXSmall);
+            .waltCapitalText {
+              color: var(--grey1);
+              font-weight: var(--font-semibold);
+            }
+            .copyrightText {
+              color: var(--grey1);
+            }
+          }
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+     
+      //     @keyframes toast-in-left {
+      //       from {
+      //           transform: translateX(0%);
+      //           visibility: visible;
+      //       }
+      //       to {
+      //           transform: translateX(100%);
+      //           visibility: hidden;
+      //       }
+      //   }
+      //   @keyframes toast-in-right {
+      //     from {
+      //       transform: translateX(100%);
+      //       // visibility : hidden
+      //     }
+      //     to {
+      //       transform: translateX(0);
+      //       visibility: visible;
+      //     }
+      // }
+    }
+    .hideSidebar {
+      // visibility: hidden;
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,307 @@
+@mixin datePickerCustomClass($borderColor) {
+  display: flex;
+  align-items: center;
+  background: var(--grey18);
+  position: relative;
+  border: none;
+  width: 99%;
+  padding-left: 10px;
+  height: 47px;
+  cursor: pointer;
+  .datePicker {
+    background: var(--white1);
+    padding-left: 7px;
+    input {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+      background: var(--white1);
+      border: none;
+      padding: 12px;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+  .datePick {
+    color: var(--blue1);
+  }
+  .iconContainer {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 4px;
+    background: var(--white1);
+  }
+}
+.factsheetContainer {
+  width: 65%;
+  margin: auto;
+  background-color: var(--white1);
+  .addFundCross {
+    background-color: var(--white1);
+    margin: 10% auto 0px auto;
+    text-align: center;
+    padding: 25px 0px 20px 0px;
+    background-color: var(--blue1);
+    color: var(--white1);
+    font-weight: var(--font-semibold);
+    font-size: var(--medium);
+
+    .crossIcon {
+      float: right;
+      margin-right: 36px;
+    }
+  }
+  .formData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    height: 430px;
+    min-height: 330px;
+    overflow-y: scroll;
+    .investmentObjectiveContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .divider {
+        background: var(--blue10);
+        width: 255px;
+        height: 2px;
+      }
+      .heading {
+        color: var(--blue1);
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+      }
+    }
+
+    .textAreaContainer {
+      width: 97%;
+      .errorContainer {
+        min-width: 69%;
+        .input {
+          width: 99%;
+          padding-left: 10px;
+        }
+      }
+    }
+    .textFieldContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 97%;
+      margin: 10px;
+      justify-content: space-between;
+      .title {
+        margin-bottom: 0px;
+        color: var(--black1);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+      }
+      .customInput {
+        width: 69%;
+        height: 46px;
+        background: var(--grey18);
+        border: none;
+      }
+    }
+    .datePick {
+      width: 69%;
+    }
+    .datePickerContainerMain {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 97%;
+      margin: 10px;
+      .title {
+        font-weight: var(--medium);
+        font-size: var(--XXSmall);
+        color: var(--black1);
+        margin-bottom: 0px;
+      }
+      .error {
+        margin-top: 14px;
+        color: var(--red1);
+        font-weight: var(--font-medium);
+        font-size: var(--XXXSmall);
+      }
+      .label {
+        color: var(--black1);
+        font-size: var(--XXXSmall);
+        font-weight: var(--font-medium);
+        margin-bottom: 5px;
+      }
+      .datePickerContainer {
+        @include datePickerCustomClass(var(--black4));
+      }
+
+      .datePickerContainerError {
+        @include datePickerCustomClass(var(--red2));
+      }
+    }
+    .mainContainer {
+      width: 97%;
+      margin: 10px;
+      .textfieldContainer {
+        min-width: 69%;
+        .input {
+          width: 99%;
+          height: 46px;
+          background: var(--grey18);
+          padding-left: 10px;
+          border: none;
+        }
+      }
+    }
+
+    .selectFieldContainer {
+      display: flex;
+      flex-direction: row;
+      width: 97%;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--white1);
+      font-weight: var(--font-normal);
+      font-size: var(--XXSmall);
+      margin: 10px;
+      .label {
+        color: var(--black1);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        margin: 0px;
+      }
+
+      // .selectlistContent {
+      //   display: flex;
+      //   min-width: 69%;
+      //   .dropdownContainer {
+      //     border: none;
+      //     width: 100%;
+      //     position: relative;
+      //     // height: 47px;
+      //     background: var(--grey18);
+      //     display: flex;
+      //     flex-direction: column;
+      //     .dropdownContainerItems {
+      //       display: flex;
+      //       justify-content: space-between;
+      //       width: 101.3%;
+      //       align-items: center;
+      //       cursor: pointer;
+      //       .dropdownContent {
+      //         margin-left: 10px;
+      //         font-size: var(--XXSmall);
+      //         font-weight: var(--font-medium);
+      //         color: var(--black1);
+      //       }
+      //       .dropdownIconContainer {
+      //         width: 47px;
+      //         height: 47px;
+      //         background-color: var(--blue1);
+      //         .dropdownIcon {
+      //           text-align: center;
+      //           cursor: pointer;
+      //         }
+      //       }
+      //     }
+      //     .dropdownListContent {
+      //       position: absolute;
+      //       font-size: var(--XSmall);
+      //       color: var(--black1);
+      //       border-top: none;
+      //       width: 100%;
+      //       top: 53px;
+      //       height: 75px;
+      //       padding: 0px 0px 0px 10px;
+      //       overflow-y: scroll;
+      //       background: var(--white1);
+      //       box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.1);
+      //       .dropdownText {
+      //         margin: 0px;
+      //       }
+      //       .dropdownListItems {
+      //         margin: 8px 0px;
+      //         font-size: var(--XXSmall);
+      //         font-weight: var(--font-medium);
+      //         color: var(--black1);
+      //       }
+      //     }
+      //     .dropdownListContent1 {
+      //       position: relative;
+      //       font-size: var(--XSmall);
+      //       color: var(--black1);
+      //       border-top: none;
+      //       width: 77%;
+      //       margin-right: 10px;
+      //       height: 150px;
+      //       background: var(--white1);
+      //       box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.1);
+      //       overflow-y: scroll;
+      //     }
+      //     ::-webkit-scrollbar {
+      //       width: 0px;
+      //     }
+      //   }
+      //   .dropdownIcon {
+      //     background-color: var(--blue7);
+      //     border: none;
+      //     line-height: 30px;
+      //     height: 30px;
+      //     border-radius: 0px 8px 8px 0px;
+      //     margin: 10px 0px 0px 0px;
+      //   }
+      //   .error {
+      //     margin-top: 14px;
+      //     color: var(--red1);
+      //     font-weight: var(--font-medium);
+      //     font-size: var(--XXXSmall);
+      //     background: var(--white1);
+      //   }
+      // }
+
+      .title {
+        color: var(--black1);
+        background: var(--black1);
+        font-weight: var(--font-normal);
+        font-size: var(--XXSmall);
+      }
+    }
+    .riskData {
+      padding-top: 26px;
+      color: var(--grey5);
+      font-size: var(--XXXSmall);
+      font-weight: var(--font-normal);
+      margin: 0px;
+      .title {
+        color: var(--grey5);
+        font-size: var(--XXXSmall);
+        font-weight: var(--font-bold);
+      }
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue1);
+    height: 76px;
+    .button {
+      display: flex;
+      justify-content: space-between;
+      .addButton {
+        width: 205px;
+        outline: none;
+        // padding: 14px;
+        height: 50px;
+        background-color: var(--blue10);
+        color: var(--blue1);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+        margin: 12px 37px;
+      }
+    }
+  }
+}

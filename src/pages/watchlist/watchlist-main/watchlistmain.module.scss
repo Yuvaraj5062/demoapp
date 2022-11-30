@@ -1,0 +1,18 @@
+.table {
+  padding: 30px 30px 0px 30px;
+  margin-top: 0px;
+  .type {
+    background: var(--blue1);
+    padding: 11px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+  }
+  .text {
+    padding-left: 30px;
+    color: var(--white1);
+    font-weight: var(--font-light);
+    font-size: var(--medium);
+    cursor: pointer;
+  }
+}

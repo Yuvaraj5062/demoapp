@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) {
+    .breadcrumbContainer {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        background: var(--grey15);
+        padding: 12px 0px 12px 30px;
+        cursor: pointer;
+        .navlinkTextBlue{
+            color: var(--blue1);
+        }
+        .navlinkText {
+          color: var(--grey1);
+        }
+      }
+}

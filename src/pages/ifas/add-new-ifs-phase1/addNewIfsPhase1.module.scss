@@ -1,0 +1,519 @@
+@media only screen and (min-width: 758px) {
+    .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 30px 0px 30px;
+
+        .btns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .btnStyle {
+                padding: 15px 24px;
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                background: var(--blue10);
+                color: var(--blue7);
+                margin-right: 30px;
+            }
+        }
+
+        .generateIfaContainer {
+            display: flex;
+            flex-direction: row;
+            background: var(--blue7);
+            align-items: center;
+            padding: 0px 0px 0px 25px;
+
+            .printBtn {
+                padding: 15px 25px 15px 10px;
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+            }
+        }
+    }
+
+    .addNewIFAsContainer {
+        .navLink {
+            display: flex;
+            flex-direction: row;
+            font-size: var(--XXSmall);
+            font-weight: var(--font-semibold);
+            background: var(--grey15);
+            padding: 6px 0px 8px 38px;
+
+            .ifaLink {
+                color: var(--blue1);
+                margin-right: 4px;
+            }
+
+            .addIfaLink {
+                color: var(--grey1);
+            }
+        }
+
+        .ifaForm {
+            padding: 35px 0px;
+            width: 95%;
+            margin: 0px 30px 0px 30px;
+
+            .IFAsPrimaryDetails {
+                background: var(--white1);
+                padding: 35px 22px 30px 22px;
+
+                .data1 {
+                    font-size: var(--small);
+                    font-weight: var(--font-medium);
+                    margin: 0px;
+                }
+
+                .imgBtnGrp {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 23px 20px 27px 0px;
+
+                    .profileImage {
+                        width: 90px;
+                        height: 73px;
+                    }
+
+                    .uploadBtn {
+                        background: var(--blue7);
+                        font-size: var(--XXSmall);
+                        font-weight: var(--font-medium);
+                        padding: 9px 30px;
+                        border-radius: 2px;
+                    }
+
+                    .removeBtn {
+                        border: 1px solid var(--black4);
+                        font-size: var(--XXSmall);
+                        font-weight: var(--font-medium);
+                        background: var(--white1);
+                        padding: 9px 30px;
+                        border-radius: 2px;
+                        color: var(--black5);
+                    }
+
+                    .verticalDivider {
+                        border: 1px solid var(--grey21);
+                        height: 70px;
+                    }
+
+                    .uploadContainer {
+                        display: flex;
+
+                        .fileInputBtn {
+                            background: var(--blue10);
+                            border-radius: 2px;
+                            color: black;
+                            font-size: var(--XXSmall);
+                            font-weight: var(--font-normal);
+                            height: 40px;
+                            min-width: 200px;
+                            border: 1px dashed var(--blue7);
+                        }
+
+                        .uploadBtn {
+                            background: var(--blue7);
+                            font-size: var(--XXSmall);
+                            font-weight: var(--font-medium);
+                            padding: 9px 25px;
+                            border-radius: 2px;
+                        }
+                    }
+                }
+
+            }
+
+            .IFAsMoreDetails {
+                background: var(--white1);
+                padding: 0px 0px 0px 0px;
+
+                // margin-top: 35px;
+                .data1 {
+                    font-size: var(--small);
+                    font-weight: var(--font-medium);
+                    margin: 0px;
+                }
+
+                .divider {
+                    background: var(--grey16);
+                    margin: 30px 0px;
+                }
+
+                .IFAsType {
+                    margin-top: 19px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .labelText {
+                        font-size: var(--XXXSmall);
+                        font-weight: var(--font-medium);
+                    }
+
+                    .inputType1 {
+                        width: 90%;
+                        height: 34px;
+                        margin-right: 5px;
+                    }
+                }
+
+                .IFAsType1 {
+                    margin-top: 19px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 75%;
+
+                    .labelText {
+                        font-size: var(--XXXSmall);
+                        font-weight: var(--font-medium);
+                    }
+
+                    .inputType1 {
+                        width: 90%;
+                        height: 34px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .businessData {
+                background: var(--white1);
+                padding: 35px 22px 30px 22px;
+                margin-top: 35px;
+
+                .IFAsDetails {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 19px;
+
+                    .labelText {
+                        font-size: var(--XXXSmall);
+                        font-weight: var(--font-medium);
+                    }
+
+                    .inputType1 {
+                        width: 90%;
+                        height: 34px;
+                        margin-right: 5px;
+                    }
+
+                    .dropdownStyle {
+                        width: 90%;
+                        height: 37.8px;
+                        padding: 0px !important;
+                    }
+
+                    // .divContainer {
+                    //   width: 180px;
+                    //   height: 40px;
+                    // }
+                    .chechboxContainer {
+                        font-size: var(--XXXSmall);
+                        font-weight: var(--font-medium);
+                        margin-right: 6%;
+
+                        .registrationText {
+                            color: var(--black5);
+                        }
+
+                        .isActiveText {
+                            margin-top: 10px;
+                        }
+
+                        .yesCheck {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+
+                .divider {
+                    background: var(--grey16);
+                    margin: 30px 0px;
+                }
+
+                .contactDetails {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .contactInfo {
+                        display: flex;
+                        flex-direction: column;
+                        width: 24%;
+
+                        .labelText {
+                            font-size: var(--XXXSmall);
+                            font-weight: var(--font-medium);
+                        }
+
+                        .inputType1 {
+                            width: 90%;
+                            height: 34px;
+                            margin-right: 5px;
+                        }
+
+                        .contactLabel {
+                            margin-top: 9px;
+                            font-size: var(--XXXSmall);
+                            font-weight: var(--font-medium);
+                        }
+                    }
+
+                    .descriptionContainer {
+                        display: flex;
+                        flex-direction: column;
+                        width: 75%;
+
+                        .inputData {
+                            width: 96%;
+                            height: 173px;
+                        }
+
+                        .label {
+                            font-size: var(--XXXSmall);
+                            font-weight: var(--font-medium);
+                            color: var(--black5);
+                            margin-bottom: 5px;
+                        }
+
+                        .description {
+                            border: 1px solid var(--black4);
+                            height: 140px;
+                        }
+                    }
+                }
+
+                .data1 {
+                    font-size: var(--small);
+                    font-weight: var(--font-medium);
+                    margin: 0px;
+                }
+
+                .divider {
+                    background: var(--grey16);
+                    margin: 30px 0px;
+                }
+
+                .IFAsType {
+                    margin-top: 19px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .labelText {
+                        font-size: var(--XXXSmall);
+                        font-weight: var(--font-medium);
+                    }
+
+                    .inputType1 {
+                        width: 90%;
+                        height: 34px;
+                        margin-right: 5px;
+                    }
+                }
+
+                .IFAsType1 {
+                    margin-top: 19px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 75%;
+
+                    .labelText {
+                        font-size: var(--XXXSmall);
+                        font-weight: var(--font-medium);
+                    }
+
+                    .inputType1 {
+                        width: 90%;
+                        height: 34px;
+                        margin-right: 5px;
+                    }
+                }
+
+                .btnGrp {
+                    margin: 50px 25px 0px 0px;
+                    text-align: right;
+                    display: flex;
+                    justify-content: flex-end;
+
+
+                    .saveBtn {
+                        font-size: var(--small);
+                        font-weight: var(--font-medium);
+                        padding: 10px 25px;
+                        border-radius: 2px;
+                        width: 207px;
+                        height: 51px;
+                    }
+
+                    .cancelBtn {
+                        margin-left: 20px;
+                        background: var(--white1);
+                        color: var(--black5);
+                        border: 1px solid var(--black4);
+                        font-size: var(--small);
+                        font-weight: var(--font-medium);
+                        padding: 12px 29px;
+                    }
+
+                    .deleteBtn {
+                        margin-left: 20px;
+                        background: var(--white1);
+                        color: var(--red2);
+                        padding: 10px 25px;
+                        border: 1px solid var(--red2);
+                        font-size: var(--small);
+                        font-weight: var(--font-medium);
+                    }
+                }
+            }
+        }
+
+        // Add new Ifa Step 2 CSS
+        .form2Container {
+            height: 100vh;
+            padding: 30px 30px 0px 30px;
+
+            .fieldContainer {
+                background: var(--white1);
+                box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+                padding: 30px 22px;
+
+                .titleText {
+                    font-size: var(--small);
+                    font-weight: var(--font-medium);
+                    // margin-bottom: 30px;
+                }
+
+                .checkboxMainContainer {
+                    display: flex;
+
+                    .checkboxContainer {
+                        display: flex;
+                        // margin-top: 10px;
+                        margin-top: 0px;
+                        margin-right: 20px;
+
+                        .checkbox {
+                            outline: none;
+                        }
+
+                        .accountText {
+                            margin-left: 10px;
+                            color: var(--black1);
+                            font-size: var(--XXSmall);
+                            font-weight: var(--font-medium);
+                        }
+                    }
+                }
+
+                .inputFields {
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .labelText {
+                        font-size: var(--XXXSmall);
+                        font-weight: var(--font-medium);
+                    }
+
+                    .inputType1 {
+                        width: 90%;
+                        height: 34px;
+                        margin-right: 5px;
+                    }
+                }
+
+                .divider {
+                    background: var(--grey16);
+                    margin: 30px 0px;
+                }
+
+                .checkContainer {
+                    display: flex;
+
+                    .questionText {
+                        font-size: var(--XXXSmall);
+                        font-weight: var(--font-medium);
+                        color: var(--black5);
+                    }
+
+                    .radioCustomClass {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .radioContainer {
+                        display: flex;
+                        padding-top: 5px;
+
+                        .radioButtonText {
+                            padding-left: 9px;
+                            padding-right: 18px;
+                            font-size: var(--XXXSmall);
+                            font-weight: var(--font-normal);
+                        }
+                    }
+                }
+
+                .btnGrp {
+                    margin: 50px 25px 0px 0px;
+                    text-align: right;
+                    display: flex;
+                    justify-content: flex-end;
+
+
+                    .saveBtn {
+                        font-size: var(--small);
+                        font-weight: var(--font-medium);
+                        padding: 10px 25px;
+                        border-radius: 2px;
+
+                        width: 140px;
+                        height: 51px;
+                        //  border-radius: 2px;
+
+                    }
+
+                    .customClassLoader {
+                        margin: 0px auto;
+                    }
+
+                    .cancelBtn {
+                        margin-left: 20px;
+                        background: var(--white1);
+                        color: var(--black5);
+                        border: 1px solid var(--black4);
+                        font-size: var(--small);
+                        font-weight: var(--font-medium);
+                        padding: 12px 29px;
+                        //    border-radius: 2px;
+                    }
+
+                    .deleteBtn {
+                        margin-left: 20px;
+                        background: var(--white1);
+                        color: var(--red2);
+                        padding: 12px 28px;
+                        border: 1px solid var(--red2);
+                        font-size: var(--small);
+                        font-weight: var(--font-medium);
+                    }
+                }
+            }
+        }
+    }
+}

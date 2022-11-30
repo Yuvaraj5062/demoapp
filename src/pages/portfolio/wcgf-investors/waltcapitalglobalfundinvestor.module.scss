@@ -1,0 +1,68 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    .alphabeticFilter {
+      margin: 15px 30px 15px 19px;
+    }
+    .search {
+      background: var(--grey17);
+      box-shadow: none;
+      width: 20%;
+      margin: 0px 0px 20px 19px;
+    }
+    .input {
+      width: 75%;
+      background: var(--grey17);
+    }
+    .tableContainer {
+      margin: 0px 30px;
+      height: 600px;
+      .tableTitle {
+        font-weight: var(--font-medium);
+        font-size: var(--medium);
+      }
+      .table {
+        width: 100%;
+        th,
+        td {
+          padding: 0px 10px;
+        }
+        .tableHead {
+          background: var(--blue11);
+          height: 66px;
+          color: var(--white1);
+          font-size: var(--XSmall);
+          font-weight: var(----font-medium);
+          text-align: left;
+
+          input {
+            height: 18px;
+            width: 18px;
+          }
+        }
+        .tableBodyRow {
+          background: var(--blue8);
+          cursor: pointer;
+          height: 66px;
+          font-size: var(--XXSmall);
+          font-weight: var(--font-medium);
+          color: var(--black2);
+          white-space: nowrap;
+          &:nth-child(even) {
+            background: var(--blue9);
+          }
+        }
+      }
+    }
+    .paginationContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0px 60px 0px;
+      margin-right: 30px;
+      margin-top: unset;
+      .showPaginationDataNumber {
+        padding-left: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,281 @@
+@media only screen and (min-width: 758px) {
+    .newClientContainer {
+      padding-bottom: 50px;
+      .navLink {
+        display: flex;
+        flex-direction: row;
+        font-size: var(--XSmall);
+        color: var(--grey1);
+        font-weight: var(--font-semibold);
+        background: var(--grey15);
+        padding: 12px 0px 13px 38px;
+        .clientsLink {
+          color: var(--blue1);
+          margin-right: 4px;
+        }
+      }
+      .formContent {
+        padding: 35px 0px 0px 0px;
+        width: 90%;
+        margin: auto;
+        .clientsPrimaryDetails {
+          background: var(--white1);
+          padding: 35px 22px 50px 22px;
+          .data1 {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            margin: 0px;
+          }
+          .imgBtnGrp {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 365px;
+            margin: 23px 0px 27px 0px;
+            .profileImage {
+              width: 96px;
+              height: 79px;
+            }
+            .uploadBtn {
+              background: var(--blue7);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              padding: 9px 30px;
+              border-radius: 2px;
+            }
+            .removeBtn {
+              border: 1px solid var(--black4);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              background: var(--white1);
+              padding: 9px 30px;
+              border-radius: 2px;
+              color: var(--black5);
+            }
+          }
+          .clientDetails {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .divider {
+            border: 1px solid var(--grey16);
+            margin: 30px 0px;
+          }
+        }
+        .clientsMoreDetails {
+          background: var(--white1);
+          margin-top: 35px;
+          .clientStatus {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .data1 {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+            margin: 0px;
+          }
+          .divider {
+            border: 1px solid var(--grey16);
+            margin: 30px 0px;
+          }
+          .clientType {
+            margin-top: 19px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+          }
+        }
+        .clientsMoreDetails2 {
+          background: var(--white1);
+          padding: 35px 22px 50px 22px;
+          margin-top: 35px;
+          .clientStatus {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .maritalStatus {
+              display: flex;
+              flex-direction: column;
+              width: 20%;
+            }
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+            .spouseLabel {
+              margin-top: 9px;
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+            .descriptionContainer {
+              display: flex;
+              flex-direction: column;
+              width: 72%;
+              .label {
+                font-size: var(--XXXSmall);
+                font-weight: var(--font-medium);
+                color: var(--black5);
+                margin-bottom: 5px;
+              }
+              .description {
+                border: 1px solid var(--black4);
+                height: 140px;
+              }
+            }
+          }
+          .data1 {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            margin: 0px;
+          }
+          .divider {
+            border: 1px solid var(--grey16);
+            margin: 30px 0px;
+          }
+          .clientType {
+            margin-top: 19px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+          }
+          .btnGrp {
+            margin-top: 50px;
+            text-align: right;
+            .cancelBtn,
+            .saveBtn {
+              font-size: var(--small);
+              font-weight: var(--font-medium);
+              padding: 12px 29px;
+              border-radius: 2px;
+            }
+            .cancelBtn {
+              margin-left: 20px;
+              background: var(--white1);
+              color: var(--black5);
+              border: 1px solid var(--black4);
+            }
+            .deleteBtn {
+              margin-left: 20px;
+              background: var(--white1);
+              color: var(--red2);
+              padding: 12px 29px;
+              border: 1px solid var(--red2);
+              font-size: var(--small);
+              font-weight: var(--font-medium);
+            }
+          }
+        }
+      }
+  
+      // form2 css
+      .formDetails {
+        padding: 35px 44px 0px 39px;
+        .formContainer {
+          padding: 35px 22px;
+          background: var(--white1);
+          .formTitle {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            color: var(--black1);
+          }
+          .radioButtonContainer {
+            display: flex;
+            .radioButtonText {
+              padding-left: 8px;
+              padding-right: 30px;
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-normal);
+            }
+          }
+          .feeTypeContainer {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-normal);
+            }
+          }
+          .divider {
+            border: 1px solid var(--grey16);
+            margin: 30px 0px;
+          }
+          .monthlyFeesContainer {
+            display: flex;
+            justify-content: space-between;
+            width: 72%;
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-normal);
+            }
+          }
+          .divider {
+            border: 1px solid var(--grey16);
+            margin: 30px 0px;
+          }
+          .checkContainer {
+            display: flex;
+            .questionText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+              color: var(--black5);
+            }
+            .radioContainer {
+              display: flex;
+              padding-top: 5px;
+              .radioButtonText {
+                padding-left: 9px;
+                padding-right: 18px;
+                font-size: var(--XXXSmall);
+                font-weight: var(--font-normal);
+              }
+            }
+            .verticalDivider {
+              border: 1px solid var(--grey16);
+              height: 70px;
+              margin: 0px 30px;
+            }
+          }
+          .btnGrp {
+            margin-top: 65px;
+            text-align: right;
+            .cancelBtn,
+            .saveBtn {
+              font-size: var(--small);
+              font-weight: var(--font-medium);
+              padding: 12px 50px;
+              border-radius: 2px;
+            }
+            .cancelBtn {
+              margin-left: 20px;
+              background: var(--white1);
+              color: var(--black5);
+              padding: 12px 35px;
+              border: 1px solid var(--black4);
+            }
+            .deleteBtn {
+              margin-left: 20px;
+              background: var(--white1);
+              color: var(--red2);
+              padding: 12px 28px;
+              border: 1px solid var(--red2);
+              font-size: var(--small);
+              font-weight: var(--font-medium);
+            }
+          }
+        }
+      }
+    }
+  }
+  

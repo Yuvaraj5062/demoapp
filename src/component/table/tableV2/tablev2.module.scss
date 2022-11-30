@@ -1,0 +1,13 @@
+@media only screen and (min-width : 768px) {
+    .tableContent{
+        font-size: var(--XSmall);
+        font-weight: var(--font-semibold);
+        text-align: left;
+        padding: 14px 44px;
+    }
+    .duration, .value{
+        font-size: var(--XSmall);
+        font-weight: var(--font-semibold);
+        padding: 14px 30px;
+    }
+}

@@ -1,0 +1,45 @@
+.tableMainContainer {
+  margin-top: 16px;
+
+  .performanceTableTitle {
+    background: var(--blue1);
+    padding: 18px 0px;
+    font-size: var(--small);
+    font-weight: var(--font-semibold);
+    color: var(--white1);
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+  .tableContainer {
+    display: flex;
+    justify-content: space-between;
+    .year {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border: 1px solid var(--white1);
+      background: var(--blue11);
+      color: var(--white1);
+      font-size: var(--XSmall);
+      font-weight: var(--font-semibold);
+    }
+    .yearName {
+      text-align: center;
+    }
+    // .dataContainer {
+    // display: flex;
+    .data {
+      display: flex;
+      flex-direction: column;
+      background: var(--blue9);
+      width: 100%;
+      &:nth-child(even) {
+        background: var(--blue8);
+      }
+    }
+    // }
+  }
+}

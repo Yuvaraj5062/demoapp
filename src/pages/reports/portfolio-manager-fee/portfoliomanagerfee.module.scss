@@ -1,0 +1,119 @@
+@media only screen and (min-width: 768px) {
+  .portfoliofeeContainer {
+    height: 100vh;
+    .portfoliofeeTitle {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-semibold);
+      color: var(--blue1);
+      background: var(--grey15);
+      padding: 12px 0px 12px 30px;
+      .portfoliofeeText {
+        color: var(--grey1);
+      }
+    }
+    .mainContainer {
+      display: flex;
+
+      .dateContainer {
+        padding: 30px 25px 0px 28px;
+        display: flex;
+        flex-direction: column;
+        .endDatetext {
+          font-weight: var(--font-medium);
+          font-size: var(--XXXSmall);
+          color: var(--black5);
+          padding: 0px 0px 10px 3px;
+        }
+        .datePickerContainer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0px 20px 0px 0px;
+          .datePicker {
+            background: var(--white1);
+            text-align: center;
+            width: 18%;
+            input {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              padding: 15px 0px 15px 20px;
+              background: var(--white1);
+              border: none;
+              color: var(--grey1);
+            }
+            input:focus {
+              outline: none;
+            }
+          }
+          .datePick {
+            color: var(--blue1);
+          }
+          .iconContainer {
+            background: var(--white1);
+            padding: 10px;
+          }
+        }
+      }
+      .viewBtn {
+        margin-top: 59px;
+        margin-bottom: 0px;
+        color: var(--blue7);
+        font-size: var(--XSmall);
+        font-weight: var(--font-semibold);
+        background: var(--blue10);
+        padding: 15px 31px 15px 31px;
+      }
+    }
+
+    .tableContent {
+      margin: 40px 25px 0px 28px;
+      .table {
+        width: 100%;
+        th {
+          font-weight: var(--font-medium);
+          padding: 14px 3px;
+          // padding: 14px 8px;
+          font-size: var(--XXSmall);
+        }
+        td {
+          padding: 0px 5px;
+          // padding: 0px 10px;
+        }
+        .tableHead {
+          background: var(--blue11);
+          color: var(--white1);
+          font-size: var(--XXSmall);
+          font-weight: var(----font-medium);
+          text-align: center;
+        }
+        .tableBodyRow {
+          background: var(--blue8);
+          height: 66px;
+          font-size: var(--XXSmall);
+          font-weight: var(--font-medium);
+          color: var(--black1);
+          text-align: center;
+
+          &:nth-child(even) {
+            background: var(--blue9);
+          }
+          &:nth-child(even) {
+            background: var(--blue9);
+          }
+        }
+      }
+    }
+    .customClassTableContainer {
+      margin: auto !important;
+      padding-top: 30px !important;
+      width: 95%;
+      .customClassTh {
+        padding: 0px 5px !important;
+        font-size: 14px !important;
+      }
+      .customClassTd {
+        padding: 0px 10px !important;
+      }
+    }
+  }
+}

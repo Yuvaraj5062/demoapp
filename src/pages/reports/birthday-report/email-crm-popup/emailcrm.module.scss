@@ -1,0 +1,168 @@
+@media only screen and (min-width: 768px) {
+  .emailCrmContainer {
+    width: 70%;
+    margin: 2% auto 2% auto;
+    background-color: var(--white1);
+
+    .emailCrmCross {
+      text-align: center;
+      padding: 16px 0px 16px 0px;
+      background-color: var(--blue1);
+      color: var(--white1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+
+      .crossIcon {
+        float: right;
+        margin-right: 15px;
+      }
+    }
+    .allClients {
+      margin-bottom: 0px;
+    }
+
+    .tableData {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 13px;
+      margin-bottom: 25px;
+
+      .radioButtonContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 56%;
+        .genderText {
+          color: var(--black1);
+          font-weight: var(---font-medium);
+          font-size: var(--XXSmall);
+          margin-bottom: 8px;
+          width: 33%;
+          margin-left: 5px;
+          padding-top: 10px;
+        }
+        .genderRadioButton {
+          display: flex;
+          flex-direction: row;
+          width: 60%;
+          .radioButtonStyle {
+            margin-right: 30px;
+          }
+          .radioLabelClass {
+            margin-left: 17px;
+            font-weight: var(--font-medium);
+            font-size: var(--XXSmall);
+          }
+        }
+      }
+
+      .textfieldContainer {
+        display: flex;
+        flex-direction: row;
+        width: 55%;
+        justify-content: space-between;
+        border-style: none;
+      }
+
+      .radioButton {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .message {
+        font-size: var(--XXSmall);
+        font-weight: var(--medium);
+        width: 55%;
+        margin-top: 20px;
+      }
+      .labelName {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        color: var(--black1);
+        padding: 20px 0px 0px 0px;
+      }
+      .datainputfield {
+        width: 64%;
+        height: 51px;
+        margin-bottom: 8px;
+        background: var(--blue2);
+        padding-left: 10px;
+      }
+
+      .title {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        color: var(--black1);
+      }
+      .uploadTemplateText {
+        font-size: var(--XXSmall);
+        color: var(--black1);
+        font-weight: var(--font-medium);
+        padding: 10px 0px 0px 0px;
+        margin-left: 4px;
+      }
+      .upload {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 56%;
+        .uploadContainer {
+          .uploadArrow {
+            flex-direction: row-reverse;
+          }
+          .file {
+            margin-right: 0px;
+          }
+          .fileInputBtn {
+            background: var(--grey18);
+            color: var(--black1);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-normal);
+            height: 40px;
+            width: 323px;
+          }
+          .uploadBtn {
+            background: var(--blue7);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            padding: 9px 20px;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+    .text {
+      display: flex;
+      align-items: center;
+      color: var(--black1);
+      font-weight: var(--font-medium);
+      font-size: var(--XXSmall);
+      background-color: var(--grey18);
+      border-style: none;
+      margin: 14px 0px 0px 10px;
+      min-height: 194px;
+      width: 55%;
+      padding: 10px 0px 0px 13px;
+    }
+
+    .buttonContainer {
+      background-color: var(--blue1);
+
+      .button {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+        .sendButton {
+          padding: 9px 123px 9px 123px;
+          background-color: var(--blue10);
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    margin: 17% auto;
+    width: 40%;
+
+    .statusHeading {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      padding: 82px 99px 82px 99px;
+      color: var(--black1);
+      background-color: var(--white1);
+      font-size: var(--small);
+      font-weight: var(--font-medium);
+    }
+    .buttonContainer {
+      background-color: var(--blue1);
+      padding: 12px 0px 12px 0px;
+
+      .button {
+        display: flex;
+        justify-content: center;
+        .okButton {
+          padding: 14px 113px 14px 113px;
+          background-color: var(--blue10);
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.container {
+  width: 40%;
+  margin: 13% auto 0px auto;
+  background-color: var(--white1);
+  .addFundCross {
+    text-align: center;
+    background-color: var(--white1);
+    padding: 17px 0px 17px 0px;
+
+    background-color: var(--blue1);
+    color: var(--white1);
+    font-weight: var(--font-semibold);
+    font-size: var(--medium);
+    position: relative;
+
+    // float: right;
+    // margin: -26px 36px 0px 0px;
+    .crossIcon {
+      // float: right;
+      cursor: pointer;
+      // margin-right: 36px;
+      position: absolute;
+      top: 22px;
+      right: 30px;
+    }
+  }
+  .textfieldData {
+    padding: 30px;
+    .mainContainer {
+      margin: 0px 0px 10px 0px;
+      .title {
+        color: var(--blue1);
+        font-weight: var(--font-semibold);
+        font-size: var(--medium);
+      }
+      .textfieldContainer {
+        min-width: 50%;
+        .input {
+          width: 95%;
+
+          height: 46px;
+          background: var(--grey18);
+          padding-left: 10px;
+          border: none;
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:focus {
+          transition: background-color 9999s ease-in-out 0s !important;
+        }
+      }
+    }
+
+    .textAreaContainer {
+      width: 97%;
+      margin: 0px 0px 10px 0px;
+
+      .label {
+        color: var(--blue1);
+        font-weight: var(--font-semibold);
+        font-size: var(--medium);
+      }
+      .errorContainer {
+        min-width: 48.4%;
+        .input {
+          width: 100%;
+          padding-left: 10px;
+          height: 81px;
+        }
+      }
+    }
+  }
+
+  .radioContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+    .customClass {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+    }
+    .customClass1 {
+      display: flex;
+      align-items: center;
+    }
+    .radioButton {
+      display: flex;
+      width: 51%;
+      .label {
+        margin-left: 10px;
+        color: var(--black2);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+      }
+    }
+    .title {
+      color: var(--blue1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+    }
+  }
+  .buttonContainer {
+    background-color: var(--blue1);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .addButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 50px;
+        background-color: var(--blue10);
+        color: var(--blue1);
+        outline: none;
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+      }
+    }
+  }
+  .modalFooter {
+    background: var(--blue1);
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    .modalFooterButton {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .saveButton {
+        width: 82%;
+        text-align: center;
+        padding: 12px;
+        margin: 8px 38px;
+        background-color: var(--blue10);
+        color: var(--blue1);
+        outline: none;
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+      }
+    }
+  }
+}

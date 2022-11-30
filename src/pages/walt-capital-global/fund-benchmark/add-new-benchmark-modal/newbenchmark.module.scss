@@ -1,0 +1,54 @@
+@media only screen and (min-width: 786px) {
+  .modalMainContainer {
+    width: 555px;
+    margin: 10% auto 0px auto;
+    background-color: var(--white1);
+    .modalTitle {
+      padding: 21px 23px 11px 200px;
+      background-color: var(--blue1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+      color: var(--white1);
+
+      .crossIcon {
+        float: right;
+        cursor: pointer;
+      }
+    }
+    .tableContent {
+      margin: 40px 0px 0px 60px;
+      width: 80%;
+      .textfieldContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .labelName {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        padding: 10px 10px 10px 0px;
+      }
+      .datainputfield {
+        width: 262px;
+        height: 51px;
+        margin-bottom: 15px;
+        background: var(--blue2);
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .modalFooter {
+      padding: 13px 0px 13px 0px;
+      background-color: var(--blue1);
+      text-align: center;
+      margin-top: 25px;
+      .addBenchmarkButton {
+        width: 178px;
+        height: 51px;
+        background: var(--blue10);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+        color: var(--blue1);
+      }
+    }
+  }
+} ;

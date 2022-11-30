@@ -1,0 +1,95 @@
+.mainContainer {
+    width: 42%;
+    margin: 12% auto;
+    background-color: var(--white1);
+    z-index: 1;
+
+    .modalTitle {
+        // padding: 26px 0px 22px 0px;
+        padding: 15px 0px;
+        background-color: var(--blue1);
+        font-weight: var(--font-bold);
+        font-size: var(--large);
+        color: var(--white1);
+        text-align: center;
+
+        .crossIcon {
+            float: right;
+            margin-right: 26px;
+        }
+    }
+
+    .iconContainer {
+        display: flex;
+        justify-content: end;
+
+
+        .deleteIcon {
+            cursor: pointer;
+            margin: auto 10px;
+        }
+    }
+
+    .tableContent {
+        padding: 38px 30px;
+
+        .divider {
+            background: var(--grey16);
+            margin: 30px 0px 20px 0px;
+        }
+
+        .divider2 {
+            background: var(--grey16);
+            margin: 17px 0px;
+        }
+
+        .mainTable {
+            max-height: 280px;
+            overflow-y: auto;
+
+            // overflow-y: hidden;
+            // &:hover {
+            //     overflow-y: auto;
+            // }
+            .tabelRow {
+                display: flex;
+
+                .iconContainer {
+                    display: flex;
+                    flex: auto;
+
+                    // padding: 10px;
+                    .viewIcon {
+                        height: 25px;
+                        cursor: pointer;
+                    }
+
+                    .deleteIcon {
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+    .modalFooter {
+        padding: 8px 40px;
+        background-color: var(--blue1);
+        text-align: center;
+
+        margin-top: 25px;
+
+        .saveButton {
+            width: 100%;
+            // padding: 12px;
+            height: 48px;
+            background: var(--blue10);
+            font-weight: var(--font-semibold);
+            font-size: var(--XSmall);
+            color: var(--blue1);
+        }
+    }
+}

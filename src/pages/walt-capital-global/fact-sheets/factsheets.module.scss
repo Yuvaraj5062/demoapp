@@ -1,0 +1,683 @@
+@mixin buttonStyle($width, $height, $color, $text) {
+  font-size: var(--XSmall);
+  font-weight: var(--font-semibold);
+  // padding: 1px 33px;
+  width: $width;
+  height: $height;
+  color: var($text);
+  background: var($color);
+}
+
+@mixin textStyle($fontSize, $fontWeight, $color) {
+  font-size: var($fontSize);
+  font-weight: var($fontWeight);
+  color: var($color);
+
+  .mutedText {
+    font-weight: var(--font-normal);
+    // color: transparent;
+    // text-shadow: 0 0 0 var(--grey1);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .factsheetContainer {
+    padding: 17px 0px;
+
+    .buttonContainer {
+      padding: 30px 0px;
+      text-align: end;
+
+      .printContainer {
+        color: var(--blue7);
+        background: var(--blue10);
+        // padding: 16px 10px;
+        justify-content: center;
+        text-align: end;
+        display: flex;
+        align-items: center;
+        margin-left: 89%;
+        height: 50px;
+
+        .buttonText {
+          color: var(--blue7);
+          font-size: var(--XXSmall);
+          font-weight: var(--font-semibold);
+          background: var(--blue10);
+          // padding: 16px 10px;
+          // padding: unset;
+          //height: 10px;
+        }
+      }
+    }
+
+    .headContainer {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      background: var(--white1);
+
+      // align-items: center;
+      .imageDataContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--white1);
+        padding: 17px 22px 17px 14px;
+
+        .imageClass {
+          width: 174.29px;
+          height: 48.33px;
+        }
+
+        .textContent {
+          font-size: var(--XSmall);
+          font-weight: var(--font-medium);
+          padding-left: 105px;
+        }
+      }
+
+      .blockContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--blue11);
+        padding: 11px 0px 11px 10px;
+
+        .spanText {
+          font-size: var(--XSmall);
+          font-weight: var(--font-medium);
+          color: var(--white1);
+          margin-right: 18px;
+        }
+
+        .textFieldLeft {
+          // width: 100%;
+          display: flex;
+          flex-direction: row;
+          // justify-content: space-between;
+          align-items: center;
+
+          .textFieldBox {
+            // width: 100%;
+            // align-items: center;
+            padding: 10px 19px;
+            // text-align: center;
+            margin-right: 9px;
+            color: var(--blue7);
+            font-size: var(--medium);
+            font-weight: var(--font-medium);
+            background: var(--blue10);
+          }
+
+          .textFieldBoxSelected {
+            padding: 11px 2px;
+            margin-right: 9px;
+            font-size: var(--medium);
+            font-weight: var(--font-medium);
+            color: var(--white1);
+            background: var(--blue1);
+          }
+        }
+      }
+    }
+
+    .mainDataContainer {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      .dataContainer {
+        width: 49%;
+
+        .infoOne {
+          background: var(--white1);
+          box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+          padding: 7px 24px 50px 21px;
+
+          .titleDate {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            .titleText {
+              font-size: var(--medium);
+              font-weight: var(--font-medium);
+            }
+
+            .dateText {
+              font-size: var(--XSmall);
+              font-weight: var(--font-medium);
+              color: var(--blue7);
+            }
+          }
+
+          .investmentPara {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            line-height: 25px;
+
+            .titleOne {
+              font-size: var(--XSmall);
+              font-weight: var(--font-semibold);
+              color: var(--blue7);
+            }
+
+            .paraText {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+            }
+          }
+
+          .keyDataContainer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            line-height: 25px;
+
+            .keyDataTitle {
+              font-size: var(--XSmall);
+              font-weight: var(--font-semibold);
+              color: var(--blue7);
+            }
+
+            .keyText {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-semibold);
+
+              .valueText {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+              }
+            }
+
+            .listContainer {
+              display: flex;
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+
+              .spanTextTwo {
+                width: 63%;
+              }
+
+              .listData {
+                margin: 0px;
+                padding: 0px;
+              }
+            }
+
+            .pText {
+              margin: 0px;
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+            }
+          }
+
+          .feeCalculationContainer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            line-height: 25px;
+            .keyText {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-semibold);
+
+              .valueText {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                // }
+              }
+            }
+            .flexContainer {
+              display: flex;
+              align-items: center;
+              .feeTitle {
+                font-size: var(--XSmall);
+                font-weight: var(--font-semibold);
+                color: var(--blue7);
+              }
+
+              .keyText {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-semibold);
+
+                .valueText {
+                  font-size: var(--XXSmall);
+                  font-weight: var(--font-semibold);
+                  // }
+                }
+              }
+              .valueText {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                // }
+              }
+              .listText {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+              }
+
+              .dropdownMainContainer {
+                width: 31%;
+                position: relative;
+                margin-left: 10px;
+                .dropdownContainer {
+                  border: none;
+                  background: rgba(255, 255, 255, 0.1);
+                  border: 1px solid var(--black4);
+                  height: 28px;
+                  display: flex;
+                  flex-direction: column;
+                  margin-top: 5px;
+                  cursor: pointer;
+                  .dropdownContainerItems {
+                    // padding-bottom: 5px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .dropdownContent {
+                      margin-left: 10px;
+                      font-size: var(--XXXSmall);
+                      text-align: center;
+                      color: var(--black2);
+                      font-weight: var(--font-medium);
+                    }
+
+                    .dropdownIcon {
+                      padding: 0px 5px;
+                      margin: 0px;
+                      line-height: 23px;
+                      background: none;
+                      .icon {
+                        height: 6px;
+                      }
+                    }
+                  }
+
+                  .dropdownListContent {
+                    border: 1px solid var(--black4);
+                    box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.1);
+                    min-width: 105px;
+                    width: 94%;
+                    padding: 0px 3px;
+                    overflow-y: scroll;
+                    color: var(--black1);
+                    background: var(--white1);
+                    font-size: var(--XSmall);
+                    font-weight: var(--font-normal);
+                    .dropdownListItems {
+                      margin: 5px;
+                      color: var(--grey1);
+                      font-weight: var(--font-medium);
+                      font-size: var(--XXXSmall);
+                    }
+                  }
+
+                  ::-webkit-scrollbar {
+                    width: 0px;
+                  }
+                }
+
+                .dropdownIcon {
+                  background-color: var(--blue7);
+                  border: none;
+                  line-height: 30px;
+                  height: 30px;
+                  border-radius: 0px 8px 8px 0px;
+                  margin: 10px 0px 0px 0px;
+                }
+              }
+            }
+          }
+        }
+
+        .infoTwo {
+          background: var(--white1);
+          box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+          padding: 14px 19px 33px 21px;
+          margin-top: 16px;
+          display: flex;
+          flex-direction: column;
+
+          // line-height: 25px;
+          .titleTextTwo {
+            color: var(--blue7);
+            font-size: var(--XSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .subTitle {
+            font-size: var(--XSmall);
+            font-weight: var(--font-semibold);
+            // margin-top: 10px;
+            margin: 10px 0px 20px 0px;
+          }
+
+          .paraInfo {
+            font-size: var(--XXSmall);
+            font-weight: var(--font-normal);
+            line-height: 25px;
+          }
+        }
+      }
+
+      .graphTableContainer {
+        width: 49%;
+
+        // margin-left: 16px;
+        .graphData {
+          box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+
+          .chart {
+            padding: 11px 18px 19px 16px;
+            background: var(--white1);
+
+            .graphTitle {
+              font-size: var(--XSmall);
+              font-weight: var(--font-semibold);
+            }
+          }
+        }
+
+        .tableHeadMain {
+          background: var(--blue1);
+          padding: 18px 0px;
+          font-size: var(--small);
+          font-weight: var(--font-semibold);
+          color: var(--white1);
+          margin-top: 16px;
+          text-align: center;
+          width: 100%;
+          display: inline-block;
+        }
+
+        .customClassTableHead {
+          display: none;
+        }
+
+        .customClassTh {
+          background-color: var(--blue9);
+          font-size: var(--small);
+          font-weight: var(--font-semibold);
+          color: var(--black2);
+          text-align: center;
+
+          &:first-child {
+            width: 250px;
+            text-align: start;
+          }
+        }
+
+        .customClassTd {
+          font-size: var(--XSmall);
+          font-weight: var(--font-normal);
+          padding: 0px 10px;
+          text-align: center;
+
+          &:first-child {
+            width: 250px;
+            text-align: start;
+          }
+
+          // &:last-child {
+          //   text-align: end;
+          // }
+        }
+
+        .customClassTds {
+          font-size: var(--XSmall);
+          font-weight: var(--font-normal);
+          padding: 0px 15px;
+
+          &:first-child {
+            text-align: start;
+          }
+
+          &:last-child {
+            text-align: end;
+          }
+        }
+
+        .customClassTd1 {
+          padding: 0px 5px;
+          max-width: unset;
+          overflow-wrap: unset;
+        }
+
+        .customClassTableRow {
+          font-size: var(--XSmall);
+          font-weight: var(--font-normal);
+
+          &:last-child {
+            font-weight: var(--font-semibold);
+            font-size: var(--XSmall);
+          }
+        }
+
+        .tableOne {
+          width: 100%;
+
+          .tableHead {
+            background: var(--blue8);
+            color: var(--black2);
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            text-align: left;
+          }
+
+          .customClassForTh {
+            padding: 13px 10px;
+          }
+
+          .tableBodyRow {
+            background: var(--blue8);
+            // padding: 13px 0px;
+            font-size: var(--XSmall);
+            font-weight: var(--font-normal);
+            color: var(--black1);
+            text-align: left;
+
+            &:nth-child(even) {
+              background: var(--blue9);
+            }
+
+            &:last-child {
+              font-size: var(--XSmall);
+              font-weight: var(--font-semibold);
+            }
+
+            .customClassForTd {
+              padding: 13px 20px;
+            }
+          }
+        }
+
+        .tableHeadMainTwo,
+        .tableHeadMainThree {
+          background: var(--blue1);
+          padding: 18px 0px;
+          font-size: var(--small);
+          font-weight: var(--font-semibold);
+          color: var(--white1);
+          margin-top: 16px;
+          text-align: center;
+          width: 100%;
+          display: inline-block;
+        }
+
+        .tableTwo {
+          width: 100%;
+
+          .tableHead {
+            background: var(--blue9);
+            color: var(--black2);
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            text-align: left;
+          }
+
+          .customClassForTh {
+            padding: 13px 10px;
+          }
+
+          .tableBodyRow {
+            background: var(--blue8);
+            // padding: 13px 0px;
+            font-size: var(--XSmall);
+            font-weight: var(--font-normal);
+            color: var(--black1);
+            text-align: left;
+
+            &:nth-child(even) {
+              background: var(--blue9);
+            }
+
+            .customClassForTd {
+              padding: 13px 20px;
+            }
+          }
+        }
+
+        .tableThree {
+          width: 100%;
+
+          .tableBodyRow {
+            background: var(--blue8);
+            font-size: var(--XSmall);
+            font-weight: var(--font-normal);
+            color: var(--black1);
+            text-align: left;
+
+            &:nth-child(even) {
+              background: var(--blue9);
+            }
+
+            .customClassForTd1 {
+              text-align: start;
+              padding: 13px 20px;
+            }
+
+            .customClassForTd2 {
+              text-align: end;
+              padding: 13px 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .tableContainer {
+      margin-top: 16px;
+
+      .performanceTableTitle {
+        background: var(--blue1);
+        padding: 18px 0px;
+        font-size: var(--small);
+        font-weight: var(--font-semibold);
+        color: var(--white1);
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+      }
+
+      .tableContent {
+        display: flex;
+
+        .yearData1 {
+          margin: 0;
+          background: var(--blue11);
+          padding: 13px 30px;
+          color: var(--white1);
+          border-bottom: 0.5px solid var(--white1);
+          border-right: 0.5px solid var(--white1);
+        }
+
+        .yearData {
+          margin: 0;
+          background: var(--blue11);
+          padding: 24.5px 30px;
+          color: var(--white1);
+          border-bottom: 0.5px solid var(--white1);
+        }
+
+        .customClassTableRow {
+          height: 37px;
+          font-size: var(--XSmall);
+          font-weight: var(--font-normal);
+
+          td {
+            &:first-child {
+              font-weight: var(--font-semibold);
+            }
+
+            &:last-child {
+              font-weight: var(--font-semibold);
+            }
+          }
+
+          .customClassTd1 {
+            padding: 0px 12px;
+            max-width: unset;
+            overflow-wrap: unset;
+          }
+        }
+
+        // .tableFour {
+        //   width: 100%;
+        //   .tableHead {
+        //     background: var(--blue11);
+        //     color: var(--white1);
+        //     font-size: var(--XSmall);
+        //     font-weight: var(--font-semibold);
+        //     text-align: center;
+        //   }
+        //   .customClassForTh {
+        //     padding: 13px 10px;
+        //   }
+        //   .tableBodyRow {
+        //     background: var(--blue8);
+        //     font-size: var(--XSmall);
+        //     font-weight: var(--font-normal);
+        //     color: var(--black1);
+        //     text-align: center;
+        //     .customClassForTd1 {
+        //       padding: 6px 0px;
+        //     }
+        //     .customClassForTd2 {
+        //       color: var(--red1);
+        //     }
+        //     .customClassForTd {
+        //       font-weight: var(--font-semibold);
+        //     }
+        //     .customClassForTd3 {
+        //       font-weight: var(--font-semibold);
+        //       color: var(--red1);
+        //     }
+        //     &:nth-child(even) {
+        //       background: var(--blue9);
+        //     }
+        //   }
+        // }
+      }
+    }
+
+    .disclaimerContainer {
+      padding-top: 16px;
+      display: flex;
+      flex-direction: column;
+
+      .disclaimerTitle {
+        font-size: var(--XXXSmall);
+        font-weight: var(--font-semibold);
+        padding-bottom: 5px;
+      }
+
+      .disclaimerPara {
+        font-size: var(--XXXXXSmall);
+        font-weight: var(--font-normal);
+        line-height: 15px;
+      }
+    }
+  }
+}

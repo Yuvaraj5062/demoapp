@@ -1,0 +1,44 @@
+@media only screen and (min-width : 768px) {
+    .editBtn{
+        width: 100%;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        background: var(--blue10);
+        color: var(--blue1);
+        height: 42px;
+        padding: 7px 25px;
+        
+    }
+    .inputDate{
+        display: inline-block;
+         width: 58px;
+        text-align: center;
+        border: 0.5px solid var(--black1);
+        padding: 2px ;
+        background: var(--grey18);
+    }
+    
+    
+    .inputLabel{
+        display: inline-block;
+        min-width: 68px;
+        text-align: center;
+                .inputBorder{
+                    display: inline-block;
+                  // min-width: 58px;
+                    text-align: center;
+                    border: 0.5px solid var(--black1);
+                    padding: 2px ;
+                    background: var(--grey18);
+                }
+            .inputBorder1{
+                text-align: start;
+                display: inline-block;
+                min-width: 58px;
+                border: 0.5px solid var(--black1);
+                padding: 2px;
+                background: var(--grey18);
+            }
+}
+    
+}

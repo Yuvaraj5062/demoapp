@@ -1,0 +1,475 @@
+@mixin dropdown($width, $itemWidth) {
+  width: $width;
+  position: relative;
+
+  .dropdownContainer {
+    border: none;
+    background: var(--white1);
+    box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+
+    .dropdownContainerItems {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .dropdownContent {
+        margin-left: 10px;
+        font-size: var(--XXXSmall);
+        //font-size: var(--XXXSmall);
+        color: var(--grey1);
+        font-weight: var(--font-medium);
+      }
+
+      .dropdownIcon {
+        padding: 0px 5px;
+        background: var(--white1);
+      }
+    }
+
+    // .dropdownListContent {
+    //   // min-width: unset;
+    //   width: 0px;
+    //   // border: 1px solid var(--grey1);
+    //   // border-top: none;
+    //   background: var(--white1);
+    //   max-height: 150px;
+    //   overflow-y: scroll;
+    // }
+    .dropdownListContent {
+      // margin-top: 10px;
+      // position: relative;
+      // border: 1px solid var(--grey1);
+      box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+      border-top: none;
+      width: 92%;
+      height: 150px;
+      padding: 0px 7px;
+      overflow-y: scroll;
+      color: var(--black1);
+      background: var(--white1);
+      font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+    }
+    .dropdownListContent1 {
+      // margin-top: 10px;
+      // position: relative;
+      // border: 1px solid var(--grey1);
+      box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+      border-top: none;
+      width: 98%;
+      height: 150px;
+      padding: 0px 2px;
+      overflow-y: scroll;
+      color: var(--black1);
+      font-size: var(--XSmall);
+      font-weight: var(--font-medium);
+      background: var(--white1);
+    }
+    .dropdownListContent2 {
+      // margin-top: 10px;
+      // position: relative;
+      // border: 1px solid var(--grey1);
+      box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+      border-top: none;
+      width: 94%;
+      height: 150px;
+      padding: 0px 8px;
+      overflow-y: scroll;
+      color: var(--grey1);
+      background: var(--white1);
+      font-size: var(--XXXSmall);
+      font-weight: var(--font-normal);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
+
+  .dropdownIcon {
+    background-color: var(--blue7);
+    border: none;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 0px 8px 8px 0px;
+    margin: 10px 0px 0px 0px;
+  }
+}
+
+@mixin textStyle($left, $right, $height, $color, $align) {
+  height: $height;
+  padding: 10px $right 46px $left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: var(--font-medium);
+  font-size: var(--XSmall);
+  color: var($color);
+  text-align: $align;
+
+  .textContainer {
+    .text {
+      text-align: $align;
+      font-weight: var(--font-medium);
+      font-size: var(--XSmall);
+      color: var($color);
+
+      .mutedText {
+        color: transparent;
+        text-shadow: 0 0 0 var(--grey1);
+      }
+    }
+  }
+}
+
+@mixin middleHeaderText() {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: var(--font-bold);
+  font-size: var(--XSmall);
+  color: var(--white1);
+}
+
+@media only screen and (min-width: 768px) {
+  .clientDetailsContainer {
+    width: 100%;
+    margin: auto;
+    margin-top: 13px;
+
+    .filter {
+      margin: unset;
+      margin-bottom: 1px;
+    }
+
+    .searchWrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      .search {
+        background: var(--grey17);
+        box-shadow: none;
+        width: 30%;
+      }
+
+      .input {
+        width: 75%;
+        background: var(--grey17);
+        margin: 0px;
+      }
+
+      .printButton {
+        width: 121px;
+        display: flex;
+        justify-content: center;
+        background: var(--blue10);
+        color: var(--blue7);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        padding-top: 14px;
+        height: unset;
+
+        .iconCustomClass {
+          margin-right: 7px;
+          display: inline-block;
+        }
+
+        .titleCustomClass {
+          display: inline-block;
+          margin-top: 2px;
+        }
+      }
+    }
+
+    .clientStatementHeader {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .dropdownMainContainer {
+        @include dropdown(16.5%, 60%);
+      }
+
+      .dropdownMainContainer1 {
+        @include dropdown(15.4%, 60%);
+      }
+
+      .dropdownMainContainer2 {
+        @include dropdown(23.8%, 80%);
+      }
+
+      .dateHeader {
+        display: flex;
+        flex-direction: column;
+        width: 29%;
+        margin-top: 1px;
+        // margin-left: 18px;
+
+        .dateHeaderText {
+          color: var(--black1);
+          font-size: var(--XXSmall);
+          font-weight: var(--font-medium);
+          margin-bottom: 5px;
+        }
+
+        .dateFileds {
+          display: flex;
+          flex-direction: row;
+          background: var(--white1);
+          margin-top: 3px;
+          .datePickerText {
+            margin: 14px 20px 14px 0px;
+            color: var(--black1);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .datePickerContainer {
+            display: flex;
+            align-items: center;
+            .datePicker {
+              background: var(--white1);
+              text-align: center;
+
+              input {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                padding: 15px 0px 15px 0px;
+                background: var(--white1);
+                border: none;
+                color: var(--grey1);
+                width: 100%;
+              }
+
+              input:focus {
+                outline: none;
+              }
+            }
+
+            .datePick {
+              color: var(--blue1);
+            }
+
+            .iconContainer {
+              background: var(--white1);
+              padding: 13px 2px 13px 2px;
+            }
+          }
+        }
+      }
+
+      .button {
+        margin-top: 29px;
+        width: 8.5%;
+        .viewButton {
+          background: var(--blue10);
+          color: var(--blue7);
+          font-size: var(--XXSmall);
+          font-weight: var(--font-semibold);
+          padding: 15px 27px 15px 28px;
+          max-height: 50px;
+        }
+      }
+    }
+
+    .pageTitle {
+      margin-top: 36px;
+      background: var(--blue11);
+      height: 65px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 28px;
+
+      .title {
+        // padding: 17px 0px 18px 0px;
+        color: var(--white1);
+        font-weight: var(--font-medium);
+        font-size: var(--medium);
+      }
+    }
+
+    //card Container
+    .clientDetailsCardContainer {
+      //height: 327px;
+      background: var(--white1);
+
+      .cardTopContainer {
+        height: 164px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        .leftContainer {
+          @include textStyle(28px, 0px, 90px, --black1, unset);
+        }
+
+        .rightContainer {
+          @include textStyle(0px, 28px, 112px, --black1, right);
+        }
+      }
+
+      .divider {
+        border: 2px solid var(--grey16);
+        background: var(--grey16);
+      }
+
+      .cardBottomContainer {
+        margin-top: 29px;
+        height: 161px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .leftContainer {
+          @include textStyle(28px, 0px, 105px, --blue7, unset);
+        }
+
+        .rightContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .innerLeft {
+            width: 33px;
+            @include textStyle(0px, 20px, 112px, --blue7, unset);
+          }
+
+          .innerRight {
+            width: 123px;
+            @include textStyle(0px, 28px, 112px, --blue7, right);
+          }
+        }
+      }
+    }
+
+    //middle header
+    .middleHeaderContainer {
+      height: 113px;
+      background: var(--blue11);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .middleHeaderLeft {
+        padding: 21px 0px 22px 20px;
+        @include middleHeaderText();
+      }
+
+      .middleHeaderRight {
+        padding: 21px 20px 22px 0px;
+        text-align: right;
+        @include middleHeaderText();
+      }
+    }
+
+    .mainTableHeader {
+      margin-bottom: 12px;
+      margin-top: 53px;
+      text-align: center;
+      font-weight: var(--font-medium);
+      font-size: var(--medium);
+      color: var(--black1);
+    }
+    .customClassTh {
+      font-size: var(--XXSmall) !important;
+      padding: 0px 5px !important;
+    }
+
+    // .customClassTableRow {
+    //   &:first-child {
+    //     .customClassTd {
+    //       &:nth-child(12) {
+    //         color: red !important;
+    //       }
+    //     }
+    //   }
+    //   &:last-child {
+    //     .customClassTd {
+    //       &:nth-child(12),
+    //       &:nth-child(9),
+    //       &:nth-child(6),
+    //       &:nth-child(5) {
+    //         color: red !important;
+    //       }
+    //     }
+    //   }
+    // }
+
+    // .table {
+    //   margin-bottom: 60px; //not needed
+    //   width: 100%;
+
+    //   th,
+    //   td {
+    //     padding: 0px 4px;
+    //   }
+
+    //   .tableHead {
+    //     background: var(--blue11);
+    //     height: 65px;
+    //     color: var(--white1);
+    //     font-size: var(--XXSmall);
+    //     font-weight: var(--font-medium);
+    //     text-align: left;
+
+    //     input {
+    //       height: 18px;
+    //       width: 18px;
+    //     }
+    //   }
+
+    //   .customClassForTh1 {
+    //     padding: 0px 5px 0px 30px;
+    //   }
+
+    //   .customClassForTh2 {
+    //     padding: 0px 5px;
+    //   }
+
+    //   .customClassForThLast {
+    //     padding: 0px 30px 0px 5px;
+    //   }
+
+    //   .customClassForTd1 {
+    //     padding: 0px 5px 0px 30px;
+    //   }
+
+    //   .customClassForTd2 {
+    //     padding: 0px 5px;
+    //     text-align: center;
+    //   }
+
+    //   .customClassForTdLast {
+    //     padding: 0px 30px 0px 5px;
+    //     text-align: center;
+    //   }
+
+    //   .customClassForTd {
+    //     padding: 0px 5px;
+    //     text-align: center;
+    //     color: var(--red1);
+    //   }
+
+    //   .tableBodyRow {
+    //     background: var(--blue8);
+    //     height: 66px;
+    //     font-size: var(--XXSmall);
+    //     font-weight: var(--font-medium);
+    //     color: var(--black2);
+
+    //     &:nth-child(even) {
+    //       background: var(--blue9);
+    //     }
+    //   }
+    // }
+  }
+}

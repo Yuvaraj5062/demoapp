@@ -1,0 +1,293 @@
+@media only screen and (min-width: 768px) {
+  .portfolioMainContainer {
+    padding: 32px 0px 32px 0px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    //new
+    // flex-wrap: wrap;
+    .search {
+      background: var(--grey17);
+      box-shadow: none;
+      margin-bottom: 30px;
+      justify-content: unset;
+      padding: 13px 22px 13px 25px;
+      // width: 100%;
+      // margin-right: 20px;
+    }
+    .input {
+      width: 75% !important;
+      background: var(--grey17) !important;
+      margin: 0px 0px 0px 10px;
+    }
+    .portfolioMainContent {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: wrap;
+      .portfolioMainContentLeft {
+        width: 50%;
+        .clientDetails {
+          background: var(--white1);
+          box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+          padding: 26px 10px 20px 20px;
+          .profileName {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+          }
+          .accountNumber {
+            font-size: var(--XXSmall);
+            font-weight: var(--font-normal);
+            color: var(--grey1);
+          }
+          .clientsMainContainer {
+            display: flex;
+            flex-direction: row;
+            // justify-content: space-around;
+            flex-wrap: wrap;
+            // margin-top: 25px;
+
+            .imageContainer {
+              border-radius: 16px;
+              position: relative;
+              .image {
+                max-height: 179px;
+                max-width: 179px;
+                object-fit: contain;
+              }
+
+              .editProfileIcon {
+                border-radius: 2px;
+                background-color: rgba(8, 104, 170, 0.5);
+                padding: 8px 15px 8px 10px;
+                width: 15px;
+                height: 20px;
+                position: absolute;
+                bottom: 5%;
+                right: 0%;
+                border-radius: 0px 0px 12px 0px;
+                cursor: pointer;
+              }
+            }
+
+            .clientData {
+              margin: 10px 0px 0px 25px;
+              display: flex;
+              flex-direction: column;
+              .clientName {
+                font-size: var(--medium);
+                font-weight: var(--font-semibold);
+                color: var(--black7);
+              }
+              .accountNumber {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-normal);
+                color: var(--grey1);
+              }
+              .dateContainer {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-normal);
+                color: var(--grey1);
+              }
+              .joiningDate {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-normal);
+                color: var(--blue7);
+                margin-bottom: -5px;
+              }
+              .divider {
+                width: 100%;
+                background: var(--grey16);
+                margin-top: 19px;
+                margin-bottom: 19px;
+              }
+              .itemContainer {
+                display: flex;
+                flex-direction: row;
+                margin-top: 15px;
+                .icon {
+                  height: 39px;
+                  width: 39px;
+                  background: var(--blue1);
+                  margin-right: 15px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 2px;
+                  position: relative;
+                  .callTooltip {
+                    position: absolute;
+                    margin-left: unset;
+                    top: -43px;
+                    left: -36px;
+                    z-index: 1;
+                    .text {
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                      height: 20px;
+                      width: 90px;
+
+                      border-radius: 4px;
+                    }
+                  }
+                  .mobileTooltip {
+                    position: absolute;
+                    margin-left: unset;
+                    top: -43px;
+                    left: -24px;
+
+                    z-index: 1;
+                    .text {
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                      height: 20px;
+                      width: 65px;
+
+                      border-radius: 4px;
+                    }
+                  }
+                  .emailTooltip {
+                    position: absolute;
+                    margin-left: unset;
+                    top: -43px;
+                    left: -83px;
+                    z-index: 1;
+                    .text {
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                      height: 20px;
+
+                      border-radius: 4px;
+
+                      width: 185px;
+                    }
+                  }
+                  .printTooltip {
+                    position: absolute;
+                    margin-left: unset;
+                    top: -43px;
+                    left: -24px;
+                    z-index: 1;
+                    .text {
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                      height: 20px;
+
+                      border-radius: 4px;
+
+                      width: 65px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .investmentContainer {
+          background: var(--white1);
+          box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+          padding: 15px;
+          height: fit-content;
+          // width: 42%;
+          margin-top: 30px;
+          .investmentTitle {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+          }
+          .priceContainer {
+            display: flex;
+            flex-direction: row;
+            // justify-content: space-around;
+            .priceType {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+            }
+            .price {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-semibold);
+            }
+          }
+          .investmentData {
+            margin-top: 20px;
+            // .investmentTypeContainer {
+            //   display: flex;
+            //   .investmentText {
+            //     margin-top: 20px;
+            //   }
+            // }
+            .investmentTypeContainer {
+              display: grid;
+              grid-template-columns: auto auto;
+              .investmentText {
+                margin-top: 20px;
+              }
+            }
+            .clientAmount {
+              border: 1px solid var(--black4);
+              margin-left: 10px;
+              width: 230px;
+              .totalAmount {
+                font-size: var(--small);
+                font-weight: var(--font-semibold);
+                padding: 5px;
+              }
+              .clientNameAnnual {
+                font-size: var(--XXXSmall);
+                font-weight: var(--font-medium);
+                padding: 5px;
+                color: var(--grey19);
+              }
+              .amountData {
+                justify-content: space-between;
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                color: var(--black5);
+                background: var(--blue8);
+                height: 40px;
+                align-items: center;
+                display: flex;
+                padding: 5px;
+                &:nth-child(even) {
+                  background: var(--blue9);
+                }
+              }
+            }
+          }
+        }
+      }
+      .dataTable {
+        // max-width: 46%;
+        margin-left: 20px;
+        flex: 1;
+        min-width: 460px;
+
+        .balanceContainer {
+          background: var(--white1);
+          box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+
+          padding: 15px 0px 15px 10px;
+
+          .balanceContent {
+            padding: 15px 0px 15px 0px;
+
+            .border1CustomClass {
+              border: 2px solid var(--blue18);
+            }
+
+            .border2CustomClass {
+              border: 2px solid var(--orange2);
+            }
+          }
+        }
+      }
+    }
+  }
+}

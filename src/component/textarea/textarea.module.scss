@@ -1,0 +1,29 @@
+.textareaContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  .title {
+    color: var(--black1);
+    font-size: var(--XXSmall);
+    font-weight: var(--font-medium);
+  }
+  .textareaErrorContainer {
+    display: flex;
+    flex-direction: column;
+    .textarea {
+      width: 69%;
+      height: 46px;
+      background: var(--grey18);
+      resize: none;
+      border: none;
+    }
+    .errorText {
+      color: var(--red1);
+      margin: 5px 0px 5px 0px;
+      font-weight: var(--font-medium);
+      font-size: var(--XXXSmall);
+    }
+  }
+}

@@ -1,0 +1,215 @@
+.mainContainer {
+  padding: 22px 32px 0px 32px;
+  .cardMainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .cardData1 {
+      background: var(--white1);
+      padding: 30px 0px;
+      margin-bottom: 22px;
+      height: 700px;
+      min-height: 200px;
+      overflow-y: auto;
+      .registerText {
+        display: flex;
+        color: var(--black1);
+        font-weight: var(--font-medium);
+        font-size: var(--small);
+        padding: 0px 22px 0px 22px;
+      }
+      .groupContainer {
+        display: flex;
+        margin: 22px 20px 0px;
+        .search {
+          color: var(--black1);
+          cursor: pointer;
+          box-shadow: none;
+          padding: 14px 24px;
+        }
+        .addGroupIcon {
+          margin-left: 10px;
+          cursor: pointer;
+        }
+        .input {
+          color: var(--black1);
+          font-size: var(--XXSmall);
+          font-weight: var(--font-normal);
+          cursor: pointer;
+          margin-bottom: 0px;
+          padding-left: 16px;
+          width: 100%;
+          padding-right: 0px;
+        }
+      }
+      .searchContainer {
+        margin-top: 22px;
+        cursor: pointer;
+        .searchData {
+          display: flex;
+          justify-content: space-between;
+          overflow-wrap: anywhere;
+          .searchTitle {
+            padding: 10px 40px;
+            margin: 0px;
+            color: var(--black2);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            cursor: pointer;
+          }
+          .searchClick {
+            background: var(--blue11);
+            padding: 10px 40px;
+            margin: 0px;
+            width: 90%;
+            color: var(--black2);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            cursor: pointer;
+          }
+          .deleteContainer {
+            // display: none;
+            width: 40px;
+            .deleteIcon {
+              cursor: pointer;
+              padding: 8px 10px 0px 6px;
+            }
+          }
+          // &:hover {
+          //   background: var(--red5);
+          //   .deleteContainer {
+          //     display: unset;
+          //     margin-right: 22px;
+          //     &:hover {
+          //       background: var(--red4);
+          //       width: 40px;
+          //       .deleteIcon {
+          //         cursor: pointer;
+          //         margin: 8px 0px 0px 8px;
+          //       }
+          //     }
+          //   }
+          // }
+        }
+      }
+    }
+    .cardData2 {
+      background: var(--white1);
+      padding: 30px 22px;
+      margin-left: 22px;
+      margin-bottom: 30px;
+      height: 700px;
+      min-height: 200px;
+      overflow-y: auto;
+      .checkBoxMainContainer {
+        margin-top: 20px;
+      }
+      .registerText {
+        color: var(--black1);
+        font-weight: var(--font-medium);
+        font-size: var(--small);
+      }
+      .divider {
+        background: var(--grey16);
+        margin-top: 20px;
+      }
+      .updateButtonContainer {
+        display: flex;
+        justify-content: center;
+        .updateButton {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 305px;
+          background: var(--blue7);
+          color: var(--white1);
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          margin: 30px 0px 0px 0px;
+          padding: 12px;
+        }
+      }
+      .dropdownDown {
+        cursor: pointer;
+      }
+      .dropdownUp {
+        transform: rotate(180deg);
+        cursor: pointer;
+      }
+    }
+    .cardData3 {
+      height: 700px;
+      min-height: 200px;
+      overflow-y: auto;
+      background: var(--white1);
+      padding: 30px 22px;
+      margin-left: 22px;
+      margin-bottom: 22px;
+      .registerText {
+        color: var(--black1);
+        font-weight: var(--font-medium);
+        font-size: var(--small);
+      }
+
+      .selectedGroup {
+        color: var(--black2);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+      }
+    }
+  }
+}
+.recuesiveMainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  cursor: pointer;
+  .recursiveLeftContainer {
+    display: flex;
+    align-items: center;
+    .checkbox {
+      height: 19px;
+      width: 19px;
+      outline: none;
+    }
+    .accessCategoryTextBold {
+      display: inline-block;
+      max-width: 250px;
+      overflow-wrap: break-word;
+      margin-left: 10px;
+      color: var(--black2);
+      font-weight: var(--font-bold);
+      font-size: var(--XXSmall);
+      cursor: pointer;
+    }
+    .accessCategoryTextSemibold {
+      display: inline-block;
+      max-width: 250px;
+      overflow-wrap: break-word;
+      margin-left: 10px;
+      color: var(--black1);
+      font-weight: var(--font-medium);
+      font-size: var(--XXSmall);
+      cursor: pointer;
+    }
+    .accessCategoryTextNormal {
+      display: inline-block;
+      max-width: 230px;
+      overflow-wrap: break-word;
+      margin-left: 10px;
+      color: var(--grey1);
+      font-weight: var(--font-normal);
+      font-size: var(--XXSmall);
+      cursor: pointer;
+      // display: inline-block;
+      // max-width: 250px;
+      // overflow-wrap: break-word;
+      // margin-left: 10px;
+      // color: var(--black2);
+      // font-weight: var(--font-medium);
+      // font-size: var(--XXSmall);
+      // cursor: pointer;
+    }
+  }
+}
+// }

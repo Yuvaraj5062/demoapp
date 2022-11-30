@@ -1,0 +1,277 @@
+@media only screen and (min-width: 768px) {
+  .clientProfileContainer {
+    margin: 0px 10px;
+    .clientTitle {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-semibold);
+      color: var(--blue7);
+      padding: 12px 0px;
+      .clientNameHeading {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--grey1);
+      }
+    }
+    .profileContainer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 35px;
+      .clientContainer {
+        flex-direction: column;
+        width: 53%;
+        .clientDetails {
+          background: var(--white1);
+          box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+          padding: 26px 22px 33px 22px;
+          .profileName {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+          }
+          .accountNumber {
+            font-size: var(--XXSmall);
+            font-weight: var(--font-normal);
+            color: var(--grey1);
+          }
+          .clientsMainContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 25px;
+
+            .imageContainer {
+              border-radius: 16px;
+              position: relative;
+              height: 150px;
+              width: 180px;
+              .image {
+                height: 170px;
+                width: 186px;
+                object-fit: cover;
+              }
+              .editProfileIcon {
+                border-radius: 2px;
+                background-color: rgba(8, 104, 170, 0.5);
+                padding: 8px 15px 8px 10px;
+                width: 15px;
+                height: 20px;
+                position: absolute;
+                bottom: -13%;
+                right: -3%;
+                border-radius: 0px 0px 12px 0px;
+                cursor: pointer;
+              }
+            }
+
+            .clientData {
+              margin: 10px 0px 0px 25px;
+              .clientName {
+                font-size: var(--medium);
+                font-weight: var(--font-semibold);
+                color: var(--black7);
+              }
+              .dateContainer {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-normal);
+                color: var(--grey1);
+              }
+              .joiningDate {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-normal);
+                color: var(--blue7);
+                margin-bottom: -5px;
+              }
+              // .numberTooltip {
+              //   margin-left: -13px;
+              //   // text-align: left;
+              //   // margin-right: 30px;
+              // }
+              // .contactTooltip {
+              //   margin-left: 35px;
+              // }
+              // .emailTooltip {
+              //   margin-right: 150px;
+              // }
+              // .printTooltip {
+              //   margin-left: 140px;
+              //   // text-align: center;
+              //   // margin-right: 30px;
+              // }
+
+              .itemContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 35px;
+
+                .contactIcon {
+                  border-radius: 2px;
+                  background-color: var(--blue7);
+                  // padding: 11px 7px 0px 7px;
+                  margin-left: 10px;
+                  height: 39px;
+                  width: 39px;
+                  display: flex;
+                  justify-content: center;
+                  position: relative;
+                  align-items: center;
+                  border-radius: 2px;
+
+                  .callIcon {
+                    position: absolute;
+                    top: -43px;
+                    left: -56px;
+
+                    z-index: 1;
+                    .text {
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                      height: 20px;
+                      width: 90px;
+                      border-radius: 4px;
+                    }
+                  }
+                  .mobileIcon {
+                    position: absolute;
+                    top: -43px;
+
+                    left: -44px;
+
+                    z-index: 1;
+                    .text {
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                      height: 20px;
+                      width: 65px;
+                      border-radius: 4px;
+                    }
+                  }
+                  .emailIcon {
+                    position: absolute;
+                    top: -43px;
+                    left: -104px;
+                    z-index: 1;
+                    .text {
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                      height: 20px;
+                      border-radius: 4px;
+                      width: 185px;
+                    }
+                  }
+                  .printIcon {
+                    position: absolute;
+                    top: -39px;
+                    left: -22px;
+                    z-index: 1;
+                    .text {
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                      height: 20px;
+                      border-radius: 4px;
+                      width: 65px;
+                    }
+                  }
+                }
+
+                .editButton {
+                  font-size: var(--XXSmall);
+                  font-weight: var(--font-medium);
+                  background: var(--white1);
+                  border: 1px solid var(--black4);
+                  border-radius: 2px;
+                  color: var(--black5);
+                  margin-left: 10px;
+                  // padding: 11px 11px;
+                }
+              }
+            }
+          }
+        }
+        .clientMeeting {
+          // background: var(--white1);
+          box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+          margin-top: 30px;
+          padding: 34px 22px;
+
+          .eventContainer {
+            display: flex;
+            justify-content: space-around;
+          }
+          .eventContainerSecond {
+            display: flex;
+            justify-content: space-around;
+
+            margin-top: 22px;
+          }
+        }
+      }
+      .investmentContainer {
+        background: var(--white1);
+        box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+        padding: 15px;
+        height: fit-content;
+        width: 42%;
+        .investmentTitle {
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+        }
+        .priceContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          .priceType {
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+          }
+          .price {
+            font-size: var(--XXSmall);
+            font-weight: var(--font-semibold);
+          }
+        }
+        .investmentData {
+          margin-top: 20px;
+          .investmentTypeContainer {
+            display: flex;
+            .investmentText {
+              margin-top: 20px;
+            }
+          }
+          .clientAmount {
+            border: 1px solid var(--black4);
+            margin-left: 10px;
+            width: 230px;
+            .totalAmount {
+              font-size: var(--small);
+              font-weight: var(--font-semibold);
+              padding: 5px;
+            }
+            .clientNameAnnual {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+              padding: 5px;
+              color: var(--grey19);
+            }
+            .amountData {
+              justify-content: space-between;
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              color: var(--black5);
+              background: var(--blue8);
+              height: 40px;
+              align-items: center;
+              display: flex;
+              padding: 5px;
+              &:nth-child(even) {
+                background: var(--blue9);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

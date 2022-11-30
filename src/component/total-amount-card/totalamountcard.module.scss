@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+  .totalAmountCardContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--blue3);
+    align-items: center;
+    width: 45%;
+    justify-content: space-evenly;
+    .cardTitle {
+      font-size: var(--medium);
+      font-weight: var(--font-semibold);
+      color: var(--white1);
+    }
+    .usdValue {
+      margin-left: 47px;
+    }
+    .zarValue {
+      margin-left: 41px;
+    }
+  }
+}

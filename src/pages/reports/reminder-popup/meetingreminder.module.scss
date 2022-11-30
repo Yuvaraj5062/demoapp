@@ -1,0 +1,97 @@
+@mixin titleStyle($font) {
+  background: var(--white1);
+  font-weight: var(--font-medium);
+  font-size: $font;
+}
+@mixin inputStyle($height) {
+  border-style: none;
+  background-color: var(--grey18);
+  height: $height;
+  width: 241px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modalMainContainer {
+    width: 60%;
+    margin: 20px auto 0px auto;
+    background-color: var(--white1);
+    .modalTitle {
+      text-align: center;
+      padding: 17px 24px 17px 0px;
+      background-color: var(--blue1);
+      font-weight: var(--font-bold);
+      font-size: var(--large);
+      color: var(--white1);
+      .crossIcon {
+        float: right;
+        cursor: pointer;
+      }
+    }
+
+    .table {
+      background-color: var(--white1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        font-weight: var(--medium);
+        font-size: var(--XXSmall);
+        color: var(--black1);
+      }
+      .textFieldContainer {
+        display: flex;
+        flex-direction: row;
+        width: 82%;
+        padding-top: 6px;
+        justify-content: space-between;
+      }
+      .customClassInputIcon {
+        width: 290px;
+        display: flex;
+        flex-direction: row;
+
+        .customInput1 {
+          @include inputStyle(48px);
+        }
+        .icon {
+          background-color: var(--blue1);
+          height: 49px;
+          width: 49px;
+        }
+      }
+      .customInput1 {
+        border-style: none;
+        background-color: var(--grey18);
+        height: 48px;
+        width: 289px;
+      }
+      .customInput2 {
+        border-style: none;
+        background-color: var(--grey18);
+        height: 72px;
+        width: 289px;
+        margin-bottom: 6px;
+      }
+    }
+
+    .buttonContainer {
+      background-color: var(--blue1);
+      padding: 10px 0px 10px 0px;
+
+      .button {
+        display: flex;
+        justify-content: right;
+        width: 91%;
+        .priceButton {
+          padding: 10px 121px 10px 125px;
+          background-color: var(--blue10);
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+      }
+    }
+  }
+}

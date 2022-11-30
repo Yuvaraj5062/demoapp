@@ -1,0 +1,200 @@
+@mixin datePickerCustomClass($borderColor) {
+  display: flex;
+  align-items: center;
+  background: var(--grey18);
+  position: relative;
+  border: none;
+  // width: 257px;
+  height: 47px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  .datePicker {
+    background: var(--white1);
+    padding-left: 7px;
+    input {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+      background: var(--white1);
+      border: none;
+      padding: 12px;
+      
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+  .datePick {
+    width: 69%;
+    color: var(--blue1);
+  }
+  .iconContainer {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 4px;
+    background: var(--white1);
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .addPricingContainer {
+    width: 36.7%;
+    margin: auto;
+    background-color: var(--white1);
+
+
+
+
+
+    .addPricingCross {
+      background-color: var(--white1);
+      margin: 45% auto 0px auto;
+      text-align: center;
+      padding: 17px 0px 17px 0px;
+      background-color: var(--blue1);
+      color: var(--white1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+
+      .crossIcon {
+        float: right;
+        margin-right: 45px;
+      }
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+      margin-bottom: 14px;
+
+      .datePickerContainerMain {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 82%;
+        margin-bottom: 12px;
+        .title{
+          color: var(--black1);
+          font-size: var(--XXSmall);
+          font-weight: var(--font-medium);
+          // margin-bottom: 5px;
+        }
+        .error {
+          margin-top: 14px;
+          color: var(--red1);
+          font-weight: var(--font-medium);
+          font-size: var(--XXXSmall);
+        }
+        .label {
+          color: var(--black5);
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-medium);
+          margin-bottom: 5px;
+        }
+        .datePick {
+          width: 69%;
+          color: var(--blue1);
+        }
+        .datePickerContainer {
+          @include datePickerCustomClass(var(--black4));
+        }
+
+        .datePickerContainerError {
+          @include datePickerCustomClass(var(--red2));
+        }
+      }
+
+      .mainContainer {
+        width: 82%;
+        margin: 10px;
+        margin-top: 0px;
+        .textfieldContainer {
+          min-width: 69%;
+          .input {
+            width: 97%;
+            height: 46px;
+            background: var(--grey18);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            padding-left: 11px;
+            border: none;
+          }
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+      .textFieldContainer {
+        display: flex;
+        flex-direction: row;
+        width: 82%;
+        height: 48px;
+        margin-bottom: 12px;
+        justify-content: space-between;
+      }
+      .customInput {
+        border-style: none;
+        // background-color: var(--grey18);
+        width: 308px;
+      }
+      input {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        background: var(--white1);
+        border: none;
+        // padding: 12px;
+        height: 47px;
+      border: unset !important;
+      outline: none !important;
+      background: var(--grey18);
+      
+      }
+      input:focus {
+        outline: none;
+      }
+      .title {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        color: var(--black1);
+      }
+    }
+
+    .buttonContainer {
+      background-color: var(--blue1);
+      height: 63px;
+      display: flex;
+      align-items: center;
+      
+      .button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .priceButton {
+          padding: 9px 129px 9px 129px;
+          background-color: var(--blue10);
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+      }
+    }
+  }
+}

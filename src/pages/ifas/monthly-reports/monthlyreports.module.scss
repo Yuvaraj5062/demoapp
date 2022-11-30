@@ -1,0 +1,204 @@
+@media only screen and (min-width: 758px) {
+  .monthlyContainer {
+    width: 95%;
+    margin: auto;
+
+    .monthlyHeaderContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .monthlyHeaderLeft {
+        display: flex;
+        flex-direction: row;
+        width: 32%;
+        margin-top: 30px;
+
+        .dropdownMainContainer {
+          width: 90%;
+          position: relative;
+
+          .dropdownContainer {
+            border: none;
+            background: var(--white1);
+            box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            width: 94%;
+            .dropdownContainerItems {
+              padding-top: 5px;
+              padding-bottom: 5px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .dropdownContent {
+                margin-left: 20px;
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                color: var(--grey1);
+              }
+
+              .dropdownIcon {
+                margin-right: 15px;
+                background: var(--white1);
+              }
+            }
+
+            .dropdownListContent {
+              box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+              border-top: none;
+              padding: 0px 0px 0px 19px;
+              width: 85%;
+              font-size: var(--XXSmall);
+              background: var(--white1);
+              color: var(--grey1);
+              font-weight: var(--font-medium);
+              height: 150px;
+              overflow-y: scroll;
+            }
+
+            ::-webkit-scrollbar {
+              width: 0px;
+            }
+          }
+
+          .dropdownIcon {
+            background-color: var(--blue7);
+            border: none;
+            line-height: 30px;
+            height: 30px;
+            border-radius: 0px 8px 8px 0px;
+            margin: 10px 0px 0px 0px;
+          }
+
+          .dropdownItems {
+            background-color: var(--blue7);
+            margin-top: unset;
+            border-radius: 0px 0px 8px 8px;
+            text-align: center;
+          }
+        }
+
+        .buttonContent {
+          text-align: end;
+          margin-left: 30px;
+
+          .viewButton {
+            padding: 13px 35px;
+            color: var(--blue1);
+            font-size: var(--XSmall);
+            font-weight: var(--font-semibold);
+            background: var(--blue10);
+          }
+        }
+      }
+
+      .monthlyHeaderRight {
+        width: 43%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+
+        .createInvestmentButton {
+          flex: 1;
+          margin-right: 5px;
+          background: var(--blue10);
+          color: var(--blue7);
+          padding: 11px 16px;
+          font-size: var(--XSmall);
+          font-weight: var(--font-medium);
+        }
+
+        // .customMenuClass {
+        //     width: 35%;
+        // }
+
+        .createNewFundButton {
+          flex: 1;
+          margin-right: 5px;
+          padding: 11px 16px;
+          font-size: var(--XSmall);
+          font-weight: var(--font-medium);
+          display: inline-flex;
+
+          .iconCustomClass {
+            margin-right: 8px;
+          }
+        }
+
+        .moreIcon {
+          padding: 9px 16px;
+          background: var(--blue10);
+          &:hover {
+            background-color: var(--blue7);
+          }
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+
+      th,
+      td {
+        padding: 0px 10px;
+      }
+
+      .tableHead {
+        background: var(--blue11);
+        height: 50px;
+        color: var(--white1);
+        font-size: var(--XSmall);
+        font-weight: var(--font-medium);
+        text-align: left;
+      }
+
+      .tableBodyRow {
+        background: var(--blue8);
+        height: 66px;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        color: var(--black2);
+
+        .manageButton {
+          color: var(--white1);
+          background: var(--blue7);
+          border: 1px solid var(--blue7);
+          border-radius: 16px;
+          font-weight: var(--font-medium);
+          font-size: var(--XXXXXSmall);
+          padding: 2px 10px;
+        }
+
+        &:nth-child(even) {
+          background: var(--blue9);
+        }
+      }
+    }
+
+    .paginationContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 114px 0px 60px 0px;
+
+      .paginationHeader {
+        color: var(--grey10);
+        font-family: var(--font-medium);
+        font-size: var(--XXSmall);
+      }
+    }
+    .item {
+      cursor: pointer;
+      font-size: var(--XXXSmall);
+      font-weight: var(--font-medium);
+      color: var(--grey1);
+      margin-left: 10px;
+    }
+  }
+}

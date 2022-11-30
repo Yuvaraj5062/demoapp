@@ -1,0 +1,451 @@
+@mixin titleStyle($font, $weight, $color) {
+  font-weight: $weight;
+  font-size: $font;
+  color: $color;
+}
+
+@media only screen and (min-width: 768px) {
+  .accountMainContainer {
+    background: var(--grey22);
+
+    .accountContainer {
+      padding: 15px 0px 51px 0px;
+      width: 95%;
+      margin: auto;
+
+      .accountHeader {
+        background: var(--blue11);
+        text-align: center;
+        height: 65px;
+
+        .headerText {
+          padding: 15px;
+          @include titleStyle(var(--medium), var(--font-medium), var(--white1));
+        }
+      }
+
+      .accountCard {
+        display: flex;
+        flex-direction: row;
+        background: var(--white1);
+        justify-content: space-between;
+        padding: 20px;
+
+        .accountCardLeft {
+          display: flex;
+          flex-direction: column;
+          width: 30%;
+          justify-content: space-around;
+
+          .accountCardLeftHeader {
+            @include titleStyle(
+              var(--XXSmall),
+              var(--font-medium),
+              var(--grey1)
+            );
+          }
+
+          .accountCardFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 30px;
+            @include titleStyle(
+              var(--XSmall),
+              var(--font-medium),
+              var(--black1)
+            );
+
+            .accountNo {
+              display: flex;
+              flex-direction: column;
+
+              .cardText {
+                @include titleStyle(
+                  var(--XXSmall),
+                  var(--font-medium),
+                  var(--grey1)
+                );
+              }
+            }
+
+            .accountName {
+              display: flex;
+              flex-direction: column;
+
+              .cardText {
+                @include titleStyle(
+                  var(--XXSmall),
+                  var(--font-medium),
+                  var(--grey1)
+                );
+              }
+            }
+          }
+        }
+
+        .accountCardRight {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          justify-content: space-around;
+
+          .accountCardRightHeader {
+            // margin-top: 3px;
+            text-align: end;
+            @include titleStyle(
+              var(--XSmall),
+              var(--font-medium),
+              var(--black1)
+            );
+
+            .cardText {
+              @include titleStyle(
+                var(--XXSmall),
+                var(--font-medium),
+                var(--grey1)
+              );
+            }
+          }
+
+          .accountCardRightFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 30px;
+            @include titleStyle(
+              var(--XSmall),
+              var(--font-medium),
+              var(--black1)
+            );
+
+            .accountinception {
+              display: flex;
+              flex-direction: column;
+
+              .cardText {
+                @include titleStyle(
+                  var(--XXSmall),
+                  var(--font-medium),
+                  var(--grey1)
+                );
+              }
+            }
+
+            .accountValue {
+              display: flex;
+              flex-direction: column;
+              text-align: right;
+              .cardText {
+                @include titleStyle(
+                  var(--XXSmall),
+                  var(--font-medium),
+                  var(--grey1)
+                );
+              }
+            }
+
+            .button {
+              background: var(----blue10);
+
+              .printButton {
+                width: 131px;
+                display: flex;
+                align-items: center;
+                background: var(--blue10);
+                color: var(--blue7);
+                font-size: var(--XXSmall);
+                font-weight: var(--font-semibold);
+                padding: 10px 16px;
+              }
+            }
+          }
+        }
+      }
+
+      .accountBody {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 20px 20px 0px;
+
+        .accountBodyLeft {
+          width: 49%;
+          .accountBodyLeftHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .accountBodyLeftStart {
+              //justify-content:start;
+              @include titleStyle(
+                var(--medium),
+                var(--font-medium),
+                var(--black1)
+              );
+            }
+
+            .accountBodyLeftEnd {
+              justify-content: end;
+              @include titleStyle(
+                var(--XXSmall),
+                var(--font-medium),
+                var(--blue7)
+              );
+            }
+          }
+
+          .accountBodyGraphHeader {
+            background: var(--grey15);
+            margin-top: 10px;
+            height: 71px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .accountBodyGraphHeaderText {
+              padding: 20px 0px 10px 10px;
+              @include titleStyle(
+                var(--XSmall),
+                var(--font-medium),
+                var(--grey1)
+              );
+            }
+
+            .accountBodyGraphHeaderIcon {
+              padding: 20px 10px 10px 10px;
+            }
+          }
+
+          .chartContainer {
+            background: var(--white1);
+
+            .chart {
+              padding: 16px 24px 12px 14px;
+            }
+
+            .divider {
+              width: 100%;
+              background: var(--grey16);
+              margin-top: 19px;
+              margin-bottom: 19px;
+            }
+
+            .table {
+              padding-bottom: 20px; //not needed
+              width: 100%;
+
+              td,
+              th {
+                padding-left: 20px;
+                text-align: start;
+
+                .heading {
+                  padding-right: 30px;
+                  @include titleStyle(
+                    var(--XXSmall),
+                    var(--font-semibold),
+                    var(--black1)
+                  );
+                }
+
+                .heading1 {
+                  @include titleStyle(
+                    var(--XXSmall),
+                    var(--font-semibold),
+                    var(--black1)
+                  );
+                }
+
+                .boxColumn {
+                  display: flex;
+                  flex-direction: row;
+
+                  .box1 {
+                    margin: 6px;
+                    height: 7px;
+                    width: 7px;
+                    background: var(--blue7);
+                    background: var(--orange3);
+                  }
+
+                  .box2 {
+                    margin: 6px;
+                    height: 7px;
+                    width: 7px;
+                    background: var(--orange3);
+                  }
+
+                  .rowText1 {
+                    padding-right: 30px;
+                    @include titleStyle(
+                      var(--XXXSmall),
+                      var(--font-medium),
+                      var(--grey1)
+                    );
+                  }
+                }
+
+                .rowText {
+                  text-align: end;
+                  @include titleStyle(
+                    var(--XXXSmall),
+                    var(--font-medium),
+                    var(--grey1)
+                  );
+                }
+              }
+            }
+          }
+        }
+
+        .accountBodyRight {
+          width: 49%;
+
+          .accountBodyRightHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .accountBodyRightStart {
+              //justify-content:start;
+              @include titleStyle(
+                var(--medium),
+                var(--font-medium),
+                var(--black1)
+              );
+            }
+
+            .accountBodyRightEnd {
+              justify-content: end;
+              .verticalLine {
+                color: var(--grey3);
+                padding-left: 5px;
+              }
+              @include titleStyle(
+                var(--XXSmall),
+                var(--font-medium),
+                var(--blue7)
+              );
+            }
+          }
+
+          .accountBodyRightTableHeader {
+            height: 71px;
+            margin-top: 10px;
+            background: var(--blue11);
+
+            .headerText {
+              padding: 20px;
+              @include titleStyle(
+                var(--XSmall),
+                var(--font-medium),
+                var(--white1)
+              );
+            }
+          }
+
+          .table {
+            width: 100%;
+
+            td {
+              padding: 10px;
+            }
+
+            .tableBodyRow {
+              background: var(--blue8);
+              height: 66px;
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              color: var(--black2);
+
+              &:nth-child(even) {
+                background: var(--blue9);
+              }
+            }
+          }
+
+          .accountBodyAsset {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+
+            .assetLeft {
+              @include titleStyle(
+                var(--medium),
+                var(--font-medium),
+                var(--black1)
+              );
+            }
+
+            .assetRight {
+              @include titleStyle(
+                var(--XXSmall),
+                var(--font-medium),
+                var(--blue7)
+              );
+            }
+          }
+
+          .accountProgressContainer {
+            background: var(--white1);
+            padding: 23px 25px 13px 26px;
+            .accountProgressTitle {
+              @include titleStyle(
+                var(--XXSmall),
+                var(--font-medium),
+                var(--black2)
+              );
+            }
+            .accountProgressbar {
+              margin-top: 17px;
+              height: 17px;
+              background: var(--orange3);
+            }
+            .accountProgressbarFooter {
+              display: flex;
+              flex-direction: row;
+              margin-top: 20px;
+              justify-content: space-between;
+              @include titleStyle(
+                var(--XXXSmall),
+                var(--font-medium),
+                var(--grey1)
+              );
+              .left {
+                display: flex;
+                flex-direction: row;
+                .box1 {
+                  margin: 7px;
+                  height: 7px;
+                  width: 7px;
+                  background: var(--orange3);
+                  //background: var(--blue7);
+                }
+                .text {
+                  padding-left: 10px;
+                  padding-right: 10px;
+                }
+              }
+              .right {
+                display: flex;
+                flex-direction: row;
+                .box1 {
+                  margin: 7px;
+                  height: 7px;
+                  width: 7px;
+                  background: var(--orange3);
+                }
+                .text {
+                  padding-left: 10px;
+                  padding-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

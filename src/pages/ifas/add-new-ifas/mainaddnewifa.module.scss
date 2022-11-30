@@ -1,0 +1,35 @@
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 30px 0px 30px;
+
+    .btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .btnStyle {
+            padding: 15px 24px;
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            background: var(--blue10);
+            color: var(--blue7);
+            margin-right: 30px;
+        }
+    }
+
+    .generateIfaContainer {
+        display: flex;
+        flex-direction: row;
+        background: var(--blue7);
+        align-items: center;
+        padding: 0px 0px 0px 25px;
+
+        .printBtn {
+            padding: 15px 25px 15px 10px;
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+        }
+    }
+}

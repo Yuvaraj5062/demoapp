@@ -1,0 +1,168 @@
+@mixin buttonStyle($margin, $color, $bg-color, $border) {
+  color: $color;
+  background: $bg-color;
+  border: 1px solid $border;
+  font-weight: var(--font-semibold);
+  font-size: var(--XSmall);
+  padding: 7px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .taxFreeContainer {
+    .navLink {
+      display: flex;
+      flex-direction: row;
+      background: var(--grey15);
+      padding: 6px 0px 8px 38px;
+      .ifaLink {
+        color: var(--blue1);
+        margin-right: 4px;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+      }
+      .addIfaLink {
+        color: var(--grey1);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+      }
+    }
+    .investmentContainer {
+      margin: 20px;
+      .accountNumber {
+        font-size: var(--medium);
+        font-weight: var(--font-medium);
+      }
+
+      // .customClassTableContainer {
+      //   tr:nth-last-child(1),
+      //   tr:nth-last-child(2) {
+      //     font-weight: var(--font-semibold);
+      //   }
+      // }
+
+      .customClassFooterTd {
+        font-weight: var(--font-semibold);
+      }
+
+      .tableContainer {
+        width: 100%;
+        margin: auto;
+        .table {
+          width: 100%;
+          .tableHead {
+            background: var(--blue11);
+            height: 50px;
+            color: var(--white1);
+            font-size: var(--XSmall);
+            font-weight: var(--font-semibold);
+            text-align: left;
+            padding: 0px 10px;
+          }
+          .tableRow {
+            background: var(--blue9);
+            height: 66px;
+            font-size: var(--XXSmall);
+            font-weight: var(--font-semibold);
+            color: var(--black2);
+            cursor: pointer;
+            &:nth-child(even) {
+              background: var(--blue8);
+            }
+            td {
+              padding: 0px 10px;
+            }
+          }
+        }
+      }
+
+      // .tableContainer {
+      //   margin-top: 15px;
+      //   .table {
+      //     width: 100%;
+      //     th,
+      //     td {
+      //       padding: 0px 19px;
+      //     }
+      //     .tableHead {
+      //       background: var(--blue11);
+      //       height: 66px;
+      //       color: var(--white1);
+      //       font-size: var(--XSmall);
+      //       font-weight: var(--font-medium);
+      //       text-align: left;
+      //       input {
+      //         height: 18px;
+      //         width: 18px;
+      //       }
+      //     }
+      //     .tableBodyRow {
+      //       background: var(--blue8);
+      //       height: 66px;
+      //       font-size: var(--XXSmall);
+      //       font-weight: var(--font-medium);
+      //       color: var(--black2);
+      //       .checkbox {
+      //         input {
+      //           width: 18px;
+      //           height: 18px;
+      //           border: 2px solid var(--black2);
+      //           border-radius: 3px;
+      //         }
+      //       }
+
+      //       .gotoButton {
+      //         @include buttonStyle(
+      //           0px,
+      //           var(--black1),
+      //           var(--blue8),
+      //           var(--black1)
+      //         );
+      //         &:hover {
+      //           @include buttonStyle(
+      //             0px,
+      //             var(--white1),
+      //             var(--blue1),
+      //             var(--blue1)
+      //           );
+      //         }
+      //       }
+      //       &:nth-child(even) {
+      //         background: var(--blue9);
+      //         .gotoButton {
+      //           @include buttonStyle(
+      //             0px,
+      //             var(--black1),
+      //             var(--blue9),
+      //             var(--black1)
+      //           );
+      //           &:hover {
+      //             @include buttonStyle(
+      //               0px,
+      //               var(--white1),
+      //               var(--blue1),
+      //               var(--blue1)
+      //             );
+      //           }
+      //         }
+      //       }
+      //     }
+      //     .tableBodyRow2 {
+      //       background: var(--blue8);
+      //       height: 66px;
+      //       font-size: var(--XXSmall);
+      //       font-weight: var(--font-semibold);
+      //       color: var(--black1);
+      //       &:nth-child(even) {
+      //         background: var(--blue9);
+      //       }
+      //     }
+      //   }
+      // }
+      .paginationContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0px 0px 0px;
+      }
+    }
+  }
+}

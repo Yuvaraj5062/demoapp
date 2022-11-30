@@ -1,0 +1,245 @@
+@mixin titleStyle($font) {
+  background: var(--grey11);
+  font-weight: var(--font-bold);
+  font-size: $font;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .landingPage {
+    position: relative;
+    // background: var(--black6);
+    // opacity: 80%;
+    width: 100%;
+    min-height: 755px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 40px 0px 40px 0px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    .modalContainer {
+      // width: 75%;
+      margin: auto;
+      background-color: var(--white1);
+      border: 2px solid var(--blue1);
+      z-index: 1;
+      .modalTitle {
+        padding: 26px 0px 22px 0px;
+        background-color: var(--blue1);
+        font-weight: var(--font-bold);
+        font-size: var(--large);
+        color: var(--white1);
+        text-align: center;
+        .crossIcon {
+          float: right;
+          margin-right: 36px;
+        }
+      }
+      .loaderContainer {
+        min-height: 500px;
+        min-width: 800px;
+        .loader {
+          margin: 50% auto;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      .birthdayReport {
+        height: 710px;
+        min-height: 500px;
+        overflow-y: scroll;
+        .birthdayToday {
+          display: flex;
+          flex-direction: row;
+          .birthdayTodayTitle {
+            // padding-top: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            @include titleStyle(var(--medium));
+          }
+          .userBirthdayToday {
+            margin: 20px 0px 20px 90px;
+            .userBirthdayTodayText {
+              font-weight: var(--font-normal);
+              font-size: var(--XSmall);
+            }
+            .userBirthDateText {
+              color: var(--blue3);
+              font-weight: var(--font-bold);
+              font-size: var(--XSmall);
+              margin: 0px;
+            }
+            .text {
+              padding: 20px 0px;
+            }
+          }
+          .userBirthDate {
+            margin: 20px 90px 20px 100px;
+            .birthDate {
+              margin-bottom: 0px;
+              .userBirthDateText {
+                color: var(--blue3);
+                font-weight: var(--font-bold);
+                font-size: var(--XSmall);
+                margin: 0px;
+              }
+            }
+          }
+        }
+        .divider {
+          background: var(--grey12);
+        }
+        .birthdayUpcoming {
+          .birthdayToday {
+            display: flex;
+            flex-direction: row;
+            .birthdayTodayTitle {
+              width: 400px;
+              @include titleStyle(var(--medium));
+            }
+            .userBirthDateText {
+              color: var(--blue3);
+              font-weight: var(--font-bold);
+              font-size: var(--XSmall);
+              margin: 0px;
+            }
+            .userBirthdayToday {
+              width: 270px;
+              margin: 20px 0px 0px 50px;
+              .userBirthdayTodayText {
+                font-weight: var(--font-normal);
+                font-size: var(--XSmall);
+                text-align: center;
+              }
+            }
+            .userBirthDate {
+              margin: 20px 0px 20px 100px;
+              .userBirthDateText {
+                color: var(--blue3);
+                font-weight: var(--font-bold);
+                font-size: var(--XSmall);
+                margin: 0px;
+              }
+            }
+          }
+
+          .divider {
+            background: var(--grey12);
+          }
+        }
+        .taskMeeting {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 0px;
+          .birthdayTodayTitle {
+            // padding-top: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            @include titleStyle(var(--medium));
+          }
+          .userBirthdayToday {
+            margin: 0px 0px 0px 90px;
+            .userBirthdayTodayText1 {
+              font-weight: var(--font-normal);
+              font-size: var(--XSmall);
+            }
+            .text {
+              padding: 20px 0px 0px 0px;
+            }
+          }
+          .userBirthDate {
+            margin-left: 35px;
+            .birthDate {
+              margin-bottom: 0px;
+              .userBirthDateText {
+                color: var(--blue3);
+                font-weight: var(--font-bold);
+                font-size: var(--XSmall);
+                margin: 0px;
+              }
+            }
+          }
+        }
+        .divider {
+          background: var(--grey12);
+        }
+        .dueMeeting {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 0px;
+          .birthdayTodayTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            @include titleStyle(var(--medium));
+          }
+
+          .userBirthdayToday {
+            margin: 20px 0px 20px 90px;
+
+            .dueContainer {
+              .userBirthdayTodayText1 {
+                font-weight: var(--font-normal);
+                font-size: var(--XSmall);
+              }
+            }
+            .user {
+              color: var(--blue3);
+              font-weight: var(--font-bold);
+              font-size: var(--medium);
+              margin: 0px;
+            }
+            .text {
+              padding: 20px 0px 0px 0px;
+            }
+          }
+          .userBirthDate {
+            margin: 20px 0px 20px 170px;
+
+            .user {
+              color: var(--blue3);
+              font-weight: var(--font-bold);
+              font-size: var(--medium);
+            }
+
+            .dueContainer {
+              .birthDate {
+                margin-bottom: 0px;
+
+                .userBirthdayTodayText1 {
+                  font-weight: var(--font-normal);
+                  font-size: var(--XSmall);
+                }
+              }
+            }
+          }
+        }
+      }
+      .modalFooter {
+        background-color: var(--blue1);
+        text-align: end;
+        .goToReportButton {
+          width: 234px;
+          height: 68px;
+          background: var(--white1);
+          color: var(--blue1);
+          box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+          border-radius: 2px;
+          margin: 20px;
+          outline: none;
+        }
+      }
+    }
+  }
+}

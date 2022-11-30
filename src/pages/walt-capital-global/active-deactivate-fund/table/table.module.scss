@@ -1,0 +1,117 @@
+@mixin buttonStyle($margin, $color, $bg-color, $border) {
+    // margin-right: 30px;
+    color: $color;
+    background: $bg-color;
+    border: 1px solid $border;
+    font-weight: var(--font-semibold);
+    font-size: var(--XSmall);
+    padding: 7px 17px;
+    min-width: 128px;
+  }
+  @media only screen and (min-width: 768px) {
+    .tableContainer {
+      width: 100%;
+      margin: auto;
+  
+      .table {
+        width: 100%;
+        .tableHead {
+          background: var(--blue11);
+          height: 50px;
+          color: var(--white1);
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          text-align: left;
+          padding: 0px 45px;
+        }
+        .tableRow,
+        .tableFooter {
+          background: var(--blue8);
+          height: 66px;
+          font-size: var(--XXSmall);
+          font-weight: var(--font-medium);
+          color: var(--black2);
+          cursor: pointer;
+  
+          .tableRowData{
+            padding: 0px 45px;
+            max-width: 120px;
+            overflow-wrap: break-word;
+            .addEditButton{
+              @include buttonStyle(
+                0px,
+                var(--black1),
+                var(--blue8),
+                var(--black1)
+                );
+              }
+              .buttonDisable{
+                @include buttonStyle(
+                  0px,
+                  var(--grey20),
+                  var(--blue20),
+                  var(--blue20)
+                );
+              }
+              .buttonAcitve{
+                @include buttonStyle(
+                  0px,
+                  var(--black1),
+                  var(--blue8),
+                  var(--black1)
+                );
+              }
+              .buttonDeactive{
+                @include buttonStyle(
+                  0px,
+                  var(--white1),
+                  var(--blue1),
+                  var(--blue1)
+                );
+              }
+            }
+            &:nth-child(even) {
+              background: var(--blue9);
+              .tableRowData{
+                padding: 0px 45px;
+                max-width: 120px;
+                overflow-wrap: break-word;
+                .addEditButton{
+                  @include buttonStyle(
+                    0px,
+                    var(--black1),
+                    var(--blue9),
+                    var(--black1)
+                  );
+                }
+                .buttonDisable{
+                  @include buttonStyle(
+                    0px,
+                    var(--grey20),
+                    var(--blue20),
+                    var(--blue20)
+                  );
+                }
+                .buttonAcitve{
+                  @include buttonStyle(
+                    0px,
+                    var(--black1),
+                    var(--blue9),
+                    var(--black1)
+                  );
+                }
+                .buttonDeactive{
+                  @include buttonStyle(
+                    0px,
+                    var(--white1),
+                    var(--blue1),
+                    var(--blue1)
+                  );
+                }
+            }
+            }
+        }
+      }
+    }
+  }
+  

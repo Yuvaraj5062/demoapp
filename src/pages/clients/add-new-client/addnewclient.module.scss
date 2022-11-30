@@ -1,0 +1,1579 @@
+@mixin datePickerCustomClass($borderColor) {
+  display: flex;
+  align-items: center;
+  border: 1px solid $borderColor;
+  // border-radius: 8px;
+  position: relative;
+  // margin-top: 2px;
+  width: 90%;
+  height: 36px;
+  // margin-bottom: 7px;
+
+  .datePicker {
+    background: var(--white1);
+    padding-left: 7px;
+
+    input {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+      background: var(--white1);
+      border: none;
+      // color: var(--secondary-blur);
+      padding: 12px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+
+  .datePick {
+    color: var(--blue1);
+  }
+
+  .iconContainer {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 4px;
+    background: var(--white1);
+  }
+}
+
+@media only screen and (min-width: 758px) {
+  .newClientContainer {
+    padding-bottom: 50px;
+
+    .navLink {
+      display: flex;
+      flex-direction: row;
+      font-size: var(--XSmall);
+      color: var(--grey1);
+      font-weight: var(--font-semibold);
+      background: var(--grey15);
+      padding: 12px 0px 13px 38px;
+
+      .clientsLink {
+        color: var(--blue1);
+        margin-right: 4px;
+      }
+    }
+
+    .formContent {
+      padding: 35px 0px 0px 0px;
+      width: 95%;
+      margin: auto;
+
+      .clientsPrimaryDetails {
+        background: var(--white1);
+        padding: 35px 22px 50px 22px;
+        box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+
+        .data1 {
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          margin: 0px;
+        }
+
+        .clientsPersonalData {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 98%;
+
+          .verticalDivider {
+            border: 1px solid var(--grey21);
+            height: 70px;
+          }
+
+          .uploadContainer {
+            display: flex;
+
+            .iconContainer {
+              height: 40px;
+              width: 40px;
+              margin-left: 10px;
+              align-self: center;
+            }
+
+            .browseFile {
+              background: rgba(8, 104, 170, 0.1);
+              display: flex;
+              padding: 0px;
+              align-items: center;
+              /* width: 250px; */
+              margin-right: 20px;
+              border: 2px dashed var(--blue7);
+              height: 70px;
+            }
+
+            .fileInputBtn {
+              background: var(--blue10);
+              border-radius: 2px;
+              color: black;
+              font-size: var(--XXSmall);
+              font-weight: var(--font-normal);
+              height: 40px;
+              min-width: 200px;
+              border: 1px dashed var(--blue7);
+            }
+
+            .uploadBtn {
+              background: var(--blue7);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              padding: 9px 25px;
+              border-radius: 2px;
+            }
+
+            .uploadBtn1 {
+              background: var(--blue7);
+              color: var(--white1);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              //   padding: 1px 10px;
+              padding-left: 19px;
+              border-radius: 2px;
+            }
+          }
+
+          .imgBtnGrp {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 365px;
+            margin: 23px 0px 27px 0px;
+
+            .profileImage {
+              width: 96px;
+              height: 79px;
+            }
+
+            .uploadBtn {
+              background: var(--blue7);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              padding: 9px 30px;
+              border-radius: 2px;
+            }
+
+            .removeBtn {
+              border: 1px solid var(--black4);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              background: var(--white1);
+              padding: 9px 30px;
+              border-radius: 2px;
+              color: var(--black5);
+            }
+          }
+
+          .linktoIFAButton {
+            display: flex;
+            align-items: center;
+            background: var(--blue10);
+            color: var(--blue1);
+            font-size: var(--XSmall);
+            padding: 8px 24px;
+
+            .iconCustomClass {
+              margin: 5px 8px 0px 0px;
+            }
+          }
+
+          .editBtn {
+            color: var(--black5);
+            margin-left: 20px;
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            background: var(--white1);
+            border: 1px solid var(--black4);
+            padding: 9px 30px;
+            // margin-right: 20px;
+          }
+        }
+
+        .checkboxMainContainer {
+          display: flex;
+
+          .checkboxContainer {
+            display: flex;
+            align-items: center;
+            // margin-top: 29px;
+            margin-right: 20px;
+
+            .checkbox {
+              outline: none;
+            }
+
+            .accountText {
+              margin-left: 10px;
+              color: var(--black1);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .tooltipContainer {
+              display: flex;
+              flex-direction: column;
+              width: 20px;
+              position: relative;
+
+              .printTooltip {
+                box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.22);
+                border-radius: 4px;
+                width: 170px;
+
+                .text {
+                  color: var(--blue7);
+                  font-size: var(--XXXXXSmall);
+                  font-weight: var(--font-medium);
+                  padding: 10px;
+                  z-index: 10;
+                  left: -77px;
+                  bottom: 29px;
+                  display: inline-block;
+                  width: 170px;
+                }
+              }
+
+              .infoIcon {
+                width: 18px;
+                height: 18px;
+                margin-left: 10px;
+                position: relative;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .clientDetails {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .divider {
+          background: var(--grey16);
+          margin: 30px 0px;
+        }
+      }
+
+      .clientsMoreDetails {
+        background: var(--white1);
+        margin-top: 35px;
+
+        .clientStatus {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .data1 {
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-medium);
+          margin: 0px;
+        }
+
+        .divider {
+          background: var(--grey16);
+          margin: 30px 0px;
+        }
+
+        .clientTypeWithIcon {
+          margin-top: 19px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          position: relative;
+
+          .textWithIcon {
+            display: flex;
+            flex: 1;
+            margin-right: 16px;
+
+            .officeIconContainer {
+              background-color: var(--blue7);
+              width: 36px;
+              height: 37px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              align-self: flex-end;
+              cursor: pointer;
+            }
+
+            .officeIconContainerCustom {
+              align-self: unset;
+              cursor: pointer;
+              margin-top: 23px;
+              // margin-bottom: unset;
+            }
+
+            .labelText {
+              position: relative;
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            // .inputType1 {
+            //   width: 90%;
+            //   height: 34px;
+            //   margin-right: 5px;
+            //   background: red;
+            // }
+
+            .dropdownStyle {
+              position: relative;
+              width: 93%;
+              height: 37.8px;
+              padding: 0px !important;
+            }
+          }
+        }
+
+        .clientType {
+          margin-top: 19px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          position: relative;
+
+          .officeIconContainer {
+            background-color: var(--blue7);
+            width: 34px;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -55px;
+            margin-top: 25px;
+            cursor: pointer;
+            // .manageOfficeIcon {
+            //   // position: absolute;
+            //   margin-left: -55px;
+            //   margin-top: 25px;
+            //   cursor: pointer;
+            // }
+          }
+
+          .inputType4 {
+            width: 68%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .inputType5 {
+            width: 68%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .inputType6 {
+            width: 68%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .inputType7 {
+            width: 68%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+
+          .customClassContainer1 {
+            position: relative;
+            width: 25%;
+          }
+
+          .iconCo {
+            position: absolute;
+            left: 200px;
+            top: -11px;
+
+            .moreIcon {
+              background: var(--blue10);
+            }
+          }
+
+          .datePickerContainerMain {
+            flex: 1;
+            // margin-top: 9px;
+            display: flex;
+            flex-direction: column;
+
+            .error {
+              margin-top: 14px;
+              color: var(--red1);
+              font-weight: var(--font-medium);
+              font-size: var(--XXXSmall);
+            }
+
+            .label {
+              color: var(--black5);
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+              margin-bottom: 5px;
+            }
+
+            .datePickerContainer {
+              @include datePickerCustomClass(var(--black4));
+            }
+
+            .datePickerContainerError {
+              @include datePickerCustomClass(var(--red2));
+            }
+          }
+
+          .labelText {
+            position: relative;
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .inputType1 {
+            width: 90%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .firstNameInputField {
+            color: var(--secondary-light);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-normal);
+            margin-top: 20px;
+          }
+
+          .customclassContainerDrodown {
+            width: 32%;
+
+            .customDropdown {
+              // top: 93px;
+              margin: 0px -5px 0px 0px;
+            }
+          }
+
+          .nickNameField {
+            width: 90%;
+            height: 34px;
+            margin-right: 5px;
+            background: var(--blue10);
+            border: 1px solid var(--blue19);
+          }
+
+          .dropdownStyle {
+            position: relative;
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+
+          .dropdownStyle1 {
+            position: relative;
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+
+          .dropdownStyle2 {
+            position: relative;
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+
+          .dropdownStyle3 {
+            position: relative;
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+        }
+
+        .clientType4 {
+          margin-top: 19px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          position: relative;
+          width: 75%;
+
+          .officeIconContainer {
+            .manageOfficeIcon {
+              // position: absolute;
+              margin-left: -55px;
+              margin-top: 25px;
+              cursor: pointer;
+            }
+          }
+
+          .inputType4 {
+            width: 90%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .inputType5 {
+            // width: 90%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .inputType6 {
+            //  width: 90%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .inputType7 {
+            //  width: 100%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .customClassContainer1 {
+            position: relative;
+            width: 25%;
+          }
+
+          .iconCo {
+            position: absolute;
+            left: 200px;
+            top: -11px;
+
+            .moreIcon {
+              background: var(--blue10);
+            }
+          }
+
+          .datePickerContainerMain {
+            flex: 1;
+
+            // margin-top: 9px;
+            .error {
+              margin-top: 14px;
+              color: var(--red1);
+              font-weight: var(--font-medium);
+              font-size: var(--XXXSmall);
+            }
+
+            .label {
+              color: var(--black5);
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+              margin-top: 9px;
+            }
+
+            .datePickerContainer {
+              @include datePickerCustomClass(var(--black4));
+            }
+
+            .datePickerContainerError {
+              @include datePickerCustomClass(var(--red2));
+            }
+          }
+
+          .labelText {
+            position: relative;
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .inputType1 {
+            width: 90%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .dropdownStyle {
+            position: relative;
+            width: 75%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+
+          .dropdownStyle1 {
+            position: relative;
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+
+          .dropdownStyle2 {
+            position: relative;
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+
+          .dropdownStyle3 {
+            position: relative;
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+        }
+
+        .clientTypeCountryResidence {
+          width: 23%;
+
+          .labelText {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .inputType1 {
+            width: 100%;
+            height: 34px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .clientsMoreDetails3 {
+        background: var(--white1);
+        margin-top: 35px;
+        padding: 35px 22px 50px 22px;
+        box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+
+        .clientStatus {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .data1 {
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          color: var(--black1);
+          margin: 0px;
+        }
+
+        .divider {
+          background: var(--grey16);
+          margin: 30px 0px;
+        }
+
+        .clientType {
+          margin-top: 19px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .labelText {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .inputType1 {
+            width: 90%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .dropdownStyle {
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+        }
+
+        .clientBankType {
+          margin-top: 19px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 50%;
+
+          .labelText {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .inputType1 {
+            width: 90%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .input {
+            width: 200px;
+          }
+        }
+
+        .clientType1 {
+          margin-top: 19px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          // width: 75%;
+
+          .labelText {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .inputType1 {
+            width: 90%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .inputType2 {
+            width: 22.5%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .dropdownStyle {
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+
+          .input {
+            width: 200px;
+          }
+        }
+      }
+
+      .clientsMoreDetails2 {
+        background: var(--white1);
+        padding: 35px 22px 50px 22px;
+        margin-top: 35px;
+        box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+
+        .clientStatus {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .maritalStatus {
+            display: flex;
+
+            flex-direction: column;
+            width: 36%;
+
+            .container {
+              flex: none;
+            }
+
+            .datePickerContainerMain {
+              flex: 1;
+              // margin-top: 9px;
+              display: flex;
+              flex-direction: column;
+
+              .error {
+                color: var(--red1);
+                font-weight: var(--font-medium);
+                font-size: var(--XXXSmall);
+                margin-top: 14px;
+              }
+
+              .label {
+                color: var(--black5);
+                font-size: var(--XXXSmall);
+                font-weight: var(--font-medium);
+                margin-top: 9px;
+                margin-bottom: 5px;
+              }
+
+              .datePickerContainer {
+                @include datePickerCustomClass(var(--black4));
+              }
+
+              .datePickerContainerError {
+                @include datePickerCustomClass(var(--red2));
+              }
+            }
+
+            .dropdownStyle {
+              width: 90%;
+              height: 37.8px;
+              padding: 0px !important;
+            }
+
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .inputType1 {
+              width: 90%;
+              height: 34px;
+              margin-right: 5px;
+            }
+          }
+
+          .labelText {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .spouseLabel {
+            margin-top: 9px;
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .descriptionContainer {
+            display: flex;
+            flex-direction: column;
+            width: 72%;
+
+            .label {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+              color: var(--black5);
+              margin-bottom: 5px;
+            }
+
+            .textArea {
+              width: 97%;
+              height: 172px;
+              resize: none;
+              border: 1px solid var(--black4);
+            }
+
+            .inputData {
+              width: 97%;
+              height: 172px;
+            }
+          }
+        }
+
+        .data1 {
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          margin: 0px;
+        }
+
+        .divider {
+          background: var(--grey16);
+          margin: 30px 0px;
+        }
+
+        .clientType {
+          margin-top: 19px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .labelText {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .inputType1 {
+            width: 90%;
+            height: 34px;
+            margin-right: 5px;
+          }
+
+          .dropdownStyle {
+            width: 90%;
+            height: 37.8px;
+            padding: 0px !important;
+          }
+        }
+
+        .checkboxContainer {
+          display: flex;
+          margin-top: 29px;
+          align-items: center;
+          margin-right: 20px;
+
+          .checkbox {
+            outline: none;
+          }
+
+          .accountText {
+            margin-left: 10px;
+            color: var(--black1);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .infoIcon {
+            width: 18px;
+            height: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+          }
+
+          .printTooltip {
+            color: red;
+            font-size: var(--XXXXXSmall);
+            font-weight: var(--font-medium);
+            padding: 10px;
+            width: 178px;
+            height: 49px;
+          }
+        }
+
+        .btnGrp {
+          margin-top: 50px;
+          text-align: right;
+          display: flex;
+          justify-content: flex-end;
+
+          .saveBtn {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            // padding: 12px 29px;
+            width: 207px;
+            height: 51px;
+            border-radius: 2px;
+          }
+
+          .cancelBtn {
+            margin-left: 20px;
+            background: var(--white1);
+            color: var(--black5);
+            border: 1px solid var(--black4);
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            padding: 12px 29px;
+            border-radius: 2px;
+          }
+
+          .deleteBtn {
+            margin-left: 20px;
+            background: var(--white1);
+            color: var(--red2);
+            padding: 12px 29px;
+            border: 1px solid var(--red2);
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+          }
+        }
+      }
+    }
+
+    // form2 css
+    .formDetails {
+      padding: 35px 44px 0px 39px;
+
+      .formContainer {
+        padding: 35px 22px;
+        background: var(--white1);
+
+        .formTitle {
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          color: var(--black1);
+        }
+
+        .radioButtonContainer {
+          display: flex;
+
+          .radioButtonText {
+            padding-left: 8px;
+            padding-right: 30px;
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-normal);
+          }
+
+          .dscMcsRadiobutton {
+            display: flex;
+            margin-left: 70px;
+          }
+        }
+
+        .feeTypeContainer {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 30px;
+
+          .labelText {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-normal);
+          }
+        }
+
+        .divider {
+          background: var(--grey16);
+          margin: 30px 0px;
+        }
+
+        .monthlyFeesContainer {
+          display: flex;
+          justify-content: space-between;
+          width: 72%;
+
+          .labelText {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-normal);
+          }
+        }
+
+        .divider {
+          background: var(--grey16);
+          margin: 30px 0px;
+        }
+
+        .checkContainer {
+          display: flex;
+
+          .questionText {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+            color: var(--black5);
+          }
+
+          .radioContainer {
+            display: flex;
+            padding-top: 5px;
+
+            .radioButtonText {
+              padding-left: 9px;
+              padding-right: 18px;
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-normal);
+            }
+          }
+
+          .verticalDivider {
+            border: 1px solid var(--grey16);
+            height: 70px;
+            margin: 0px 30px;
+          }
+        }
+
+        .btnGrp {
+          margin-top: 33px;
+          text-align: right;
+
+          .editBtn {
+            padding: 12px 52px 12px 52px;
+            background: var(--blue10);
+            color: var(--blue7);
+            border-radius: 2px;
+            text-align: left;
+            margin-right: 110px;
+          }
+
+          .cancelBtn,
+          .saveBtn {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            padding: 12px 50px;
+            border-radius: 2px;
+          }
+
+          .cancelBtn {
+            margin-left: 20px;
+            background: var(--white1);
+            color: var(--black5);
+            padding: 12px 35px;
+            border: 1px solid var(--black4);
+          }
+
+          .deleteBtn {
+            margin-left: 20px;
+            background: var(--white1);
+            color: var(--red2);
+            padding: 12px 28px;
+            border: 1px solid var(--red2);
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+          }
+        }
+      }
+    }
+
+    .newClientContainer {
+      padding-bottom: 50px;
+
+      .navLink {
+        display: flex;
+        flex-direction: row;
+        font-size: var(--XSmall);
+        color: var(--grey1);
+        font-weight: var(--font-semibold);
+        background: var(--grey15);
+        padding: 12px 0px 13px 38px;
+
+        .clientsLink {
+          color: var(--blue1);
+          margin-right: 4px;
+        }
+      }
+
+      .formContent {
+        padding: 35px 0px;
+        width: 95%;
+        margin: 0px 30px 0px 30px;
+
+        .clientsPrimaryDetails {
+          background: var(--white1);
+          padding: 35px 22px 50px 22px;
+
+          .data1 {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            margin: 0px;
+          }
+
+          .clientsPersonalData {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .imgBtnGrp {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              width: 365px;
+              margin: 23px 0px 27px 0px;
+
+              .profileImage {
+                width: 96px;
+                height: 79px;
+              }
+
+              .uploadBtn {
+                background: var(--blue7);
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                padding: 9px 30px;
+                border-radius: 2px;
+              }
+
+              .removeBtn {
+                border: 1px solid var(--black4);
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                background: var(--white1);
+                padding: 9px 30px;
+                border-radius: 2px;
+                color: var(--black5);
+              }
+
+
+            }
+
+            .linktoIFAButton {
+              display: flex;
+              align-items: center;
+              background: var(--blue10);
+              color: var(--blue1);
+              font-size: var(--XSmall);
+              padding: 8px 24px;
+
+              .iconCustomClass {
+                margin: 5px 8px 0px 0px;
+              }
+            }
+          }
+
+          .clientDetails {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+
+          .divider {
+            background: var(--grey16);
+            margin: 30px 0px;
+          }
+        }
+
+        .clientsMoreDetails {
+          background: var(--white1);
+          margin-top: 35px;
+
+          .clientStatus {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+
+          .data1 {
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+            margin: 0px;
+          }
+
+          .divider {
+            background: var(--grey16);
+            margin: 30px 0px;
+          }
+
+          // .clientType {
+          //   margin-top: 19px;
+          //   display: flex;
+          //   flex-direction: row;
+          //   justify-content: space-between;
+          //   .labelText {
+          //     font-size: var(--XXXSmall);
+          //     font-weight: var(--font-medium);
+          //   }
+          // }
+          .clientType {
+            margin-top: 19px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: red;
+
+            .customClassContainer {
+              flex: 1;
+              width: 100%;
+            }
+
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .inputType1 {
+              width: 100%;
+              height: 34px;
+              margin-right: 5px;
+            }
+
+            .dropdownStyle {
+              width: 50%;
+              height: 37.8px;
+              padding: 0px !important;
+            }
+          }
+        }
+
+        .clientsMoreDetails3 {
+          background: var(--white1);
+          margin-top: 35px;
+          padding: 35px 22px 50px 22px;
+
+          .clientStatus {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+
+          .data1 {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            color: var(--black1);
+            margin: 0px;
+          }
+
+          .divider {
+            background: var(--grey16);
+            margin: 30px 0px;
+          }
+
+          .clientType {
+            margin-top: 19px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .labelText {
+              width: 52%;
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .input {
+              width: 130%;
+            }
+
+            // .inputType {
+            //   width: 130%;
+            //   height: 34px;
+            // }
+          }
+
+          .clientType1 {
+            margin-top: 19px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 72%;
+
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .inputType {
+              width: 90%;
+            }
+
+            .input {
+              width: 200px;
+            }
+          }
+        }
+
+        .clientsMoreDetails2 {
+          background: var(--white1);
+          padding: 35px 22px 50px 22px;
+          margin-top: 35px;
+
+          .clientStatus {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .maritalStatus {
+              display: flex;
+
+              flex-direction: column;
+              width: 20%;
+            }
+
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .spouseLabel {
+              margin-top: 9px;
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .descriptionContainer {
+              display: flex;
+              flex-direction: column;
+              width: 72%;
+
+              .label {
+                font-size: var(--XXXSmall);
+                font-weight: var(--font-medium);
+                color: var(--black5);
+                margin-bottom: 5px;
+              }
+
+              .textArea {
+                margin-top: 20px;
+                width: 97%;
+                height: 133px;
+                resize: none;
+              }
+
+              .inputData {
+                width: 99%;
+                height: 172px;
+              }
+            }
+          }
+
+          .data1 {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            margin: 0px;
+          }
+
+          .divider {
+            background: var(--grey16);
+            margin: 30px 0px;
+          }
+
+          .clientType {
+            margin-top: 19px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .inputType {
+              width: 130%;
+            }
+          }
+
+          .checkboxContainer {
+            display: flex;
+            // margin-top: 29px;
+            margin-right: 20px;
+
+            .checkbox {
+              outline: none;
+            }
+
+            .accountText {
+              margin-left: 10px;
+              color: var(--black1);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+            }
+          }
+
+          .btnGrp {
+            margin-top: 50px;
+            text-align: right;
+
+            .cancelBtn,
+            .saveBtn {
+              font-size: var(--small);
+              font-weight: var(--font-medium);
+              padding: 12px 29px;
+              border-radius: 2px;
+            }
+
+            .cancelBtn {
+              margin-left: 20px;
+              background: var(--white1);
+              color: var(--black5);
+              border: 1px solid var(--black4);
+            }
+
+            .deleteBtn {
+              margin-left: 20px;
+              background: var(--white1);
+              color: var(--red2);
+              padding: 12px 29px;
+              border: 1px solid var(--red2);
+              font-size: var(--small);
+              font-weight: var(--font-medium);
+            }
+          }
+        }
+      }
+
+      // form2 css
+      .formDetails {
+        padding: 35px 44px 0px 39px;
+
+        .formContainer {
+          padding: 35px 22px;
+          background: var(--white1);
+
+          .formTitle {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            color: var(--black1);
+          }
+
+          .radioButtonContainer {
+            display: flex;
+
+            .radioButtonText {
+              padding-left: 8px;
+              padding-right: 30px;
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-normal);
+            }
+
+            .dscMcsRadiobutton {
+              display: flex;
+              margin-left: 70px;
+            }
+          }
+
+          .feeTypeContainer {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-normal);
+            }
+          }
+
+          .divider {
+            background: var(--grey16);
+            margin: 30px 0px;
+          }
+
+          .monthlyFeesContainer {
+            display: flex;
+            justify-content: space-between;
+            width: 72%;
+
+            .labelText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-normal);
+            }
+          }
+
+          .divider {
+            background: var(--grey16);
+            margin: 30px 0px;
+          }
+
+          .checkContainer {
+            display: flex;
+
+            .questionText {
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+              color: var(--black5);
+            }
+
+            .radioContainer {
+              display: flex;
+              padding-top: 5px;
+
+              .radioButtonText {
+                padding-left: 9px;
+                padding-right: 18px;
+                font-size: var(--XXXSmall);
+                font-weight: var(--font-normal);
+              }
+            }
+
+            .verticalDivider {
+              border: 1px solid var(--grey16);
+              height: 70px;
+              margin: 0px 30px;
+            }
+          }
+
+          .btnGrp {
+            margin-top: 33px;
+            text-align: right;
+
+            .editBtn {
+              padding: 12px 52px 12px 52px;
+              background: var(--blue10);
+              color: var(--blue7);
+              border-radius: 2px;
+              text-align: left;
+              margin-right: 110px;
+            }
+
+            .cancelBtn,
+            .saveBtn {
+              font-size: var(--small);
+              font-weight: var(--font-medium);
+              padding: 12px 50px;
+              border-radius: 2px;
+            }
+
+            .cancelBtn {
+              margin-left: 20px;
+              background: var(--white1);
+              color: var(--black5);
+              padding: 12px 35px;
+              border: 1px solid var(--black4);
+            }
+
+            .deleteBtn {
+              margin-left: 20px;
+              background: var(--white1);
+              color: var(--red2);
+              padding: 12px 28px;
+              border: 1px solid var(--red2);
+              font-size: var(--small);
+              font-weight: var(--font-medium);
+            }
+          }
+        }
+      }
+    }
+  }
+}

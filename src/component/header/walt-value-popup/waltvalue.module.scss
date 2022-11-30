@@ -1,0 +1,34 @@
+@media only screen and (min-width: 768px) {
+  .waltValueContainer {
+    background: var(--white1);
+    width: 40%;
+    margin: 10% auto 0px auto;
+    .crossIcon {
+      text-align: end;
+      padding: 20px;
+    }
+    .waltValueContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .waltSa {
+        margin-bottom: 70px;
+        .waltText {
+          font-size: var(--medium);
+          font-weight: var(--font-semibold);
+        }
+        .zarText {
+          font-size: var(--XXXXXLarge);
+          font-weight: var(--font-bold);
+          .amount {
+            color: var(--blue1);
+          }
+        }
+      }
+      .divider {
+        width: 100%;
+      }
+    }
+  }
+}

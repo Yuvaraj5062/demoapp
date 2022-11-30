@@ -1,0 +1,61 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    margin: 15% auto;
+    width: 43%;
+    .deleteHeading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px;
+      background-color: var(--white1);
+      .paragraph {
+        margin: 0px;
+        color: var(--black1);
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+      }
+      .paragraph1 {
+        color: var(--black1);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        text-align: center;
+        width: 54%;
+        line-height: 29px;
+        padding: 10px 0px 0px 0px;
+        margin: 0px;
+      }
+
+      .paragraph2 {
+        color: var(--black1);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        margin: 0px;
+      }
+    }
+    .buttonContainer {
+      background-color: var(--blue1);
+      padding: 13px 18px 13px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .cancelButton {
+        padding: 14px 38px;
+        background-color: var(--blue10);
+        color: var(--blue1);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+        display: flex;
+        justify-content: center;
+      }
+      .deleteButton {
+        background-color: var(--red1);
+        color: var(--white1);
+        font-size: var(--XSmall);
+        font-weight: (--font-semibold);
+        padding: 14px 38px;
+        margin-left: 18px;
+      }
+    }
+  }
+}
