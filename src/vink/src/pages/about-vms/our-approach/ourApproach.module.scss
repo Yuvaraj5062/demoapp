@@ -1,0 +1,31 @@
+@media only screen and (min-width: 768px) {
+  .ourApproachContainer {
+    background: var(--blue5);
+    padding: 80px 0px;
+
+    .mainContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      padding-bottom: 40px;
+
+      .ourApproachText {
+        font-size: var(--XXXXXLarge);
+        font-weight: var(--font-bold);
+        color: var(--white1);
+        padding-bottom: 23px;
+      }
+
+      .vmsBankText {
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+        color: var(--white1);
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+}

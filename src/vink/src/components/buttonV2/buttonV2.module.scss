@@ -1,0 +1,14 @@
+.button{
+    margin-top: 10px;
+    width: 130px;
+    height: 50px;
+    border-radius:30px;
+    border: none;
+    background: var(--white1);
+    cursor: pointer;
+    .title{
+        color: var(--black2);
+        font-weight: var(--font-medium);
+        font-size: var(--XSmall);
+    }
+}

@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    border-radius: 4px;
+    border: 6px solid var(--grey10);
+    padding: 45px 30px 45px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    // width: 500px;
+    width: 50%;
+    align-items: center;
+    height: 177px;
+    .cardInfo {
+      font-size: var(--XXXLarge);
+      font-weight: var(--font-light);
+      color: var(--grey1);
+      margin: 0px 0px 0px 28px;
+    }
+    // }
+  }
+}

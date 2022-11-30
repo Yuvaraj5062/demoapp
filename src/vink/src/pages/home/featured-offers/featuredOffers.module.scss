@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    background-color: var(--grey5);
+    .featuredOffersContainer {
+      width: 80%;
+      margin: auto;
+      padding: 100px 0px;
+      .featuredOfferText {
+        margin: 0;
+        color: var(--blue5);
+        font-size: var(--XXXXXXLarge);
+        font-weight: var(--font-bold);
+        text-align: center;
+      }
+      .offerCardContainer {
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-direction: row;
+        padding: 40px 0px 0px 0px;
+        // max-width: 70%;
+        // min-width: 100%;
+        // max-width: 100%;
+        // width: 80%;
+        margin: auto;
+        // text-align: center;
+        // object-fit: contain;
+        // margin: auto 50px auto 70px;
+      }
+    }
+  }
+}

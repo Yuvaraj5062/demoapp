@@ -1,0 +1,15 @@
+.sharePriceMainContainer {
+  background: var(--white4);
+  // height: 740px;
+  .sharePriceContent {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0px;
+    .cardsContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  }
+}

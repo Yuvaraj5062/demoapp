@@ -1,0 +1,39 @@
+@media only screen and (min-width: 768px) {
+  .cardContainer {
+    display: grid;
+    // grid-template-rows: (2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-row-gap: 60px;
+    grid-column-gap: 60px;
+    margin: auto;
+    width: 80%;
+    .imageCard {
+      background-color: var(--blue5);
+      text-align: center;
+      padding: 15px 0;
+      color: var(--white1);
+      // width: 400px;
+      //flex: 40%;
+      .imageContainer {
+        width: 54px;
+        height: 58px;
+        background-color: var(--white1);
+        padding: 26px;
+        border-radius: 50%;
+        margin: auto;
+      }
+      .cardTitle {
+        font-weight: 600;
+        font-size: var(--XXLarge);
+        line-height: 29px;
+        margin: 23px 0;
+      }
+      .cardText {
+        font-weight: 400;
+        font-size: var(--small);
+        line-height: 29px;
+        margin: 0;
+      }
+    }
+  }
+}

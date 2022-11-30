@@ -1,0 +1,11 @@
+@media only screen and (min-width: 768px) {
+  .studioMainContainer {
+    padding: 90px 0px;
+    margin: 0 auto;
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row-gap: 60px;
+    grid-column-gap: 60px;
+  }
+}

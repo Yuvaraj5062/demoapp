@@ -1,0 +1,75 @@
+@media only screen and (min-width: 768px) {
+    .mainContainer {
+        padding: 53px 0px;
+    background-size: cover;
+    .mainContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+      .spotOnText{
+        font-size: var(--XXXXXXLarge);
+        font-weight: var( --font-bold);
+        color: #000000;
+        margin: 0px;
+        padding-bottom: 17px;
+      }
+      .giveFeedbackText{
+        font-size: var(--XSmall);
+        font-weight: var( --font-normal);
+        color: var(--grey9);
+        margin: 0px;
+      }
+    }
+    .feedbackForm{
+      width: 65%;
+      margin-top: 30px;
+      margin: auto;
+      .sendMsgText{
+        width: 100%;
+        color: var(--blue5);
+        font-size: var(--large);
+        font-weight: var(--font-semibold);
+      }
+      .nameSurnameContainer{
+        display: flex;
+        // justify-content: space-between;
+      .inputFieldContainerName{
+        // width: 48%;
+        margin-right: 30px;
+        flex: 1;
+      }
+      .inputFieldContainerSurname{
+        // width: 48%;
+        margin-right: 0px;
+        flex: 1;
+      }
+      }
+      .captchaAudioContainer{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        .audioImage{
+          display: inline-block;
+          margin-left: 30px;
+          height: 62px;
+        }
+        .captchImage{
+          display: inline-block;
+          // margin-left: 30px;
+          height: 91px;
+        }
+      }
+      .btnStyle{
+        margin-top: 25px;
+        border-radius: 100px;
+        width: 230px;
+      }
+      .btnText{
+        font-size: var(--XLarge);
+      }
+    }
+    }}
+   

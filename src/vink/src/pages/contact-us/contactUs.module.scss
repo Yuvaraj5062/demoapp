@@ -1,0 +1,60 @@
+@media only screen and (min-width: 768px) {
+  .contactUsContainer {
+    // margin-bottom: 160px;
+    .bannerImage {
+      background: url("../../assests/images/contactUsBackgroundImage.png");
+      //   padding: 170px 0px;
+      display: flex;
+      align-items: center;
+      //   height: 400px;
+      //   height: 100%;
+      height: 70vh;
+      //   background-repeat: no-repeat;
+      //   width: 1660px;
+      margin-bottom: 60px;
+      background-size: cover;
+      .benefitsText {
+        font-size: 38px;
+        font-weight: var(--font-bold);
+        color: var(--white1);
+        margin: 0px;
+        padding-left: 50px;
+        width: 100%;
+        animation: slide-right 4s ease 1s forwards;
+        // position: static;
+        visibility: hidden;
+        @keyframes slide-right {
+          0% {
+            margin-left: -100%;
+            visibility: hidden;
+          }
+          100% {
+            margin-left: 0%;
+            visibility: visible;
+          }
+        }
+      }
+    }
+    // .contactOption {
+    //   display: flex;
+    //   flex-direction: row;
+    //   justify-content: center;
+    //   padding: 60px 0px;
+    //   .contactText {
+    //     color: var(--grey1);
+    //     font-size: var(--medium);
+    //     font-weight: var(--font-bold);
+    //     margin: 0px 30px;
+    //     cursor: pointer;
+    //   }
+    //   .activeText {
+    //     color: var(--blue5);
+    //     font-size: var(--medium);
+    //     font-weight: var(--font-bold);
+    //     margin: 0px 30px;
+    //     cursor: pointer;
+    //     border-bottom: 1px solid var(--blue6);
+    //   }
+    // }
+  }
+}

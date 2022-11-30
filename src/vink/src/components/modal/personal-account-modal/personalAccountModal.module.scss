@@ -1,0 +1,138 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    padding: 15px 0px 50px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 818px;
+    background-color: var(--white1);
+    height: 450px;
+    overflow-y: scroll;
+    .detailContainer {
+      padding: 20px 50px 0px 50px;
+      .signUp {
+        font-size: var(--XXLarge);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        margin: 0;
+        padding-bottom: 30px;
+      }
+      .applicationText {
+        color: var(--blue1);
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+        margin: 0;
+      }
+      .referenceText {
+        margin: 0;
+        font-weight: var(--font-semibold);
+        font-size: var(--XXSmall);
+        color: var(--grey1);
+        padding: 10px 0px 40px 0px;
+        .refNumber {
+          color: var(--blue1);
+          font-weight: var(--font-bold);
+        }
+      }
+      .welcomeText {
+        color: var(--black2);
+        font-weight: var(--font-bold);
+        font-size: var(--medium);
+        margin: 0;
+      }
+      .monthlyFeeText {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        color: var(--grey1);
+        margin: 0;
+        padding: 10px 0px;
+        .feeText {
+          color: var(--blue1);
+          font-weight: var(--font-bold);
+        }
+      }
+      .priceEstimate {
+        margin: 0;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--grey1);
+      }
+      .divider {
+        width: 100%;
+        max-width: 718px;
+        height: 1px;
+        background: var(--grey8);
+        margin: 20px auto;
+        border: none;
+      }
+      .addValue {
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        margin: 0;
+      }
+      .rewardsText {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding-top: 10px;
+        .rewards {
+          color: var(--grey3);
+          font-size: var(--XXSmall);
+          font-weight: var(--font-normal);
+          margin-left: 12px;
+        }
+      }
+
+      .continueBtn {
+        width: 100%;
+        max-width: 344px;
+        margin: 40px auto 0px auto;
+        border-radius: 25px;
+      }
+      .continueText {
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+      }
+      // .btnContainer {
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: space-between;
+      //   padding-top: 40px;
+      //   .continueBtn {
+      //     width: 100%;
+      //     max-width: 344px;
+      //     margin-right: 30px;
+      //   }
+      //   .continueText {
+      //     font-size: var(--XSmall);
+      //     font-weight: var(--font-bold);
+      //   }
+      //   .backBtn {
+      //     width: 100%;
+      //     max-width: 344px;
+      //     background: var(--purple4);
+      //   }
+      //   .backText {
+      //     color: var(--blue1);
+      //     font-weight: var(--font-bold);
+      //     font-size: var(--XSmall);
+      //   }
+      // }
+      .accText {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--black2);
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        .signIn {
+          font-weight: var(--font-bold);
+          color: var(--blue1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

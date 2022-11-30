@@ -1,0 +1,44 @@
+.mainCardContainer{
+    background-color: var(--white1);
+    width: 320px;
+    padding: 38px 20px 16px 20px;
+    border-radius: 10px;
+    margin-left: 26px;
+    .mainCardTitle{
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        margin:0;
+        margin-bottom: 36px;
+        text-align: center;
+    }
+    
+    .mainCardText{
+        display: flex;
+        justify-content: space-between;
+        .mainCardTextName{
+            font-size: var(--XXSmall);
+            font-weight: var(--font-normal);
+            margin: 17px 0;
+            text-align: left;
+            text-transform: uppercase;
+            color: var(--black2);
+            line-height: 20px;
+        } 
+        .mainCardTextValue{
+            font-size: var(--XXSmall);
+            font-weight: var(--font-light);
+            text-align: right;
+            color: var(--blue5);
+            margin: 17px 0;
+            line-height: 18px;
+            .mainCardTextSubValue{  
+                font-weight: var(--font-bold);
+                padding-right: 6px;
+            }
+        }
+    }
+    .dividerMarginBT{
+        background: var(--grey18);
+        margin: 0;
+    }
+}

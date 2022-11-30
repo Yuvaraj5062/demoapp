@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100% !important;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#root {
+  overflow-y: auto;
+  height: 100%;
+  /* position: relative; */
+}
+html {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+:root {
+  --XXXSmall: 12px;
+  --XXSmall: 14px;
+  --XSmall: 16px;
+  --small: 18px;
+  --medium: 20px;
+  --large: 22px;
+  --XLarge: 24px;
+  --XXLarge: 28px;
+  --XXXLarge: 30px;
+  --XXXXLarge: 40px;
+  --XXXXXLarge: 50px;
+  --XXXXXXLarge: 54px;
+  --jumboFontSize: 60px;
+  --veryBigFontSize: 250px;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --white1: #ffffff;
+  --white2: #fffaed;
+  --white3: #fff8f8;
+  --white4:#F7F7F7;
+  --white5:#ECECEC;
+  --grey1: #9c9ca6;
+  --grey2: #f4f5f7;
+  --grey3: #8a8d9f;
+  --grey4: #d9d9d9;
+  --grey5: #f7f8f8;
+  --grey6: #ebeced;
+  --grey7: #f9f9f9;
+  --grey8: #f3f3f3;
+  --grey9: #9C9CA6;
+  --grey10: #F5F6F7;
+  --grey11: #d9dade;
+  --grey12:#67676A;
+  --grey13:#C4C4C4;
+  --grey14:#DBDBDB;
+  /* --grey15:#F7F7F7; */ /* --white4 */
+  --grey16:#f8f8f8;
+  --grey17:#d5d4d4;
+  --grey18:#dfdfdf;
+  --blue1: #5735d4;
+  --blue2: #6243d1;
+  --blue3: #301e72;
+  --blue4: #522ed2;
+  --blue5: #212558;
+  --blue6: #552DCF;
+  --blue7: #0C0522;
+  --purple1: #2a1a65;
+  --purple2: #100633;
+  --purple3: #392972;
+  --purple4: #ebe6fe;
+  --purple5: #e2dcdc;
+  --purple6: #eeebfb;
+  --purple7: #A793E8;
+  --purple8: #c2b9f4;
+  --black1: #474973;
+  --black2: #262b2e;
+  --black3: #15294b;
+  --black4:#000000;
+  --black5:#595960;
+  --red1: #fe2121;
+  --red2: #ffb7b7;
+  --red3: #ef3838;
+  --green1: #ebfbfb;
+  --green2: #00afaf;
+  --green3: #20c569;
+  --green4: #02882F;
+  --bigFontSize: 150px;
+}
+
+* {
+  font-family: Roboto;
+}

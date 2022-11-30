@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+  .statusModalContainer {
+    padding: 15px 0px 50px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 444px;
+    max-width: 444px;
+    margin: auto;
+    background-color: var(--white1);
+    .statusContainer {
+      text-align: center;
+      .iconContainer {
+        padding-top: 57px;
+        margin-top: 57px;
+      }
+      .statusSuccess {
+        margin: 0;
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        padding: 20px 0px 10px 0px;
+        color: var(--green3);
+      }
+      .statusError {
+        margin: 0;
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        padding: 20px 0px 10px 0px;
+        color: var(--red3);
+      }
+      .statusText {
+        margin: 0;
+        font-size: var(--XSmall);
+        font-weight: var(--font-normal);
+        color: var(--grey1);
+        padding-bottom: 27px;
+      }
+      .btnStyle {
+        width: 100%;
+        max-width: 344px;
+        margin: auto;
+      }
+      .btnTextStyle {
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+      }
+    }
+  }
+}

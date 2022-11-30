@@ -1,0 +1,34 @@
+@media only screen and (min-width: 768px) {
+  .corporateOverviewContainer {
+    background: var(--blue7);
+    padding: 70px 0px 70px 90px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    // margin-bottom: 160px;
+    .mainContainer {
+      width: 55%;
+      .overviewText {
+        font-size: var(--jumboFontSize);
+        font-weight: var(--font-bold);
+        color: var(--white1);
+        margin: 0;
+      }
+      .overviewInfo {
+        font-size: var(--XLarge);
+        font-weight: var(--font-medium);
+        color: var(--white1);
+        padding-top: 12px;
+        line-height: 39px;
+      }
+    }
+    .imageStyle {
+      padding-top: 50px;
+      // background: var(--blue7);
+      height: 370px;
+      position: absolute;
+      right: 0;
+      width: 500px;
+    }
+  }
+}

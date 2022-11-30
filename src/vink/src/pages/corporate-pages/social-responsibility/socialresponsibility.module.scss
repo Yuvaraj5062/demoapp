@@ -1,0 +1,48 @@
+.socialResponsibilityMainContainer{
+    // height: 100%;
+    width: 80%;
+    margin: 40px auto 60px auto;
+    height: 100%;
+    .buttonContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .button{
+                width: 200px;
+                background: var(--white1);
+                border: 1px solid var(--blue1) !important;
+                border-radius: 30px;
+                margin-right: 40px;
+                &:last-of-type{
+                    margin-right: 0px;
+                }
+        }
+        .btnText {
+            font-size: var(--XSmall);
+            color: var(--blue1);
+          }
+    }
+    .maskGroup{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+        // margin: auto;
+    }
+    .paragraph{
+        margin-top: 30px;
+        color: var(--grey1);
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+    }
+    .meetParagraph{
+        margin-top: 30px;
+        color: var(--grey1);
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+        .officeLink{
+            color: var(--blue1);
+            text-decoration: underline;
+        }
+    }
+}

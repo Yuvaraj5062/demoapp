@@ -1,0 +1,38 @@
+@media only screen and (min-width: 768px) {
+  .servicesSolutionsContainer {
+    background: var(--blue7);
+    padding: 70px 0px 90px 90px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 60px;
+
+    .mainContainer {
+      width: 55%;
+
+      .servicesSolutionsText {
+        font-size: var(--jumboFontSize);
+        font-weight: var(--font-bold);
+        color: var(--white1);
+        margin: 0;
+      }
+
+      .servicesSolutionsInfo {
+        font-size: var(--XLarge);
+        font-weight: var(--font-medium);
+        color: var(--white1);
+        padding-top: 12px;
+        line-height: 39px;
+      }
+    }
+
+    .imageStyle {
+      padding-top: 20px;
+      // background: var(--blue7);
+      height: 370px;
+      position: absolute;
+      right: 0;
+      width: 500px;
+    }
+  }
+}

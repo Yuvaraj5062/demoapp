@@ -1,0 +1,223 @@
+.investorRelatoinMainContainer {
+
+  // height: 100%;
+  .investorRelationImageContainer {
+    background-image: url("../../assests/images/i.png");
+    background-image: linear-gradient(180deg,
+        #000 0%,
+        rgba(255, 255, 255, 0) 100%),
+      url("../../assests/images/i.png");
+    //   min-height: 100vh;
+    min-height: 1142px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // background-size: 100% 100%;
+    // width: 100%;
+    .investorRelationContent {
+      width: 90%;
+      margin: auto;
+      padding: 150px 0px;
+
+      .title {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: var(--white1);
+        font-weight: var(--font-bold);
+        font-size: var(--jumboFontSize);
+      }
+
+      .performanceCard {
+        min-height: 370px;
+        width: 100%;
+        max-width: 1285px;
+        background: var(--white1);
+        margin: 150px auto;
+        display: flex;
+
+        .performanceCardLeft {
+          width: 35%;
+          background: var(--blue1);
+          text-align: center;
+
+          .title {
+            color: var(--white1);
+            font-size: var(--medium);
+            font-weight: var(--font-medium);
+            margin-top: 40px;
+          }
+
+          .finicialYear {
+            color: var(--white1);
+            font-weight: var(--font-extrabold);
+            font-size: var(--jumboFontSize);
+          }
+
+          .performanctHighlights {
+            color: var(--white1);
+            font-weight: var(--font-normal);
+            font-size: var(--small);
+            width: 90%;
+            margin: 15px auto;
+            margin-bottom: 0px;
+          }
+        }
+
+        .performanceCardRight {
+          width: 70%;
+          display: flex;
+          align-items: center;
+
+          .investorRelationsCard {
+            width: 250px;
+            margin: 0px 15px;
+
+            .investorRelationsCardTitle {
+              font-weight: var(--font-semibold);
+              font-size: var(--medium);
+              line-height: 25px;
+              color: var(--blue1);
+              margin: 0;
+            }
+
+            .investorRelationsCardDivider {
+              border: none;
+              border-top: 1px solid var(--grey14);
+              margin: 15px 0px 13px;
+            }
+
+            .investorRelationsCardTxtSectionOne {
+              //   padding: 0 25% 0 24%;
+              position: relative;
+
+              .changeContainer {
+                display: flex;
+
+                // align-items: flex-start;
+                .changeContainerRight {
+                  margin-left: 5px;
+
+                  // align-self: flex-start;
+                  .investorRelationsCardTxtSectionOneTxtOne {
+                    font-weight: var(--font-extrabold);
+                    font-size: var(--jumboFontSize);
+                    line-height: 60px;
+                    color: var(--blue1);
+                    margin: 0;
+                  }
+
+                  .investorRelationsCardTxtSectionOneTxtTwo {
+                    font-weight: var(--font-semibold);
+                    font-size: var(--small);
+                    line-height: 16px;
+                    color: var(--blue1);
+                    margin: 5px 0px;
+                  }
+
+                  .investorRelationsCardTxtSectionOneTxtThree {
+                    font-weight: var(--font-normal);
+                    font-size: 15px;
+                    line-height: 16px;
+                    color: var(--grey3);
+                    margin: 0;
+                  }
+                }
+              }
+            }
+
+            .investorRelationsCardTxtSectionTwo {
+              display: flex;
+              align-items: center;
+              margin-top: 22px;
+
+              .investorRelationsCardYear {
+                padding: 20px 10px 20px 0px;
+
+                .investorRelationsCardYearTxt {
+                  font-weight: var(--font-medium);
+                  font-size: 13px;
+                  line-height: 16px;
+                  color: var(--grey3);
+                  margin: 0;
+
+                  &:nth-child(2) {
+                    margin-top: 14px;
+                  }
+                }
+              }
+
+              .investorRelationsCardAmount {
+                padding: 20px 0px;
+                border-left: 1px solid var(--grey1);
+
+                .investorRelationsCardAmountTxt {
+                  margin: 0;
+                  width: 100%;
+                  font-weight: var(--font-medium);
+                  font-size: 13px;
+                  line-height: 16px;
+                  color: var(--white1);
+                  background: var(--blue1);
+                  padding: 4px 60px 3px 9px;
+
+                  &:nth-child(2) {
+                    margin-top: 7px;
+                    background: var(--blue5);
+                    padding-right: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .companyMilestomeText {
+        color: var(--blue5);
+        font-size: var(--XXXLarge);
+        font-weight: var(--font-bold);
+        display: inline-block;
+        width: 58%;
+      }
+
+    }
+
+
+  }
+
+  .threeReasontitle {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 88px;
+    padding-bottom: 47px;
+    width: 80%;
+  }
+
+  .customClassContainer {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .imageContainer {
+    background: var(--white4) !important;
+
+  }
+
+  .imageCart {
+    background: unset;
+    // max-width: 577px;
+  }
+
+  .cardTitle {
+    color: var(--blue5);
+    font-size: var(--XXXLarge);
+    font-weight: var(--font-bold);
+  }
+
+  .cardSubTitleText {
+    color: var(--grey9);
+  }
+}

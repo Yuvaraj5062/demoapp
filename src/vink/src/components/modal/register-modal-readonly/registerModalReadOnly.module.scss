@@ -1,0 +1,190 @@
+@media screen and (min-width: 768px) {
+  .registerContainer {
+    padding: 15px 0px 50px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 87%;
+    max-width: 818px;
+    margin: 30px auto;
+    background-color: var(--white1);
+    height: 450px;
+    overflow-y: scroll;
+    .fieldContainer {
+      padding: 40px 50px 50px 50px;
+      .registerText {
+        font-size: var(--XXLarge);
+        font-weight: var(--font-bold);
+        margin: 0;
+      }
+      .aboutText {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--grey1);
+        padding: 10px 0px 30px 0px;
+        margin: 0;
+      }
+      .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .newApplication {
+          width: 100%;
+          max-width: 344px;
+          background: var(--purple4);
+          // margin-left: 20px;
+          margin: 0px 7px;
+          border-radius: 25px;
+        }
+        .newApplicationText {
+          color: var(--blue1);
+          font-size: var(--XSmall);
+          font-weight: var(--font-bold);
+        }
+        .savedApplication {
+          width: 100%;
+          max-width: 344px;
+          border-radius: 25px;
+          margin: 0px 7px;
+        }
+        .savedApplicationText {
+          color: var(--white2);
+          font-size: var(--XSmall);
+          font-weight: var(--font-bold);
+        }
+      }
+      .divider {
+        max-width: 718px;
+        margin: 30px 0px;
+        color: var(--purple5);
+        height: 1px;
+        border: none;
+      }
+      .accType {
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        margin: 0;
+        padding-bottom: 15px;
+      }
+      .dropDownContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .accountType {
+          width: 50%;
+          max-width: 344px;
+          margin-right: 20px;
+          caret-color: transparent;
+        }
+        .accountName {
+          width: 50%;
+          max-width: 344px;
+          caret-color: transparent;
+        }
+      }
+      .accessAccountData {
+        width: 50%;
+        max-width: 344px;
+        caret-color: transparent;
+      }
+
+      .personalInfo,
+      .enterRefNo {
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        margin: 0;
+        padding-bottom: 15px;
+      }
+      .dropdwonTextField {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .countryOfBirth {
+          margin-bottom: 20px;
+          margin-right: 20px;
+          width: 50%;
+          max-width: 344px;
+          caret-color: transparent;
+        }
+        .inputField1 {
+          margin-bottom: 20px;
+          width: 50%;
+          max-width: 344px;
+          caret-color: transparent;
+        }
+        .inputField {
+          margin-bottom: 20px;
+          width: 50%;
+          max-width: 344px;
+          margin-right: 20px;
+          caret-color: transparent;
+        }
+        // .dropdownFieldContainer {
+        //   margin-right: 20px;
+        //   width: 50%;
+        //   max-width: 344px;
+        //   .countryOfBirth {
+        //     margin-bottom: 20px;
+        //   }
+        //   .dropdownValue {
+        //     color: var(--grey3);
+        //   }
+        //   .inputField {
+        //     margin-bottom: 20px;
+        //   }
+        // }
+        // .inputFieldContainer {
+        //   width: 50%;
+        //   max-width: 344px;
+        //   .inputField1 {
+        //     margin-bottom: 20px;
+        //   }
+        //   .inputField {
+        //     margin-bottom: 20px;
+        //   }
+        // }
+      }
+      .continueBtn {
+        padding: 16px 0px;
+        margin: auto;
+        width: 100%;
+        max-width: 344px;
+        justify-content: center;
+        border-radius: 25px;
+        margin-top: 10px;
+      }
+      .textFieldContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .inputField1 {
+          margin-bottom: 20px;
+          width: 50%;
+          max-width: 344px;
+          margin-right: 20px;
+        }
+        .inputField {
+          margin-bottom: 20px;
+          width: 50%;
+          max-width: 344px;
+        }
+      }
+      .btnText {
+        font-weight: var(--font-bold);
+      }
+      .accText {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--black2);
+        text-align: center;
+        .signIn {
+          font-weight: var(--font-bold);
+          color: var(--blue1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

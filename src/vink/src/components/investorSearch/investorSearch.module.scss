@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+  .investorSearch {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    .investorInput {
+      width: 360px;
+      height: 30px;
+      // right: 0;
+      border-radius: 30px;
+      border: 2px solid var(--grey14);
+      padding-left: 10px;
+      &::placeholder {
+        font-size: var(--XXSmall);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .investorSearchBtn {
+      width: 100px;
+      height: 35px;
+      position: absolute;
+      right: 0;
+      border-radius: 30px;
+      &:hover {
+        background: var(--blue1);
+      }
+    }
+    .investorSearchBtnText {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+    }
+  }
+}

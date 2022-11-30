@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+  .startNowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 41px 0px 43px 0px;
+    .textContent {
+      color: var(--grey1);
+      padding-right: 117px;
+
+      font-weight: var(--font-normal);
+      .textData {
+        margin: 0px;
+        font-size: var(--XXLarge);
+        padding-bottom: 4px;
+      }
+
+      .text {
+        margin: 0px;
+        font-size: var(--small);
+      }
+    }
+    .startBtn {
+      padding: 13px 0px;
+      border-radius: 34px;
+    }
+    .startBtnIcon {
+      padding: 2px 10px;
+    }
+  }
+}

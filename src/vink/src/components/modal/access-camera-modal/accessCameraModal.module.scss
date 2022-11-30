@@ -1,0 +1,93 @@
+@media screen and (min-width: 768px) {
+  .accessCameraContainer {
+    padding: 15px 0px 53px 0px;
+    background: var(--white1);
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    max-width: 818px;
+    width: 78%;
+    margin: 30px auto;
+    height: 450px;
+    overflow-y: scroll;
+    background-color: var(--white1);
+    .fieldContainer {
+      padding: 0px 50px;
+      margin-top: 40px;
+      .signupText {
+        font-size: var(--XXLarge);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        padding: 0px 0px 30px 0px;
+        margin: 0;
+        margin-top: 40px;
+      }
+      .permissionText {
+        color: var(--blue1);
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+        margin: 0;
+      }
+      .verificationText {
+        color: var(--grey1);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        padding: 11px 0px 40px 0px;
+        margin: 0;
+      }
+      .imageContainer {
+        max-width: 517px;
+        // width: 70%;
+        margin: auto;
+        height: 340px;
+        // text-align: center;
+        // margin: 0px auto;
+        // padding: 0px 100px;
+        .cameraAccessImage {
+          width: 97%;
+          max-width: 517px;
+        }
+      }
+      .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+        justify-content: space-between;
+        .continueBtn {
+          max-width: 344px;
+          width: 46%;
+          border: 1px solid var(--white1) !important;
+          border-radius: 25px;
+        }
+        .continueText {
+          color: var(--white2);
+          font-size: var(--XSmall);
+          font-weight: var(--font-bold);
+        }
+        .withoutVerificationBtn {
+          max-width: 344px;
+          width: 46%;
+          background: var(--purple4);
+          border-radius: 25px;
+        }
+        .withoutVerificationText {
+          color: var(--blue1);
+          font-size: var(--XSmall);
+          font-weight: var(--font-bold);
+        }
+      }
+      .haveAccount {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--black2);
+        margin: 0;
+        text-align: center;
+        padding-top: 10px;
+        .signIn {
+          font-weight: var(--font-bold);
+          color: var(--blue1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

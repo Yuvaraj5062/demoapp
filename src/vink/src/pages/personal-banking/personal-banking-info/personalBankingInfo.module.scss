@@ -1,0 +1,24 @@
+@media only screen and (min-width: 768px) {
+  .personalBankingInfoContainer {
+    background-color: var(--blue5);
+    .imageStyle {
+      width: 100%;
+    }
+    .infoContainer {
+      color: var(--white1);
+      margin: auto;
+      width: 80%;
+      padding: 30px 0px 40px 0px;
+      .bankingTitle {
+        font-size: var(--jumboFontSize);
+        font-weight: var(--font-bold);
+        padding-bottom: 12px;
+      }
+      .bankingInfoText {
+        line-height: 39px;
+        font-size: var(--XLarge);
+        font-weight: var(--font-medium);
+      }
+    }
+  }
+}

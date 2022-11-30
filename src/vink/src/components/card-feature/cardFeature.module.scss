@@ -1,0 +1,35 @@
+@media only screen and (min-width: 768px) {
+  .cardFeatureContainer {
+    text-align: center;
+    width: 78%;
+    // align-self: center;
+    justify-self: center;
+    .benefitImageContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../../assests/svg/backgroundVector.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: auto;
+      width: 122px;
+      height: 127px;
+      &:hover {
+        background-image: url("../../assests/svg/backgroundHoverVector.svg");
+      }
+    }
+    .featureText {
+      font-size: var(--medium);
+      font-weight: var(--font-bold);
+      color: var(--blue5);
+      margin: 0;
+      padding: 34px 0px 10px 0px;
+    }
+    .descriptionText {
+      font-size: var(--XSmall);
+      font-weight: var(--font-medium);
+      color: var(--grey1);
+      margin: 0;
+    }
+  }
+}

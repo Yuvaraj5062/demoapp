@@ -1,0 +1,35 @@
+@media only screen and (min-width: 768px) {
+  .responsibilitiesContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    .titleStyle {
+      font-size: var(--XXXLarge);
+    }
+    color: var(--grey1);
+    font-size: var(--small);
+    font-weight: var(--font-normal);
+    .detailInfoContainer {
+      display: flex;
+      flex-direction: row;
+      padding-top: 40px;
+      justify-content: space-between;
+      text-align: left;
+      .containerOne {
+        width: 48%;
+        .paragraphTwo,
+        .paragraphFour {
+          padding: 30px 0px;
+        }
+      }
+      .containerTwo {
+        width: 48%;
+        .paragraphFive {
+          padding: 30px 0px;
+        }
+      }
+    }
+  }
+}

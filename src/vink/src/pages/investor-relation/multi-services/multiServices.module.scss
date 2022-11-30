@@ -1,0 +1,64 @@
+@media only screen and (min-width: 768px) {
+  .multiServicesContainer {
+    background-color: var(--white4);
+    padding: 80px 0px;
+
+    .mainContainer {
+      width: 80%;
+      margin: auto;
+      max-width: 1200px;
+      margin: auto;
+      .titleStyle {
+        font-size: var(--XXLarge);
+      }
+      .listContainer {
+        margin: 0;
+        margin-top: 30px;
+        display: flex;
+        .list {
+          display: flex;
+          align-items: center;
+          margin-right: 50px;
+          .listItem {
+            font-weight: var(--font-normal);
+            font-size: var(--XSmall);
+            color: var(--black1);
+            margin-left: 50px;
+          }
+        }
+      }
+      .servicesContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 60px;
+        .servicesInfo {
+          width: 50%;
+          margin-right: 20px;
+          font-size: var(--small);
+          font-weight: var(--font-normal);
+          color: var(--grey1);
+          .titleStyle {
+            font-size: var(--XXXXLarge);
+          }
+          .paragraphOne {
+            padding: 10px 0px 20px 0px;
+            color: var(--black5);
+          }
+          .paragraphTwo {
+            padding-bottom: 40px;
+          }
+          .titleVision {
+            font-size: var(--XXLarge);
+          }
+          .paragraphThree {
+            padding: 10px 0px 50px 0px;
+          }
+          .paragraphFour {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

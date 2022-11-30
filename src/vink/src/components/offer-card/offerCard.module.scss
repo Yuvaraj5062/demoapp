@@ -1,0 +1,46 @@
+@media only screen and (min-width: 768px) {
+  .offerCardContainer {
+    background-color: var(--white1);
+    text-align: center;
+    padding: 45px 15px;
+    // width: 260px;
+    width: 80%;
+    margin: 0px 10px;
+    // margin-right: 20px;
+    .rewardCredit {
+      font-weight: var(--font-light);
+      font-size: var(--XLarge);
+      color: var(--blue5);
+      margin: 0;
+      line-height: 29px;
+    }
+    .pointsText {
+      font-weight: var(--font-light);
+      font-size: var(--small);
+      color: var(--blue6);
+      margin: 0;
+      padding: 8px 0px 15px 0px;
+      line-height: 21px;
+    }
+    .imageStyle {
+      width: 70%;
+    }
+    .infoDetails {
+      font-weight: var(--font-normal);
+      font-size: var(--XSmall);
+      line-height: 19px;
+      color: var(--grey1);
+      margin: 0;
+      padding: 35px 0px;
+    }
+    .applyBtn {
+      margin: auto;
+      width: 142px;
+      border-radius: 100px;
+    }
+    .applyBtnText {
+      font-size: var(--medium);
+      font-weight: var(--font-normal);
+    }
+  }
+}

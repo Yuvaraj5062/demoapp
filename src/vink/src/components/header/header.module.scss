@@ -1,0 +1,96 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  height: 106px;
+  // background: var(--grey7);
+  background-color: rgb(231, 237, 231);
+  justify-content: space-between;
+
+  .headerContent {
+    padding: 30px 20px;
+    .logoStyle {
+      cursor: pointer;
+    }
+  }
+  .loginSearch {
+    display: flex;
+    flex-direction: row;
+    padding: 37px 20px 36px 0px;
+    .mobileSearchIcon {
+      padding-right: 15px;
+    }
+    .mobileLoginIcon {
+      padding-right: 15px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .headerContainer {
+    padding: 29px 59px 29px 59px;
+    align-items: center;
+    height: unset;
+    background: none;
+
+    .headerContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      .menuText {
+        padding: 0px 19px 0px 22px;
+        color: var(--grey1);
+        font-size: var(--XSmall);
+        font-weight: var(--font-medium);
+      }
+      .divider {
+        margin: 0px 19px;
+        height: 49px;
+        width: 1px;
+      }
+      .headerText {
+        padding: 0px 19px;
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+        color: var(--black1);
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .headerTextActive {
+        padding: 0px 19px;
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+        color: var(--blue1);
+        cursor: pointer;
+      }
+      .marketplace {
+        padding: 0px 5px;
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+        color: var(--black1);
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .marketplaceActive {
+        padding: 0px 5px;
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+        color: var(--blue1);
+        cursor: pointer;
+      }
+    }
+    .loginSearch {
+      align-items: center;
+      padding: 0px;
+      .searchIcon {
+        padding-right: 20px;
+      }
+      .loginBtn {
+        padding: 8px 0px;
+        width: 106px;
+      }
+      .icon {
+        padding-right: 5px;
+      }
+    }
+  }
+}

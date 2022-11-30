@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+  .characterMainContainer {
+    background-color: var(--blue5);
+    padding: 100px 0px;
+    .characterCommitmentText {
+      color: var(--white1);
+      font-size: var(--XXXXXXLarge);
+      font-weight: var(--font-bold);
+      text-align: center;
+    }
+    .characterCommitmentCardContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 40px;
+      width: 80%;
+      margin: auto;
+    }
+  }
+  // }
+}

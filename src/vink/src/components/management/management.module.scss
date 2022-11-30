@@ -1,0 +1,19 @@
+@media only screen and (min-width: 768px) {
+  .managementContainer {
+    text-align: center;
+    .titleStyle {
+      font-size: var(--XXXLarge);
+    }
+    .imageContainer {
+      padding: 40px 0px 100px 0px;
+      display: grid;
+      // grid-template-rows: (2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-row-gap: 60px;
+      &:last-of-type {
+        grid-column: 1 / span 2;
+        margin: auto;
+      }
+    }
+  }
+}

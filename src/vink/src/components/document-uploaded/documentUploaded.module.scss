@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+  .mainContainer {
+    padding: 18px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .listContainer {
+      margin: 0;
+      padding-left: 15px;
+      font-size: var(--XXSmall);
+      font-weight: var(--font-semibold);
+      color: var(--black2);
+      .listData {
+        list-style-type: none;
+        .spanText {
+          padding-right: 5px;
+        }
+      }
+    }
+    .viewBtn {
+      padding-right: 12px;
+      cursor: pointer;
+    }
+    .deleteBtn {
+      cursor: pointer;
+    }
+  }
+  .dividerStyle {
+    height: 1px;
+    background: var(--grey8);
+  }
+}

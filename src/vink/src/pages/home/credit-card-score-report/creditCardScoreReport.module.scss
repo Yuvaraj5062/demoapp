@@ -1,0 +1,27 @@
+@media only screen and (min-width: 768px) {
+  .creditScoreContainer {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+    .applyText {
+      color: var(--blue5);
+      font-size: var(--XXXXXXLarge);
+      font-weight: var(--font-bold);
+      margin: 0;
+      padding-bottom: 70px;
+      text-align: center;
+    }
+    .cardContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      //   justify-content: space-between;
+      .cardReport {
+        margin-right: 10px;
+      }
+      .cardScore {
+        margin-left: 10px;
+      }
+    }
+  }
+}

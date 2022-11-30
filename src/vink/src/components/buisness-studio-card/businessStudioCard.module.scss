@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) {
+  .businessStudioCardContainer {
+    padding: 33px 26px 40px 26px;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    width: 300px;
+    .titleStyle {
+      margin: 0;
+      font-size: var(--XLarge);
+      font-weight: var(--font-medium);
+      color: var(--blue1);
+      padding: 16px 0px 13px 0px;
+    }
+    .desciptionText {
+      margin: 0;
+      font-size: var(--small);
+      font-weight: var(--font-normal);
+      color: var(--grey1);
+    }
+  }
+}

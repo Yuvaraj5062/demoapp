@@ -1,0 +1,119 @@
+@media screen and (min-width: 768px) {
+    .inputFieldContainer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 344px;
+      // flex: 1;
+      width: 100%;
+      margin-top: 15px;
+      .label{
+        color: var(--grey12);
+        font-size: var(--XSmall);
+        font-size: var( --font-normal);
+      }
+      .inputField {
+        padding: 10px 20px;
+        // height: 46px;
+        margin-top: 10px;
+        border: 1px solid var(--grey11);
+        outline: none;
+        border-radius: 10px;
+        color: var(--grey9);
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+        // border: none;
+      }
+      .textarea {
+        padding: 10px 20px;
+        // height: 46px;
+        margin-top: 10px;
+        border: 1px solid var(--grey11);
+        outline: none;
+        border-radius: 10px;
+        color: var(--grey9);
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+        // border: none;
+      }
+      .inputFieldSelect {
+        // border-radius: 25px;
+        // background-color: var(--grey2);
+        margin-top: 10px;
+        border: 1px solid var(--grey11);
+        padding: 10px 20px;
+        height: 46px;
+        outline: none;
+        border-radius: 10px;
+        color: var(--grey9);
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+        // border: none;
+        // padding: 10px 16px;
+        // border: 0;
+        // border-right: 16px solid transparent;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+  
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+      ::placeholder {
+        color: var(--grey3);
+        font-size: var(--XSmall);
+        font-weight: var(--font-medium);
+      }
+    }
+    .inputFieldContainer option {
+      // background-color: red !important;
+      // border-radius: 10px !important;
+      // border: 1px solid green !important;
+      color: #262b2e;
+      background-color: var(--white1);
+      font-weight: 500;
+      font-size: 16px;
+      padding: 10px;
+      border: none !important;
+      outline: unset !important;
+      border: none !important;
+      offset: none !important;
+      -webkit-user-select: none !important;
+  
+      user-select: none !important;
+    }
+    // .inputFieldContainer option:focus-visible {
+    //   color: black !important;
+    //   background-color: red !important;
+    // }
+    // .inputFieldContainer option :hover {
+    //   // -webkit-background-clip: red;
+    //   background-color: aqua !important;
+    //   color: purple !important;
+    // }
+    // .inputFieldContainer select {
+    //   // color: rebeccapurple !important;
+    //   // & :focus {
+    //   //   background-color: red !important;
+    //   // }
+    //   // -webkit-appearance: none !important;
+    //   // -webkit-margin-collapse: collapse;
+    // }
+    // .inputFieldContainer select :focus {
+    //   background-color: red !important;
+    // }
+    .customClass {
+      position: absolute;
+      right: 10px;
+      top: 11px;
+    }
+    .errorText {
+      font-size: var(--XXXSmall);
+      color: var(--red1);
+      padding: 5px 0px 0px 20px;
+      // position: absolute;
+    }
+  }
+  

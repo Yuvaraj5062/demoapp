@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+  .bonusPointCard {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    // align-items: center;
+    .pointInfo {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      .pointText {
+        margin: 0;
+        font-weight: var(--font-light);
+        font-size: var(--XXXXXLarge);
+        color: var(--blue5);
+        padding-bottom: 8px;
+      }
+      .titleText {
+        margin: 0;
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+        color: var(--grey1);
+      }
+    }
+  }
+}

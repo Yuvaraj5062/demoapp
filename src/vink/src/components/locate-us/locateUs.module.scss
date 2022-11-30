@@ -1,0 +1,42 @@
+@media only screen and (min-width: 768px) {
+  .locateUsMainContainer {
+    margin: auto;
+    width: 85%;
+    margin-bottom: 20px;
+
+    .quickHeadsUp {
+      width: 80%;
+      margin: auto;
+      color: var(--black4);
+      font-size: var(--XXXXXXLarge);
+      font-weight: var(--font-bold);
+      padding-top: 130px;
+    }
+    .LocateUsQuickLinksMain {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 44px;
+
+      .listData {
+        list-style: none;
+        .LocateUsQuickLinksMenuLinks {
+          display: flex;
+          color: var(--grey9);
+          font-size: var(--medium);
+          align-items: center;
+          padding-bottom: 20px;
+        }
+        .LocateUsQuickLinksMenuTitle {
+          color: var(--blue5);
+          font-size: 23px;
+          font-weight: var(--font-medium);
+          padding-bottom: 25px;
+        }
+        .rightIcon {
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@media only screen and (min-width: 768px) {
+  .CharacterCommitmentContainer {
+    background-color: var(--white1);
+    width: 561px;
+    margin: 0px 20px;
+
+    .characterCommitmentImg {
+      width: 561px;
+      height: 388px;
+    }
+
+    .CharacterCommitmentContent {
+      padding: 40px 40px 50px 40px;
+
+      .characterCommitmentTitle {
+        font-weight: var(--font-light);
+        font-size: var(--XXXLarge);
+        color: var(--blue5);
+        margin: 0;
+        line-height: 29px;
+      }
+
+      .characterCommitmentInfo {
+        font-weight: var(--font-normal);
+        font-size: var(--small);
+        line-height: 29px;
+        color: var(--grey1);
+        margin: 0;
+        padding: 23px 0px 15px 0px;
+        height: 120px;
+      }
+
+      .commitmentBtn {
+        width: 275px;
+        border-radius: 30px;
+
+        &:hover {
+          background: var(--blue6);
+        }
+      }
+
+      .CommitmentBtnText {
+        font-size: var(--XSmall);
+        font-weight: var(--font-medium);
+      }
+    }
+  }
+}

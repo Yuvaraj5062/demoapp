@@ -1,0 +1,36 @@
+.OnlineBankingCard {
+  .OnlineBankingCardTitle {
+    color: var(--blue5);
+    font-weight: var(--font-bold);
+    font-size: var(--XXXXXLarge);
+    line-height: 61px;
+    margin: 0px 0px 21px;
+  }
+
+  .OnlineBankingCardList {
+    padding-left: 20px;
+    .OnlineBankingCardListItem {
+      font-weight: var(--font-normal);
+      font-size: var(--small);
+      line-height: 47px;
+      color: var(--grey1);
+      &::marker {
+        color: var(--blue1);
+      }
+    }
+  }
+  .OnlineBankingCardTxt {
+    font-weight: var(--font-normal);
+    font-size: var(--small);
+    line-height: 29px;
+    color: var(--grey1);
+  }
+  .OnlineBankingCardBtn {
+    width: 284px;
+    height: 45px;
+    margin: 37px 0px 60px 0px;
+  }
+  .OnlineBankingCardBtnTxt {
+    font-weight: var(--font-bold);
+  }
+}

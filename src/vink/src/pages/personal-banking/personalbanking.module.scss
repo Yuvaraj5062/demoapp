@@ -1,0 +1,99 @@
+@media only screen and (min-width: 768px) {
+  .paragraphContainer {
+    background: var(--blue5);
+  }
+  .title {
+    color: var(--white1) !important;
+  }
+  .info {
+    color: var(--white1) !important;
+  }
+  .paraContainer {
+    padding: 100px 0px;
+    .solutionParagraph {
+      background: var(--white1);
+    }
+    .customClassFormain {
+      border: 1px solid var(--grey17);
+      padding: 70px 0px;
+    }
+  }
+  .bankingWithUs {
+    text-align: center;
+  }
+  .atmAndLocations {
+    text-align: center;
+    margin-top: 70px;
+    .atmLocationContainer {
+      margin: 50px 0px;
+      display: flex;
+      justify-content: center;
+      .location {
+        width: 400px;
+        margin-right: 80px;
+        text-align: start;
+        .locationText {
+          text-align: start;
+          color: var(--blue5);
+          font-size: var(--XXXLarge);
+          font-weight: var(--font-bold);
+        }
+        .listContainer{
+          margin: 0;
+          margin-top: 18px;
+          display: flex;
+          .list{
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            .listItem{
+              font-weight: var(--font-normal);
+              font-size: var(--XSmall);
+              color: var(--black1);
+              margin-left: 10px;
+            }
+          }
+        }
+        button{
+          width: 220px;
+          margin-top: 80px;
+        }
+        .buttonText{
+          font-weight: var(--font-bold);
+        }
+      }
+      .atms {
+        width: 400px;
+        margin-left: 80px;
+        text-align: start;
+        // flex: 1;
+        .atmText {
+          color: var(--blue5);
+          font-size: var(--XXXLarge);
+          font-weight: var(--font-bold);
+        }
+        .atmContent{
+          font-weight: var(--font-normal);
+          font-size: var(--small);
+          line-height: 29px;
+          color: var(--grey1);
+          margin: 0;
+          margin-top: 15px;
+        }
+        button{
+          width: 220px;
+          margin-top: 15px;
+        }
+        .buttonText{
+          font-weight: var(--font-bold);
+        }
+      }
+  
+    }
+    .divider {
+      height: 280px;
+      border: 1px solid var(--grey2);
+      margin: 0;
+    }
+  }
+}

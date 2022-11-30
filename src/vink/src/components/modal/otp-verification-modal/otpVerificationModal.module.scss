@@ -1,0 +1,141 @@
+@media screen and (min-width: 768px) {
+  .verificationContainer {
+    padding: 15px 0px 50px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 36%;
+    max-width: 444px;
+    margin: 30px auto;
+    height: 450px;
+    overflow-y: scroll;
+    background-color: var(--white1);
+    .fieldContainer {
+      padding: 40px 50px 30px 50px;
+      .verificationText {
+        font-size: var(--XXLarge);
+        font-weight: var(--font-bold);
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      .enterCode {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--grey1);
+        margin: 0;
+      }
+    }
+    .otpTextContainer {
+      text-align: center;
+      padding-bottom: 25px;
+      .otpText {
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        margin: 0;
+        padding-bottom: 7px;
+      }
+      .codeText {
+        font-size: var(--XSmall);
+        font-weight: var(--font-normal);
+        color: var(--black2);
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      .phoneNumber {
+        font-size: var(--XSmall);
+        font-weight: var(--font-normal);
+        color: var(--blue5);
+        margin: 0;
+      }
+    }
+    .otpContainer {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 23px;
+      justify-content: center;
+      margin: auto;
+    }
+    .resendCode {
+      font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+      color: var(--black3);
+      padding-bottom: 20px;
+      text-align: center;
+      margin: 0;
+      .resendCodeText {
+        cursor: pointer;
+        color: var(--blue1);
+        font-weight: var(--font-bold);
+        // text-decoration: underline;
+        // text-decoration-color: var(--blue1) ;
+      }
+      .resendCodeTextDeactive {
+        cursor: pointer;
+        color: var(--black2);
+        font-weight: var(--font-normal);
+        // text-decoration: underline;
+        // text-decoration-color: var(--black2) ;
+      }
+    }
+    .attempt {
+      text-align: center;
+      font-size: var(--XSmall);
+      font-weight: var(--font-medium);
+      margin: 0;
+      color: var(--black3);
+      .timeText {
+        color: var(--red1);
+      }
+    }
+    .warningText {
+      padding: 20px;
+      margin: 20px 60px;
+      font-size: var(--XSmall);
+      font-weight: var(--font-semibold);
+      color: var(--black3);
+      text-align: center;
+      background-color: var(--grey2);
+      border: 1px solid var(--grey6);
+      border-radius: 15px;
+      .warning {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+      }
+      .consecutive {
+        font-size: var(--XSmall);
+        font-weight: var(--font-semibold);
+      }
+    }
+    .accountLock {
+      padding: 20px;
+      margin: 20px 60px;
+      font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+      background: var(--white3);
+      border: 1px solid var(--red2);
+      border-radius: 15px;
+      color: var(--red1);
+    }
+    .continueBtn {
+      padding: 16px 0px;
+      width: 100%;
+      max-width: 344px;
+      justify-content: center;
+      border-radius: 25px;
+      margin: 30px auto 18px auto;
+    }
+    .btnText {
+      font-weight: var(--font-bold);
+    }
+    .alreadyHaveAcc {
+      font-size: var(--XXSmall);
+      color: var(--black2);
+      text-align: center;
+      .signIn {
+        font-weight: var(--font-bold);
+        color: var(--blue1);
+        cursor: pointer;
+      }
+    }
+  }
+}

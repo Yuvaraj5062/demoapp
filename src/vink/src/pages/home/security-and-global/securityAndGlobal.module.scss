@@ -1,0 +1,137 @@
+@media only screen and (min-width: 768px) {
+  .securityContainer {
+    .mainContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+
+      .protectedContent {
+        padding: 53px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+
+        .protectedTextContainer {
+          width: 50%;
+
+          .protectedText {
+            font-size: 54px;
+            font-weight: var(--font-bold);
+            color: var(--blue5);
+            margin: 0px;
+            padding-bottom: 47px;
+            // width: 60%;
+          }
+
+          .creditIntrestText {
+            font-weight: var(--font-normal);
+            font-size: var(--small);
+            color: var(--grey1);
+            margin: 0px;
+            padding-bottom: 14px;
+          }
+
+          .creditCardBuyText {
+            font-weight: var(--font-normal);
+            font-size: var(--small);
+            color: var(--grey1);
+            margin: 0px;
+            padding-bottom: 39px;
+          }
+
+          .btnStyle {
+            width: 234px;
+            border-radius: 100px;
+            &:hover {
+              background: var(--blue6);
+            }
+          }
+          .btnText {
+            font-size: var(--large);
+          }
+        }
+
+        .imageContainer {
+          width: 350px;
+          height: 500px;
+          padding-right: 57px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  //Map container
+  // @media only screen and (min-width: 768px) {
+  .mapMainContainer {
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+
+    .mapContent {
+      padding: 53px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      align-items: center;
+
+      .mapTextContainer {
+        width: 50%;
+        // margin-right: 20px;
+
+        .everywhereText {
+          font-size: 54px;
+          font-weight: var(--font-bold);
+          color: var(--blue5);
+          margin: 0px;
+          padding-bottom: 47px;
+          // width: 100%;
+        }
+
+        .cardPaymentText {
+          font-size: var(--small);
+          font-weight: var(--font-normal);
+          color: var(--grey1);
+          margin: 0px;
+          padding-bottom: 11px;
+        }
+
+        .cardIssueText {
+          font-size: var(--small);
+          font-weight: var(--font-normal);
+          color: var(--grey1);
+          margin: 0px;
+          padding-bottom: 32px;
+        }
+
+        .detailBtnStyle {
+          // padding: 10px 0px;
+          width: 234px;
+          border-radius: 100px;
+          &:hover {
+            background: var(--blue6);
+          }
+        }
+        .detailBtnText {
+          font-size: var(--large);
+        }
+      }
+
+      .mapContainer {
+        width: 50%;
+        // height: 350px;
+        padding-right: 57px;
+      }
+    }
+  }
+  // }
+}

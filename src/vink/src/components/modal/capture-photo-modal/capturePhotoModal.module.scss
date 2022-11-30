@@ -1,0 +1,102 @@
+@media screen and (min-width: 768px) {
+  .capturePhotoContainer {
+    padding: 15px 0px 50px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 818px;
+    height: 450px;
+    overflow-y: scroll;
+    background-color: var(--white1);
+    .fieldContainer {
+      padding: 20px 50px 0px 50px;
+      .pictureContainer {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+       
+        .videoContainer {
+          width: 100%;
+        }
+        .defaultCam{
+          
+          // .cameraStyle {
+          //  padding: 50px 0px;
+          // }
+           background-color: #F0F0F1;
+           padding: 50px 0px;
+           border-radius: 12px;
+         }
+      }
+      .register {
+        font-size: var(--XXLarge);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        margin: 0;
+      }
+      .permissionText {
+        padding: 30px 0px 10px 0px;
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+        color: var(--blue1);
+        margin: 0;
+      }
+      .deviceCamera {
+        margin: 0;
+        color: var(--grey1);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        padding-bottom: 40px;
+      }
+      .btnContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        .takePicBtn {
+          width: 100%;
+          max-width: 344px;
+          border-radius: 25px;
+        }
+        .takePicText {
+          font-weight: var(--font-bold);
+          font-size: var(--XSmall);
+        }
+        .retakeBtn {
+          width: 100%;
+          max-width: 344px;
+          background: var(--purple4);
+          margin-right: 20px;
+          border-radius: 25px;
+        }
+        .retakeText {
+          color: var(--blue1);
+          font-weight: var(--font-bold);
+          font-size: var(--XSmall);
+        }
+        .continueBtn {
+          width: 100%;
+          max-width: 344px;
+          border-radius: 25px;
+        }
+        .continueText {
+          font-weight: var(--font-bold);
+          font-size: var(--XSmall);
+        }
+      }
+      .accText {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--black2);
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        .signIn {
+          font-weight: var(--font-bold);
+          color: var(--blue1);
+        }
+      }
+    }
+  }
+}

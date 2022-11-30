@@ -1,0 +1,192 @@
+@media screen and (min-width: 768px) {
+  .bankingAppContainer {
+    padding: 15px 0px 50px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 87%;
+    max-width: 818px;
+    background-color: var(--white1);
+    height: 450px;
+    overflow-y: scroll;
+    .mainContainer {
+      padding: 20px 50px 0px 50px;
+      .signUp {
+        font-size: var(--XXLarge);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        margin: 0;
+      }
+      .bankingApplication {
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+        color: var(--blue1);
+        padding: 30px 0px 10px 0px;
+        margin: 0;
+      }
+      .accountNumber {
+        margin: 0;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        color: var(--grey1);
+        .numberText {
+          font-weight: var(--font-bold);
+          color: var(--blue1);
+        }
+      }
+      .uploadText {
+        margin: 0;
+        color: var(--black2);
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        padding: 30px 0px 13px 0px;
+        .dateText {
+          color: var(--blue1);
+        }
+      }
+      .documentSize {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        color: var(--grey1);
+        padding-bottom: 20px;
+        margin: 0;
+        .sizeText {
+          color: var(--blue1);
+        }
+      }
+      .divider {
+        margin: 0;
+        height: 1px;
+        background: var(--grey8);
+        border: none;
+      }
+      .selectWay {
+        margin: 0;
+        color: var(--black2);
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        padding: 20px 0px 10px 0px;
+      }
+      .notHaveDocument {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        color: var(--grey1);
+        margin: 0;
+        padding-bottom: 20px;
+        .emailText {
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+        }
+      }
+      .generalDocument {
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        margin: 0;
+        padding: 20px 0px 20px 0px;
+      }
+      .copyText {
+        font-size: var(--XSmall);
+        font-weight: var(--font-normal);
+        color: var(--grey3);
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      .uploadDocument {
+        background: var(--green1);
+        width: 100%;
+        max-width: 718px;
+        border-radius: 25px;
+      }
+      .uploadDocumentText {
+        color: var(--green2);
+        font-size: var(--XSmall);
+        font-weight: var(--font-medium);
+        line-height: 19px;
+      }
+      .uploadIcon {
+        padding: 2px 10px;
+      }
+      .proofText {
+        font-size: var(--XSmall);
+        font-weight: var(--font-normal);
+        color: var(--grey3);
+        margin: 0;
+        padding: 20px 0px 5px 0px;
+        // padding-bottom: 5px;
+      }
+      .documents {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        color: var(--blue1);
+        margin: 0;
+        padding-bottom: 10px;
+        .documentsList {
+          font-weight: var(--font-medium);
+        }
+      }
+      .listOfDocuments {
+        margin: 0;
+        color: var(--black2);
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        padding: 40px 0px 10px 0px;
+      }
+      .importantText {
+        background-color: var(--purple6);
+        padding: 10px 20px;
+        color: var(--blue1);
+        // opacity: 0.1;
+        border-radius: 20px;
+      }
+      .submitBtn {
+        width: 100%;
+        max-width: 344px;
+        margin: 30px auto 0px auto;
+        border-radius: 25px;
+      }
+      .submitBtnText {
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+      }
+      // .btnContainer {
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: space-between;
+      //   padding-top: 30px;
+      //   .submitBtn {
+      //     width: 100%;
+      //     max-width: 344px;
+      //     margin-right: 30px;
+      //   }
+      //   .submitBtnText {
+      //     font-size: var(--XSmall);
+      //     font-weight: var(--font-bold);
+      //   }
+      //   .backBtn {
+      //     width: 100%;
+      //     max-width: 344px;
+      //     background: var(--purple4);
+      //   }
+      //   .backBtnText {
+      //     color: var(--blue1);
+      //     font-size: var(--XSmall);
+      //     font-weight: var(--font-bold);
+      //   }
+      // }
+      .accText {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--black2);
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        .signIn {
+          font-weight: var(--font-bold);
+          color: var(--blue1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

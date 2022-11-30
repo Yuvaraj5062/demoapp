@@ -1,0 +1,35 @@
+@media only screen and (min-width: 768px) {
+  .stepOfWayContainer {
+    padding: 100px 0px;
+    text-align: center;
+    .titleText {
+      font-size: var(--XXXXXLarge);
+      font-weight: var(--font-bold);
+      color: var(--blue5);
+    }
+    .cardContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      width: 80%;
+      padding-top: 50px;
+      text-align: left;
+      .cardLayout {
+        width: 366px;
+        background-color: var(--grey16);
+      }
+      .imgStyle {
+        width: 366px;
+        height: 267px;
+      }
+      .customClassForTitle {
+        font-weight: var(--font-bold);
+      }
+      .customClassForButton {
+        width: 185px;
+        // max-width: 140px;
+      }
+    }
+  }
+}

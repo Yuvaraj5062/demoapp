@@ -1,0 +1,39 @@
+@media only screen and (min-width: 768px) {
+  .featureBenefitsContainer {
+    background-color: var(--grey5);
+    padding-bottom: 150px;
+    .featureBenefitsContainer {
+      text-align: center;
+      padding: 50px 0px;
+      .featureText {
+        font-size: var(--XXXLarge);
+        font-weight: var(--font-bold);
+        color: var(--blue5);
+        margin: 0px;
+        padding-bottom: 12px;
+      }
+      .moreFeatureText {
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+        color: var(--grey1);
+        margin: 0px;
+      }
+    }
+    .cardContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 90px;
+      width: 70%;
+      margin: auto;
+      // padding: 0px 40px;
+    }
+
+    .iconStyle {
+      padding-top: 5px;
+      padding-left: 10px;
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+}

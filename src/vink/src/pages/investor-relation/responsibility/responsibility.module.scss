@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+  .responsibilityContainer {
+    padding: 90px 0px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    .factText {
+      color: var(--grey1);
+      font-size: var(--small);
+      font-weight: var(--font-normal);
+    }
+    .responsibilityText {
+      margin: 45px 0px;
+      color: var(--black2);
+      padding: 15px 0px;
+      background-color: var(--white4);
+      font-size: var(--medium);
+      font-weight: var(--font-semibold);
+    }
+  }
+}

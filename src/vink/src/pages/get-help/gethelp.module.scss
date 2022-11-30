@@ -1,0 +1,227 @@
+@media only screen and (min-width: 768px) {
+  .getHelpContainer {
+    padding-bottom: 150px;
+    .bannerImage {
+      background: url("../../assests/images/getHelpImage.png");
+      height: 465px;
+      margin-bottom: 60px;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      .selfServiceText {
+        font-size: 60px;
+        font-weight: var(--font-bold);
+        color: var(--white1);
+        margin: 0px;
+        width: 50%;
+        padding: 90px 0px 0px 40px;
+        animation: slide-right 4s ease 1s forwards;
+        visibility: hidden;
+        @keyframes slide-right {
+          0% {
+            margin-left: -100%;
+            visibility: hidden;
+          }
+          100% {
+            margin-left: 0%;
+            visibility: visible;
+          }
+        }
+        // }
+      }
+      .secureRangeText {
+        font-size: var(--XLarge);
+        font-weight: var(--font-medium);
+        color: var(--white1);
+        width: 50%;
+        margin: 0px;
+        // padding-top: 11px;
+        padding: 10px 0px 0px 40px;
+        animation: slide-right1 4s ease 5s forwards;
+        visibility: hidden;
+        @keyframes slide-right1 {
+          from {
+            margin-left: -100%;
+            visibility: hidden;
+          }
+          to {
+            margin-left: 0%;
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .selfServiceTitleText {
+      text-align: center;
+      font-size: var(--XXXXXXLarge);
+      font-weight: var(--font-bold);
+      margin: 0 auto;
+      width: 60%;
+      padding-bottom: 50px;
+    }
+
+    .SelfServiveHeading {
+      text-align: center;
+      font-weight: var(--font-bold);
+      font-size: var(--XXXXXXLarge);
+      line-height: 63px;
+      margin: 0 auto 49px;
+      max-width: 781px;
+    }
+
+    .SelfServiceCardsSection {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1200px;
+      column-gap: 16px;
+      padding-bottom: 100px;
+      .customClassForContent {
+        padding: 18px 20px 18px 18px;
+      }
+      .FirstSelfServiceCard {
+        flex: 25%;
+        padding: 0;
+        // border: 1px solid #d9d9d9;
+        // border-radius: 6px;
+        // position: relative;
+
+        // .SelfServiceCardImg {
+        //   width: 100%;
+        // }
+
+        // .SelfServiceCardHeading {
+        //   font-weight: 700;
+        //   font-size: 20px;
+        //   margin: 23px 0 5px 15px;
+        //   color: #000000;
+        // }
+
+        // .SelfServiceCardTxt {
+        //   font-weight: 400;
+        //   font-size: 16px;
+        //   line-height: 25px;
+        //   margin-left: 15px;
+        //   color: #9c9ca6;
+        // }
+
+        // .SelfServiceCardBtn {
+        //   cursor: pointer;
+        //   background: transparent;
+        //   border: none;
+        //   margin-left: 15px;
+        //   font-weight: 500;
+        //   font-size: 15px;
+        //   line-height: 18px;
+        //   color: #552dcf;
+        //   position: absolute;
+        //   bottom: 20px;
+        // }
+      }
+
+      .SelfServiceCardsSubSection {
+        flex: 75%;
+        display: flex;
+        column-gap: 16px;
+        row-gap: 16px;
+        flex-wrap: wrap;
+
+        .OtherSelfServiceCard {
+          flex: 25%;
+          // padding: 15px;
+          // border: 1px solid #d9d9d9;
+          // border-radius: 6px;
+          // position: relative;
+
+          // .SelfServiceCardHeading {
+          //   margin: 0px 0px 5px 0px;
+          //   font-weight: 700;
+          //   font-size: 20px;
+          //   color: #000000;
+          // }
+
+          // .SelfServiceCardTxt {
+          //   margin: 0;
+          //   height: 270px;
+          //   font-weight: 400;
+          //   font-size: 16px;
+          //   line-height: 25px;
+          //   color: #9c9ca6;
+          // }
+
+          // .SelfServiceCardBtn {
+          //   margin: 0;
+          //   cursor: pointer;
+          //   background: transparent;
+          //   border: none;
+          //   font-weight: 500;
+          //   font-size: 15px;
+          //   line-height: 18px;
+          //   color: #552dcf;
+          //   position: absolute;
+          //   bottom: 20px;
+          // }
+        }
+      }
+    }
+    .PaymentSectionHeading {
+      font-weight: var(--font-bold);
+      text-align: center;
+      font-size: var(--XXXXXXLarge);
+      color: #000000;
+      // margin-top: 110px;
+      margin: 0;
+    }
+
+    .PaymentSectionParagraph {
+      text-align: center;
+      font-size: var(--XSmall);
+      color: #9c9ca6;
+      // margin-top: 10px;
+      // margin-bottom: 47px;
+      padding: 16px 0px 47px 0px;
+      font-weight: var(--font-normal);
+      margin: 0;
+    }
+
+    .PaymentCardsContainer {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1200px;
+      column-gap: 16px;
+      padding: 0 10px;
+      margin-bottom: 50px;
+      .PaymentCard {
+        flex: 50%;
+        border: 1px solid #d9d9d9;
+        border-radius: 10px;
+        height: 200px;
+        padding: 18px 0 0 18px;
+        .SelfServiceCardHeading {
+          font-weight: var(--font-bold);
+          font-size: var(--medium);
+          color: #000000;
+        }
+
+        .SelfServiceCardTxt {
+          font-weight: var(--font-normal);
+          font-size: var(--XSmall);
+          line-height: 25px;
+          color: #9c9ca6;
+          height: 60px;
+          margin-top: 5px;
+        }
+
+        .SelfServiceCardBtn {
+          cursor: pointer;
+          background: transparent;
+          border: none;
+          font-weight: var(--font-medium);
+          font-size: var(--XSmall);
+          line-height: 18px;
+          color: #552dcf;
+          margin-top: 55px;
+        }
+      }
+    }
+  }
+}

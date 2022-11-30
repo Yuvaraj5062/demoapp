@@ -1,0 +1,64 @@
+.mainContainer{
+    height: 655px;
+    background: var(--white4);
+    // width: 100%;
+    display: flex;
+    // justify-content: center;
+    .tabsTitleContainer{
+        margin: 100px auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .title{
+            text-align: center;
+            color: var(--blue5);
+            font-size: var(--XXXXXLarge);
+            font-weight: var(--font-bold);
+        }
+        .banking{
+            &::after{
+                left: 20%;
+            }
+            &::before{
+                left: 20%;
+            }
+        }
+        .financial{
+            &::after{
+                left: 35%;
+            }
+            &::before{
+                left: 35%;
+            }
+        }
+        .realEstate{
+            &::after{
+                left: 50%;
+            }
+            &::before{
+                left: 50%;
+            }
+
+        }
+        .wealthManagement{
+            &::after{
+                left: 63%;
+                // right: 35%;
+            }
+            &::before{
+                left: 63%;
+                // right: 35%;
+            }
+
+        }
+        .personalBanking{
+            &::after{
+                left: 80%;
+            }
+            &::before{
+                left: 80%;
+            }
+
+        }
+    }
+}

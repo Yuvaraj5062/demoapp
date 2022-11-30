@@ -1,0 +1,48 @@
+@media only screen and (min-width: 768px) {
+  .adviceMain {
+    background-color: var(--blue5);
+    color: var(--white1);
+    text-align: center;
+
+    // margin-bottom: 20px;
+    .adviceContent {
+      width: 80%;
+      margin: auto;
+      padding: 70px 0;
+
+      .adviceHeading {
+        font-weight: var(--font-bold);
+        font-size: var(--XXXXXLarge);
+        line-height: 64px;
+        letter-spacing: 0.01em;
+        color: var(--white1);
+        margin: 0;
+        text-align: center;
+      }
+
+      .adviceTxt {
+        font-weight: var(--font-normal);
+        font-size: var(--small);
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: var(--white1);
+        padding: 15px 0px 30px 0px;
+        margin: 0;
+      }
+
+      .adviceType {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .adviceList {
+          color: var(--white1);
+          margin: 0px 25px;
+          font-size: var(--XSmall);
+          font-weight: var(--font-bold);
+        }
+      }
+    }
+  }
+}

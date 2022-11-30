@@ -1,0 +1,159 @@
+@media only screen and (min-width: 768px) {
+  .serviceCardContainer {
+    padding: 18px 30px 18px 18px;
+    // height: 200px;
+    // height: 55%;
+    // padding: 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    position: relative;
+    .SelfServiceCardImg {
+      width: 100%;
+    }
+    .SelfServiceCardHeading {
+      font-weight: 700;
+      font-size: 20px;
+      //   margin: 23px 0 5px 15px;
+      margin: 0;
+      padding: 0px 0px 5px 0px;
+    }
+
+    .SelfServiceCardTxt {
+      font-weight: 400;
+      font-size: 16px;
+      //   line-height: 25px;
+      //   margin-left: 15px;
+      color: #9c9ca6;
+      //   min-height: 130px;
+      //   max-height: 400px;
+      height: 150px;
+      margin: 0;
+    }
+
+    .SelfServiceCardBtn {
+      cursor: pointer;
+      //   background: transparent;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+      //   margin-top: 25px;
+      //   margin-left: 15px;
+      font-weight: var(--font-medium);
+      font-size: var(--XSmall);
+      //   line-height: 18px;
+      color: #552dcf;
+      //   position: absolute;
+      //   bottom: 20px;
+      //   padding-top: 50px;
+      position: absolute;
+      bottom: 25px;
+      // .iconStyle {
+      //   padding-left: 10px;
+      // }
+      .arrowIcon{
+        margin-left: 10px;
+      }
+    }
+    // .SelfServiveHeading {
+    //   text-align: center;
+    //   font-weight: 700;
+    //   font-size: 54px;
+    //   line-height: 63px;
+    //   margin: 0 auto 49px;
+    //   max-width: 781px;
+    // }
+
+    // .SelfServiceCardsSection {
+    //   display: flex;
+    //   margin: 0 auto;
+    //   max-width: 1200px;
+    //   column-gap: 16px;
+    //   padding: 0 10px;
+
+    //   .FirstSelfServiceCard {
+    //     flex: 25%;
+    //     border: 1px solid #d9d9d9;
+    //     border-radius: 6px;
+    //     position: relative;
+
+    //     .SelfServiceCardImg {
+    //       width: 100%;
+    //     }
+
+    //     .SelfServiceCardHeading {
+    //       font-weight: 700;
+    //       font-size: 20px;
+    //       margin: 23px 0 5px 15px;
+    //     }
+
+    //     .SelfServiceCardTxt {
+    //       font-weight: 400;
+    //       font-size: 16px;
+    //       line-height: 25px;
+    //       margin-left: 15px;
+    //       color: #9c9ca6;
+    //     }
+
+    //     .SelfServiceCardBtn {
+    //       cursor: pointer;
+    //       background: transparent;
+    //       border: none;
+    //       margin-left: 15px;
+    //       font-weight: 500;
+    //       font-size: 15px;
+    //       line-height: 18px;
+    //       color: #552dcf;
+    //       position: absolute;
+    //       bottom: 20px;
+    //     }
+    //   }
+
+    //   .SelfServiceCardsSubSection {
+    //     flex: 75%;
+    //     display: flex;
+    //     column-gap: 16px;
+    //     row-gap: 16px;
+    //     flex-wrap: wrap;
+
+    //     .OtherSelfServiceCard {
+    //       flex: 25%;
+    //       padding: 15px;
+    //       border: 1px solid #d9d9d9;
+    //       border-radius: 6px;
+    //       position: relative;
+
+    //       .SelfServiceCardHeading {
+    //         margin: 0px 0px 5px 0px;
+    //         font-weight: 700;
+    //         font-size: 20px;
+    //         color: #000000;
+    //       }
+
+    //       .SelfServiceCardTxt {
+    //         margin: 0;
+    //         height: 270px;
+    //         font-weight: 400;
+    //         font-size: 16px;
+    //         line-height: 25px;
+    //         color: #9c9ca6;
+    //       }
+
+    //       .SelfServiceCardBtn {
+    //         margin: 0;
+    //         cursor: pointer;
+    //         background: transparent;
+    //         border: none;
+    //         font-weight: 500;
+    //         font-size: 15px;
+    //         line-height: 18px;
+    //         color: #552dcf;
+    //         position: absolute;
+    //         bottom: 20px;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}

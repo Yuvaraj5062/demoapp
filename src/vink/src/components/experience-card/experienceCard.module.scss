@@ -1,0 +1,27 @@
+@media only screen and (min-width: 768px) {
+  .aboutusCard {
+    background-color: var(--blue5);
+    border: 1px solid var(--white1);
+    padding: 65px 0px;
+    width: 350px;
+    text-align: center;
+
+    .aboutusTitle {
+      color: var(--white2);
+      font-size: var(--small);
+    }
+
+    .aboutusCount {
+      padding: 8px 0px 0px 0px;
+      color: var(--white2);
+      font-weight: var(--font-bold);
+      font-size: var(--XXXXXLarge);
+    }
+
+    .aboutustxt {
+      padding: 10px 0px 0px 0px;
+      color: var(--purple8);
+      font-size: var(--small);
+    }
+  }
+}

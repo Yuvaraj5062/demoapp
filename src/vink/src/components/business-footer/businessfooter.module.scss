@@ -1,0 +1,60 @@
+.footerMainContainer {
+  // min-height: 100%;
+  bottom: 0px;
+  &:last-of-type {
+    margin-top: auto;
+  }
+  .titleTextConatiner {
+    padding: 60px 0px;
+    background-color: var(--grey5);
+    .titleText {
+      font-weight: var(--font-bold);
+      font-size: var(--XLarge);
+      text-align: center;
+      color: var(--blue1);
+      margin: 0px;
+    }
+    .subTitleText {
+      font-weight: var(--font-normal);
+      font-size: var(--XXSmall);
+      text-align: center;
+      color: var(--grey1);
+      margin: 0px;
+      padding: 15px 0px 5px 0px;
+    }
+    .noteText {
+      margin: 0px;
+      padding: 0px;
+      font-weight: var(--font-semibold);
+      font-size: var(--XXSmall);
+      text-align: center;
+      color: var(--grey1);
+      padding-bottom: 15px;
+    }
+
+    .continueApplicationBtn {
+      margin: auto;
+      width: 231px;
+      height: 45px;
+      .btnText {
+        color: var(--white1);
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footerMainContainer {
+    .titleTextConatiner {
+      .titleText {
+        font-size: var(--XXXLarge);
+      }
+      .subTitleText {
+        font-size: var(--XSmall);
+      }
+      .noteText {
+        font-size: var(--XSmall);
+      }
+    }
+  }
+}

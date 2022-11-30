@@ -1,0 +1,75 @@
+.mainCardContainer{
+    background-color: var(--white1);
+    width: 320px;
+    padding: 38px 20px 16px 20px;
+    border-radius: 10px;
+    .mainCardTitle{
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        margin:0;   
+        margin-bottom:36px;
+        text-align: center;
+    }
+    .sharePriceTag{
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--black4);
+        margin: 0;
+    }
+    .sharePrice{
+        font-size: var(--XXXXLarge);
+        font-weight: var(--font-semibold);
+        color: var(--black4);
+        margin:0 0 20px 0;
+    }
+    
+    .mainCardChange{
+        display: flex;
+        justify-content: space-between;
+        .mainCardChangeName{
+            font-size: var(--XXSmall);
+            font-weight: var(--font-normal);
+            margin:14px 0;
+            text-transform: uppercase;
+            color: var(--black2);
+        } 
+        .mainCardChangeValue{
+            font-size: var(--small);
+            font-weight: var(--font-semibold);
+            text-align: right;
+            color: var(--green4);
+            margin:14px 0;
+            line-height: 18px;
+            .mainCardChangeIcon{  
+                font-weight: var(--font-bold);
+                padding-right: 6px;
+            }
+        }
+    }
+    .mainCardHighLow{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainCardHighLowTitle{
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--black4);
+        margin: 17px 0 0 0;
+    }
+    .mainCardHighLowValue{
+        font-size: var(--XLarge);
+        font-weight: var(--font-normal);
+        color: var(--grey9);
+        margin: 8px 0 0 0;
+    }
+    .dividerMarginBT{
+        background: var(--grey18);
+    }
+    .shareQuoteCardBTN{
+        width: 241px;
+        margin: auto;
+        padding: 13px 30px;
+        border-radius: 30px;
+        margin-top: 32px;
+    }
+}

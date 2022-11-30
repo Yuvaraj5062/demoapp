@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px) {
+  .paragraphContainer {
+    background: var(--white4);
+
+    .mainContainer {
+      padding: 100px 0;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+
+      .cardTitle {
+        color: var(--blue5);
+        font-size: var(--XXXXXLarge);
+        font-weight: var(--font-bold);
+        margin: 0;
+      }
+
+      .cardInfo,
+      .cardInfo1 {
+        color: var(--grey9);
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+        line-height: 29px;
+        margin: 12px 6px 24px 6px;
+
+
+      }
+
+      // .cardInfo1 {
+      //   padding-top: 21px;
+      // }
+
+      .btnStyle {
+        width: 151px;
+        border-radius: 30px;
+        margin: 0 auto;
+
+        &:hover {
+          background: var(--blue6);
+        }
+      }
+    }
+  }
+}

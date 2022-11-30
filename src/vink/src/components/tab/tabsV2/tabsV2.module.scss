@@ -1,0 +1,23 @@
+.tabsContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .tabItem{
+        margin-right: 30px;
+        cursor: pointer;
+        &:last-of-type{
+            margin-right: unset;
+        }
+        .tab{
+            color: var(--black1);
+            font-size: var(--XSmall);
+            font-weight: var(--font-bold);
+        }
+        .tabActive{
+            color: var(--blue1);
+            font-size: var(--XSmall);
+            font-weight: var(--font-bold);
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.investorRelationsCard {
+    width: 250px;
+    margin: 0px 15px;
+    .investorRelationsCardTitle {
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+      line-height: 25px;
+      color: var(--blue1);
+      margin: 0;
+    }
+
+    .investorRelationsCardDivider {
+      border: none;
+      border-top: 1px solid var(--grey14);
+      margin: 15px 0px 13px;
+    }
+
+    .investorRelationsCardTxtSectionOne {
+    //   padding: 0 25% 0 24%;
+      position: relative;
+      .changeContainer {
+        display: flex;
+        // align-items: flex-start;
+        .changeContainerRight{
+          margin-left: 5px;
+          // align-self: flex-start;
+          .investorRelationsCardTxtSectionOneTxtOne {
+            font-weight: var(--font-extrabold);
+            font-size: var(--jumboFontSize);
+            line-height: 60px;
+            color: var(--blue1);
+            margin: 0;
+          }
+          .investorRelationsCardTxtSectionOneTxtTwo {
+            font-weight: var(--font-semibold);
+            font-size: var(--small);
+            line-height: 16px;
+            color: var(--blue1);
+            margin: 5px 0px;
+          }
+          .investorRelationsCardTxtSectionOneTxtThree {
+            font-weight: var(--font-normal);
+            font-size: 15px;
+            line-height: 16px;
+            color: var(--grey3);
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .investorRelationsCardTxtSectionTwo {
+      display: flex;
+      align-items: center;
+      margin-top: 22px;
+      .investorRelationsCardYear {
+        padding: 20px 10px 20px 0px;
+        .investorRelationsCardYearTxt {
+          font-weight: var(--font-medium);
+          font-size: 13px;
+          line-height: 16px;
+          color: var(--grey3);
+          margin: 0;
+          &:nth-child(2) {
+            margin-top: 14px;
+          }
+        }
+      }
+      .investorRelationsCardAmount {
+        padding: 20px 0px;
+        border-left: 1px solid var(--grey1);
+        .investorRelationsCardAmountTxt {
+          margin: 0;
+          width: 100%;
+          font-weight: var(--font-medium);
+          font-size: 13px;
+          line-height: 16px;
+          color: var(--white1);
+          background: var(--blue1);
+          padding: 4px 60px 3px 9px;
+          &:nth-child(2) {
+            margin-top: 7px;
+            background: var(--blue5);
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+  }

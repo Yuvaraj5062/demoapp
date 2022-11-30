@@ -1,0 +1,33 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    background-image: url("../../assests/images/backgroundImg.png");
+    padding-bottom: 100px;
+    .bonusPointCash {
+      margin: auto;
+      width: 70%;
+      .infoText {
+        margin: 0;
+        font-size: var(--XLarge);
+        font-weight: var(--font-normal);
+        color: var(--grey1);
+        padding: 140px 0px 50px 0px;
+      }
+      .businessText {
+        margin: 0;
+        font-size: var(--jumboFontSize);
+        font-weight: var(--font-bold);
+        color: var(--blue5);
+      }
+      .dividerStyle {
+        background: var(--blue6);
+        height: 4px;
+        margin: 130px 0px;
+      }
+      .cardContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+}

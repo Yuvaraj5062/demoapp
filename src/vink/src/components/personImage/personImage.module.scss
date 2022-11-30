@@ -1,0 +1,17 @@
+@media only screen and (min-width: 768px) {
+  .imageContainer {
+    text-align: center;
+    .imageStyle {
+      width: 264px;
+      height: 251px;
+      border: 1px solid var(--grey18);
+      border-radius: 10px;
+    }
+    .nameText {
+      padding-top: 10px;
+      font-size: var(--large);
+      font-weight: var(--font-semibold);
+      color: var(--blue1);
+    }
+  }
+}

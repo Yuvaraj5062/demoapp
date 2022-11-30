@@ -1,0 +1,54 @@
+@media only screen and (min-width: 768px) {
+    .discoverBusinessContainer {
+        padding: 100px 0px;
+        text-align: center;
+        background-color: var(--white4);
+
+        .title {
+            justify-content: center;
+            margin: auto;
+            width: 80%;
+
+        }
+
+        .cardContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            width: 80%;
+            padding-top: 50px;
+            text-align: left;
+            position: relative;
+
+            .cardLayout {
+                width: 370px;
+                background-color: var(--white1);
+                // margin: 0px 15px;
+            }
+
+            .imgStyle {
+                width: 370px;
+                height: 267px;
+            }
+
+            .customClassForTitle {
+                font-weight: var(--font-bold);
+                font-size: 24px;
+                //  height: 55px;
+            }
+
+            .customClassForButton {
+                width: 185px;
+                // max-width: 140px;
+                // margin-top: 30px;
+                position: absolute;
+                bottom: 30px;
+            }
+
+            .customClassForInfo {
+                height: 170px;
+            }
+        }
+    }
+}

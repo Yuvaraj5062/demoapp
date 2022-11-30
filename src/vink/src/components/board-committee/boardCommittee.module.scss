@@ -1,0 +1,64 @@
+@media only screen and (min-width: 768px) {
+  .boardCommitteeContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    .titleStyle {
+      font-size: var(--XXXLarge);
+    }
+    color: var(--grey1);
+    font-size: var(--small);
+    font-weight: var(--font-normal);
+    // line-height: 39px;
+    // letter-spacing: 0.01em;
+    .boardCommitteeInfo {
+      padding: 40px 0px 10px 0px;
+    }
+    .detailInfoContainer {
+      display: flex;
+      flex-direction: row;
+      padding-top: 80px;
+      justify-content: space-between;
+      text-align: left;
+      .containerOne {
+        width: 48%;
+        .paragraphOne {
+          padding: 10px 0px 30px 0px;
+        }
+        .paragraphThree {
+          padding: 30px 0px 10px 0px;
+        }
+        .paragraphFour {
+          padding: 10px 0px 20px 0px;
+        }
+        .customClassForList {
+          color: var(--grey1);
+          font-size: var(--small);
+          font-weight: var(--font-normal);
+        }
+      }
+      .containerTwo {
+        width: 48%;
+        .paragraphFive {
+          padding: 30px 0px;
+        }
+        .paragraphSix,
+        .paragraphSeven,
+        .paragraphNine {
+          padding: 15px 0px 35px 0px;
+        }
+        .paragraphEight {
+          padding-bottom: 30px;
+        }
+        .paragraphTen {
+          padding-top: 10px;
+        }
+        .paragraphEleven {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@media only screen and (min-width: 768px) {
+  .OnlineBankingCardList {
+    padding-left: 20px;
+    .OnlineBankingCardListItem {
+      font-weight: var(--font-normal);
+      font-size: var(--small);
+      color: var(--grey1);
+      &::marker {
+        color: var(--blue1);
+      }
+    }
+  }
+}

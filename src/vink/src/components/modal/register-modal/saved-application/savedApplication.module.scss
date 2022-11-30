@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+  .savedApplicationContainer {
+    .enterRefNo {
+      font-size: var(--XSmall);
+      font-weight: var(--font-bold);
+      color: var(--black2);
+      margin: 0;
+      padding-bottom: 15px;
+    }
+    .textFieldContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .inputField1 {
+        margin-bottom: 20px;
+        width: 50%;
+        max-width: 344px;
+        margin-right: 20px;
+      }
+      .inputField {
+        margin-bottom: 20px;
+        width: 50%;
+        max-width: 344px;
+      }
+    }
+    .continueBtn {
+      padding: 16px 0px;
+      margin: auto;
+      width: 100%;
+      max-width: 344px;
+      justify-content: center;
+      border-radius: 25px;
+      margin-top: 10px;
+    }
+    .btnText {
+      font-weight: var(--font-bold);
+    }
+    .accText {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-normal);
+      color: var(--black2);
+      text-align: center;
+      .signIn {
+        font-weight: var(--font-bold);
+        color: var(--blue1);
+        cursor: pointer;
+      }
+    }
+  }
+}

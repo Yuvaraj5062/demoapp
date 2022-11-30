@@ -1,0 +1,73 @@
+@media screen and (min-width: 768px) {
+  .signupContainer {
+    padding: 15px 0px 50px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 40%;
+    max-width: 444px;
+    background-color: var(--white1);
+    height: 450px;
+    overflow-y: scroll;
+    .fieldContainer {
+      padding: 20px 50px 0px 50px;
+      .signUp {
+        font-size: var(--XXLarge);
+        font-weight: var(--font-bold);
+        color: var(--black2);
+        margin: 0;
+      }
+      .congratulationText {
+        padding: 30px 0px 10px 0px;
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+        color: var(--blue1);
+        margin: 0;
+      }
+      .welcome {
+        margin: 0;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        color: var(--grey1);
+        .nameText {
+          color: var(--blue1);
+          font-weight: var(--font-bold);
+        }
+      }
+      .notCloseWindow {
+        margin: 0;
+        padding: 30px 0px 40px 0px;
+        color: var(--black2);
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+      }
+      .imageStyle {
+        padding: 0px 24px;
+        width: 85%;
+        height: 85%;
+        // max-height: 296px;
+      }
+      .btnStyle {
+        width: 100%;
+        max-width: 344px;
+        margin-top: 40px;
+      }
+      .okText {
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+      }
+      .accText {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--black2);
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        .signIn {
+          font-weight: var(--font-bold);
+          color: var(--blue1);
+        }
+      }
+    }
+  }
+}

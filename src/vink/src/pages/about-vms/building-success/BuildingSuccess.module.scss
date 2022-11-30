@@ -1,0 +1,33 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    padding: 100px 0;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+
+    .buildingSuccessTitle {
+      color: var(--blue5);
+      font-size: var(--XXXXXLarge);
+      font-weight: var(--font-bold);
+      margin: 0;
+    }
+
+    .buildingSuccessInfo {
+      color: var(--grey9);
+      font-size: var(--small);
+      font-weight: var(--font-normal);
+      line-height: 29px;
+      margin: 12px 6px 24px 6px;
+    }
+
+    .btnStyle {
+      width: 151px;
+      border-radius: 30px;
+      margin: 0 auto;
+
+      &:hover {
+        background: var(--blue6);
+      }
+    }
+  }
+}

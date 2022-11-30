@@ -1,0 +1,17 @@
+.wealthManagementMainContainer {
+  .customClassForExperience {
+    flex-direction: row-reverse !important;
+
+    .ImageContainer {
+      width: unset !important;
+      padding-right: 58px !important;
+      margin: 0px !important;
+    }
+
+    .experienceTextContainer {
+      width: unset !important;
+      //padding-right: 58px !important;
+      margin: 0px !important;
+    }
+  }
+}

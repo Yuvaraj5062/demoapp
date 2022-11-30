@@ -1,0 +1,56 @@
+.tooltipMainContainer{
+    background:var(--white1);
+    padding: 40px;
+    margin-top: 30px;
+    border: 0.5px solid var(--grey14);
+    // position: absolute;
+    // left: 0;
+    position: relative;
+    flex:1;
+    max-width: 1170px;
+    .title{
+        color: var(--blue5);
+        font-size: var(--XXXLarge);
+        font-weight: var(--font-bold);
+    }
+    .description{
+        margin-top: 20px;
+        color: var(--grey1);
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+    }
+    .button{
+        width: 300px;
+        margin-top: 20px;
+    }
+    &::after{
+        border: solid transparent;
+        content: " ";
+        display: block;
+        height: 0;
+        position: absolute;
+        pointer-events: none;
+        width: 0;
+        bottom: 100%;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: var(--white1);
+        left: 20%;
+        margin-left: -13px;
+        border-width: 21px;
+    }
+    &::before{
+        border: solid transparent;
+        content: " ";
+        display: block;
+        height: 0;
+        position: absolute;
+        pointer-events: none;
+        width: 0;
+        bottom: 100%;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: var(--grey14);
+        left: 20%;
+        margin-left: -15px;
+        border-width: 23px;
+    }
+}

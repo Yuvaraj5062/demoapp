@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+  .navbarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--blue1);
+    padding: 0px 59px;
+    .navbarContent {
+      padding: 17px 0px;
+      .navText {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-bold);
+        color: var(--white1);
+        padding: 17px 18px;
+        cursor: pointer;
+      }
+      :hover {
+        background-color: var(--blue2);
+        padding: 18px 18px 17px 18px;
+      }
+      .navText1 {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-bold);
+        color: var(--white1);
+        padding: 18px 18px 17px 18px;
+        cursor: pointer;
+        background-color: var(--blue3);
+      }
+    }
+    .helpText {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-bold);
+      color: var(--white1);
+      background-color: var(--blue2);
+      padding: 17px 26px 17px 26px;
+      cursor: pointer;
+    }
+  }
+}

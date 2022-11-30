@@ -1,0 +1,59 @@
+@media only screen and (min-width: 768px) {
+  .tabContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px 0px;
+    .tabItemsContainer{
+      margin-right: 40px;
+      &:last-of-type{
+        margin-right: 0px;
+      }
+      .contactText {
+        color: var(--grey1);
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        // margin: 0px 30px;
+        cursor: pointer;
+      }
+      .activeText {
+        color: var(--blue5);
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+        // margin: 0px 30px;
+        cursor: pointer;
+        // border-bottom: 1px solid var(--blue6);
+        // position: relative;
+        .borderStyle {
+          width: 200px;
+          border-bottom: 1px solid var(--blue6);
+          box-sizing: border-box;
+          height: 15px;
+          width: 15px;
+          border-style: solid;
+          // border-color: red;
+          border-width: 0px 1px 1px 0px;
+          transform: rotate(45deg);
+          // transition: border-width 150ms ease-in-out;
+          position: absolute;
+          top: 18px;
+          left: 43%;
+        }
+        //   .borderStyle ::after {
+        //     content: "";
+        //     left: 50%;
+        //     right: 50%;
+        // position: absolute;
+        // left: 0;
+        // right: 0;
+        // margin: 0 auto;
+        // width: 0;
+        // height: 0;
+        // border-top: 25px solid #6a0136;
+        // border-left: 50px solid transparent;
+        // border-right: 50px solid transparent;
+        //   }
+      }
+    }
+  }
+}

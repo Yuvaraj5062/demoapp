@@ -1,0 +1,43 @@
+@media only screen and (min-width: 768px) {
+  .investorOptionContainor {
+    margin: 0 auto;
+    padding: 25px 0px 60px 0px;
+    .investorDivider {
+      color: var(--grey18) !important;
+    }
+    .investorInfo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .investorBtns {
+      display: flex;
+      flex-direction: row;
+      height: 36px;
+
+      .investorResetBtn {
+        width: 110px;
+        border-radius: 30px;
+        margin-right: 20px;
+        background: var(--blue1);
+        // &:hover {
+        //   background: var(--blue1);
+        // }
+      }
+      .investorResetBtnText {
+        font-size: var(--XXXSmall);
+        font-weight: var(--font-medium);
+      }
+      .investorOptionBtn {
+        background: var(--black1);
+        flex-direction: row-reverse;
+      }
+      .investorOptionBtnText {
+        font-size: var(--XXXSmall);
+        font-weight: var(--font-medium);
+        margin-right: 10px;
+      }
+    }
+  }
+}

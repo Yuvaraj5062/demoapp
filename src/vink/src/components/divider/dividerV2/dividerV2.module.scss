@@ -1,0 +1,35 @@
+.hr {
+    // width:100%;
+    // margin: auto;
+    height: 1px;
+    background: var(--blue6);
+    position: relative;
+    // display: flex;
+    // justify-content: center;
+    // margin: 0px 30px;
+
+&::after {
+    content:'';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: 0px;
+    left:43%;
+}
+&::before {
+    content:'';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    border-color: #552DCF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: 1px;
+    left: 43%;
+}
+}

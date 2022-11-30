@@ -1,0 +1,267 @@
+.cardContainer {
+  padding: 30px;
+  border: 1px solid var(--grey4);
+  border-radius: 20px;
+  width: 57%;
+  margin: 0px auto 0px auto;
+  .mainTitle {
+    font-size: var(--medium);
+    font-weight: var(--font-semibold);
+    color: var(--blue1);
+    margin: 0;
+    height: 50px;
+    padding-bottom: 10px;
+  }
+  .priceText {
+    font-size: var(--XXXXLarge);
+    font-weight: var(--font-bold);
+    color: var(--blue1);
+    margin: 0;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .monthText {
+      font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+      color: var(--grey1);
+      padding-left: 7px;
+    }
+  }
+  .getText {
+    font-size: var(--XSmall);
+    font-weight: var(--font-semibold);
+    color: var(--blue1);
+    padding-bottom: 18px;
+    margin: 0;
+  }
+  .detailContainer {
+    height: 350px;
+    .detailText {
+      flex-direction: row;
+      display: flex;
+      margin: 0px 0px 15px 0px;
+
+      .textContent {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--grey1);
+        padding-left: 10px;
+      }
+    }
+  }
+  .btnContainer {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    .moreBtn {
+      background: var(--white1);
+      margin-left: 8px;
+      border: 1px solid var(--blue1) !important;
+      .btnText {
+        font-size: var(--XXSmall);
+        color: var(--blue1);
+      }
+    }
+    .applyBtn {
+      .btnText {
+        font-size: var(--XXSmall);
+      }
+    }
+    .applyBtn,
+    .moreBtn {
+      width: 137px;
+      height: 40px;
+      border-radius: 30px;
+    }
+    .btnIcon {
+      padding: 0px;
+    }
+  }
+}
+// active card
+.cardContainerActive {
+  background: var(--blue1);
+  box-shadow: 0px 13px 30px rgba(93, 60, 213, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid var(--grey4);
+  width: 57%;
+  margin: 0px auto 0px auto;
+  .mainTitle {
+    font-size: var(--medium);
+    font-weight: var(--font-semibold);
+    color: var(--white1);
+    margin: 0;
+    height: 50px;
+    padding-bottom: 10px;
+  }
+  .priceText {
+    font-size: var(--XXXXLarge);
+    font-weight: var(--font-bold);
+    color: var(--white1);
+    margin: 0;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .monthText {
+      font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+      color: var(--white1);
+      padding-left: 7px;
+    }
+  }
+  .getText {
+    font-size: var(--XSmall);
+    font-weight: var(--font-semibold);
+    color: var(--white1);
+    padding-bottom: 18px;
+    margin: 0;
+  }
+  .detailContainer {
+    height: 350px;
+    .detailText {
+      flex-direction: row;
+      display: flex;
+      margin: 0px 0px 15px 0px;
+      .textContent {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--white1);
+        padding-left: 10px;
+      }
+    }
+  }
+  .btnContainer {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    .moreBtn {
+      background: none;
+      margin-left: 8px;
+      border: 1px solid var(--white1) !important;
+      .btnText {
+        color: var(--white1);
+        font-size: var(--XXSmall);
+      }
+    }
+    .applyBtn {
+      height: 40px;
+      background: var(--white1);
+      border: 1px solid var(--white1) !important;
+      .btnText {
+        color: var(--blue1);
+        font-size: var(--XXSmall);
+      }
+    }
+    .applyBtn,
+    .moreBtn {
+      width: 137px;
+      height: 40px;
+      border-radius: 30px;
+    }
+    .btnIcon {
+      padding: 0px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .cardContainer {
+    width: auto;
+    height: 632px;
+    margin: 0px;
+    .mainTitle {
+      font-size: var(--XLarge);
+      font-weight: var(--font-medium);
+    }
+    .priceText {
+      font-size: var(--XXXXXLarge);
+      .monthText {
+        font-size: var(--small);
+      }
+    }
+    .getText {
+      font-size: var(--small);
+    }
+    .detailContainer {
+      height: 388px;
+      .detailText {
+        .textContent {
+          font-size: var(--XSmall);
+        }
+      }
+    }
+    .btnContainer {
+      width: 90%;
+      margin: 0px auto 30px auto;
+      .applyBtn {
+        height: unset;
+        .btnText {
+          font-size: var(--XSmall);
+        }
+      }
+      .applyBtn,
+      .moreBtn {
+        height: unset;
+      }
+      .moreBtn {
+        margin-left: 20px;
+        .btnText {
+          font-size: var(--XSmall);
+        }
+      }
+    }
+  }
+  // active card
+  .cardContainerActive {
+    width: auto;
+    height: 632px;
+    margin: 0px;
+    .mainTitle {
+      font-size: var(--XLarge);
+      font-weight: var(--font-medium);
+    }
+    .priceText {
+      font-size: var(--XXXXXLarge);
+      .monthText {
+        font-size: var(--small);
+      }
+    }
+    .getText {
+      font-size: var(--small);
+      font-weight: var(--font-semibold);
+    }
+    .detailContainer {
+      height: 388px;
+      .detailText {
+        .textContent {
+          font-size: var(--XSmall);
+          font-weight: var(--font-normal);
+        }
+      }
+    }
+    .btnContainer {
+      width: 90%;
+      margin: 0px auto 30px auto;
+      .moreBtn {
+        margin-left: 20px;
+        .btnText {
+          font-size: var(--XSmall);
+        }
+      }
+      .applyBtn {
+        height: unset;
+        .btnText {
+          font-size: var(--XSmall);
+        }
+      }
+      .applyBtn,
+      .moreBtn {
+        height: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(108, 77, 218, 0.6) 0%,
+    var(--blue4) 100%
+  );
+  padding: 14px 0px;
+  width: 160px;
+  border-radius: 22.5px;
+  border: none !important;
+  cursor: pointer;
+  .icon {
+    padding: 2px 0px;
+  }
+  .text {
+    font-size: var(--XSmall);
+    font-weight: var(--font-medium);
+    color: var(--white1);
+    padding: 2px 0px;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      180deg,
+      rgba(108, 77, 218, 0.6) 0%,
+      var(--blue4) 100%
+    );
+    padding: 14px 0px;
+    width: 160px;
+    border-radius: 22.5px;
+    border: none !important;
+    cursor: pointer;
+    .icon {
+      padding: 2px 10px;
+    }
+    .text {
+      font-size: var(--XSmall);
+      font-weight: var(--font-medium);
+      color: var(--white1);
+      padding: 2px 0px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      180deg,
+      rgba(108, 77, 218, 0.6) 0%,
+      var(--blue4) 100%
+    );
+    padding: 14px 0px;
+    width: 160px;
+    border-radius: 22.5px;
+    border: none !important;
+    cursor: pointer;
+    .icon {
+      padding: 2px 0px;
+    }
+    .text {
+      font-size: var(--XSmall);
+      font-weight: var(--font-medium);
+      color: var(--white1);
+      padding: 2px 0px;
+    }
+
+    // .button {
+    //   display: flex;
+    //   flex-direction: row;
+    //   justify-content: center;
+    //   align-items: center;
+    //   background: linear-gradient(
+    //     180deg,
+    //     rgba(108, 77, 218, 0.6) 0%,
+    //     var(--blue4) 100%
+    //   );
+    //   padding: 14px 0px;
+    //   width: 160px;
+    //   border-radius: 22.5px;
+    //   border: none !important;
+    //   cursor: pointer;
+    //   .icon {
+    //     padding: 2px 10px;
+    //   }
+    //   .text {
+    //     font-size: var(--XSmall);
+    //     font-weight: var(--font-medium);
+    //     color: var(--white1);
+    //     padding: 2px 0px;
+    //   }
+    // }
+  }
+}

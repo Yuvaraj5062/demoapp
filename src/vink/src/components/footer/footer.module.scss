@@ -1,0 +1,266 @@
+.mainContainer {
+  width: 100%;
+  min-height: 700px;
+  background-color: var(--purple1);
+  display: flex;
+  flex-direction: column;
+
+  .footerContentLinks {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0px 30px 0px;
+
+    .socialContent {
+      font-weight: var(--font-medium);
+      font-size: var(--medium);
+      color: var(--white1);
+      padding: 0px 0px 22px 20px;
+      .Icons {
+        display: flex;
+        flex-direction: row;
+        .LinkIcons {
+          padding: 0px 14px 0px 0px;
+        }
+      }
+      .socialContentLinks {
+        font-weight: var(--font-normal);
+        font-size: var(--XXSmall);
+        line-height: 26px;
+        margin: 0px 0px 8px 0px;
+        cursor: pointer;
+      }
+    }
+    .howWeAreContent {
+      color: var(--white1);
+      padding: 15px 0px 22px 20px;
+      font-weight: var(--font-medium);
+      font-size: var(--medium);
+      .howWeAreContentLinks {
+        font-weight: var(--font-normal);
+        font-size: var(--XXSmall);
+        line-height: 26px;
+        margin: 0px 0px 8px 0px;
+        cursor: pointer;
+      }
+    }
+    .ourSiteContent {
+      color: var(--white1);
+      padding: 15px 0px 22px 20px;
+      font-weight: var(--font-medium);
+      font-size: var(--medium);
+      .ourSitesContentLinks {
+        font-weight: var(--font-normal);
+        font-size: var(--XXSmall);
+        line-height: 26px;
+        margin: 0px 0px 8px 0px;
+        cursor: pointer;
+      }
+    }
+    .supportContent {
+      color: var(--white1);
+      padding: 15px 0px 22px 20px;
+      font-weight: var(--font-medium);
+      font-size: var(--medium);
+
+      .supportContentLinks {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        line-height: 26px;
+        margin: 0px 0px 8px 0px;
+        cursor: pointer;
+      }
+    }
+    .downloadApp {
+      background-color: var(--blue4);
+      border-radius: 10px;
+      width: 300px;
+      max-width: 240px;
+      height: fit-content;
+      padding: 20px;
+      margin: 0px 20px;
+      color: var(--white1);
+      .downloadAppText {
+        font-size: 26px;
+        font-weight: var(--font-bold);
+        margin: 0;
+      }
+      .creditScoreText {
+        margin: 0;
+        padding: 15px 0px;
+        font-size: var(--XSmall);
+        font-weight: var(--font-normal);
+      }
+      .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        .downloadAppBtn {
+          width: 150px;
+          max-width: 120px;
+          margin-right: 5px;
+        }
+        .googlePlayBtn {
+          width: 150px;
+          max-width: 120px;
+        }
+      }
+    }
+  }
+  .divideLine {
+    background: var(--purple3) !important;
+    width: 88%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .footerContentInfoLinks {
+    font-weight: var(--font-normal);
+    font-size: var(--XXSmall); //14px
+    line-height: 19px;
+    text-align: center;
+    margin: 0px;
+    color: var(--white1);
+    padding: 30px 5px 15px 5px;
+  }
+  .footerContentAddressInfo {
+    font-weight: var(--font-normal);
+    font-size: var(--XXSmall); //14px
+    line-height: 19px;
+    text-align: center;
+    margin: 0px;
+    color: var(--white1);
+    padding-bottom: 30px;
+    margin: 0px 5px;
+  }
+  .footerContent {
+    background-color: var(--purple2);
+    width: 100%;
+
+    .footerContentText {
+      font-weight: var(--font-bold);
+      font-size: var(--XXSmall); //14px
+      text-align: center;
+      color: var(--white1);
+      padding: 40px 20px 0px 20px;
+      margin: 0px;
+    }
+    .footerContentCopyRightText {
+      font-weight: var(--font-normal);
+      font-size: var(--XXSmall); //14px
+      text-align: center;
+      color: var(--white1);
+      padding: 19px 20px 40px 20px;
+      margin: 0px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .mainContainer {
+    .footerContentLinks {
+      width: 98%;
+      flex-direction: row;
+      flex: 1;
+      margin: 60px auto 60px auto;
+      .socialContent {
+        height: 100%;
+        padding: 0px;
+        font-weight: var(--font-medium);
+        font-size: var(--XLarge);
+        .socialContentLinks {
+          font-weight: var(--font-normal);
+          font-size: var(--XSmall);
+        }
+      }
+      .howWeAreContent {
+        padding: 0px;
+        margin-left: 4%;
+        height: 100%;
+        font-weight: var(--font-medium);
+        font-size: var(--XLarge);
+        .howWeAreContentLinks {
+          font-weight: var(--font-normal);
+          font-size: var(--XSmall);
+        }
+      }
+      .ourSiteContent {
+        padding: 0px;
+        margin-left: 4%;
+        height: 100%;
+        font-weight: var(--font-medium);
+        font-size: var(--XLarge);
+        .ourSitesContentLinks {
+          font-weight: var(--font-normal);
+          font-size: var(--XSmall);
+        }
+      }
+      .supportContent {
+        padding: 0px;
+        margin-left: 3%;
+        height: 100%;
+        font-weight: var(--font-medium);
+        font-size: var(--XLarge);
+        .supportContentLinks {
+          font-weight: var(--font-normal);
+          font-size: var(--XSmall);
+        }
+      }
+      .downloadApp {
+        background-color: var(--blue4);
+        border-radius: 10px;
+        width: 350px;
+        min-width: 13%;
+        height: fit-content;
+        padding: 25px;
+        color: var(--white1);
+        .downloadAppText {
+          font-size: 26px;
+          font-weight: var(--font-bold);
+          margin: 0;
+        }
+        .creditScoreText {
+          margin: 0;
+          line-height: 30px;
+          padding: 15px 0px;
+          font-size: var(--XSmall);
+          font-weight: var(--font-normal);
+        }
+        .buttonContainer {
+          display: flex;
+          flex-direction: row;
+          .downloadAppBtn {
+            min-width: 50px;
+            width: 150px;
+            margin-right: 5px;
+          }
+          .googlePlayBtn {
+            min-width: 50px;
+            width: 150px;
+          }
+        }
+      }
+    }
+    .divideLine {
+      width: 97%;
+    }
+    .footerContentInfoLinks {
+      font-size: var(--XSmall);
+    }
+    .footerContentAddressInfo {
+      font-size: var(--XSmall);
+    }
+    .footerContent {
+      background-color: var(--purple2);
+      height: 100%;
+      width: 100%;
+      .footerContentText {
+        font-size: var(--XSmall);
+        padding: 40px 0px 0px 0px;
+      }
+      .footerContentCopyRightText {
+        font-size: var(--XSmall);
+        padding: 19px 0px 40px 0px;
+      }
+    }
+  }
+}

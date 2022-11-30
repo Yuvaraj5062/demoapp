@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+  .accordionContainer {
+    border: 1px solid var(--grey11);
+    border-radius: 10px;
+    padding: 20px 25px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 70%;
+    margin: 0px auto 20px auto;
+    .accordionCloseContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .accordionText {
+        color: var(--blue5);
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+        margin: 0;
+      }
+      .openStyle,
+      .closeStyle {
+        cursor: pointer;
+      }
+    }
+    .dividerClass {
+      margin-top: 20px;
+      border-radius: 10px;
+      background: var(--grey11);
+    }
+    .accordionContent {
+      color: var(--grey1);
+      font-weight: var(--font-normal);
+      font-size: var(--XSmall);
+    }
+  }
+}

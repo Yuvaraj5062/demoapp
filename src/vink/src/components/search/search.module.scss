@@ -1,0 +1,25 @@
+
+    .searchBarInputDiv{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-bottom: 0.8px solid #C4C4C4;
+        width: 74%;
+        input{
+            width: 100%;
+            padding: 16px 38px;
+            font-size: 20px;
+            outline: 0;
+            border: 0;
+        }
+        .searchBarLocateIcon{
+            position: absolute;
+            left: 0;
+        }
+        .searchBarSearchIcon{
+            position: absolute;
+            right: 0;
+        }
+    }
