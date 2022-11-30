@@ -1,0 +1,111 @@
+.blogsTitle{
+    font-weight: 600;
+    font-size: 18px;
+    color: #12599A;
+}
+.blogsCardTitle{
+    font-weight: 600;
+    font-size: 16px;
+    color: #636363;
+    /* display: inline-block;
+    width: 195px; */
+}
+.blogsCardSubTitle{
+ font-weight: 500;
+font-size: 12px;
+color: #636363;
+
+}
+.blogsClientblogsClientCardSubTitle{
+    font-weight: 500;
+font-size: 14px;
+color: #636363;
+}
+.blogsHeader{
+    background-color: #F5F5F5;
+    padding: 11px 20px;   
+    display: flex;
+    flex-direction: column; 
+}
+/* .blogsHeaderText{
+    font-weight: 700;
+    font-size: 18px;
+    color: #287CBC;
+} */
+.blogsHeaderText{
+    font-weight: 600;
+    font-size: 18px;
+    color: #287CBC;
+}
+.blogsImage{
+     min-height:200px; 
+     max-height:200px;
+     border-top-left-radius:27px;
+     border-top-right-radius:27px
+}
+.blogsClientImage{
+    min-height:150px; 
+    max-height:150px;
+    min-width:150px; 
+    max-width:150px;
+}
+.blogsClientImageTxt{
+    border: 1px solid #cccccc ;
+    height: 150px;
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+.blogsClientCardTitle{
+    font-weight: 500;
+    font-size: 16px;
+}
+.blogsClientCardSubTitle{
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.blogsSubtitle{  
+    font-size: 13px;
+}
+.blogTabActive{
+    font-weight: 600;
+    font-Size: 16px;
+     color:#ffffff;
+     cursor: pointer;
+     display: inline-block;
+     text-align: center;
+     min-width: 236px;
+     padding: 14px 0px;
+     background: #287CBC;
+     border-radius:10px 10px 0px 0px;
+     border-bottom:0.5px solid #287CBC
+}
+.blogTab{
+    font-weight: 500;
+    font-Size: 16px;
+     color:#636363;
+     cursor: pointer;
+     display: inline-block;
+     text-align: center;
+     min-width: 236px;
+     padding: 14px 0px;
+     background: rgb(245, 245, 245);
+     border-radius:10px 10px 0px 0px;
+}
+.cancleBtn{
+    color:  #ffffff !important;
+    background: #287CBC !important;
+    margin-left: 3%;
+}
+
+/* .MuiAlert-root{ */
+    /* width: 98% !important; */
+    /* padding: 5px 0px !important; */
+/* } */
+
+.MuiAlert-icon{
+    padding: 5px 0px !important;
+}

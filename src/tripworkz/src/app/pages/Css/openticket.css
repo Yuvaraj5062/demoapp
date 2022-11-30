@@ -1,0 +1,119 @@
+/* #287CBC */
+.openTicketHeading{
+    font-weight: 600;
+    font-Size: 18px;
+     color:#636363
+}
+.openTicketsubHeading{
+    font-weight: 400;
+    font-Size: 14px;
+     color:#000000
+}
+.openTicketButton{
+    font-weight: 500;
+    font-Size: 16px;
+     color:#ffffff;
+     background-color:#287CBC;
+}
+
+.openTicketTab{
+    font-weight: 400;
+    font-Size: 16px;
+     color:#636363;
+     cursor: pointer;
+     display: inline-block;
+     text-align: center;
+     min-width: 236px;
+     padding: 15px 0px 15px 0px;
+     background: rgb(245, 245, 245);
+}
+.openTicketHeaderSubText{
+    font-weight: "400";
+    font-size: "13px"
+}
+
+.openTicketTabActive{
+    font-weight: 500;
+    font-Size: 16px;
+     color:#ffffff;
+     cursor: pointer;
+     display: inline-block;
+     text-align: center;
+     min-width: 236px;
+     padding: 15px 0px 16px 0px;
+     background: #287CBC;
+     border-radius:10px 10px 0px 0px;
+     border-bottom:2px solid #287CBC
+}
+
+.ButtonStyle {
+
+    background: #287CBC;
+    border: 1px solid #287CBC;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.registerText{
+    font-weight: 500;
+    font-Size: 18px;
+     color:#287CBC
+ }
+ .openTicketInput{
+    font-weight: 600;
+    font-Size: 16px;
+     color:#636363
+ }
+ .openTicketMyQuery{
+     color:#636363;
+     font-weight: 500;
+    font-Size: 16px;
+
+ }
+ .openTicketTableHead{
+    color:#287CBC;
+    font-weight: 500;
+   font-Size: 14px;
+ }
+ .openTicketCardHead{
+    font-weight: 500;
+    font-Size: 16px;
+ }
+ .openTicketTabletext{
+    color:#636363;
+    font-weight: 500;
+   font-Size: 14px;
+ }
+ .openTicketHeader{
+    background-color: #F5F5F5;
+    padding: 10px 20px;    
+}
+ .openTicketHeaderText{
+    font-weight: 600;
+    font-size: 18px;
+    color: #287CBC;
+}
+.openTicketSubHeaderText{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.firstColumn{
+    max-width: 100px !important;
+    overflow-y: "hidden" !important;
+    -ms-overflow-style: none !important;  
+    scrollbar-width: none !important
+}
+
+.firstColumn::-webkit-scrollbar {
+    display: none !important;
+  }
+  
+  .firstColumn {
+    -ms-overflow-style: none !important;  
+    scrollbar-width: none !important;  
+  }

@@ -1,0 +1,319 @@
+// 3rd-party Plugins
+@import "~highlight.js/styles/googlecode.css";
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+
+// Theme Styles
+@import "./_metronic/_assets/sass/style.react.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+// Default Layout themes
+// @import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+// @import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+// @import "./_metronic/_assets/sass/themes/layout/brand/dark.scss";
+// @import "./_metronic/_assets/sass/themes/layout/aside/dark.scss";
+
+// Header themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/base/dark.scss";
+
+// Header Menu themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/menu/dark.scss";
+
+// Brand themes
+// .brand-dark {
+//   @import "./_metronic/_assets/sass/themes/layout/brand/dark.scss";
+// }
+// // Light
+// .brand-light {
+//   @import "./_metronic/_assets/sass/themes/layout/brand/light.scss";
+// }
+
+// Aside themes
+// Dark
+//@import "./_metronic/_assets/sass/themes/layout/aside/dark.scss";
+// Light
+// @import "./_metronic/_assets/sass/themes/layout/aside/light.scss";
+
+// .example-highlight {
+//   padding: 0rem 1.5rem 1.75rem !important;
+// }
+
+.dropdown-item.active, .dropdown-item:active{
+
+  background-color: #287CBC !important ;
+}
+
+.example-highlight > pre {
+  background: none transparent !important;
+  margin: 0 !important;
+  padding-top: 0.5rem;
+  code {
+    overflow-y: auto;
+    display: block;
+
+    span {
+      background: none transparent !important;
+    }
+  }
+}
+
+.json > pre {
+  background: none #fff !important;
+}
+
+.example-code > .json {
+  background: none #fff !important;
+}
+
+.symbol.symbol-45 > svg {
+  width: 100%;
+  max-width: 45px;
+  height: 45px;
+}
+
+.react-bootstrap-table {
+  overflow-x: auto;
+}
+
+.react-bootstrap-table {
+  th {
+    outline: none;
+
+    &.sortable {
+      .svg-icon-sort {
+        opacity: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .svg-icon-sort {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .table.table-head-custom thead tr {
+    .sortable-active {
+      color: $primary !important;
+    }
+  }
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.mainHeadingFont {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 5rem;
+  margin-top: 5vh;
+  margin-bottom: 50px;
+}
+
+.card-cstm-footer {
+  background-color: #cde1ef;
+  height: 66px;
+  padding: 1.25rem 2.25rem;
+}
+
+.footer-btn {
+  border: 1px solid white !important;
+  font-weight: 600 !important;
+  float: right;
+}
+
+.footer-para {
+  margin-bottom: 0;
+  padding-top: 7px;
+  font-weight: 600;
+  float: left;
+}
+
+.roundedTextBox .MuiOutlinedInput-root {
+  border-radius: 50px !important;
+}
+
+.rounded-shape {
+  border-radius: 50px !important;
+  border-color: #ccc;
+}
+
+.loginBtn {
+  background-color: #287CBC;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  padding: 9px 0px;
+  color: white;
+  font-size: 13px;
+  margin-top: 17px;
+}
+
+.sendCodeBtn {
+  background-color: #e1e1e1;
+  width: 100%;
+  border-radius: 50px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  padding: 9px 0px;
+  color: #000;
+  font-size: 13px;
+  margin-top: 17px;
+}
+
+.textStyle1 {
+  color: #000;
+  font-weight: 500;
+}
+
+.removePadding .MuiBox-root {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.swiper-cstm div div {
+  overflow: hidden;
+}
+
+.cstm-checkbox {
+  width: 17px;
+  height: 27px;
+}
+
+.react-tel-input .countryField {
+  width: 100%;
+  margin-top: 10px !important;
+  border-radius: 50px !important;
+}
+
+.countryField1 {
+  width: 100% !important;
+  height: 39px !important;
+  margin-top: 3px !important;
+  border-radius: 50px !important;
+}
+
+.phoneErrorLabel {
+  display: block;
+  color: #f018a6;
+  font-size: 10px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.phoneMessageLabel {
+  display: block;
+  color: #0000008a;
+  font-size: 10px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.error-field {
+  border-color: #f018a6 !important;
+}
+
+.error-field1 {
+  border-color: #f64e60 !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag,
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background-color: transparent !important;
+  border-radius: 50px 0px 0px 50px !important;
+}
+
+.react-tel-input .flag-dropdown.open,
+.flag-dropdown {
+  border-radius: 50px 0px 0px 50px !important;
+}
+
+.custom-block {
+  border: 2px solid #eee;
+  float: left;
+  padding: 20px;
+  width: 100%;
+  // height: 80px;
+  // line-height: 80px;
+  border-radius: 15px;
+}
+.custom-block1 {
+  border: 2px solid #eee;
+  float: left;
+  padding: 15px;
+  width: 100%;
+  // height: 80px;
+  // line-height: 80px;
+  border-radius: 15px;
+}
+
+.linkBtn {
+  border-radius: 50px;
+  width: 100px;
+  padding: 0.4rem;
+}
+
+.showuser {
+  margin: 0 0 0 10px;
+  opacity: 1;
+}
+
+.rbt-input-hint,
+.rbt-input-main {
+  border-radius: 50px !important;
+  border: 1px solid #cacaca;
+}
+.kep-login-facebook {
+  width: 185px;
+  height: 35px;
+  border-radius: 4px;
+  background: #3b5998;
+  color: white;
+  border: 0px transparent;
+  text-align: center;
+  margin: 5px;
+  display: inline-block;
+  & i {
+    margin-right: 10px;
+  }
+  &:hover {
+    background: #3b5998;
+    opacity: 0.6;
+  }
+}
+
+.kep-login-google {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  width: 165px;
+  height: 35px;
+  border-radius: 4px;
+  background: #db3236;
+  color: white;
+  border: 0px transparent;
+  text-align: center;
+  & div {
+    padding: 0 !important;
+  }
+  &:hover {
+    background: #3b5998;
+    opacity: 0.6;
+  }
+}
+
+.inputFile {
+  border-radius: 20;
+  &:after {
+    border-radius: 0 1.42rem 1.42rem 0 !important;
+  }
+}

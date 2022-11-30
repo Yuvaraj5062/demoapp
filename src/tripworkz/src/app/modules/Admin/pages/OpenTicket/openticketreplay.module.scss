@@ -1,0 +1,268 @@
+@media only screen and (min-width: 768px) {
+    .MainContainer {
+        background-color: #ffffff;
+        //min-height: 100vh;
+
+        .AlertStatus {
+            margin: 25px 40px 0px 40px;
+        }
+
+        .Header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #F5F5F5;
+            text-align: center;
+            align-items: center;
+            padding: 20px 0px;
+
+            .HeaderText {
+                margin-left: 40px;
+                font-weight: 600;
+                font-size: 18px;
+                color: #287CBC;
+            }
+
+            .buttonHeader {
+                .HeaderButton1 {
+                    margin-right: 40px;
+                    background: #287CBC;
+                    border: 1px solid #287CBC;
+                    border-radius: 30px;
+                    color: #ffffff;
+                    font-size: 13px;
+                    font-weight: 400;
+                    padding: 9px 30px;
+
+                }
+
+                .HeaderButton {
+                    margin-right: 40px;
+                    background: #287CBC;
+                    border: 1px solid #287CBC;
+                    border-radius: 30px;
+                    color: #ffffff;
+                    font-size: 13px;
+                    font-weight: 400;
+                    padding: 9px;
+                }
+            }
+        }
+
+        .InformationMain {
+            display: flex;
+            border: 2px solid #E8EEFF;
+            justify-content: space-between;
+            margin: 40px;
+            // box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.05);
+            border-radius: 24px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .InformationLeft {
+                display: flex;
+                flex-direction: column;
+                padding-left: 40px;
+                line-height: 40px;
+
+
+                .TicketInfo {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #287CBC;
+                }
+
+                .TicketnormalText {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #636363;
+                    overflow-wrap: break-word;
+
+                }
+            }
+
+            .InformationRight {
+                display: flex;
+                flex-direction: column;
+                padding-right: 40px;
+                line-height: 40px;
+
+                .TicketnormalText {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #636363;
+                    overflow-wrap: break-word;
+
+                }
+
+            }
+        }
+
+        .Chatbox1 {
+            display: flex;
+            align-items: center;
+            margin: 30px 40px 10px 40px;
+
+            .ChatboxLeft {
+                display: flex;
+                flex-direction: column;
+                width: 92%;
+                background: #FFFFFF;
+                border: 1px solid #287CBC;
+                border-radius: 12px;
+                margin-left: 10px;
+                overflow-wrap: break-word;
+
+                .ChatboxLeftHeading {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #287CBC;
+                    background-color: #F5F5F5;
+                    padding: 14px 0px 13px 40px;
+                    border-top-left-radius: 16px;
+                    border-top-right-radius: 16px;
+                    overflow-wrap: break-word;
+                }
+
+                .ChatboxLeftText {
+                    padding: 14px 40px 13px 40px;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+        .AdminDate {
+            margin-left: 15%;
+            margin-bottom: 30px;
+            font-weight: 500;
+            font-size: 12px;
+            font-weight: 500;
+            color: #636363;
+
+            .DateField {
+                // margin-left: 15px;
+            }
+        }
+
+        .ClientDate {
+            margin-left: 8%;
+            margin-top: 10px;
+            padding-left: 10px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #636363;
+
+            .DateField {
+                //margin-left: 15px;
+            }
+        }
+
+        .Chatbox2 {
+            display: flex;
+            align-items: center;
+            margin: 30px 40px 10px 40px;
+
+            .ChatboxLeft2 {
+                display: flex;
+                // flex-wrap: wrap;
+                flex-direction: column;
+                width: 92%;
+                background: #FFFFFF;
+                border: 1px solid #287CBC;
+                border-radius: 16px;
+                margin-right: 10px;
+                overflow-wrap: break-word;
+
+                .ChatboxLeftHeading2 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #287CBC;
+                    background-color: #F5F5F5;
+                    padding: 14px 0px 13px 40px;
+                    border-top-left-radius: 19px;
+                    border-top-right-radius: 19px;
+                    overflow-wrap: break-word;
+                }
+
+                .ChatboxLeftText2 {
+                    overflow-wrap: break-word;
+                    padding: 14px 40px 13px 40px;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+        .Footer {
+            display: flex;
+            flex-direction: column;
+            margin: 40px;
+            background: #FFFFFF;
+            border: 1px solid #287CBC;
+            border-radius: 12px;
+
+            .FooterHeading {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #287CBC;
+                background-color: #F5F5F5;
+                padding: 14px 0px 13px 40px;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+            }
+
+            .FooterText {
+                overflow-wrap: break-word;
+                padding: 14px 0px 13px 40px;
+                font-weight: 500;
+                font-size: 12px;
+                color: #636363
+            }
+
+            .FooterLine {
+                border: 1px solid #E5E5E5;
+                margin-bottom: 20px;
+            }
+
+            .FooterinputField {
+                overflow-wrap: break-word;
+                margin: 0px 40px;
+            }
+        }
+
+        .ButtonGroup {
+            padding: 14px 0px 13px 40px;
+            margin-right: 40px;
+
+            .FooterButton {
+                background: #287CBC;
+                border: 1px solid #287CBC;
+                border-radius: 30px;
+                color: #ffffff;
+                font-size: 13px;
+                font-weight: 400;
+                padding: 12px 0px;
+                width: 167px;
+                text-align: center;
+            }
+
+            .FooterButton1 {
+                background: #287CBC;
+                border: 1px solid #287CBC;
+                border-radius: 30px;
+                color: #ffffff;
+                font-size: 13px;
+                font-weight: 400;
+                padding: 12px 0px;
+                width: 136px;
+                text-align: center;
+                margin-left: 40px;
+            }
+        }
+    }
+}

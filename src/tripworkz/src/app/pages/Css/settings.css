@@ -1,0 +1,25 @@
+.settingImage{
+    min-height: 58px;
+    max-height: 58px;
+    max-width: 68px;
+    min-width: 68px;
+}
+.settingTableHeader{
+    font-weight: 500;
+    font-size: 16px;
+    color: #287CBC;
+    margin-left:6px
+}
+.settingHeader{
+    background-color: #F5F5F5;
+    padding: 20px 20px;    
+}
+.settingHeaderText{
+    font-weight: 600;
+    font-size: 18px;
+    color: #287CBC;
+}
+.settingSubHeaderText{
+    font-weight: 500;
+    font-size: 16px;
+}

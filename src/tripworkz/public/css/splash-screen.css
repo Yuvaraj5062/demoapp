@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 1200px){
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1240px !important;
+}
+}
+#splash-screen {position: absolute;z-index: 1000;width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;background-color: #f2f3f8;}
+
+#splash-screen img {margin-left: calc(100vw - 100%);
+  margin-bottom: 30px;
+}
+
+#splash-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.splash-spinner {
+  animation: rotate 2s linear infinite;
+  margin-left: calc(100vw - 100%);
+  width: 50px;
+  height: 50px;
+}
+.amanitiyInformernow {padding: 5px 0px;}
+.amanitiyInformernow li {display: inline-block; padding: 0px 10px;}
+.AppBarInformation span {font-size: 16px;}
+.splash-spinner .path {
+  stroke: #5d78ff;
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+}
+.myCreditsInfomr li {display: inline-block; padding: 0px 5px;}
+.myCreditsInfomrnow {text-align: left; padding: 0px 10px;}
+.myCreditsInfomrnow li {display: inline-block; padding: 0px 5px;}
+.totalMemberUser {text-align: left; padding: 0px 10px;}
+.totalMemberUser li {display: inline-block; padding: 0px 5px;}
+.toast.show {position: absolute; top: 0px; left: -20px;}
+.toast-header {display: unset !important; border: none !important; padding: 0px !important;}
+.toast-header span {position: absolute; top: 10px; right: 10px; color: #fff; z-index: '10',}
+.footerCareers {text-align: right;}
+.footerCareers li {color: #fff;  display: inline-block; padding: 0px 10px;}
+.footerCareers a {color: #fff; font-size: 13px;}
+.menu-text-now {border-radius: 0.42rem;
+  padding: 0.75rem 1.25rem; font-weight: 600;}
+.header-menu .menu-nav > .menu-item > .MenuLinkInformation .menu-text-now {color: #fff;}
+.header-fixed[data-header-scroll="on"] .header-menu .menu-nav > .menu-item > .MenuLinkInformation .menu-text-now {color: #7E8299;}
+.header-fixed[data-header-scroll="on"] .header-menu .menu-nav > .menu-item > .MenuLinkInformation .menu-text-now:hover {transition: all 0.3s ease; background: rgba(0, 0, 0, 0.1);}
+.menu-text-now:hover {transition: all 0.3s ease; background-color: rgba(255, 255, 255, 0.1);}
+.footerNavbarConversion {color: #3F4254;}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+@media only screen and (min-width:318px) and (max-width:991px) {
+  .header-menu-mobile .menu-nav > .menu-item > .menu-heading .menu-text-now, .header-menu-mobile .menu-nav > .menu-item > .MenuLinkInformation .menu-text-now{color: #3F4254;}
+  .header-menu-mobile .menu-nav > .menu-item > .MenuLinkInformation {
+    padding: 9px 30px;
+}
+.header-menu-mobile .menu-nav .menu-item > .MenuLinkInformation .menu-text-now {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0;
+}
+.header-menu-mobile .menu-nav > .menu-item > .MenuLinkInformation .menu-arrow {
+  flex: 0 0 20px;
+  font-size: 0.6rem;
+}
+  
+}
