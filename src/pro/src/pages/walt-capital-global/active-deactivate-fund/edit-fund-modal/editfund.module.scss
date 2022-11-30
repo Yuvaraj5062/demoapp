@@ -1,0 +1,122 @@
+@media only screen and (min-width: 768px) {
+  .editFundcontainer {
+    width: 555px;
+    margin: auto;
+    background-color: var(--white1);
+    .editFundCross {
+      background-color: var(--white1);
+      margin: 25% auto 0px auto;
+      text-align: center;
+      padding: 25px 0px 20px 0px;
+      background-color: var(--blue1);
+      color: var(--white1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+      .crossIcon {
+        float: right;
+        margin-right: 36px;
+      }
+    }
+  }
+  .tableContent {
+    padding: 22px 37px 27px 39px;
+    .dateInput {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 108%;
+      .dateInputLabel {
+        display: flex;
+        align-items: center;
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+      }
+      .datePickerContainer {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 15px 0px;
+        width: 300px;
+        margin-right: 37px;
+        .datePicker {
+          background: var(--grey18);
+          text-align: center;
+          input {
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            padding: 15px 20px;
+            background: var(--grey18);
+            border: none;
+            color: var(--black1);
+          }
+          input::placeholder {
+            color: var(--black1);
+          }
+          input:focus {
+            outline: none;
+          }
+        }
+        .iconContainer {
+          background: var(--blue7);
+          padding: 10px 14px;
+        }
+      }
+      // input[type="date"] {
+      //   width: 324px;
+      //   height: 47px;
+      //   margin: 22px 37px 15px 12px;
+      //   padding-left: 2px;
+      //   border-style: none;
+      //   background: var(--grey18);
+
+      //   &::-webkit-calendar-picker-indicator {
+      //     background-color: #f49554;
+      //     font-size: 16px;
+      //     height: 66px;
+      //     padding: 15px;
+      //     margin-top: 40px;
+      //     cursor: pointer;
+      //     filter: invert(1);
+      //   }
+      // }
+    }
+    .comment {
+      color: var(--black1);
+      font-weight: var(--font-medium);
+      font-size: var(--XXSmall);
+    }
+
+    .text {
+      color: var(--black1);
+      font-weight: var(--font-medium);
+      font-size: var(--XXSmall);
+      background-color: var(--grey18);
+      border-style: none;
+      margin-top: 9px;
+      min-height: 140px;
+      width: 94%;
+      padding: 7px 16px;
+    }
+  }
+  .buttonContainer {
+    background-color: var(--blue1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 38px 13px 38px;
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--blue10);
+      width: 90%;
+      .addCommentButton {
+        padding: 14px 0px 13px 0px;
+        background-color: var(--blue10);
+        color: var(--blue1);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+      }
+    }
+  }
+}

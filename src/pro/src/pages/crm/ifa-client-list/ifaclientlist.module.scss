@@ -1,0 +1,58 @@
+
+  
+  @media only screen and (min-width: 768px) {
+      .ifaMainContainer{
+          //  padding: 30px 0px 0px 30px;
+          width: 95%;
+          margin: auto;
+          //background: var(--grey22);
+                   
+          .tableContainer {
+              margin-top: 13px;
+              
+              
+              .table {
+                width: 100%;
+                th,
+                td {
+                  padding-left:  17px;
+                }
+                .tableHead {
+                  background: var(--blue11);
+                  height: 50px;
+                  color: var(--white1);
+                  font-size: var(--XSmall);
+                  font-weight: var(--font-medium);
+                  text-align: left;
+                }
+                .tableBodyRow {
+                
+                
+                  background: var(--blue8);
+                  height: 64px;
+                  font-size: var(--XXSmall);
+                  font-weight: var(--font-medium);
+                  color: var(--black2);  
+                  &:nth-child(even) {
+                    background: var(--blue9);
+                    
+                  }
+                }
+              }
+            }
+          
+          .paginationContainer {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 0px 60px 0px;
+            margin-top: 160px;
+            //margin-bottom: 50px;
+            .paginationText{
+              font-weight: var(--font-medium);
+              font-size: var(--XXSmall);
+              color:var(--grey10)
+            }
+          }
+      }
+  
+  }

@@ -1,0 +1,53 @@
+@media only screen and (min-width: 768px) {
+  .globalFundCardContainer{
+    border:1px solid var(--blue1);
+    border-top: 0px;
+    .globalfundcard {
+      display: flex;
+      flex-direction: row;
+      background-color: var(--blue3);
+      align-items: center;
+      padding: 26px 0px 26px 0px;
+      margin-top: 30px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      cursor: pointer;
+  
+      .globalFundContentLeft {
+        //flex:1;
+  
+        .title {
+          font-size: var(--medium);
+          font-weight: var(--font-semibold);
+          color: var(--white1);
+          margin: 0px;
+        }
+        .usdValue {
+          font-size: var(--XXXXLarge);
+          font-weight: var(--font-bold);
+          color: var(--white1);
+          margin: 0px;
+        }
+      }
+      .globalFundContent {
+        //flex:1;
+        font-size: var(--XSmall);
+        color: var(--white1);
+        font-weight: var(--font-semibold);
+      }
+    }
+    .clientsData {
+      background: var(--white1);
+      font-size: var(--XXXSmall);
+      box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+      font-weight: var(--font-semibold);
+      padding: 12px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .value {
+        color: var(--blue3);
+      }
+    }
+  }
+}

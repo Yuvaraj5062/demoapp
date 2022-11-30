@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+  .allClients {
+    background: var(--white1);
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    .divider {
+      height: 51px;
+      border: 1px solid var(--blue12);
+    }
+    .allClientsText {
+      color: var(--black2);
+      font-size: var(--XXSmall);
+      font-weight: var(--font-semibold);
+    }
+    .initialLetter {
+      font-size: var(--XXSmall);
+      color: var(--grey1);
+      font-family: var(--font-medium);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@mixin buttonStyle($margin, $color, $bg-color, $border) {
+  color: $color;
+  background: $bg-color;
+  border: 1px solid $border;
+  font-weight: var(--font-semibold);
+  font-size: var(--XSmall);
+  padding: 7px 0px;
+  text-align: center;
+  min-width: 128px;
+}
+@media only screen and (min-width:768px) {
+  .fundContainer {
+    padding: 18px 0px 0px 0px;
+    .fundHeading {
+      display: flex;
+      align-items: center;
+      background-color: var(--blue1);
+      padding: 16px 0px 15px 0px;
+      color: var(--white1);
+      justify-content: center;
+    }
+    .button {
+      display: flex;
+      justify-content: right;
+      width: 100%;
+      padding: 16px 22px 14px 0px;
+      .doneButton {
+        padding: 13px 42px 13px 42px;
+        background-color: var(--blue10);
+        color: var(--blue1);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+      }
+    }
+    .tableContainer {
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 19px;
+        th {
+          font-weight: var(--font-medium);
+          padding: 0px 70px;
+          font-size: var(--small);
+        }
+        td {
+          padding-left: 70px;
+        }
+        .tableHead {
+          background: var(--blue11);
+          height: 47px;
+          color: var(--white1);
+          font-size: var(--XSmall);
+          font-weight: var(----font-medium);
+          text-align: left;
+        }
+        .tableRow {
+          background: var(--blue8);
+          height: 66px;
+          font-size: var(--small);
+          font-weight: var(--font-normal);
+          color: var(--black2);
+          .deactiveButton {
+            @include buttonStyle(
+              0px,
+              var(--black1),
+              var(--blue8),
+              var(--black1)
+            );
+            &:hover {
+              @include buttonStyle(
+                0px,
+                var(--white1),
+                var(--blue1),
+                var(--blue1)
+              );
+            }
+          }
+          &:nth-child(even) {
+            background: var(--blue9);
+            .deactiveButton {
+              @include buttonStyle(
+                0px,
+                var(--black1),
+                var(--blue9),
+                var(--black1)
+              );
+              &:hover {
+                @include buttonStyle(
+                  0px,
+                  var(--white1),
+                  var(--blue1),
+                  var(--blue1)
+                );
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) {
+  .menuContainer {
+    width: 75%;
+    // height: 143px;
+    background: var(--white1);
+    box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    // left: 85%;
+    .menuItems {
+      // display: flex;
+      // align-items: center;
+      .menuItem{
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+      }
+    }
+  }
+}

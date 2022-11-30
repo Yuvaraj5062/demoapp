@@ -1,0 +1,70 @@
+@media only screen and (min-width: 768px) {
+  .addPricingContainer {
+    width: 36.7%;
+    margin: auto;
+    
+    background-color: var(--white1);
+    .addPricingCross {
+      background-color: var(--white1);
+      margin: 45% auto 0px auto;
+      text-align: center;
+      padding: 17px 0px 17px 0px;
+      background-color: var(--blue1);
+      color: var(--white1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+
+      .crossIcon {
+        float: right;
+        margin-right: 45px;
+      }
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+      margin-bottom: 14px;
+      .textFieldContainer {
+        display: flex;
+        flex-direction: row;
+        width: 82%;
+        height: 48px;
+        margin-bottom: 7px;
+        justify-content: space-between;
+      }
+      .customInput {
+        border-style: none;
+        background-color: var(--grey18);
+        width: 288px;
+      }
+      .title {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        color: var(--black1);
+      }
+    }
+
+    .buttonContainer {
+      background-color: var(--blue1);
+      height: 63px;
+      display: flex;
+      align-items: center;
+
+      .button {
+        display: flex;
+        justify-content: right;
+        width: 91%;
+        .priceButton {
+          padding: 9px 129px 9px 129px;
+          background-color: var(--blue10);
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+      }
+    }
+  }
+}

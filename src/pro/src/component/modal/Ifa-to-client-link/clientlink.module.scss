@@ -1,0 +1,84 @@
+@media only screen and (min-width: 768px) {
+  .clientLinkMainContainer {
+    width: 56%;
+    background-color: var(--white1);
+    margin: 2% auto;
+    .clientLinkCross {
+      text-align: center;
+      padding: 23px 0px 23px 0px;
+      background-color: var(--blue1);
+      color: var(--white1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+      .crossIcon {
+        float: right;
+        margin-right: 36px;
+      }
+    }
+    .clientData {
+      background-color: var(--white1);
+      padding: 16px 60px 16px 60px;
+      color: var(--black1);
+      font-size: var(--medium);
+      font-weight: var(--font-semibold);
+    }
+    .dropdownContainer {
+      display: flex;
+      padding-left: 60px;
+      .lastMonth {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+        background-color: var(--blue2);
+        width: 20%;
+        padding: 12px 37px 12px 37px;
+      }
+      .search {
+        background-color: var(--blue10);
+        color: var(--blue1);
+        padding: 12px 33px 12px 33px;
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+        margin-left: 11px;
+      }
+    }
+    .tableContainer {
+      .tableData {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 81%;
+        padding-left: 60px;
+        margin-top: 18px;
+        .globalNumber {
+          color: var(--blue7);
+          font-weight: var(--font-bold);
+          font-size: var(--small);
+        }
+        .link {
+          color: var(--blue7);
+          font-weight: var(--font-bold);
+          font-size: var(--small);
+        }
+      }
+      .mainTableData {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0px 0px 60px;
+        width: 81%;
+        margin-top: 18px;
+        .title {
+          color: var(--black1);
+          font-weight: var(--font-medium);
+          font-size: var(--small);
+        }
+        .linkData {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}

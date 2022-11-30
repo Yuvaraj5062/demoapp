@@ -1,0 +1,328 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    margin: 14px 30px 0px 30px;
+    height: 980px;
+    .ifaHeaderContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .textDropdown {
+        display: flex;
+        .viewBtn {
+          padding: 13px 34px;
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          background: var(--blue10);
+          color: var(--blue1);
+          margin-left: 20px;
+        }
+        .ifaNameText {
+          font-weight: var(--font-normal);
+          font-size: var(--XSmall);
+          margin: 10px 0px;
+        }
+        .dropdowns {
+          display: flex;
+          flex-direction: row;
+          justify-content: right;
+          .dropdownContainer {
+            background: var(--white1);
+            padding: 15px 0px;
+            margin-left: 20px;
+            width: 212px;
+            height: 20px;
+            box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+            .dropdownContainerItems {
+              display: flex;
+              justify-content: space-between;
+              width: 90%;
+              align-items: center;
+              .dropdownContent {
+                font-weight: var(--font-normal);
+                font-size: var(--XSmall);
+                color: var(--black1);
+                padding: 0px 10px;
+              }
+            }
+            .dropdownListContent {
+              margin-top: 10px;
+              // position: relative;
+              width: 188px;
+              padding: 0px 14px;
+              background: var(--white1);
+              height: 150px;
+              overflow-y: scroll;
+            }
+            ::-webkit-scrollbar {
+              width: 0px;
+            }
+          }
+        }
+      }
+
+      .InvestmentButton {
+        justify-content: space-between;
+        .investmentPlacedButton {
+          width: 200px;
+          height: 50px;
+          background: var(--blue10);
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+          padding: 10px;
+          margin-right: 24px;
+        }
+        .generateInvoiceButton {
+          width: 200px;
+          height: 50px;
+          background: var(--blue10);
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+          padding: 10px;
+        }
+      }
+    }
+    .dividerBorder {
+      margin: 13px 0px 13px 0px;
+      border: 2px solid #000000;
+    }
+    .dateContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .dateTextContainer {
+        display: flex;
+        .dateText {
+          font-weight: var(--font-normal);
+          font-size: var(--XSmall);
+          margin: 15px 0px;
+        }
+        .datePickerContainer {
+          display: flex;
+          align-items: center;
+          margin: 0px 20px 0px 10px;
+          .datePicker {
+            background: var(--white1);
+            text-align: center;
+            input {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              padding: 15px 0px 15px 20px;
+              background: var(--white1);
+              border: none;
+              color: var(--grey1);
+            }
+            input:focus {
+              outline: none;
+            }
+          }
+          .datePick {
+            color: var(--blue1);
+          }
+          .iconContainer {
+            background: var(--white1);
+            padding: 10px;
+          }
+        }
+        .viewBtn {
+          padding: 15px 34px;
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          background: var(--blue10);
+          color: var(--blue1);
+        }
+      }
+
+      .printButton {
+        width: 131px;
+        display: flex;
+        justify-content: center;
+        background: var(--blue10);
+        color: var(--blue7);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        padding-top: 14px;
+        height: unset;
+        .iconCustomClass {
+          margin-right: 7px;
+          display: inline-block;
+        }
+        .titleCustomClass {
+          display: inline-block;
+          margin-top: 2px;
+        }
+      }
+    }
+
+    .logoAddressContainer {
+      display: flex;
+      flex-direction: row;
+      margin-top: 13px;
+      .logoContainer {
+        background: var(--white1);
+        box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+        display: flex;
+        align-items: center;
+        width: 230px;
+        padding: 5px;
+        .logo {
+          width: 198px;
+        }
+      }
+      .addressPhoneContainer {
+        display: flex;
+        width: 100%;
+        background-color: var(--blue11);
+        font-weight: var(--font-medium);
+        font-size: var(--XSmall);
+        color: var(--white1);
+        padding: 14px 20px;
+        justify-content: flex-end;
+        .feeUserName1 {
+          .feeText6 {
+            font-size: var(--XSmall);
+            font-weight: var(--font-medium);
+            margin: 0px;
+            text-align: right;
+          }
+        }
+      }
+    }
+    .feesAttentionContainer {
+      background-color: var(--white1);
+      height: 720px;
+      .feeStatementContainer {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .feeDetailContainer {
+          margin: 34px 20px 0px 0px;
+
+          .feeUserName1 {
+            margin-top: 70px;
+
+            .feeText6 {
+              font-size: var(--XSmall);
+              font-weight: var(--font-medium);
+              margin: 0px;
+              text-align: right;
+            }
+          }
+          .feeText1 {
+            margin: 0px;
+            color: var(--blue7);
+            font-weight: var(--font-medium);
+            font-size: var(--XSmall);
+          }
+          .feeText2 {
+            margin: 5px 0px 0px 0px;
+            color: var(--blue7);
+            font-size: var(--XSmall);
+            font-weight: var(--font-medium);
+            float: right;
+          }
+        }
+        .feePeriodContainer {
+          margin: 34px 0px 0px 20px;
+          .feeText1 {
+            margin: 0px;
+            color: var(--blue7);
+            font-weight: var(--font-semibold);
+            font-size: var(--medium);
+          }
+          .feeText2 {
+            margin: 5px 0px 0px 0px;
+            color: var(--blue7);
+            font-size: var(--XSmall);
+          }
+          .feeUserName {
+            margin-top: 34px;
+            .feeText3 {
+              margin: 0;
+              font-size: var(--XSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .feeText4 {
+              margin: 30px 0px 0px 0px;
+              font-size: var(--XSmall);
+              font-weight: var(--font-medium);
+            }
+            .feeText5 {
+              margin: 0px;
+              font-size: var(--XSmall);
+              font-weight: var(--font-medium);
+            }
+          }
+        }
+      }
+      .AttentionContainer {
+        width: 100%;
+        .attentionText {
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          text-align: center;
+        }
+        .tableContent {
+          margin-top: 15px;
+          .table {
+            width: 100%;
+            th {
+              font-weight: var(--font-medium);
+              padding: 10px 30px;
+            }
+            td {
+              padding-left: 30px;
+            }
+            .tableHead {
+              background: var(--blue11);
+              height: 24px;
+              color: var(--white1);
+              font-size: var(--XSmall);
+              font-weight: var(----font-medium);
+              text-align: left;
+            }
+            .tableBodyRow {
+              background: var(--white1);
+              height: 24px;
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              color: var(--black2);
+              text-align: left;
+            }
+          }
+        }
+      }
+      .attentionSumTable {
+        float: right;
+        margin-right: 20px;
+        .tableBodyRow {
+          background: var(--blue8);
+          height: 24px;
+          font-size: var(--XXSmall);
+          font-weight: var(--font-medium);
+          color: var(--black2);
+          text-align: left;
+
+          &:nth-child(even) {
+            background: var(--blue9);
+          }
+        }
+        .customClassForTd {
+          padding: 5px 15px;
+        }
+      }
+    }
+    .noteText {
+      font-weight: var(--font-normal);
+      font-size: var(--XXSmall);
+      padding: 10px 0px;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}

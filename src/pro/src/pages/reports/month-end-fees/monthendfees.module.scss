@@ -1,0 +1,183 @@
+@mixin incomeTotal {
+  background: var(--blue7);
+  color: var(--white1);
+  font-weight: var(--font-bold);
+  font-size: var(--medium);
+}
+@media only screen and (min-width: 768px) {
+  .monthendfeesContainer {
+    min-height: 100vh;
+    padding-bottom: 40px;
+
+    .noteText {
+      font-weight: var(--font-normal);
+      font-size: 11px;
+      padding: 13px 30px;
+      margin-top: 30px;
+    }
+    .monthendfessTitle {
+      font-size: var(--XXSmall);
+      font-weight: var(--font-semibold);
+      color: var(--blue1);
+      background: var(--grey15);
+      padding: 12px 0px 12px 30px;
+      .monthendfessText {
+        color: var(--grey1);
+      }
+    }
+    .monthEndManagement {
+      width: 95%;
+      margin: auto;
+      margin-top: 18px;
+      .monthendfessTab {
+        padding: 19px 0px;
+        display: flex;
+        justify-content: space-around;
+        background: var(--blue1);
+        .monthEndManagementItem {
+          color: var(--white1);
+          font-size: var(--XSmall);
+          font-weight: var(--font-medium);
+        }
+      }
+      .addButtonDatepickerContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 0px;
+
+        // .datePickerContainer {
+        //   display: flex;
+        //   align-items: center;
+        //   width: 20%;
+        //   .datePicker {
+        //     background: var(--white1);
+        //     text-align: center;
+        //     input {
+        //       font-size: var(--XXSmall);
+        //       font-weight: var(--font-medium);
+        //       padding: 15px 0px 15px 20px;
+        //       background: var(--white1);
+        //       border: none;
+        //       color: var(--grey1);
+        //     }
+        //     input:focus {
+        //       outline: none;
+        //     }
+        //   }
+        //   .datePick {
+        //     color: var(--blue1);
+        //   }
+        //   .iconContainer {
+        //     background: var(--white1);
+        //     padding: 10px;
+        //   }
+        // }
+        .dataViewContainer {
+          display: flex;
+          flex-direction: row;
+          width: 42%;
+  
+          .dateInput {
+            display: flex;
+            flex-direction: row;
+            input[type="date"] {
+              padding-left: 27px;
+              border: 1px solid var(--white1);
+              background: var(--white1);
+              &::-webkit-calendar-picker-indicator {
+                background-color: white;
+                font-size: 16px;
+                padding: 15px;
+                cursor: pointer;
+              }
+            }
+          }
+          .datePickerContainer {
+            display: flex;
+            align-items: center;
+            margin: 0px 20px 0px 10px;
+            .datePicker {
+              background: var(--white1);
+              text-align: center;
+              input {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                padding: 15px 0px 15px 20px;
+                background: var(--white1);
+                border: none;
+                color: var(--grey1);
+              }
+              input:focus {
+                outline: none;
+              }
+            }
+            .datePick {
+              color: var(--blue1);
+            }
+            .iconContainer {
+              background: var(--white1);
+              padding: 10px;
+            }
+          }
+          .viewBtn {
+            padding: 15px 34px;
+            font-size: var(--XXSmall);
+            font-weight: var(--font-semibold);
+            background: var(--blue10);
+            color: var(--blue1);
+          }
+        }
+        .addButtonText {
+          padding: 13px 35px;
+          color: var(--blue1);
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          background: var(--blue10);
+          margin-left: 30px;
+        }
+      }
+      .incomeExpenseContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7px;
+        flex-wrap: wrap;
+        // overflow-x: scroll;
+        .incomeExpenseLeft {
+          width: 48%;
+          // max-width: 515px;
+
+          .expensePPM {
+            margin-top: 45px;
+            border: 1px solid var(--red1);
+          }
+          .totalTable {
+            width: 100%;
+            margin-top: 14px;
+            .incomeTotal {
+              @include incomeTotal();
+            }
+          }
+        }
+        .incomeExpenseRight {
+          width: 48%;
+          // max-width: 515px;
+          .incomeTradeStation {
+            margin-top: 24px;
+          }
+          .expenseBrokers {
+            margin-top: 38px;
+            border: 1px solid var(--red1);
+          }
+          .totalTable {
+            width: 100%;
+            margin-top: 15px;
+            .incomeTotal {
+              @include incomeTotal();
+            }
+          }
+        }
+      }
+    }
+  }
+}

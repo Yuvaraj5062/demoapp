@@ -1,0 +1,34 @@
+@media only screen and (min-width: 768px) {
+  .amountContainer {
+    background: var(--white1);
+    box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+    flex: 1;
+    margin: 5px;
+    .amountContent {
+      padding: 4px 0px 6px 15px;
+      .amountTypeText {
+        font-size: var(--XXXSmall);
+        color: var(--grey3);
+      }
+      .amountText {
+        font-size: var(--large);
+        font-weight: var(--font-semibold);
+        color: var(--black2);
+      }
+      .accSize {
+        font-size: var(--XXXSmall);
+      }
+      .clients {
+        font-size: var(--XXXSmall);
+        margin-left: 2px;
+        .clientsCount {
+          font-weight: var(--font-semibold);
+        }
+      }
+    }
+    .accLineImage {
+     // width: 240px;
+     width: 100%;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@media only screen and (min-width: 768px) {
+  .pricingContainer {
+    margin-top: 35px;
+    .dropdownBtnContainer {
+      display: flex;
+      // flex-direction: row;
+      //justify-content: space-between;
+      // width: 31%;
+
+      .datePickerContainer {
+        display: flex;
+        align-items: center;
+        background: var(--white1);
+        .datePicker {
+          background: var(--white1);
+          text-align: center;
+          input {
+            font-size: var(--XXSmall);
+            font-weight: var(--font-medium);
+            padding: 15px 0px 15px 25px;
+            background: var(--white1);
+            border: none;
+            color: var(--grey1);
+          }
+          input:focus {
+            outline: none;
+          }
+        }
+        .datePick {
+          color: var(--white1);
+        }
+        .iconContainer {
+          background: var(--white1);
+          padding: 10px 22px 10px 22px;
+        }
+      }
+
+      .dropdown {
+        width: 50%;
+        position: relative;
+        .dropdownMain {
+          position: absolute;
+        }
+        .dropdownContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+          background: var(--white1);
+          padding: 12px 24px;
+        }
+      }
+      .viewBtn {
+        margin-left: 30px;
+        font-size: var(--XSmall);
+        font-weight: var(--font-semibold);
+        background: var(--blue10);
+        color: var(--blue1);
+        padding: 13px 32px;
+      }
+      .addPricingBtn {
+        margin-left: 30px;
+        font-size: var(--XSmall);
+        font-weight: var(--font-semibold);
+        background: var(--blue10);
+        color: var(--blue1);
+        padding: 15px 20px;
+      }
+    }
+    .table {
+      border-collapse: collapse;
+      margin: 14px 0px 40px 0px;
+      box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+      text-align: center;
+      width: 100%;
+      .pricingTableHeader {
+        background: var(--blue11);
+        color: var(--white1);
+        font-size: var(--XXXSmall);
+        font-weight: var(--font-medium);
+        .headerData {
+          padding: 15px 0px;
+          border: 1px solid var(--blue11);
+        }
+      }
+      .pricingTableRow {
+        font-size: var(--XXXXXSmall);
+        font-weight: var(--font-medium);
+        color: var(--grey1);
+        .rowData {
+          border: 1px solid var(--blue7);
+          padding: 5px 11px 5px 11px;
+        }
+        .editBtn {
+          padding: 0px;
+        }
+      }
+    }
+  }
+}

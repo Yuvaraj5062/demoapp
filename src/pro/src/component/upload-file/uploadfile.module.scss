@@ -1,0 +1,13 @@
+@media only screen and (min-width: 768px) {
+  .uploadContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .uploadFileIcon {
+      background: var(--blue1);
+      padding: 8px 10px 0px 10px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+}

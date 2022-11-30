@@ -1,0 +1,339 @@
+@media only screen and (min-width: 768px) {
+  .runfeesPPMStyle {
+    padding-bottom: 50px;
+    .runfeesPPMContainer {
+      padding: 30px 30px 0px 30px;
+      .titleButtonContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .titleContainer {
+          .titleText {
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            margin: 0px;
+            padding: 0px;
+          }
+          .endDate {
+            font-size: var(--XSmall);
+            font-weight: var(--font-medium);
+            color: var(--grey1);
+            margin: 0px;
+            padding: 0px;
+          }
+        }
+        .printContainer {
+          .printButton {
+            width: 131px;
+            display: flex;
+            justify-content: center;
+            background: var(--blue10);
+            color: var(--blue7);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-semibold);
+            padding: 15px 20px;
+            height: 50px;
+            .iconCustomClass {
+              margin-right: 7px;
+              display: inline-block;
+            }
+            .titleCustomClass {
+              display: inline-block;
+              margin-top: 2px;
+            }
+          }
+        }
+      }
+      .abcFilter {
+        margin-bottom: 30px;
+      }
+
+      .buttonDropdownContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .datePickerContainer {
+          display: flex;
+          align-items: center;
+          width: 20%;
+          .datePicker {
+            background: var(--white1);
+            text-align: center;
+            input {
+              font-size: var(--XXSmall);
+              font-weight: var(--font-medium);
+              padding: 15px 0px 15px 20px;
+              background: var(--white1);
+              border: none;
+              color: var(--grey1);
+            }
+            input:focus {
+              outline: none;
+            }
+          }
+          .datePick {
+            color: var(--blue1);
+          }
+          .iconContainer {
+            background: var(--white1);
+            padding: 10px;
+          }
+        }
+        .viewBtn {
+          color: var(--blue7);
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          background: var(--blue10);
+          padding: 15px 30px;
+        }
+        .searchFilter {
+          width: 262px;
+          .search {
+            background: var(--grey17);
+            box-shadow: none;
+          }
+          .input {
+            background: var(--grey17);
+          }
+        }
+        .dropdownButtonContainer {
+          display: flex;
+          position: relative;
+          background: var(--white1);
+          .dropdownContainerItems {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0px;
+            .dropdownContent {
+              margin-left: 20px;
+              font-size: var(--XXSmall);
+              font-weight: var(--font-normal);
+              color: var(--grey1);
+            }
+            .dropdownIcon {
+              margin: 0px 20px;
+              background: var(--blue2);
+            }
+
+            .dropdownListContent {
+              margin-top: 25px;
+              // border: 1px solid var(--grey1);
+              border-top: none;
+              // width: 169px;
+              height: 150px;
+              overflow-y: scroll;
+              background: var(--white1);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-normal);
+              padding: 0px 26px;
+              color: var(--grey1);
+            }
+          }
+          .dropdownContainerItems1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0px;
+            .dropdownContent {
+              margin-left: 20px;
+              font-size: var(--XXSmall);
+              font-weight: var(--font-normal);
+              color: var(--grey1);
+            }
+            .dropdownIcon {
+              margin: 0px 20px;
+              background: var(--blue2);
+            }
+
+            .dropdownListContent1 {
+              margin-top: 25px;
+              border-top: none;
+              width: 129px;
+              min-width: 0px;
+              height: 150px;
+              padding: 0px 0px 0px 20px;
+              overflow-y: scroll;
+              background: var(--white1);
+              font-size: var(--XXSmall);
+              font-weight: var(--font-normal);
+
+              color: var(--grey1);
+            }
+          }
+
+          .dropdownListContent4 {
+            margin-top: 25px;
+            border-top: none;
+            width: 129px;
+            min-width: 0px;
+            height: 150px;
+            padding: 0px 0px 0px 20px;
+            overflow-y: scroll;
+            background: var(--white1);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-normal);
+
+            color: var(--grey1);
+          }
+
+          ::-webkit-scrollbar {
+            width: 0px;
+          }
+        }
+      }
+      .customClassTableContainer {
+        overflow-x: auto !important;
+        position: relative !important;
+        padding-top: 30px;
+        tr:nth-last-child(1),
+        tr:nth-last-child(2),
+        tr:nth-last-child(3),
+        tr:nth-last-child(4) {
+          background-color: var(--blue10) !important;
+          position: sticky;
+          left: 0;
+          padding: 0px !important;
+          margin: 0px !important;
+          // z-index: 2;
+          height: 45px !important;
+          font-weight: var(--font-semibold);
+        }
+      }
+      .customClassTh {
+        padding: 0px 15px !important;
+      }
+      th:nth-child(1) {
+        background: rgba(91, 155, 213, 1);
+        position: sticky;
+        left: 0;
+        width: 30px;
+      }
+      th:nth-child(n + 2) {
+        background: var(--blue11);
+      }
+      .customClassTd {
+        padding: 0px 15px !important;
+        min-width: 150px !important;
+      }
+      td:nth-child(1) {
+        position: sticky;
+        left: 0;
+        background: inherit;
+      }
+      .customClassTableRow {
+        &:last-child {
+          background: var(--blue10);
+          font-weight: var(--font-semibold);
+        }
+      }
+      // .tableContainer {
+      //   margin-top: 30px;
+      //   overflow-x: auto;
+      //   position: relative;
+      //   .table {
+      //     width: 100%;
+      //     th,
+      //     td {
+      //       padding: 10px 0px 10px 30px;
+      //       min-width: 100px;
+      //     }
+      //     th:nth-child(1) {
+      //       background: rgba(91, 155, 213, 1);
+      //       position: sticky;
+      //       left: 0;
+      //       width: 30px;
+      //       // z-index: 2;
+      //     }
+      //     // tr:nth-child(even) {
+      //     //   background: var(--blue9);
+      //     //   td:nth-child(1) {
+      //     //     position: sticky;
+      //     //     left: 0;
+      //     //     background: inherit;
+      //     //   }
+      //     // }
+      //     // tr:nth-child(odd) {
+      //     //   background: var(--blue8);
+      //     //   td:nth-child(1) {
+      //     //     position: sticky;
+      //     //     left: 0;
+      //     //     background: inherit;
+      //     //   }
+      //     // }
+      //     th:nth-child(n + 2) {
+      //       background: var(--blue11);
+      //     }
+
+      //     // tr:nth-child(8),
+      //     // tr:nth-child(9),
+      //     // tr:nth-child(10),
+      //     // tr:nth-child(11) {
+      //     //   background: var(--blue10);
+      //     //   td:nth-child(1) {
+      //     //     position: sticky;
+      //     //     left: 0;
+      //     //     background: inherit;
+      //     //   }
+      //     // }
+
+      //     td:nth-child(1) {
+      //       position: sticky;
+      //       left: 0;
+      //       background: inherit;
+      //     }
+      //     tr:nth-last-child(1),
+      //     tr:nth-last-child(2),
+      //     tr:nth-last-child(3),
+      //     tr:nth-last-child(4) {
+      //       background-color: var(--blue10);
+
+      //       position: sticky;
+      //       left: 0;
+      //       // z-index: 2;
+      //     }
+
+      //     .tableHead {
+      //       background: var(--blue11);
+      //       height: 66px;
+      //       color: var(--white1);
+      //       font-size: var(--XXSmall);
+      //       font-weight: var(--font-medium);
+      //       text-align: left;
+
+      //       input {
+      //         height: 18px;
+      //         width: 18px;
+      //       }
+      //     }
+      //     .tableBodyRow {
+      //       background: var(--blue8);
+      //       height: 66px;
+      //       font-size: var(--XXSmall);
+      //       font-weight: var(--font-medium);
+      //       color: var(--black2);
+      //       cursor: pointer;
+      //       &:nth-child(even) {
+      //         background-color: var(--blue9);
+      //       }
+      //       &:last-child() {
+      //         background: var(--blue10);
+      //       }
+      //     }
+      //   }
+      //   .customClassForTd {
+      //     background: var(--blue10);
+      //     font-size: var(--XXSmall);
+      //     font-weight: var(--font-semibold);
+      //     color: var(--black2);
+
+      //     tr:nth-last-child(2 + n) {
+      //       position: sticky;
+      //       left: 0;
+      //       background: inherit;
+      //     }
+      //   }
+      // }
+    }
+  }
+}

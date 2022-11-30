@@ -1,0 +1,187 @@
+@mixin buttonStyle($margin, $color, $bg-color, $border, $width) {
+  color: $color;
+  background: $bg-color;
+  border: 1px solid $border;
+  font-weight: var(--font-semibold);
+  font-size: var(--XSmall);
+  width: $width;
+  height: 51px;
+}
+@media only screen and (min-width: 768px) {
+  .clientListMainContainer {
+    background: var(--grey20);
+    .allClients {
+      margin-top: 23px;
+    }
+    .clientListHeaderContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .search {
+        background: var(--grey17);
+        box-shadow: none;
+        width: 30%;
+        margin-top: 18px;
+      }
+      .input {
+        width: 70%;
+        background: var(--grey17);
+      }
+      .buttonContainer {
+        margin-top: 35px;
+      }
+      // .dropdownMainContainer {
+      //   .dropdownContainer {
+      //     border: none;
+      //     width: 304px;
+      //     height: 50px;
+      //     background: var(--blue2);
+      //     box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+      //     display: flex;
+      //     flex-direction: column;
+      //     position: relative;
+      //     .dropdownMain {
+      //       position: absolute;
+      //       top: 30px;
+      //     }
+      //     .dropdownContainerItems {
+      //       display: flex;
+      //       justify-content: space-between;
+      //       width: 95%;
+      //       align-items: center;
+      //       .dropdownContent {
+      //         margin-left: 28px;
+      //         padding: 13px;
+      //         color: var(--black1);
+      //       }
+      //       .dropdownIcon {
+      //         background: var(--blue2);
+      //       }
+      //     }
+      //     .dropdownListContent {
+      //       margin-top: 10px;
+      //       border-top: none;
+      //       width: 188px;
+      //       height: 150px;
+      //       overflow-y: scroll;
+      //     }
+      //     ::-webkit-scrollbar {
+      //       width: 0px;
+      //     }
+      //   }
+
+      //   .dropdownIcon {
+      //     background-color: var(--blue7);
+      //     border: none;
+      //     line-height: 30px;
+      //     height: 30px;
+      //     border-radius: 0px 8px 8px 0px;
+      //     margin: 10px 0px 0px 0px;
+      //   }
+      //   .dropdownItems {
+      //     background-color: var(--blue7);
+      //     margin-top: unset;
+      //     border-radius: 0px 0px 8px 8px;
+      //     text-align: center;
+      //   }
+      // }
+      .buttonContent {
+        padding-left: 34px;
+        justify-content: space-between;
+        width: 68%;
+        .pricingButton {
+          background-color: var(--blue10);
+          color: var(--blue1);
+          padding: 13px 20px 13px 20px;
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+      }
+      .totalButton {
+        background-color: var(--blue10);
+        color: var(--black1);
+        padding: 12px 20px 12px 20px;
+        font-weight: var(--font-semibold);
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+      }
+    }
+
+    // .customClassTableRow {
+    //   text-align: center;
+    //   &:last-child {
+    //     background: var(--blue10) !important;
+    //     td {
+    //       &:last-child {
+    //         background: var(--blue1);
+    //       }
+    //     }
+    //   }
+    // }
+    .customClassTableHead {
+      text-align: center;
+    }
+    .customClassFooter {
+      background: var(--blue10) !important;
+      .customClassFooterTd {
+        padding: 0px !important;
+        svg {
+          background: var(--blue1);
+          padding: 25px;
+          float: right;
+        }
+      }
+    }
+
+    // .table {
+    //   width: 100%;
+    //   .tableHeaderCustomClass {
+    //     background: var(--blue11);
+    //     color: var(--white1);
+    //     font-size: var(--XXSmall);
+    //     font-weight: var(--font-medium);
+    //     height: 50px;
+    //     text-align: start;
+    //     width: 120%;
+    //   }
+
+    //   .tableBodyRow {
+    //     background: var(--blue8);
+    //     height: 66px;
+    //     font-size: var(--XXSmall);
+    //     text-align: start;
+    //     padding-left: 20px;
+    //     padding: 22px 15px;
+    //     text-align: start;
+    //     .initialColumn {
+    //       padding-left: 90px;
+    //     }
+
+    //     &:nth-child(even) {
+    //       background: var(--blue9);
+    //     }
+    //   }
+    // }
+
+    .tableFooterData {
+      width: 100%;
+      margin-top: 2px;
+      background: var(--blue10);
+      height: 66px;
+      margin-left: 20px;
+      .customClassforTotal {
+        border-top: 2px solid var(--white1);
+        padding-left: 3%;
+      }
+      .customClassForTd {
+        border-top: 2px solid var(--white1);
+        text-align: end;
+      }
+
+      .updirectionButtonStyle {
+        padding: 24px 25px 24px 25px;
+      }
+    }
+  }
+}

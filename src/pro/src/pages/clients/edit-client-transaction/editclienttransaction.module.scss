@@ -1,0 +1,116 @@
+@media only screen and (min-width: 768px) {
+  .transactionContainer {
+    width: 55%;
+    margin: 5% auto 2% auto;
+    background-color: var(--white1);
+
+    .transactionCross {
+      text-align: center;
+      padding: 16px 0px 16px 0px;
+      background-color: var(--blue1);
+      color: var(--white1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+
+      .crossIcon {
+        float: right;
+        margin-right: 15px;
+      }
+    }
+    .tableInformation {
+      display: flex;
+      flex-direction: column;
+
+      padding: 13px 22px 14px 22px;
+
+      .textfieldContainer {
+        display: flex;
+        flex-direction: row;
+        width: 89%;
+        justify-content: space-between;
+        border-style: none;
+      }
+      .labelName {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        padding: 13px 22px 14px 58px;
+        color: var(--black1);
+      }
+      .datainputfield {
+        width: 280px;
+        margin-bottom: 8px;
+        background-color: var(--grey18);
+      }
+
+      .textareaContainer {
+        display: flex;
+        flex-direction: row;
+        width: 89%;
+        border-style: none;
+
+        .message {
+          font-size: var(--XXSmall);
+          font-weight: var(--medium);
+          width: 57%;
+          padding-left: 58px;
+        }
+        .text {
+          display: flex;
+          flex-direction: row;
+          width: 51%;
+          justify-content: space-between;
+          background-color: var(--grey18);
+          min-height: 51px;
+          margin-bottom: 8px;
+        }
+      }
+
+      .dropdown {
+        display: flex;
+        flex-direction: row;
+        width: 88%;
+        .risk {
+          font-size: var(--XXSmall);
+          font-weight: var(--medium);
+          width: 57%;
+          padding-left: 58px;
+        }
+        .dropdownArrow {
+          display: flex;
+          flex-direction: row;
+          width: 51%;
+          justify-content: space-between;
+          background-color: var(--grey18);
+          min-height: 51px;
+          margin-bottom: 8px;
+          .arrow {
+            background-color: var(--blue1);
+            margin-left: 87%;
+            padding: 12px 10px 12px 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .buttonContainer {
+      background-color: var(--blue1);
+      padding: 13px 22px 13px 0px;
+      display: flex;
+      align-items: center;
+
+      .button {
+        display: flex;
+        justify-content: right;
+        width: 89%;
+        .priceButton {
+          padding: 9px 129px 9px 129px;
+          background-color: var(--blue10);
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+      }
+    }
+  }
+}

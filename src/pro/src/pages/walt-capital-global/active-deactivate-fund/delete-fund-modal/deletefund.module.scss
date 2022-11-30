@@ -1,0 +1,55 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    margin: 10% auto;
+    width: 60%;
+
+    .crossContainer {
+      background-color: var(--blue1);
+      .cross {
+        padding: 26px 29px 26px 0px;
+
+        text-align: right;
+      }
+    }
+    .deleteHeading {
+      display: flex;
+      justify-content: center;
+      background-color: var(--white1);
+
+      .paragraph {
+        color: var(--black1);
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+        text-align: center;
+        width: 78%;
+        line-height: 60px;
+      }
+    }
+    .buttonContainer {
+      background-color: var(--blue1);
+      padding: 13px 18px 13px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .okButton {
+        padding: 13px 52px 13px 52px;
+
+        background-color: var(--blue10);
+        color: var(--blue1);
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+        display: flex;
+        justify-content: center;
+      }
+
+      .deleteButton {
+        background-color: var(--red1);
+        color: var(--white1);
+        font-size: var(--XSmall);
+        font-weight: (--font-semibold);
+        padding: 13px 39px 13px 39px;
+        margin-left: 18px;
+      }
+    }
+  }
+}

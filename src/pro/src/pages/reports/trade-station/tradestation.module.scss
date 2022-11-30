@@ -1,0 +1,79 @@
+@media only screen and (min-width: 768px) {
+  .tradeStationMainContainer {
+    padding: 30px 0px 51px 0px;
+    width: 95%;
+    margin: auto;
+    .navlink {
+      //margin-bottom: 45px;
+      display: flex;
+      flex-direction: row;
+      font-size: var(--XXSmall);
+      color: var(--grey1);
+      font-weight: var(--font-normal);
+      padding: 13px;
+      background: var(--grey15);
+      .reportsLink {
+        color: var(--blue7);
+        margin: 0px 6px 0px 0px;
+      }
+      .pagename {
+        margin: 0px 0px 0px 6px;
+      }
+    }
+    .filter {
+      margin-bottom: 30px;
+    }
+    .searchFilter {
+      width: 380px;
+      margin-bottom: 30px;
+      .search {
+        background: var(--grey17);
+        box-shadow: none;
+      }
+      .input {
+        background: var(--grey17);
+      }
+    }
+    // .tableContainer {
+    //   margin-top: 4px;
+    //   .table {
+    //     width: 100%;
+    //     th,
+    //     td {
+    //       padding: 0px 19px;
+    //     }
+    //     .tableHead {
+    //       background: var(--blue11);
+    //       height: 47px;
+    //       color: var(--white1);
+    //       font-size: var(--XXSmall);
+    //       font-weight: var(--font-medium);
+    //       text-align: left;
+    //       input {
+    //         height: 18px;
+    //         width: 18px;
+    //       }
+    //     }
+    //     .tableBodyRow {
+
+    //       background: var(--blue8);
+    //       height: 66px;
+    //       font-size: var(--XXSmall);
+    //       font-weight: var(--font-medium);
+    //       color: var(--black2);
+
+    //       &:nth-child(even) {
+    //         background: var(--blue9);
+
+    //       }
+    //     }
+    //   }
+    // }
+    .customClassTh {
+      padding: 0px 25px !important;
+    }
+    .customClassTd {
+      padding: 0px 25px !important;
+    }
+  }
+}

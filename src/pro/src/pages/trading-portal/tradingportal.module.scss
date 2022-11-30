@@ -1,0 +1,170 @@
+@media only screen and (min-width: 768px) {
+    .tradingPortalContainer{
+        min-height: 100vh;
+        .tradingPortalHeader{
+            width: 95%;
+            margin: auto;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .tradingPortalHeaderLeft{
+                display: flex;
+                // justify-content: space-between;
+                // width: 32%;
+                .fxText{
+                    padding: 10px 12px;
+                    background: var(--blue7);
+                    color: var(--white1);
+                    font-size: var(--medium);
+                    font-weight: var(--font-bold);
+                }
+                .usDollar{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 30px;
+                    .usdZarText{
+                        color: var(--black1);
+                        font-size: var(--small);
+                        font-weight: var(--font-medium);
+                    }
+                    .usdSAText{
+                        color: var(--grey1);
+                        font-size: var(--XSmall);
+                        font-weight: var(--font-medium);
+                    }
+                   
+                }
+            }
+            .tradingPortalHeaderRight{
+                display: flex;
+                align-items: center;
+                .iconClass{
+                    margin-right: 30px;
+                }
+                .search {
+                    background: var(--grey17);
+                    box-shadow: none;
+                    width: 88%;
+                  }
+                  .input {
+                    background: var(--grey17);
+                  }
+            }
+        }
+        .divider{
+            // width: 100%;
+            margin:30px 0px 
+        }
+        .tradingPortalContent{
+            width: 95%;
+            margin: auto;
+            padding-bottom: 30px;
+            .table{
+                width: 100%;
+                .tableHeadRow{
+                    background: var(--blue11);
+                    .customClassForTh{
+                        color: var(--white1);
+                        font-weight: var(--font-medium);
+                        font-size: var(--XSmall);
+                        padding: 13px 30px;
+                        text-align: start;
+                    }
+                }
+                .tableBodyRow{
+                    background: var(--blue10);
+                    .customClassForTd{
+                        padding: 13px 30px;
+                        text-align: start;
+                        color: var(--black2);
+                        font-weight: var(--font-medium);
+                        font-size: var(--medium);
+                    }
+                }
+            }
+            .realTimePriceContainer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 33px 0px;
+                .realTimePrice{
+                    display: flex;
+                    align-items: center;
+                    .realTimePriceText{
+                        margin-left: 30px;
+                        color: var(--black1);
+                        font-size: var(--XSmall);
+                        font-weight: var(--font-medium);
+                    }
+                }
+                .open{
+                    .roundIcon{
+                        margin-right: 17px;
+                    }
+                    .openText{
+                        margin-right: 30px;
+                        color: var(--black1);
+                        font-size: var(--XSmall);
+                        font-weight: var(--font-medium);
+                    }
+                }
+            }
+            .tableContainer{
+                display: flex;
+                justify-content: space-between;
+                .costTableContainer{
+                    background: var(--white1);
+                    width: 48%;
+                    .costTable{
+                        width: 100%;
+                        .costTableRow1{ 
+                            .costTableTd1{
+                                padding: 20px 25px 0px 25px;
+                                color: var(--blue1);
+                                font-weight: var(--font-semibold);
+                                font-size: var(--small);
+                            }
+                            .costTableTd2{
+                                padding: 20px 25px 0px 25px;
+                                color: var(--black1);
+                                font-weight: var(--font-semibold);
+                                font-size: var(--small);
+                            }
+                        }
+                        .costTableRow{
+                            .costTableTd{
+                                padding: 10px 25px 0px 25px; 
+                                color: var(--black5);
+                                font-weight: var(--font-semibold);
+                                font-size: var(--small);
+                                &:nth-child(1){
+                                    display: flex;
+                                    // justify-content: space-between;
+                                }
+                                .question{
+                                    padding-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .addTakeProfit{
+                width: 50%;
+                padding: 30px 0px;
+                text-align: center;
+                color: var(--blue1);
+                font-size: var(--small);
+                font-weight: var(--font-medium);
+            }
+            .orderButton{
+                width: 48%;
+                padding: 11px 0px;
+                font-size: var(--small);
+                font-weight: var(--font-medium);
+                color: var(--white1);
+            }
+        }
+    }
+}

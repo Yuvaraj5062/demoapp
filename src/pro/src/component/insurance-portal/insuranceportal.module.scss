@@ -1,0 +1,45 @@
+@media only screen and (min-width: 768px) {
+  .insurancePortalContainer {
+    background-color: var(--blue7);
+    border-radius: 2px;
+    height: 130px;
+    width: 168px;
+    padding: 0px 15px 15px 0px;
+    cursor: pointer;
+    .insurancePortalHeadingActive {
+      color: var(--white1);
+      font-size: var(--XXSmall);
+      font-weight: var(--font-bold);
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding-top: 13px;
+      svg{
+        margin-top: 5px;
+      }
+      .title{
+        max-width: 98px;
+      }
+    }
+    .insurancePortalHeadingDeactive {
+      color: var(--white3);
+      font-size: var(--XXSmall);
+      font-weight: var(--font-bold);
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding-top: 13px;
+        svg{
+          margin-top: 5px;
+        }
+        .title{
+          max-width: 98px;
+        }
+    }
+    .icon {
+      display: flex;
+      justify-content: end;
+      margin-top: 14px;
+    }
+  }
+}

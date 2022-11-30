@@ -1,0 +1,123 @@
+@media only screen and (min-width: 768px) {
+  .modelEquityPortfolioContainer {
+    width: 95%;
+    margin: auto;
+    padding-top: 40px;
+    .showClientButton {
+      background: var(--blue10);
+      color: var(--blue7);
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+      padding: 14px 20px 14px 20px;
+    }
+    .customClassTableContainer1 {
+      tr:nth-last-child(1),
+      tr:nth-last-child(2) {
+        font-weight: var(--font-semibold);
+      }
+    }
+    // .table {
+    //   width: 100%;
+    //   margin-top: 30px;
+    //   .tableHeaderCustomClass {
+    //     background: var(--blue11);
+    //     color: var(--white1);
+    //     font-weight: var(--font-medium);
+    //     height: 50px;
+    //   }
+    //   .customClassForTh {
+    //     text-align: start;
+    //     padding: 22px 15px;
+    //   }
+    //   .customClassForTd {
+    //     padding: 22px 15px;
+    //     text-align: start;
+    //   }
+    //   .tableBodyRow {
+    //     background: var(--blue8);
+    //     // height: 66px;
+    //     font-size: var(--XXSmall);
+    //     font-weight: var(--font-medium);
+    //     color: var(--black2);
+    //     &:nth-child(even) {
+    //       background: var(--blue9);
+    //     }
+    //   }
+    //   .tableCash {
+    //     .tableCashTd {
+    //       padding: 22px 15px;
+    //       text-align: start;
+    //     }
+    //     color: var(--black1);
+    //     font-size: var(--XXSmall);
+    //     font-weight: var(--font-semibold);
+    //     background: var(--blue8);
+    //   }
+    //   .tableBodyFooter {
+    //     .tableCashTd {
+    //       padding: 22px 16px;
+    //       text-align: start;
+    //     }
+    //     color: var(--black1);
+    //     font-size: var(--XXSmall);
+    //     font-weight: var(--font-semibold);
+    //     background: var(--blue9);
+    //   }
+    // }
+    .customClassTableContainer1 {
+      padding-top: 30px;
+    }
+    .alphabeticFilter {
+      margin: 30px 0px;
+    }
+    .search {
+      background: var(--grey17);
+      box-shadow: none;
+      width: 20%;
+      margin-bottom: 20px;
+    }
+    .input {
+      width: 75%;
+      background: var(--grey17);
+    }
+    .jseTaxFreeAccountTFSA {
+      .jseTaxFreeAccountTFSA {
+        color: var(--black1);
+        font-size: var(--medium);
+        font-weight: var(--font-medium);
+      }
+      .jseTaxFreeAccountTFSATable {
+        width: 100%;
+        // .tableHeaderCustomClass {
+        //   background: var(--blue11);
+        //   color: var(--white1);
+        //   font-weight: var(--font-medium);
+        //   height: 50px;
+        // }
+        // .customClassForTh {
+        //   text-align: start;
+        //   padding: 22px 10px;
+        // }
+        // .tableBodyRow {
+        //   background: var(--blue8);
+        //   // height: 66px;
+        //   font-size: var(--XXSmall);
+        //   font-weight: var(--font-medium);
+        //   color: var(--black2);
+        //   &:nth-child(even) {
+        //     background: var(--blue9);
+        //   }
+        // }
+        // .customClassForTd {
+        //   padding: 22px 15px;
+        //   text-align: start;
+        // }
+      }
+    }
+    .paginationContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0px 60px 0px;
+    }
+  }
+}

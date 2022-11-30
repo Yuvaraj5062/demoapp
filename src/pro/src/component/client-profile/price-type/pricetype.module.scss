@@ -1,0 +1,11 @@
+@media only screen and (min-width: 768px) {
+  .priceType {
+    font-size: var(--XXSmall);
+    font-weight: var(--font-medium);
+    color: var(--black5);
+  }
+  .price {
+    font-size: var(--XXSmall);
+    font-weight: var(--font-semibold);
+  }
+}

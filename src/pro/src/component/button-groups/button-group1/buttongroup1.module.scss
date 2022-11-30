@@ -1,0 +1,40 @@
+// @mixin buttonStyle($margin, $color, $bg-color, $border) {
+// margin-right: 30px;
+@mixin buttonStyle($margin, $color, $bg-color, $border) {
+  // margin-right: 30px;
+  color: $color;
+  background: $bg-color;
+  border: 1px solid $border;
+  font-weight: var(--font-semibold);
+  font-size: var(--XSmall);
+  padding: 7px 17px;
+}
+@media only screen and (min-width: 768px) {
+  .buttonGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30px;
+    .emailButton {
+      @include buttonStyle(0px, var(--black1), var(--blue8), var(--black1));
+      &:hover {
+        @include buttonStyle(0px, var(--white1), var(--blue1), var(--blue1));
+      }
+
+      &:nth-child(even) {
+        // background: var(--red1) ;
+        .emailButton {
+          @include buttonStyle(0px, var(--black1), var(--blue9), var(--black1));
+          &:hover {
+            @include buttonStyle(
+              0px,
+              var(--white1),
+              var(--blue1),
+              var(--blue1)
+            );
+          }
+        }
+      }
+    }
+  }
+}

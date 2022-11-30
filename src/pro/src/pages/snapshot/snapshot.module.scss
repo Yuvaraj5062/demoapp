@@ -1,0 +1,219 @@
+@media only screen and (min-width: 768px) {
+  .snapshotContainer {
+    .snapshotHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 12px 30px;
+      background: var(--grey15);
+      .title {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        color: var(--blue1);
+      }
+    }
+    .mainContent {
+      padding: 26px 36px;
+      .clientDetailsContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 67px 0px 59px;
+        justify-content: space-between;
+        .clientDetails {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 35%;
+          font-size: var(--XSmall);
+          .text {
+            font-weight: var(--font-bold);
+          }
+        }
+        .measurementUnits {
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-semibold);
+        }
+      }
+      .graphTableContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 12px;
+        .lineBarGraph {
+          width: 42%;
+          background: var(--white1);
+          .textContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 11px 24px;
+            .netValueText {
+              font-size: var(--XXXXSmall);
+              font-weight: var(--font-bold);
+            }
+            .cumulativeText {
+              font-size: var(--XXXXSmall);
+              font-weight: var(--font-bold);
+            }
+          }
+        }
+        .statisticsContainer {
+          background: var(--white1);
+          padding: 11px 12px;
+          width: 52%;
+          .statisticsText {
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-bold);
+          }
+          .data {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 16px;
+            font-size: var(--medium);
+            font-weight: var(--font-bold);
+          }
+          .type {
+            display: flex;
+            flex-direction: row;
+            margin-top: 12px;
+            justify-content: space-between;
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+          }
+          .month {
+            display: flex;
+            flex-direction: row;
+            margin: 7px 0px 20px 0px;
+            justify-content: space-around;
+            font-size: var(--XXXXXSmall);
+            font-weight: var(--font-medium);
+          }
+          .snapshotTables {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .topTable {
+              border-collapse: collapse;
+              .navTableHeader {
+                background: var(--blue7);
+                color: var(--white1);
+                font-size: var(--XXXSmall);
+              }
+              .tableTitle {
+                font-weight: var(--font-bold);
+                padding: 6px 9px 6px 6px;
+                text-align: left;
+              }
+              .tableValue {
+                font-weight: var(--font-normal);
+                padding: 0px 13px 0px 0px;
+                text-align: right;
+              }
+              .navTableRow {
+                font-size: var(--XXXXSmall);
+              }
+              .navTableValues {
+                text-align: center;
+              }
+              .topPerformerHeader {
+                font-size: var(--XXXXSmall);
+                padding: 5px 10px;
+                text-align: center;
+              }
+            }
+            .bottomTable {
+              margin-left: 11px;
+              border-collapse: collapse;
+              .navTableHeader {
+                background: var(--blue7);
+                color: var(--white1);
+                font-size: var(--XXXSmall);
+              }
+              .tableTitle {
+                font-weight: var(--font-bold);
+                padding: 2px 9px 2px 6px;
+                text-align: left;
+              }
+              .tableValue {
+                font-weight: var(--font-normal);
+                padding: 0px 13px 0px 0px;
+                text-align: right;
+              }
+              .navTableRow {
+                font-size: var(--XXXXSmall);
+              }
+              .navTableValues {
+                text-align: center;
+                padding: 10px 0px;
+              }
+              .topPerformerHeader {
+                font-size: var(--XXXXSmall);
+                padding: 15px 10px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+      .returnsAllocationContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 26px;
+        .returnsGraph {
+          width: 42%;
+          background: var(--white1);
+          .returnsText {
+            padding: 11px 24px;
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-bold);
+          }
+          .chart{
+              margin-top: 10px;
+          }
+        }
+        .allocationContainer {
+          background: var(--white1);
+          padding: 13px;
+          width: 52%;
+          .allocationText {
+            padding: 11px 19px;
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-bold);
+          }
+          .allocationTables {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .allocationTable {
+              border-collapse: collapse;
+              font-size: var(--XXXSmall);
+              .allocationCash {
+                background: var(--blue7);
+                color: var(--white1);
+              }
+              .allocationTotal {
+                background: var(--blue7);
+                color: var(--white1);
+                font-weight: var(--font-bold);
+              }
+              .allocationData {
+                padding: 6px 10px 0px 10px;
+              }
+              .allocationOptions{
+                  background: var(--orange1);
+                  color: var(--white1);
+              }
+              .allocationEquities{
+                background: var(--orange1);
+                color: var(--white1);
+                font-weight: var(--font-bold);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

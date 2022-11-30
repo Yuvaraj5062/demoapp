@@ -1,0 +1,138 @@
+@mixin buttonStyle($margin, $color, $bg-color, $border, $width) {
+  // margin-right: 30px;
+  color: $color;
+  background: $bg-color;
+  border: 1px solid $border;
+  font-weight: var(--font-semibold);
+  font-size: var(--XSmall);
+  padding: 13px 13px auto 32px;
+  width: $width;
+  height: 51px;
+}
+@media only screen and (min-width: 768px) {
+  .waltHeaderMainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .waltHeaderLeft {
+      // display: flex;
+      position: relative;
+      .createNewFundButton {
+        margin-right: 20px;
+        padding: 14px 20px;
+        font-weight: var(--font-semibold);
+        font-size: var(--XXSmall);
+        display: inline-flex;
+        // height: 50px;
+        // display: flex;
+        // align-items: center;
+        .iconCustomClass {
+          margin-right: 8px;
+        }
+      }
+      .moreIcon {
+        padding: 14px 16px;
+        background: var(--blue10);
+        &:hover {
+          background-color: var(--blue7);
+        }
+      }
+    }
+
+    .waltHeaderContainer {
+      display: flex;
+      flex-direction: row;
+      .waltHeaderContent {
+        .dropdownContainer {
+          border: none;
+          width: 305px;
+          height: 51px;
+          background: var(--blue2);
+          box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+          .dropdownContainerItems {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .dropdownContent {
+              padding: 14px;
+              font-size: var(--XSmall);
+              font-weight: var(--font-normal);
+              color: var(--black1);
+            }
+            .dropdownIcon {
+              // margin-right: 15px;
+              background: var(--blue2);
+              padding: 0px 15px;
+              margin-bottom: 7px;
+            }
+          }
+          .dropdownListContent {
+            // margin-top: 10px;
+            position: relative;
+            // border: 1px solid var(--grey1);
+            box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+            border-top: none;
+            // width: 188px;
+            height: 150px;
+            padding: 0px 15px;
+            overflow-y: scroll;
+            color: var(--black1);
+            font-size: var(--XSmall);
+            font-weight: var(--font-normal);
+          }
+          ::-webkit-scrollbar {
+            width: 0px;
+          }
+        }
+        .symbolText {
+          background-color: var(--grey3);
+          padding: 5px 0px;
+          text-align: center;
+          width: 90px;
+        }
+
+        .dropdownIcon {
+          background-color: var(--blue7);
+          border: none;
+          line-height: 30px;
+          height: 30px;
+          border-radius: 0px 8px 8px 0px;
+          margin: 10px 0px 0px 0px;
+        }
+        .dropdownItems {
+          background-color: var(--blue7);
+          margin-top: unset;
+          border-radius: 0px 0px 8px 8px;
+          text-align: center;
+        }
+      }
+      .buttonContent {
+        margin-left: 60px;
+
+        // padding: 13px 13px auto 32px;
+        .viewButton {
+          @include buttonStyle(0px, var(--blue1), var(--blue10), none, 103px);
+          &:hover {
+            @include buttonStyle(
+              0px,
+              var(--white1),
+              var(--blue1),
+              var(--blue1),
+              103px
+            );
+          }
+        }
+      }
+    }
+    .item {
+      cursor: pointer;
+      font-size: var(--XXXSmall);
+      font-weight: var(--font-medium);
+      color: var(--grey1);
+      margin-left: 10px;
+    }
+  }
+}

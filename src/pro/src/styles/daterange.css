@@ -1,0 +1,13 @@
+/* .react-datepicker-ignore-onclickoutside{
+    width:10px;
+}
+input[type=text]{
+    width: 100%;
+}
+.react-datepicker-wrapper{
+    width: 33px;
+} */
+
+.date-header .react-datepicker__input-container {
+  width: 120px !important;
+}

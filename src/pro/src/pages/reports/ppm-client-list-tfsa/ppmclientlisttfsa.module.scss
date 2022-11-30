@@ -1,0 +1,146 @@
+@mixin buttonStyle($margin, $color, $bg-color, $border) {
+  color: $color;
+  background: $bg-color;
+  border: 1px solid $border;
+  font-weight: var(--font-semibold);
+  font-size: var(--XSmall);
+  padding: 7px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .ppmTfsaMainContainer {
+    padding: 30px 0px 20px 0px;
+    width: 95%;
+    margin: auto;
+    .abcFilter {
+      margin-bottom: 30px;
+    }
+    .searchFilter {
+      display: inline-block;
+      width: 380px;
+      .search {
+        background: var(--grey17);
+        box-shadow: none;
+      }
+      .input {
+        background: var(--grey17);
+      }
+    }
+    .ppmTfsaHeader {
+      color: var(--black1);
+      font-weight: var(--font-medium);
+      font-size: var(--medium);
+    }
+    .customClassTh {
+      padding: 0px 15px !important;
+      text-align: left !important;
+    }
+    .customClassTd {
+      padding: 0px 15px !important;
+      text-align: left !important;
+    }
+
+    .customClassFooter {
+      background: var(--blue10) !important;
+      .customClassFooterTd {
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+      }
+    }
+
+    // .customClassTableRow {
+    //   &:last-child {
+    //     background: var(--blue10);
+    //     font-size: var(--small);
+    //     font-weight: var(--font-medium);
+    //   }
+    // }
+    // .tableContainer {
+    //   margin-top: 12px;
+    //   .table {
+    //     width: 100%;
+    //     th,
+    //     td {
+    //       padding: 0px 19px;
+    //     }
+    //     .tableHead {
+    //       background: var(--blue11);
+    //       height: 50px;
+    //       color: var(--white1);
+    //       font-size: var(--XSmall);
+    //       font-weight: var(--font-medium);
+    //       text-align: left;
+    //       input {
+    //         height: 18px;
+    //         width: 18px;
+    //       }
+    //     }
+    //     .tableBodyRow {
+    //       background: var(--blue8);
+    //       height: 66px;
+    //       font-size: var(--XXSmall);
+    //       font-weight: var(--font-medium);
+    //       color: var(--black2);
+    //       .gotoButton {
+    //         @include buttonStyle(
+    //           0px,
+    //           var(--black1),
+    //           var(--blue8),
+    //           var(--black1)
+    //         );
+    //         &:hover {
+    //           @include buttonStyle(
+    //             0px,
+    //             var(--white1),
+    //             var(--blue1),
+    //             var(--blue1)
+    //           );
+    //         }
+    //       }
+    //       &:nth-child(even) {
+    //         background: var(--blue9);
+    //         .gotoButton {
+    //           @include buttonStyle(
+    //             0px,
+    //             var(--black1),
+    //             var(--blue9),
+    //             var(--black1)
+    //           );
+    //           &:hover {
+    //             @include buttonStyle(
+    //               0px,
+    //               var(--white1),
+    //               var(--blue1),
+    //               var(--blue7)
+    //             );
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    //   .totalAmount {
+    //     background: var(--blue10);
+    //     text-align: left;
+    //     height: 66px;
+    //     .customClassForTd {
+    //       font-weight: var(--font-medium);
+    //       font-size: var(--small);
+    //       color: var(--black1);
+    //     }
+    //   }
+    // }
+
+    .paginationContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0px 0px 0px;
+      margin-bottom: 20px;
+      .paginationText {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        color: var(--grey10);
+        padding: 8px 0px 0px 3px;
+      }
+    }
+  }
+}

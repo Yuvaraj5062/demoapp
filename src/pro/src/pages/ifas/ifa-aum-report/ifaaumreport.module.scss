@@ -1,0 +1,151 @@
+@media only screen and (min-width: 768px) {
+  .aumContainer {
+    padding: 21px 0px 51px 0px;
+    width: 95%;
+    margin: auto;
+    .titleContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .text {
+        font-size: var(--medium);
+        font-weight: var(--font-medium);
+        color: var(--black1);
+        padding-bottom: 19px;
+      }
+      .freezeTitle {
+        text-align: right;
+        width: 37%;
+        color: var(--black5);
+        font-size: var(--XXXSmall);
+        font-weight: var(--font-medium);
+      }
+      .unFreezeTitle {
+        text-align: right;
+        width: 43%;
+        color: var(--black5);
+        font-size: var(--XXXSmall);
+        font-weight: var(--font-medium);
+      }
+
+      .aumHeaderContainer {
+        display: flex;
+        justify-content: space-between;
+        .aumHeaderContainerLeft {
+          display: flex;
+          flex-direction: column;
+          .freezeDataContainer {
+            height: 50%;
+            display: flex;
+            align-items: center;
+            margin: 9px 20px 0px 10px;
+            background: var(--white1);
+            .datePicker {
+              background: var(--blue2);
+              text-align: center;
+              input {
+                font-size: var(--XXSmall);
+                font-weight: var(--font-medium);
+                padding: 15px 0px 15px 20px;
+                background: var(--white1);
+                border: none;
+                color: var(--grey1);
+              }
+              input:focus {
+                outline: none;
+              }
+            }
+            .datePick {
+              color: var(--blue1);
+            }
+            .iconContainer {
+              background: var(--white1);
+              padding: 10px;
+            }
+          }
+        }
+
+        .printContainer {
+          color: var(--blue7);
+          background: var(--blue10);
+          padding: 0px 20px;
+          justify-content: end;
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          margin-bottom: 5px;
+          .printIcon {
+            padding-top: 8px;
+          }
+          .buttonText {
+            color: var(--blue7);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-semibold);
+            background: var(--blue10);
+          }
+        }
+      }
+    }
+
+    .table {
+      width: 100%;
+      margin-top: 30px;
+      th {
+        font-weight: var(--font-medium);
+        padding: 13px 0px 13px 28px;
+
+        &:last-child {
+          text-align: end;
+          padding-right: 28px;
+        }
+      }
+
+      td {
+        padding: 0px 28px;
+
+        &:last-child {
+          text-align: end;
+          padding-right: 28px;
+        }
+      }
+
+      .tableHead {
+        background: var(--blue11);
+        color: var(--white1);
+        font-size: var(--XSmall);
+        font-weight: var(--font-medium);
+        text-align: left;
+      }
+
+      .tableBodyRow {
+        background: var(--blue8);
+        height: 66px;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-normal);
+        color: var(--black1);
+        text-align: left;
+
+        &:nth-child(even) {
+          background: var(--blue9);
+        }
+      }
+      .total {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-bold);
+        color: var(--black1);
+      }
+    }
+
+    .paginationContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 114px 0px 60px 0px;
+
+      .paginationHeader {
+        color: var(--grey10);
+        font-family: var(--font-medium);
+        font-size: var(--XXSmall);
+      }
+    }
+  }
+}

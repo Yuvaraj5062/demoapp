@@ -1,0 +1,43 @@
+@media only screen and (min-width: 768px) {
+  .ifaBreakDownPageContainer {
+    min-height: 100vh;
+    .month {
+      background: var(--white1);
+      padding: 25px 10px;
+      .monthText {
+        color: var(--black1);
+        font-weight: var(--font-medium);
+        font-size: var(--small);
+      }
+    }
+    .customClassTh {
+      font-size: var(--XXSmall) !important;
+      font-weight: var(--font-semibold) !important;
+    }
+    // .table {
+    //   width: 100%;
+    //   .tableHead {
+    //     background: var(--blue11);
+    //     color: var(--white1);
+    //     font-size: var(--XXSmall);
+    //     font-weight: var(----font-medium);
+    //     .customClassForTh {
+    //       padding: 21px 3px;
+    //       text-align: start;
+    //     }
+    // }
+    // .tableRow{
+    //     background: var(--blue8);
+    //     font-size: var(--XXSmall);
+    //     font-weight: var(--font-medium);
+    //     color: var(--black2);
+    //     .customClassForTd{
+    //         padding: 23px 3px;
+    //     }
+    //     &:nth-child(even) {
+    //         background: var(--blue9);
+    //     }
+    // }
+    // }
+  }
+}

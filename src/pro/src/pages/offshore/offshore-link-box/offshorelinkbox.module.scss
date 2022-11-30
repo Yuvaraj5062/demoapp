@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) {
+    .offshoreLinkBox{
+        text-align: center;
+        padding: 35px 0px 11px 0px;
+        width:23%;
+        border: 1px solid var(--black1);
+        color: var(--black5);
+        cursor: pointer;
+        font-size: var(--XSmall);
+        font-weight: var(--font-medium);
+        .offshoreLinkBoxItem{
+            display: inline-block;
+            max-width: 208px;
+        }
+        &:hover{
+            background: var(--blue7);
+            color: var(--white1);
+            border: 1px solid var(--blue7);
+            font-weight: var(--font-bold);
+        }
+    }
+}

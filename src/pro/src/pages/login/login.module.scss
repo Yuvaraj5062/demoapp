@@ -1,0 +1,67 @@
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .loginContainer {
+      width: 482px;
+      height: 532px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 80px;
+      padding-top: 50px;
+      box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+      .logo {
+        width: 382px;
+        height: 100px;
+      }
+      .userInput {
+        display: flex;
+        flex-direction: column;
+        margin-top: 29px;
+        .userLabel,
+        .passwordLabel {
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+        }
+        .passwordLabel {
+          margin-top: 22px;
+        }
+        .userInputField,
+        .userPasswordField {
+          width: 333px;
+          height: 49px;
+          border: 2px solid var(--grey6);
+          font-size: var(--XSmall);
+          color: var(--grey7);
+        }
+        .submitButton {
+          width: 341px;
+          height: 47px;
+          margin-top: 45px;
+          background-color: var(--blue1);
+          font-size: var(--medium);
+          color: var(--white1);
+          border: none;
+          cursor: pointer;
+          font-weight: var(--font-bold);
+        }
+      }
+      .forgotPassword {
+        font-weight: var(--font-medium);
+        font-size: var(--XSmall);
+        color: var(--grey8);
+        margin: 12px 0px 0px 0px;
+      }
+    }
+    .disclaimerText {
+      width: 90%;
+      margin: 80px auto 23px auto;
+      text-align: justify;
+      font-weight: var(--font-normal);
+      font-size: var(--XSmall);
+      color: var(--grey5);
+    }
+  }
+}

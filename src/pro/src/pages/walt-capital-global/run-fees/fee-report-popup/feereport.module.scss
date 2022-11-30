@@ -1,0 +1,175 @@
+@mixin fees {
+  margin-left: 53px;
+  font-weight: var(--font-bold);
+  color: var(--blue1);
+}
+
+@media only screen and (min-width: 768px) {
+  .runFeeContainer {
+    width: 80%;
+
+    margin: 5% auto 0px auto;
+    .feeReportCross {
+      background-color: var(--white1);
+
+      text-align: center;
+      padding: 25px 0px 20px 0px;
+      background-color: var(--blue1);
+      color: var(--white1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+
+      .crossIcon {
+        float: right;
+        margin-right: 36px;
+      }
+    }
+
+    .tableContent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: var(--blue1);
+      border-radius: 1px;
+      background-color: var(--white1);
+      display: flex;
+      padding: 18px 49px 25px 53px;
+
+      .date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 22%;
+        .detail {
+          background-color: var(--grey18);
+          width: 55%;
+          padding: 13px 23px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .lastMonth {
+        display: flex;
+        align-items: center;
+        background-color: var(--grey18);
+        justify-content: space-between;
+        width: 77%;
+        padding: 13px 23px;
+      }
+      .dropdownListContent {
+        color: var(--black1);
+      }
+      .dateRange {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        // width: 38%;
+        .rangeData {
+          display: flex;
+          align-items: center;
+          background-color: var(--grey18);
+          justify-content: space-between;
+          // width: 62%;
+          padding: 13px 18px;
+          margin-left: 10px;
+          .dateText {
+            padding-right: 8px;
+          }
+        }
+        .toText {
+          margin-left: 5px;
+        }
+        .search {
+          background-color: var(--blue10);
+          color: var(--blue1);
+          padding: 13px 32px 14px 32px;
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+          margin-left: 15px;
+        }
+      }
+
+      .search {
+        background-color: var(--blue10);
+        color: var(--blue1);
+        padding: 13px 32px 14px 32px;
+        font-weight: var(--font-semibold);
+        font-size: var(--XSmall);
+      }
+    }
+
+    .popupContainer {
+      background-color: var(--white1);
+
+      .fees {
+        @include fees();
+      }
+      .mapData {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 32px 0px 20px 53px;
+        .mainContainer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 15%;
+          font-weight: var(--font-bold);
+          margin-right: 53px;
+        }
+        .title {
+          font-weight: var(--font-medium);
+          font-size: var(--XXSmall);
+        }
+        .country {
+          color: var(--blue1);
+          font-weight: var(--font-medium);
+          font-size: var(--XXSmall);
+        }
+        .price {
+          color: var(--blue1);
+          font-weight: var(--font-medium);
+          font-size: var(--XXSmall);
+        }
+      }
+      .feesPeriod {
+        @include fees();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        .container {
+          display: flex;
+          width: 15%;
+          justify-content: space-between;
+          margin-right: 53px;
+          .USDText {
+            font-size: var(--XXSmall);
+          }
+        }
+      }
+    }
+
+    .pdfContainer {
+      display: flex;
+      align-items: center;
+      height: 75px;
+      background-color: var(--blue1);
+
+      .button {
+        display: flex;
+        justify-content: right;
+        width: 95%;
+        .pdfButton {
+          background-color: var(--blue10);
+          padding: 14px 43px 13px 43px;
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@media only screen and (min-width: 768px) {
+  .formDetails {
+    padding: 35px 44px 120px 39px;
+
+    .formContainer {
+      padding: 35px 22px;
+      background: var(--white1);
+
+      .formTitle {
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+        color: var(--black1);
+      }
+      .radioButtonContainer {
+        display: flex;
+        .radioButtonText {
+          padding-left: 8px;
+          padding-right: 30px;
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-normal);
+        }
+        .dscMcsRadiobutton {
+          display: flex;
+          margin-left: 70px;
+        }
+      }
+      .feeTypeContainer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        .labelText {
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-normal);
+        }
+        .inputType1 {
+          width: 90%;
+          height: 34px;
+          margin-right: 5px;
+        }
+      }
+      .divider {
+        border: 1px solid var(--grey16);
+        margin: 30px 0px;
+      }
+      .monthlyFeesContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        .labelText {
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-normal);
+        }
+        .inputType1 {
+          width: 90%;
+          height: 34px;
+          margin-right: 5px;
+        }
+      }
+      .divider {
+        border: 1px solid var(--grey16);
+        margin: 30px 0px;
+      }
+      .checkContainer {
+        display: flex;
+        .questionText {
+          font-size: var(--XXXSmall);
+          font-weight: var(--font-medium);
+          color: var(--black5);
+        }
+        .radioContainer {
+          display: flex;
+          padding-top: 5px;
+          .radioButtonText {
+            padding-left: 9px;
+            padding-right: 18px;
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-normal);
+          }
+        }
+        .verticalDivider {
+          border: 1px solid var(--grey16);
+          height: 70px;
+          margin: 0px 30px;
+        }
+      }
+
+      .btnGrp {
+        margin-top: 33px;
+        text-align: right;
+        .editBtn {
+          padding: 12px 52px 12px 52px;
+          background: var(--blue10);
+          color: var(--blue7);
+          border-radius: 2px;
+          text-align: left;
+          margin-right: 138px;
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+        }
+        .cancelBtn,
+        .saveBtn {
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          padding: 12px 50px;
+          border-radius: 2px;
+        }
+        .cancelBtn {
+          margin-left: 20px;
+          background: var(--white1);
+          color: var(--black5);
+          padding: 12px 35px;
+          border: 1px solid var(--black4);
+        }
+        .deleteBtn {
+          margin-left: 20px;
+          background: var(--white1);
+          color: var(--red2);
+          padding: 12px 28px;
+          border: 1px solid var(--red2);
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+        }
+      }
+    }
+  }
+}

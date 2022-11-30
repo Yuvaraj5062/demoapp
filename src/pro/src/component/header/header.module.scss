@@ -1,0 +1,243 @@
+@mixin valuation($margin: 0px) {
+  margin-right: $margin;
+  font-size: var(--XXSmall);
+  font-weight: var(--font-semibold);
+  line-height: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .headerContainer {
+    overflow-y: hidden;
+    // overflow: auto;
+    display: flex;
+    // justify-content: space-between;
+    .logoContainer {
+      display: flex;
+      align-items: center;
+      // position: fixed; //new
+      .logo {
+        width: 198px;
+        height: 52px;
+        margin: 26px 0px 12px 31px;
+      }
+    }
+    .headerConent {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 27px;
+      align-items: center;
+      width: 100%;
+      .dashboardText {
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+        margin: 39px;
+      }
+
+      .waltValuation {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 63%;
+
+        // .waltSAValuation {
+        //   @include valuation(30px);
+        //   .zarText {
+        //     font-weight: var(--font-normal);
+        //     color: var(--black2);
+        //     .waltSAAmount {
+        //       font-weight: var(--font-bold);
+        //     }
+        //   }
+        // }
+        // .waltCIValuation {
+        //   @include valuation();
+        //   .usdText {
+        //     font-weight: normal;
+        //     color: var(--black2);
+        //     .waltCIAmount {
+        //       font-weight: var(--font-bold);
+        //     }
+        //   }
+        // }
+        .waltValueButton {
+          background: var(--blue10);
+          color: var(--blue1);
+          padding: 14px 30px;
+        }
+
+        .date {
+          font-size: var(--XXSmall);
+          font-weight: var(--font-semibold);
+          color: var(--grey1);
+        }
+
+        // .logout {
+        //   font-size: var(--XXSmall);
+        //   font-weight: var(--font-semibold);
+        //   color: var(--blue1);
+        //   cursor: pointer;
+        // }
+        // .userContainer {
+
+        .dropdownContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 22%;
+          background: var(--white1);
+
+          // .dropdownContainerItems {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          .userImage {
+            margin-right: 10px;
+          }
+
+          .dropdownContent {
+            margin-right: 8px;
+            font-size: var(--XXSmall);
+            color: var(--grey1);
+          }
+
+          // }
+
+          .dropdownListContent {
+            top: 95px;
+            right: 30px;
+            width: 200px;
+            padding: 15px 14px;
+            background: var(--white1);
+            overflow-y: scroll;
+          }
+
+          ::-webkit-scrollbar {
+            width: 0px;
+          }
+
+          .dropdownItems {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .dropdownText {
+              margin-left: 10px;
+              font-size: var(--XXXSmall);
+              font-weight: var(--font-medium);
+            }
+
+            .balanceValue {
+              font-weight: var(--font-bold);
+              color: var(--black1);
+              font-size: var(--XXXSmall);
+              margin-left: 7px;
+            }
+          }
+        }
+
+        // }
+      }
+
+      // .totalUserContainer {
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: space-between;
+      //   align-items: center;
+      //   width: 64%;
+
+      .totalUser {
+        display: flex;
+        flex-direction: column;
+
+        .totalUserText {
+          font-size: var(--XSmall);
+          font-weight: var(--font-semibold);
+          color: var(--black2);
+        }
+
+        .totalUserCount {
+          font-size: var(--small);
+          font-weight: var(--font-thin);
+          color: var(--grey13);
+        }
+      }
+
+      .date {
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        color: var(--grey1);
+      }
+
+      // .logout {
+      //   font-size: var(--XXSmall);
+      //   font-weight: var(--font-semibold);
+      //   color: var(--blue1);
+      //   cursor: pointer;
+      // }
+      // .userContainer {
+
+      .dropdownContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 35%;
+        background: var(--white1);
+        align-items: center;
+        text-align: end;
+
+        .dropdownContainerItems {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          .userImage {
+            margin-right: 10px;
+          }
+
+          .dropdownContent {
+            margin-right: 8px;
+            font-size: var(--XXSmall);
+            color: var(--grey1);
+          }
+        }
+
+        .dropdownListContent {
+          top: 95px;
+          right: 30px;
+          width: 200px;
+          padding: 15px 14px;
+          background: var(--white1);
+          overflow-y: scroll;
+        }
+
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+
+        .dropdownItems {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .dropdownText {
+            margin-left: 10px;
+            font-size: var(--XXXSmall);
+            font-weight: var(--font-medium);
+          }
+
+          .balanceValue {
+            font-weight: var(--font-bold);
+            color: var(--black1);
+            font-size: var(--XXXSmall);
+            margin-left: 7px;
+          }
+        }
+      }
+
+      // }
+      // }
+    }
+  }
+}

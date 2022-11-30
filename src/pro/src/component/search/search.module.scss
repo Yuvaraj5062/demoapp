@@ -1,0 +1,21 @@
+@media only screen and (min-width : 768px){
+    .inputData {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 13px 22px 13px 12px;
+        background: var(--blue2);
+        box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, 0.1);
+        
+        .inputFilled {
+          border: none;
+          background: var(--blue2);
+          font-size: var(--XSmall);
+          margin-bottom: 3px;
+          width: 70%;
+        }
+        :focus {
+          outline: none;
+        }
+      }
+}

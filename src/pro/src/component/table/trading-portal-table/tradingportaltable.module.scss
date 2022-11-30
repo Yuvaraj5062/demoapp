@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+.tradingPortalTypeConainer{
+    width: 48%;
+    .tradingPortalTable{
+        width: 100%;
+        .row{
+            background: var(--blue8);
+            .column{
+                padding: 13px 30px;
+                text-align: start;
+                color: var(--black1);
+                font-weight: var(--font-medium);
+                font-size: var(--XSmall);
+            }
+            &:nth-child(even){
+                background: var(--blue9);
+            }
+        }
+    }
+}
+}

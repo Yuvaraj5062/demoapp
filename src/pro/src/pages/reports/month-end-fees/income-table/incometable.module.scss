@@ -1,0 +1,55 @@
+@media only screen and (min-width: 768px) {
+  .incomePPM {
+    box-shadow: 0px 3px 6px rgba(62, 73, 84, 0.04);
+    .table {
+      width: 100%;
+      .incomeHeading {
+        padding: 14px 25px;
+        width: 100%;
+        background: var(--white1);
+        color: var(--blue7);
+        font-size: var(--XSmall);
+        font-weight: var(--font-bold);
+      }
+      .tableRow {
+        &:nth-child(even) {
+          background: var(--blue9);
+        }
+        &:nth-child(odd) {
+          background: var(--blue8);
+        }
+      }
+      .tdCustomClass {
+        padding: 0px;
+        color: var(--black1);
+        font-size: var(--XSmall);
+        font-weight: var(--font-normal);
+        padding: 10px 25px 10px 25px;
+        min-width: 200px;
+      }
+      .tdCustomClass2 {
+        border: 1px solid var(--black1);
+        padding-top: 7px;
+        height: 34px;
+        min-width: 158px;
+        display: inline-block;
+        text-align: center;
+      }
+      .totalData {
+        padding: 14px 25px;
+        background: var(--blue7);
+        color: var(--white1);
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .tdCustomClassFooter {
+        border: 1px solid var(--white1);
+        padding-top: 7px;
+        height: 34px;
+        min-width: 158px;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+}

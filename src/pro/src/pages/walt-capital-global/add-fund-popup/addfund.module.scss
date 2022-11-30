@@ -1,0 +1,161 @@
+@media only screen and (min-width: 768px) {
+  .addFundContainer {
+    width: 39%;
+    margin: auto;
+    background-color: var(--white1);
+
+    .addFundCross {
+      background-color: var(--white1);
+      margin: 10% auto 0px auto;
+      text-align: center;
+      padding: 25px 0px 20px 0px;
+      background-color: var(--blue1);
+      color: var(--white1);
+      font-weight: var(--font-semibold);
+      font-size: var(--medium);
+
+      .crossIcon {
+        float: right;
+        margin-right: 36px;
+      }
+    }
+
+
+    .fundData {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+
+      .textAreaField {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: 47px;
+        margin-bottom: 13px;
+        justify-content: space-between;
+        //margin-left: 9%;
+
+        .textAreaFieldTitle {
+          padding-top: 10px;
+          font-weight: var(--font-medium);
+          font-size: var(--XXSmall);
+          color: var(--black1);
+          padding-left: 12px;
+
+        }
+
+        .description {
+          background: var(--grey18);
+          border: 1px solid var(--grey18);
+          height: 47px;
+          width: 262px;
+        }
+      }
+
+
+
+      .textFieldFirst {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: 47px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        margin-top: 22px;
+        //margin-left: 9%;
+
+        .textFieldTitle {
+          padding-top: 10px;
+          font-weight: var(--font-medium);
+          font-size: var(--XXSmall);
+          color: var(--black1);
+          padding-left: 12px;
+
+        }
+
+        .textFieldLeft {
+          width: 267px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+
+          .textFieldBox {
+            width: 17.6%;
+            background: var(--grey18);
+            align-items: center;
+            padding: 11px 0px 10px 0px;
+            text-align: center;
+            font-weight: var(--font-medium);
+            font-size: var(--XXSmall);
+            color: var(--black1);
+
+            &:hover {
+              background: var(--blue7);
+              font-weight: var(--font-medium);
+              font-size: var(--XXSmall);
+              color: var(--white1);
+            }
+          }
+
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+      .textFieldContainer {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: 47px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+      }
+
+      .customInput {
+        border-style: none;
+        background-color: var(--grey18);
+        height: 47px;
+        width: 262px;
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+      }
+
+      .title {
+        font-weight: var(--medium);
+        font-size: var(--XXSmall);
+        color: var(--black1);
+        padding: 12px;
+      }
+    }
+
+    .buttonContainer {
+      background-color: var(--blue1);
+      height: 76px;
+      display: flex;
+      align-items: center;
+
+      .button {
+        display: flex;
+        justify-content: right;
+        width: 92%;
+
+        .addButton {
+          padding: 14px 113px 13px 113px;
+          background-color: var(--blue10);
+          color: var(--blue1);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@media only screen and (min-width: 768px) {
+  .swipperContainer {
+    display: flex;
+    justify-content: space-between;
+    .leftArrow{
+      cursor: pointer;
+    }
+    .title {
+      color: var(--black1);
+      font-weight: var(--font-medium);
+      font-size: var(--XSmall);
+    }
+    .leftArrow{
+      cursor: pointer;
+    }
+  }
+}
